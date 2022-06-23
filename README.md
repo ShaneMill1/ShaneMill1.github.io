@@ -1,16 +1,20 @@
-# ShaneMill1.github.io
 
-##ServerlessEast Tests
+## ServerlessEast Tests
 
-###10 Concurrent - 30 minute per test 
-@https://shane.mill1.github.io/NCPPServerlessEast/10concurrent/index.html@
+### 10 Concurrent - 30 minute per test 
 
-##ServerlessWest Tests
+https://shane.mill1.github.io/NCPPServerlessEast/10concurrent/index.html
 
-###10 Concurrent - 30 minute per test 
-@https://shane.mill1.github.io/NCPPServerlessWest/10concurrent/index.html@
 
-##ServerEast Tests
+## ServerlessWest Tests
 
-###10 Concurrent - 30 minute per test 
-@https://shane.mill1.github.io/NCPPServerEast/10concurrent/index.html@
+### 10 Concurrent - 30 minute per test 
+
+https://shane.mill1.github.io/NCPPServerlessWest/10concurrent/index.html
+
+
+## ServerEast Tests
+
+### 10 Concurrent - 30 minute per test 
+
+https://shane.mill1.github.io/NCPPServerEast/10concurrent/index.html
