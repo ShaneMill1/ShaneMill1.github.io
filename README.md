@@ -1,5 +1,3 @@
-#NCPP
-
 ## ServerlessEast Tests
 
 ### 10 Concurrent - 30 minute per test 
