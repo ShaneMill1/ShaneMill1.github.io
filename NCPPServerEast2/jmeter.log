@@ -1,0 +1,93 @@
+2022-07-13 14:24:18,156 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2022-07-13 14:24:18,164 INFO o.a.j.JMeter: Loading user properties from: C:\Users\Shane.Mill\Desktop\apache-jmeter-5.5\apache-jmeter-5.5\bin\user.properties
+2022-07-13 14:24:18,164 INFO o.a.j.JMeter: Loading system properties from: C:\Users\Shane.Mill\Desktop\apache-jmeter-5.5\apache-jmeter-5.5\bin\system.properties
+2022-07-13 14:24:18,169 INFO o.a.j.JMeter: Copyright (c) 1998-2022 The Apache Software Foundation
+2022-07-13 14:24:18,169 INFO o.a.j.JMeter: Version 5.5
+2022-07-13 14:24:18,169 INFO o.a.j.JMeter: java.version=1.8.0_331
+2022-07-13 14:24:18,169 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) Client VM
+2022-07-13 14:24:18,169 INFO o.a.j.JMeter: os.name=Windows 10
+2022-07-13 14:24:18,179 INFO o.a.j.JMeter: os.arch=x86
+2022-07-13 14:24:18,179 INFO o.a.j.JMeter: os.version=10.0
+2022-07-13 14:24:18,179 INFO o.a.j.JMeter: file.encoding=Cp1252
+2022-07-13 14:24:18,179 INFO o.a.j.JMeter: java.awt.headless=true
+2022-07-13 14:24:18,179 INFO o.a.j.JMeter: Max memory     =1073741824
+2022-07-13 14:24:18,179 INFO o.a.j.JMeter: Available Processors =8
+2022-07-13 14:24:18,182 INFO o.a.j.JMeter: Default Locale=English (EN)
+2022-07-13 14:24:18,182 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2022-07-13 14:24:18,182 INFO o.a.j.JMeter: JMeterHome=C:\Users\Shane.Mill\Desktop\apache-jmeter-5.5\apache-jmeter-5.5
+2022-07-13 14:24:18,182 INFO o.a.j.JMeter: user.dir  =C:\Users\Shane.Mill\Desktop\jtl_testing\NCPPServerEast2
+2022-07-13 14:24:18,182 INFO o.a.j.JMeter: PWD       =C:\Users\Shane.Mill\Desktop\jtl_testing\NCPPServerEast2
+2022-07-13 14:24:22,720 INFO o.a.j.JMeter: IP: 10.0.0.87 Name: SILNWS-L-SMILL1 FullName: SILNWS-L-SMILL1.corpsrv.noaa.local
+2022-07-13 14:24:22,735 INFO o.a.j.JMeter: Setting property 'jmeter.reportgenerator.outputdir' to:'C:\Users\Shane.Mill\Desktop\jtl_testing\NCPPServerEast2\10concurrent1min'
+2022-07-13 14:24:22,737 INFO o.a.j.s.FileServer: Default base='C:\Users\Shane.Mill\Desktop\jtl_testing\NCPPServerEast2'
+2022-07-13 14:24:22,738 INFO o.a.j.s.FileServer: Set new base='C:\Users\Shane.Mill\Desktop\jtl_testing\NCPPServerEast2'
+2022-07-13 14:24:22,809 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2022-07-13 14:24:22,821 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2022-07-13 14:24:22,825 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2022-07-13 14:24:22,828 INFO o.a.j.s.SaveService: Loading file: NCPPServerEastTestPlan.jmx
+2022-07-13 14:24:22,867 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2022-07-13 14:24:22,867 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2022-07-13 14:24:22,867 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2022-07-13 14:24:22,867 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2022-07-13 14:24:22,867 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2022-07-13 14:24:22,867 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2022-07-13 14:24:23,059 INFO o.a.j.JMeter: Creating summariser <summary>
+2022-07-13 14:24:23,063 INFO o.a.j.r.d.ReportGenerator: ReportGenerator will use for Parsing the separator: ','
+2022-07-13 14:24:23,063 INFO o.a.j.r.d.ReportGenerator: Will generate report at end of test from  results file: SummaryReport.jtl
+2022-07-13 14:24:23,063 INFO o.a.j.r.d.ReportGenerator: Reading report generator properties from: C:\Users\Shane.Mill\Desktop\apache-jmeter-5.5\apache-jmeter-5.5\bin\reportgenerator.properties
+2022-07-13 14:24:23,064 INFO o.a.j.r.d.ReportGenerator: Merging with JMeter properties
+2022-07-13 14:24:23,067 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.temp_dir' not found, using default value 'temp' instead.
+2022-07-13 14:24:23,069 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.apdex_per_transaction' not found, using default value 'null' instead.
+2022-07-13 14:24:23,069 INFO o.a.j.r.c.ReportGeneratorConfiguration: apdex_per_transaction is empty, not APDEX per transaction customization
+2022-07-13 14:24:23,069 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.sample_filter' not found, using default value 'null' instead.
+2022-07-13 14:24:23,069 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.report_title' not found, using default value 'null' instead.
+2022-07-13 14:24:23,069 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.start_date' not found, using default value 'null' instead.
+2022-07-13 14:24:23,069 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.end_date' not found, using default value 'null' instead.
+2022-07-13 14:24:23,069 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.date_format' not found, using default value 'null' instead.
+2022-07-13 14:24:23,069 INFO o.a.j.r.c.ReportGeneratorConfiguration: Will use date range start date: null, end date: null
+2022-07-13 14:24:23,072 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.totalTPS.exclude_controllers' not found, using default value 'false' instead.
+2022-07-13 14:24:23,072 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.activeThreadsOverTime.exclude_controllers' not found, using default value 'false' instead.
+2022-07-13 14:24:23,072 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.timeVsThreads.exclude_controllers' not found, using default value 'false' instead.
+2022-07-13 14:24:23,072 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimeDistribution.exclude_controllers' not found, using default value 'false' instead.
+2022-07-13 14:24:23,072 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.transactionsPerSecond.exclude_controllers' not found, using default value 'false' instead.
+2022-07-13 14:24:23,072 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentiles.exclude_controllers' not found, using default value 'false' instead.
+2022-07-13 14:24:23,072 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentilesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2022-07-13 14:24:23,072 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2022-07-13 14:24:23,072 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.connectTimeOverTime.exclude_controllers' not found, using default value 'false' instead.
+2022-07-13 14:24:23,072 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.latenciesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2022-07-13 14:24:23,073 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.filters_only_sample_series' not found, using default value 'true' instead.
+2022-07-13 14:24:23,073 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.series_filter' not found, using default value '' instead.
+2022-07-13 14:24:23,073 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.show_controllers_only' not found, using default value 'false' instead.
+2022-07-13 14:24:23,073 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.filters_only_sample_series' not found, using default value 'true' instead.
+2022-07-13 14:24:23,073 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.series_filter' not found, using default value '' instead.
+2022-07-13 14:24:23,073 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.show_controllers_only' not found, using default value 'false' instead.
+2022-07-13 14:24:23,080 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2022-07-13 14:24:23,080 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2022-07-13 14:24:23,080 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2022-07-13 14:24:23,085 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2022-07-13 14:24:23,085 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2022-07-13 14:24:23,253 INFO o.a.j.r.ResultCollector: Folder at C:\Users\Shane.Mill\Desktop\jtl_testing\NCPPServerEast was created
+2022-07-13 14:24:23,261 INFO o.a.j.JMeter: Running test (1657736663261)
+2022-07-13 14:24:23,289 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : NCPPServerEastRoot
+2022-07-13 14:24:23,289 INFO o.a.j.e.StandardJMeterEngine: Starting 10 threads for group NCPPServerEastRoot.
+2022-07-13 14:24:23,289 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-07-13 14:24:23,289 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=10 ramp-up=10 delayedStart=false
+2022-07-13 14:24:23,293 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2022-07-13 14:24:23,293 INFO o.a.j.e.StandardJMeterEngine: Waiting for thread group: NCPPServerEastRoot to finish before starting next group
+2022-07-13 14:24:23,294 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerEastRoot 1-1
+2022-07-13 14:24:23,307 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = SILNWS-L-SMILL1
+2022-07-13 14:24:23,310 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2022-07-13 14:24:23,312 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2022-07-13 14:24:23,312 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to ISO-8859-1
+2022-07-13 14:24:23,312 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2022-07-13 14:24:23,312 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2022-07-13 14:24:24,293 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerEastRoot 1-2
+2022-07-13 14:24:25,292 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerEastRoot 1-3
+2022-07-13 14:24:26,291 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerEastRoot 1-4
+2022-07-13 14:24:27,292 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerEastRoot 1-5
+2022-07-13 14:24:28,291 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerEastRoot 1-6
+2022-07-13 14:24:29,291 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerEastRoot 1-7
+2022-07-13 14:24:30,023 INFO o.a.j.r.Summariser: summary +    242 in 00:00:07 =   35.8/s Avg:   105 Min:    94 Max:   149 Err:     0 (0.00%) Active: 7 Started: 7 Finished: 0
+2022-07-13 14:24:30,291 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerEastRoot 1-8
+2022-07-13 14:24:31,291 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerEastRoot 1-9
+2022-07-13 14:24:32,290 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerEastRoot 1-10
