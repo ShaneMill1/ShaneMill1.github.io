@@ -25,6 +25,22 @@
 - Changes were made to the Memory Allocations for Each Lambda function (decreased from 10240 to 256/512) to conserve costs
 - Changes were made to Dask Fargate Cluster to conserve costs (CPU to 256, Memory to 2046)
 
-## ServerlessEast 1 minute Test to evaluate impacts of changes
+## ServerlessEast Tests
 
-[https://shanemill1.github.io/NCPPServerEast/10concurrent1min/index.html](https://shanemill1.github.io/NCPPServerEast/10concurrent1min/index.html)
+### 10 Concurrent - 1 minute per test 
+
+[https://shanemill1.github.io/NCPPServerlessEast2/10concurrent1min/index.html](https://shanemill1.github.io/NCPPServerlessEast2/10concurrent1min/index.html)
+
+
+## ServerlessWest Tests
+
+### 10 Concurrent - 1 minute per test 
+
+[https://shanemill1.github.io/NCPPServerlessWest2/10concurrent1min/index.html](https://shanemill1.github.io/NCPPServerlessWest2/10concurrent1min/index.html)
+
+
+## ServerEast Tests
+
+### 10 Concurrent - 1 minute per test 
+
+[https://shanemill1.github.io/NCPPServerEast2/10concurrent1min/index.html](https://shanemill1.github.io/NCPPServerEast2/10concurrent1min/index.html)
