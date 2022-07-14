@@ -1,0 +1,1487 @@
+2022-07-14 11:56:30,821 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2022-07-14 11:56:30,830 INFO o.a.j.JMeter: Loading user properties from: C:\Users\Shane.Mill\Desktop\apache-jmeter-5.5\apache-jmeter-5.5\bin\user.properties
+2022-07-14 11:56:30,831 INFO o.a.j.JMeter: Loading system properties from: C:\Users\Shane.Mill\Desktop\apache-jmeter-5.5\apache-jmeter-5.5\bin\system.properties
+2022-07-14 11:56:30,836 INFO o.a.j.JMeter: Copyright (c) 1998-2022 The Apache Software Foundation
+2022-07-14 11:56:30,836 INFO o.a.j.JMeter: Version 5.5
+2022-07-14 11:56:30,836 INFO o.a.j.JMeter: java.version=1.8.0_331
+2022-07-14 11:56:30,836 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) Client VM
+2022-07-14 11:56:30,836 INFO o.a.j.JMeter: os.name=Windows 10
+2022-07-14 11:56:30,836 INFO o.a.j.JMeter: os.arch=x86
+2022-07-14 11:56:30,836 INFO o.a.j.JMeter: os.version=10.0
+2022-07-14 11:56:30,836 INFO o.a.j.JMeter: file.encoding=Cp1252
+2022-07-14 11:56:30,836 INFO o.a.j.JMeter: java.awt.headless=true
+2022-07-14 11:56:30,836 INFO o.a.j.JMeter: Max memory     =1073741824
+2022-07-14 11:56:30,837 INFO o.a.j.JMeter: Available Processors =8
+2022-07-14 11:56:30,839 INFO o.a.j.JMeter: Default Locale=English (EN)
+2022-07-14 11:56:30,840 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2022-07-14 11:56:30,840 INFO o.a.j.JMeter: JMeterHome=C:\Users\Shane.Mill\Desktop\apache-jmeter-5.5\apache-jmeter-5.5
+2022-07-14 11:56:30,840 INFO o.a.j.JMeter: user.dir  =C:\Users\Shane.Mill\Desktop\jtl_testing\NCPPServerlessWest3
+2022-07-14 11:56:30,840 INFO o.a.j.JMeter: PWD       =C:\Users\Shane.Mill\Desktop\jtl_testing\NCPPServerlessWest3
+2022-07-14 11:56:35,366 INFO o.a.j.JMeter: IP: 10.0.0.87 Name: SILNWS-L-SMILL1 FullName: SILNWS-L-SMILL1.corpsrv.noaa.local
+2022-07-14 11:56:35,378 INFO o.a.j.JMeter: Setting property 'jmeter.reportgenerator.outputdir' to:'C:\Users\Shane.Mill\Desktop\jtl_testing\NCPPServerlessWest3\10concurrent1min'
+2022-07-14 11:56:35,380 INFO o.a.j.s.FileServer: Default base='C:\Users\Shane.Mill\Desktop\jtl_testing\NCPPServerlessWest3'
+2022-07-14 11:56:35,381 INFO o.a.j.s.FileServer: Set new base='C:\Users\Shane.Mill\Desktop\jtl_testing\NCPPServerlessWest3'
+2022-07-14 11:56:35,458 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2022-07-14 11:56:35,471 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2022-07-14 11:56:35,475 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2022-07-14 11:56:35,479 INFO o.a.j.s.SaveService: Loading file: NCPPServerlessWestTestPlan1min.jmx
+2022-07-14 11:56:35,520 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2022-07-14 11:56:35,520 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2022-07-14 11:56:35,520 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2022-07-14 11:56:35,520 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2022-07-14 11:56:35,520 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2022-07-14 11:56:35,520 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2022-07-14 11:56:35,721 INFO o.a.j.JMeter: Creating summariser <summary>
+2022-07-14 11:56:35,725 INFO o.a.j.r.d.ReportGenerator: ReportGenerator will use for Parsing the separator: ','
+2022-07-14 11:56:35,725 INFO o.a.j.r.d.ReportGenerator: Will generate report at end of test from  results file: SummaryReport.jtl
+2022-07-14 11:56:35,726 INFO o.a.j.r.d.ReportGenerator: Reading report generator properties from: C:\Users\Shane.Mill\Desktop\apache-jmeter-5.5\apache-jmeter-5.5\bin\reportgenerator.properties
+2022-07-14 11:56:35,726 INFO o.a.j.r.d.ReportGenerator: Merging with JMeter properties
+2022-07-14 11:56:35,735 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.temp_dir' not found, using default value 'temp' instead.
+2022-07-14 11:56:35,737 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.apdex_per_transaction' not found, using default value 'null' instead.
+2022-07-14 11:56:35,737 INFO o.a.j.r.c.ReportGeneratorConfiguration: apdex_per_transaction is empty, not APDEX per transaction customization
+2022-07-14 11:56:35,737 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.sample_filter' not found, using default value 'null' instead.
+2022-07-14 11:56:35,737 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.report_title' not found, using default value 'null' instead.
+2022-07-14 11:56:35,737 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.start_date' not found, using default value 'null' instead.
+2022-07-14 11:56:35,737 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.end_date' not found, using default value 'null' instead.
+2022-07-14 11:56:35,737 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.date_format' not found, using default value 'null' instead.
+2022-07-14 11:56:35,738 INFO o.a.j.r.c.ReportGeneratorConfiguration: Will use date range start date: null, end date: null
+2022-07-14 11:56:35,741 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.totalTPS.exclude_controllers' not found, using default value 'false' instead.
+2022-07-14 11:56:35,741 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.activeThreadsOverTime.exclude_controllers' not found, using default value 'false' instead.
+2022-07-14 11:56:35,742 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.timeVsThreads.exclude_controllers' not found, using default value 'false' instead.
+2022-07-14 11:56:35,742 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimeDistribution.exclude_controllers' not found, using default value 'false' instead.
+2022-07-14 11:56:35,742 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.transactionsPerSecond.exclude_controllers' not found, using default value 'false' instead.
+2022-07-14 11:56:35,742 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentiles.exclude_controllers' not found, using default value 'false' instead.
+2022-07-14 11:56:35,742 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentilesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2022-07-14 11:56:35,742 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2022-07-14 11:56:35,742 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.connectTimeOverTime.exclude_controllers' not found, using default value 'false' instead.
+2022-07-14 11:56:35,742 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.latenciesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2022-07-14 11:56:35,742 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.filters_only_sample_series' not found, using default value 'true' instead.
+2022-07-14 11:56:35,742 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.series_filter' not found, using default value '' instead.
+2022-07-14 11:56:35,742 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.show_controllers_only' not found, using default value 'false' instead.
+2022-07-14 11:56:35,743 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.filters_only_sample_series' not found, using default value 'true' instead.
+2022-07-14 11:56:35,743 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.series_filter' not found, using default value '' instead.
+2022-07-14 11:56:35,743 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.show_controllers_only' not found, using default value 'false' instead.
+2022-07-14 11:56:35,747 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2022-07-14 11:56:35,748 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2022-07-14 11:56:35,748 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2022-07-14 11:56:35,757 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2022-07-14 11:56:35,757 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2022-07-14 11:56:36,029 INFO o.a.j.JMeter: Running test (1657814196029)
+2022-07-14 11:56:36,060 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : NCPPServerlessWestCollections
+2022-07-14 11:56:36,060 INFO o.a.j.e.StandardJMeterEngine: Starting 10 threads for group NCPPServerlessWestCollections.
+2022-07-14 11:56:36,060 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-07-14 11:56:36,060 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=10 ramp-up=10 delayedStart=false
+2022-07-14 11:56:36,064 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2022-07-14 11:56:36,064 INFO o.a.j.e.StandardJMeterEngine: Waiting for thread group: NCPPServerlessWestCollections to finish before starting next group
+2022-07-14 11:56:36,065 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestCollections 1-1
+2022-07-14 11:56:36,077 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = SILNWS-L-SMILL1
+2022-07-14 11:56:36,081 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2022-07-14 11:56:36,082 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2022-07-14 11:56:36,082 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to ISO-8859-1
+2022-07-14 11:56:36,082 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2022-07-14 11:56:36,082 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2022-07-14 11:56:36,130 INFO o.a.j.p.h.s.h.LazyLayeredConnectionSocketFactory: Setting up HTTPS TrustAll Socket Factory
+2022-07-14 11:56:36,134 INFO o.a.j.u.JsseSSLManager: Using default SSL protocol: TLS
+2022-07-14 11:56:36,134 INFO o.a.j.u.JsseSSLManager: SSL session context: per-thread
+2022-07-14 11:56:36,397 INFO o.a.j.u.SSLManager: JmeterKeyStore Location:  type JKS
+2022-07-14 11:56:36,400 INFO o.a.j.u.SSLManager: KeyStore created OK
+2022-07-14 11:56:36,400 WARN o.a.j.u.SSLManager: Keystore file not found, loading empty keystore
+2022-07-14 11:56:37,062 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestCollections 1-2
+2022-07-14 11:56:38,062 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestCollections 1-3
+2022-07-14 11:56:39,063 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestCollections 1-4
+2022-07-14 11:56:40,063 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestCollections 1-5
+2022-07-14 11:56:41,061 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestCollections 1-6
+2022-07-14 11:56:42,062 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestCollections 1-7
+2022-07-14 11:56:43,061 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestCollections 1-8
+2022-07-14 11:56:44,071 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestCollections 1-9
+2022-07-14 11:56:45,062 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestCollections 1-10
+2022-07-14 11:57:00,016 INFO o.a.j.r.Summariser: summary +    695 in 00:00:24 =   29.0/s Avg:   278 Min:   158 Max:  2142 Err:     0 (0.00%) Active: 10 Started: 10 Finished: 0
+2022-07-14 11:57:30,005 INFO o.a.j.r.Summariser: summary +   1285 in 00:00:30 =   42.8/s Avg:   233 Min:   160 Max:  1106 Err:     0 (0.00%) Active: 10 Started: 10 Finished: 0
+2022-07-14 11:57:30,006 INFO o.a.j.r.Summariser: summary =   1980 in 00:00:54 =   36.7/s Avg:   248 Min:   158 Max:  2142 Err:     0 (0.00%)
+2022-07-14 11:57:36,064 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestCollections 1-7
+2022-07-14 11:57:36,065 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestCollections 1-7
+2022-07-14 11:57:36,072 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestCollections 1-3
+2022-07-14 11:57:36,072 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestCollections 1-3
+2022-07-14 11:57:36,072 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestCollections 1-9
+2022-07-14 11:57:36,073 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestCollections 1-9
+2022-07-14 11:57:36,090 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestCollections 1-2
+2022-07-14 11:57:36,090 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestCollections 1-2
+2022-07-14 11:57:36,107 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestCollections 1-6
+2022-07-14 11:57:36,107 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestCollections 1-6
+2022-07-14 11:57:36,145 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestCollections 1-4
+2022-07-14 11:57:36,145 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestCollections 1-4
+2022-07-14 11:57:36,201 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestCollections 1-8
+2022-07-14 11:57:36,201 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestCollections 1-8
+2022-07-14 11:57:36,227 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestCollections 1-5
+2022-07-14 11:57:36,228 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestCollections 1-5
+2022-07-14 11:57:36,252 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestCollections 1-10
+2022-07-14 11:57:36,252 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestCollections 1-10
+2022-07-14 11:57:36,267 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestCollections 1-1
+2022-07-14 11:57:36,268 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestCollections 1-1
+2022-07-14 11:57:36,268 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 2 : NCPPServerlessWestGFSInstances
+2022-07-14 11:57:36,268 INFO o.a.j.e.StandardJMeterEngine: Starting 10 threads for group NCPPServerlessWestGFSInstances.
+2022-07-14 11:57:36,268 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-07-14 11:57:36,268 INFO o.a.j.t.ThreadGroup: Starting thread group... number=2 threads=10 ramp-up=10 delayedStart=false
+2022-07-14 11:57:36,269 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSInstances 2-1
+2022-07-14 11:57:36,270 INFO o.a.j.t.ThreadGroup: Started thread group number 2
+2022-07-14 11:57:36,270 INFO o.a.j.e.StandardJMeterEngine: Waiting for thread group: NCPPServerlessWestGFSInstances to finish before starting next group
+2022-07-14 11:57:37,269 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSInstances 2-2
+2022-07-14 11:57:38,269 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSInstances 2-3
+2022-07-14 11:57:39,269 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSInstances 2-4
+2022-07-14 11:57:40,269 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSInstances 2-5
+2022-07-14 11:57:41,277 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSInstances 2-6
+2022-07-14 11:57:42,269 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSInstances 2-7
+2022-07-14 11:57:43,269 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSInstances 2-8
+2022-07-14 11:57:44,269 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSInstances 2-9
+2022-07-14 11:57:45,268 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSInstances 2-10
+2022-07-14 11:58:00,024 INFO o.a.j.r.Summariser: summary +    611 in 00:00:30 =   20.4/s Avg:   414 Min:   164 Max:  4836 Err:     0 (0.00%) Active: 10 Started: 20 Finished: 10
+2022-07-14 11:58:00,024 INFO o.a.j.r.Summariser: summary =   2591 in 00:01:24 =   30.8/s Avg:   287 Min:   158 Max:  4836 Err:     0 (0.00%)
+2022-07-14 11:58:30,001 INFO o.a.j.r.Summariser: summary +    672 in 00:00:30 =   22.4/s Avg:   444 Min:   316 Max:  1143 Err:     0 (0.00%) Active: 10 Started: 20 Finished: 10
+2022-07-14 11:58:30,003 INFO o.a.j.r.Summariser: summary =   3263 in 00:01:54 =   28.6/s Avg:   320 Min:   158 Max:  4836 Err:     0 (0.00%)
+2022-07-14 11:58:36,303 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSInstances 2-4
+2022-07-14 11:58:36,303 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSInstances 2-4
+2022-07-14 11:58:36,306 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSInstances 2-10
+2022-07-14 11:58:36,306 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSInstances 2-10
+2022-07-14 11:58:36,370 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSInstances 2-1
+2022-07-14 11:58:36,370 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSInstances 2-1
+2022-07-14 11:58:36,378 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSInstances 2-2
+2022-07-14 11:58:36,379 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSInstances 2-2
+2022-07-14 11:58:36,489 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSInstances 2-9
+2022-07-14 11:58:36,489 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSInstances 2-9
+2022-07-14 11:58:36,548 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSInstances 2-8
+2022-07-14 11:58:36,548 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSInstances 2-8
+2022-07-14 11:58:36,550 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSInstances 2-3
+2022-07-14 11:58:36,550 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSInstances 2-3
+2022-07-14 11:58:36,639 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSInstances 2-7
+2022-07-14 11:58:36,639 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSInstances 2-7
+2022-07-14 11:58:36,693 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSInstances 2-6
+2022-07-14 11:58:36,693 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSInstances 2-6
+2022-07-14 11:58:36,812 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSInstances 2-5
+2022-07-14 11:58:36,813 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSInstances 2-5
+2022-07-14 11:58:36,813 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 3 : NCPPServerlessWestGFSCollectionMeta
+2022-07-14 11:58:36,813 INFO o.a.j.e.StandardJMeterEngine: Starting 10 threads for group NCPPServerlessWestGFSCollectionMeta.
+2022-07-14 11:58:36,813 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-07-14 11:58:36,814 INFO o.a.j.t.ThreadGroup: Starting thread group... number=3 threads=10 ramp-up=10 delayedStart=false
+2022-07-14 11:58:36,815 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSCollectionMeta 3-1
+2022-07-14 11:58:36,816 INFO o.a.j.t.ThreadGroup: Started thread group number 3
+2022-07-14 11:58:36,817 INFO o.a.j.e.StandardJMeterEngine: Waiting for thread group: NCPPServerlessWestGFSCollectionMeta to finish before starting next group
+2022-07-14 11:58:37,822 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSCollectionMeta 3-2
+2022-07-14 11:58:38,815 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSCollectionMeta 3-3
+2022-07-14 11:58:39,815 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSCollectionMeta 3-4
+2022-07-14 11:58:40,815 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSCollectionMeta 3-5
+2022-07-14 11:58:41,816 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSCollectionMeta 3-6
+2022-07-14 11:58:42,815 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSCollectionMeta 3-7
+2022-07-14 11:58:43,814 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSCollectionMeta 3-8
+2022-07-14 11:58:44,814 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSCollectionMeta 3-9
+2022-07-14 11:58:45,828 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSCollectionMeta 3-10
+2022-07-14 11:59:00,104 INFO o.a.j.r.Summariser: summary +    355 in 00:00:30 =   11.8/s Avg:   707 Min:   333 Max:  7139 Err:     0 (0.00%) Active: 10 Started: 30 Finished: 20
+2022-07-14 11:59:00,105 INFO o.a.j.r.Summariser: summary =   3618 in 00:02:24 =   25.1/s Avg:   358 Min:   158 Max:  7139 Err:     0 (0.00%)
+2022-07-14 11:59:30,048 INFO o.a.j.r.Summariser: summary +    503 in 00:00:30 =   16.8/s Avg:   596 Min:   440 Max:  1035 Err:     0 (0.00%) Active: 10 Started: 30 Finished: 20
+2022-07-14 11:59:30,050 INFO o.a.j.r.Summariser: summary =   4121 in 00:02:54 =   23.7/s Avg:   387 Min:   158 Max:  7139 Err:     0 (0.00%)
+2022-07-14 11:59:36,865 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSCollectionMeta 3-2
+2022-07-14 11:59:36,865 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSCollectionMeta 3-2
+2022-07-14 11:59:36,943 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSCollectionMeta 3-1
+2022-07-14 11:59:36,943 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSCollectionMeta 3-1
+2022-07-14 11:59:36,956 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSCollectionMeta 3-9
+2022-07-14 11:59:36,956 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSCollectionMeta 3-9
+2022-07-14 11:59:37,046 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSCollectionMeta 3-4
+2022-07-14 11:59:37,046 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSCollectionMeta 3-4
+2022-07-14 11:59:37,100 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSCollectionMeta 3-7
+2022-07-14 11:59:37,100 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSCollectionMeta 3-7
+2022-07-14 11:59:37,281 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSCollectionMeta 3-5
+2022-07-14 11:59:37,282 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSCollectionMeta 3-5
+2022-07-14 11:59:37,330 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSCollectionMeta 3-10
+2022-07-14 11:59:37,331 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSCollectionMeta 3-10
+2022-07-14 11:59:37,375 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSCollectionMeta 3-8
+2022-07-14 11:59:37,375 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSCollectionMeta 3-8
+2022-07-14 11:59:37,377 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSCollectionMeta 3-6
+2022-07-14 11:59:37,378 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSCollectionMeta 3-6
+2022-07-14 11:59:37,444 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSCollectionMeta 3-3
+2022-07-14 11:59:37,444 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSCollectionMeta 3-3
+2022-07-14 11:59:37,445 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 4 : NCPPServerlessWestGFSPosition-1time-1zedd
+2022-07-14 11:59:37,445 INFO o.a.j.e.StandardJMeterEngine: Starting 10 threads for group NCPPServerlessWestGFSPosition-1time-1zedd.
+2022-07-14 11:59:37,445 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-07-14 11:59:37,445 INFO o.a.j.t.ThreadGroup: Starting thread group... number=4 threads=10 ramp-up=10 delayedStart=false
+2022-07-14 11:59:37,447 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-1time-1zedd 4-1
+2022-07-14 11:59:37,448 INFO o.a.j.t.ThreadGroup: Started thread group number 4
+2022-07-14 11:59:37,448 INFO o.a.j.e.StandardJMeterEngine: Waiting for thread group: NCPPServerlessWestGFSPosition-1time-1zedd to finish before starting next group
+2022-07-14 11:59:38,449 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-1time-1zedd 4-2
+2022-07-14 11:59:39,448 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-1time-1zedd 4-3
+2022-07-14 11:59:40,447 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-1time-1zedd 4-4
+2022-07-14 11:59:41,446 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-1time-1zedd 4-5
+2022-07-14 11:59:42,446 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-1time-1zedd 4-6
+2022-07-14 11:59:43,447 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-1time-1zedd 4-7
+2022-07-14 11:59:44,448 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-1time-1zedd 4-8
+2022-07-14 11:59:45,447 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-1time-1zedd 4-9
+2022-07-14 11:59:46,446 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-1time-1zedd 4-10
+2022-07-14 12:00:00,003 INFO o.a.j.r.Summariser: summary +    402 in 00:00:30 =   13.4/s Avg:   627 Min:   406 Max:  3202 Err:     0 (0.00%) Active: 10 Started: 40 Finished: 30
+2022-07-14 12:00:00,004 INFO o.a.j.r.Summariser: summary =   4523 in 00:03:24 =   22.2/s Avg:   408 Min:   158 Max:  7139 Err:     0 (0.00%)
+2022-07-14 12:00:30,022 INFO o.a.j.r.Summariser: summary +    515 in 00:00:30 =   17.2/s Avg:   581 Min:   410 Max:  1739 Err:     0 (0.00%) Active: 10 Started: 40 Finished: 30
+2022-07-14 12:00:30,023 INFO o.a.j.r.Summariser: summary =   5038 in 00:03:54 =   21.5/s Avg:   426 Min:   158 Max:  7139 Err:     0 (0.00%)
+2022-07-14 12:00:37,515 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-1time-1zedd 4-8
+2022-07-14 12:00:37,515 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-1time-1zedd 4-8
+2022-07-14 12:00:37,539 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-1time-1zedd 4-3
+2022-07-14 12:00:37,539 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-1time-1zedd 4-3
+2022-07-14 12:00:37,621 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-1time-1zedd 4-6
+2022-07-14 12:00:37,621 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-1time-1zedd 4-6
+2022-07-14 12:00:37,644 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-1time-1zedd 4-9
+2022-07-14 12:00:37,645 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-1time-1zedd 4-9
+2022-07-14 12:00:37,746 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-1time-1zedd 4-7
+2022-07-14 12:00:37,746 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-1time-1zedd 4-7
+2022-07-14 12:00:37,840 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-1time-1zedd 4-10
+2022-07-14 12:00:37,840 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-1time-1zedd 4-10
+2022-07-14 12:00:37,843 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-1time-1zedd 4-1
+2022-07-14 12:00:37,843 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-1time-1zedd 4-1
+2022-07-14 12:00:37,938 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-1time-1zedd 4-5
+2022-07-14 12:00:37,939 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-1time-1zedd 4-5
+2022-07-14 12:00:37,977 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-1time-1zedd 4-4
+2022-07-14 12:00:37,977 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-1time-1zedd 4-4
+2022-07-14 12:00:37,992 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-1time-1zedd 4-2
+2022-07-14 12:00:37,993 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-1time-1zedd 4-2
+2022-07-14 12:00:37,993 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 5 : NCPPServerlessWestGFSPosition-1time-halfzedd
+2022-07-14 12:00:37,994 INFO o.a.j.e.StandardJMeterEngine: Starting 10 threads for group NCPPServerlessWestGFSPosition-1time-halfzedd.
+2022-07-14 12:00:37,994 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-07-14 12:00:37,994 INFO o.a.j.t.ThreadGroup: Starting thread group... number=5 threads=10 ramp-up=10 delayedStart=false
+2022-07-14 12:00:37,995 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-1time-halfzedd 5-1
+2022-07-14 12:00:37,997 INFO o.a.j.t.ThreadGroup: Started thread group number 5
+2022-07-14 12:00:37,997 INFO o.a.j.e.StandardJMeterEngine: Waiting for thread group: NCPPServerlessWestGFSPosition-1time-halfzedd to finish before starting next group
+2022-07-14 12:00:39,008 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-1time-halfzedd 5-2
+2022-07-14 12:00:39,996 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-1time-halfzedd 5-3
+2022-07-14 12:00:40,995 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-1time-halfzedd 5-4
+2022-07-14 12:00:41,995 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-1time-halfzedd 5-5
+2022-07-14 12:00:42,996 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-1time-halfzedd 5-6
+2022-07-14 12:00:43,995 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-1time-halfzedd 5-7
+2022-07-14 12:00:44,995 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-1time-halfzedd 5-8
+2022-07-14 12:00:45,995 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-1time-halfzedd 5-9
+2022-07-14 12:00:46,995 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-1time-halfzedd 5-10
+2022-07-14 12:01:00,003 INFO o.a.j.r.Summariser: summary +    244 in 00:00:30 =    8.1/s Avg:  1021 Min:   397 Max:  2387 Err:     0 (0.00%) Active: 10 Started: 50 Finished: 40
+2022-07-14 12:01:00,005 INFO o.a.j.r.Summariser: summary =   5282 in 00:04:24 =   20.0/s Avg:   453 Min:   158 Max:  7139 Err:     0 (0.00%)
+2022-07-14 12:01:30,007 INFO o.a.j.r.Summariser: summary +    164 in 00:00:30 =    5.5/s Avg:  1803 Min:  1459 Max:  2975 Err:     0 (0.00%) Active: 10 Started: 50 Finished: 40
+2022-07-14 12:01:30,009 INFO o.a.j.r.Summariser: summary =   5446 in 00:04:54 =   18.5/s Avg:   494 Min:   158 Max:  7139 Err:     0 (0.00%)
+2022-07-14 12:01:38,042 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-1time-halfzedd 5-6
+2022-07-14 12:01:38,042 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-1time-halfzedd 5-6
+2022-07-14 12:01:38,065 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-1time-halfzedd 5-10
+2022-07-14 12:01:38,065 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-1time-halfzedd 5-10
+2022-07-14 12:01:38,147 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-1time-halfzedd 5-3
+2022-07-14 12:01:38,147 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-1time-halfzedd 5-3
+2022-07-14 12:01:38,273 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-1time-halfzedd 5-1
+2022-07-14 12:01:38,273 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-1time-halfzedd 5-1
+2022-07-14 12:01:38,933 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-1time-halfzedd 5-7
+2022-07-14 12:01:38,934 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-1time-halfzedd 5-7
+2022-07-14 12:01:38,971 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-1time-halfzedd 5-4
+2022-07-14 12:01:38,971 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-1time-halfzedd 5-4
+2022-07-14 12:01:39,141 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-1time-halfzedd 5-9
+2022-07-14 12:01:39,141 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-1time-halfzedd 5-9
+2022-07-14 12:01:39,285 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-1time-halfzedd 5-2
+2022-07-14 12:01:39,285 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-1time-halfzedd 5-2
+2022-07-14 12:01:39,369 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-1time-halfzedd 5-5
+2022-07-14 12:01:39,369 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-1time-halfzedd 5-5
+2022-07-14 12:01:39,653 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-1time-halfzedd 5-8
+2022-07-14 12:01:39,654 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-1time-halfzedd 5-8
+2022-07-14 12:01:39,662 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 6 : NCPPServerlessWestGFSPosition-1time-fullzedd
+2022-07-14 12:01:39,663 INFO o.a.j.e.StandardJMeterEngine: Starting 10 threads for group NCPPServerlessWestGFSPosition-1time-fullzedd.
+2022-07-14 12:01:39,663 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-07-14 12:01:39,663 INFO o.a.j.t.ThreadGroup: Starting thread group... number=6 threads=10 ramp-up=10 delayedStart=false
+2022-07-14 12:01:39,668 INFO o.a.j.t.ThreadGroup: Started thread group number 6
+2022-07-14 12:01:39,669 INFO o.a.j.e.StandardJMeterEngine: Waiting for thread group: NCPPServerlessWestGFSPosition-1time-fullzedd to finish before starting next group
+2022-07-14 12:01:39,683 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-1time-fullzedd 6-1
+2022-07-14 12:01:40,681 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-1time-fullzedd 6-2
+2022-07-14 12:01:41,679 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-1time-fullzedd 6-3
+2022-07-14 12:01:42,680 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-1time-fullzedd 6-4
+2022-07-14 12:01:43,689 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-1time-fullzedd 6-5
+2022-07-14 12:01:44,699 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-1time-fullzedd 6-6
+2022-07-14 12:01:45,680 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-1time-fullzedd 6-7
+2022-07-14 12:01:46,677 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-1time-fullzedd 6-8
+2022-07-14 12:01:47,697 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-1time-fullzedd 6-9
+2022-07-14 12:01:48,698 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-1time-fullzedd 6-10
+2022-07-14 12:02:00,208 INFO o.a.j.r.Summariser: summary +    103 in 00:00:30 =    3.4/s Avg:  2381 Min:  1479 Max:  4092 Err:     0 (0.00%) Active: 10 Started: 60 Finished: 50
+2022-07-14 12:02:00,209 INFO o.a.j.r.Summariser: summary =   5549 in 00:05:24 =   17.1/s Avg:   529 Min:   158 Max:  7139 Err:     0 (0.00%)
+2022-07-14 12:02:30,140 INFO o.a.j.r.Summariser: summary +     98 in 00:00:30 =    3.3/s Avg:  3034 Min:  2494 Max:  3829 Err:     0 (0.00%) Active: 10 Started: 60 Finished: 50
+2022-07-14 12:02:30,141 INFO o.a.j.r.Summariser: summary =   5647 in 00:05:54 =   15.9/s Avg:   573 Min:   158 Max:  7139 Err:     0 (0.00%)
+2022-07-14 12:02:39,804 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-1time-fullzedd 6-6
+2022-07-14 12:02:39,805 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-1time-fullzedd 6-6
+2022-07-14 12:02:39,968 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-1time-fullzedd 6-2
+2022-07-14 12:02:39,968 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-1time-fullzedd 6-2
+2022-07-14 12:02:40,310 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-1time-fullzedd 6-3
+2022-07-14 12:02:40,310 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-1time-fullzedd 6-3
+2022-07-14 12:02:40,418 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-1time-fullzedd 6-4
+2022-07-14 12:02:40,418 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-1time-fullzedd 6-4
+2022-07-14 12:02:40,878 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-1time-fullzedd 6-1
+2022-07-14 12:02:40,878 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-1time-fullzedd 6-1
+2022-07-14 12:02:40,991 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-1time-fullzedd 6-5
+2022-07-14 12:02:40,991 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-1time-fullzedd 6-5
+2022-07-14 12:02:41,392 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-1time-fullzedd 6-8
+2022-07-14 12:02:41,393 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-1time-fullzedd 6-8
+2022-07-14 12:02:42,260 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-1time-fullzedd 6-10
+2022-07-14 12:02:42,260 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-1time-fullzedd 6-10
+2022-07-14 12:02:42,671 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-1time-fullzedd 6-7
+2022-07-14 12:02:42,671 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-1time-fullzedd 6-7
+2022-07-14 12:02:42,719 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-1time-fullzedd 6-9
+2022-07-14 12:02:42,719 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-1time-fullzedd 6-9
+2022-07-14 12:02:42,719 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 7 : NCPPServerlessWestGFSPosition-halftime-1zedd
+2022-07-14 12:02:42,719 INFO o.a.j.e.StandardJMeterEngine: Starting 10 threads for group NCPPServerlessWestGFSPosition-halftime-1zedd.
+2022-07-14 12:02:42,719 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-07-14 12:02:42,719 INFO o.a.j.t.ThreadGroup: Starting thread group... number=7 threads=10 ramp-up=10 delayedStart=false
+2022-07-14 12:02:42,720 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-halftime-1zedd 7-1
+2022-07-14 12:02:42,721 INFO o.a.j.t.ThreadGroup: Started thread group number 7
+2022-07-14 12:02:42,721 INFO o.a.j.e.StandardJMeterEngine: Waiting for thread group: NCPPServerlessWestGFSPosition-halftime-1zedd to finish before starting next group
+2022-07-14 12:02:43,719 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-halftime-1zedd 7-2
+2022-07-14 12:02:44,720 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-halftime-1zedd 7-3
+2022-07-14 12:02:45,720 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-halftime-1zedd 7-4
+2022-07-14 12:02:46,719 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-halftime-1zedd 7-5
+2022-07-14 12:02:47,720 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-halftime-1zedd 7-6
+2022-07-14 12:02:48,720 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-halftime-1zedd 7-7
+2022-07-14 12:02:49,721 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-halftime-1zedd 7-8
+2022-07-14 12:02:50,719 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-halftime-1zedd 7-9
+2022-07-14 12:02:51,719 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-halftime-1zedd 7-10
+2022-07-14 12:03:00,121 INFO o.a.j.r.Summariser: summary +    254 in 00:00:30 =    8.5/s Avg:   991 Min:   414 Max:  3359 Err:     0 (0.00%) Active: 10 Started: 70 Finished: 60
+2022-07-14 12:03:00,122 INFO o.a.j.r.Summariser: summary =   5901 in 00:06:24 =   15.4/s Avg:   591 Min:   158 Max:  7139 Err:     0 (0.00%)
+2022-07-14 12:03:30,111 INFO o.a.j.r.Summariser: summary +    552 in 00:00:30 =   18.4/s Avg:   540 Min:   400 Max:  1517 Err:     0 (0.00%) Active: 10 Started: 70 Finished: 60
+2022-07-14 12:03:30,112 INFO o.a.j.r.Summariser: summary =   6453 in 00:06:54 =   15.6/s Avg:   586 Min:   158 Max:  7139 Err:     0 (0.00%)
+2022-07-14 12:03:42,881 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-halftime-1zedd 7-1
+2022-07-14 12:03:42,881 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-halftime-1zedd 7-1
+2022-07-14 12:03:42,886 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-halftime-1zedd 7-3
+2022-07-14 12:03:42,886 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-halftime-1zedd 7-3
+2022-07-14 12:03:42,979 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-halftime-1zedd 7-2
+2022-07-14 12:03:42,979 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-halftime-1zedd 7-2
+2022-07-14 12:03:43,075 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-halftime-1zedd 7-7
+2022-07-14 12:03:43,075 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-halftime-1zedd 7-7
+2022-07-14 12:03:43,078 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-halftime-1zedd 7-9
+2022-07-14 12:03:43,078 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-halftime-1zedd 7-9
+2022-07-14 12:03:43,120 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-halftime-1zedd 7-4
+2022-07-14 12:03:43,120 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-halftime-1zedd 7-4
+2022-07-14 12:03:43,152 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-halftime-1zedd 7-6
+2022-07-14 12:03:43,152 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-halftime-1zedd 7-6
+2022-07-14 12:03:43,165 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-halftime-1zedd 7-5
+2022-07-14 12:03:43,166 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-halftime-1zedd 7-5
+2022-07-14 12:03:43,166 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-halftime-1zedd 7-10
+2022-07-14 12:03:43,166 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-halftime-1zedd 7-10
+2022-07-14 12:03:44,085 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-halftime-1zedd 7-8
+2022-07-14 12:03:44,085 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-halftime-1zedd 7-8
+2022-07-14 12:03:44,087 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 8 : NCPPServerlessWestGFSPosition-halftime-halfzedd
+2022-07-14 12:03:44,087 INFO o.a.j.e.StandardJMeterEngine: Starting 10 threads for group NCPPServerlessWestGFSPosition-halftime-halfzedd.
+2022-07-14 12:03:44,087 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-07-14 12:03:44,087 INFO o.a.j.t.ThreadGroup: Starting thread group... number=8 threads=10 ramp-up=10 delayedStart=false
+2022-07-14 12:03:44,087 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-halftime-halfzedd 8-1
+2022-07-14 12:03:44,089 INFO o.a.j.t.ThreadGroup: Started thread group number 8
+2022-07-14 12:03:44,090 INFO o.a.j.e.StandardJMeterEngine: Waiting for thread group: NCPPServerlessWestGFSPosition-halftime-halfzedd to finish before starting next group
+2022-07-14 12:03:45,102 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-halftime-halfzedd 8-2
+2022-07-14 12:03:46,088 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-halftime-halfzedd 8-3
+2022-07-14 12:03:47,097 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-halftime-halfzedd 8-4
+2022-07-14 12:03:48,087 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-halftime-halfzedd 8-5
+2022-07-14 12:03:49,088 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-halftime-halfzedd 8-6
+2022-07-14 12:03:50,089 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-halftime-halfzedd 8-7
+2022-07-14 12:03:51,088 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-halftime-halfzedd 8-8
+2022-07-14 12:03:52,088 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-halftime-halfzedd 8-9
+2022-07-14 12:03:53,089 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-halftime-halfzedd 8-10
+2022-07-14 12:04:00,096 INFO o.a.j.r.Summariser: summary +    282 in 00:00:30 =    9.4/s Avg:   856 Min:   412 Max:  3776 Err:     0 (0.00%) Active: 10 Started: 80 Finished: 70
+2022-07-14 12:04:00,096 INFO o.a.j.r.Summariser: summary =   6735 in 00:07:24 =   15.2/s Avg:   598 Min:   158 Max:  7139 Err:     0 (0.00%)
+2022-07-14 12:04:30,093 INFO o.a.j.r.Summariser: summary +    167 in 00:00:30 =    5.6/s Avg:  1798 Min:  1439 Max:  3003 Err:     0 (0.00%) Active: 10 Started: 80 Finished: 70
+2022-07-14 12:04:30,094 INFO o.a.j.r.Summariser: summary =   6902 in 00:07:54 =   14.6/s Avg:   627 Min:   158 Max:  7139 Err:     0 (0.00%)
+2022-07-14 12:04:44,373 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-halftime-halfzedd 8-7
+2022-07-14 12:04:44,373 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-halftime-halfzedd 8-7
+2022-07-14 12:04:44,394 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-halftime-halfzedd 8-5
+2022-07-14 12:04:44,394 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-halftime-halfzedd 8-5
+2022-07-14 12:04:44,511 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-halftime-halfzedd 8-8
+2022-07-14 12:04:44,511 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-halftime-halfzedd 8-8
+2022-07-14 12:04:44,964 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-halftime-halfzedd 8-6
+2022-07-14 12:04:44,964 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-halftime-halfzedd 8-6
+2022-07-14 12:04:45,031 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-halftime-halfzedd 8-9
+2022-07-14 12:04:45,031 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-halftime-halfzedd 8-9
+2022-07-14 12:04:45,220 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-halftime-halfzedd 8-3
+2022-07-14 12:04:45,220 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-halftime-halfzedd 8-3
+2022-07-14 12:04:45,255 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-halftime-halfzedd 8-1
+2022-07-14 12:04:45,255 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-halftime-halfzedd 8-1
+2022-07-14 12:04:45,736 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-halftime-halfzedd 8-2
+2022-07-14 12:04:45,736 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-halftime-halfzedd 8-2
+2022-07-14 12:04:45,825 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-halftime-halfzedd 8-4
+2022-07-14 12:04:45,825 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-halftime-halfzedd 8-4
+2022-07-14 12:04:45,830 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-halftime-halfzedd 8-10
+2022-07-14 12:04:45,830 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-halftime-halfzedd 8-10
+2022-07-14 12:04:45,830 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 9 : NCPPServerlessWestGFSPosition-halftime-fullzedd
+2022-07-14 12:04:45,830 INFO o.a.j.e.StandardJMeterEngine: Starting 10 threads for group NCPPServerlessWestGFSPosition-halftime-fullzedd.
+2022-07-14 12:04:45,830 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-07-14 12:04:45,830 INFO o.a.j.t.ThreadGroup: Starting thread group... number=9 threads=10 ramp-up=10 delayedStart=false
+2022-07-14 12:04:45,831 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-halftime-fullzedd 9-1
+2022-07-14 12:04:45,831 INFO o.a.j.t.ThreadGroup: Started thread group number 9
+2022-07-14 12:04:45,831 INFO o.a.j.e.StandardJMeterEngine: Waiting for thread group: NCPPServerlessWestGFSPosition-halftime-fullzedd to finish before starting next group
+2022-07-14 12:04:46,831 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-halftime-fullzedd 9-2
+2022-07-14 12:04:47,830 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-halftime-fullzedd 9-3
+2022-07-14 12:04:48,830 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-halftime-fullzedd 9-4
+2022-07-14 12:04:49,830 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-halftime-fullzedd 9-5
+2022-07-14 12:04:50,830 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-halftime-fullzedd 9-6
+2022-07-14 12:04:51,830 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-halftime-fullzedd 9-7
+2022-07-14 12:04:52,831 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-halftime-fullzedd 9-8
+2022-07-14 12:04:53,831 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-halftime-fullzedd 9-9
+2022-07-14 12:04:54,832 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-halftime-fullzedd 9-10
+2022-07-14 12:05:00,090 INFO o.a.j.r.Summariser: summary +    112 in 00:00:30 =    3.7/s Avg:  2132 Min:  1447 Max:  4429 Err:     0 (0.00%) Active: 10 Started: 90 Finished: 80
+2022-07-14 12:05:00,092 INFO o.a.j.r.Summariser: summary =   7014 in 00:08:24 =   13.9/s Avg:   651 Min:   158 Max:  7139 Err:     0 (0.00%)
+2022-07-14 12:05:30,173 INFO o.a.j.r.Summariser: summary +     96 in 00:00:30 =    3.2/s Avg:  3139 Min:  2497 Max:  4384 Err:     0 (0.00%) Active: 10 Started: 90 Finished: 80
+2022-07-14 12:05:30,174 INFO o.a.j.r.Summariser: summary =   7110 in 00:08:54 =   13.3/s Avg:   684 Min:   158 Max:  7139 Err:     0 (0.00%)
+2022-07-14 12:05:45,868 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-halftime-fullzedd 9-4
+2022-07-14 12:05:45,868 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-halftime-fullzedd 9-4
+2022-07-14 12:05:45,928 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-halftime-fullzedd 9-5
+2022-07-14 12:05:45,928 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-halftime-fullzedd 9-5
+2022-07-14 12:05:45,990 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-halftime-fullzedd 9-9
+2022-07-14 12:05:45,990 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-halftime-fullzedd 9-9
+2022-07-14 12:05:46,383 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-halftime-fullzedd 9-2
+2022-07-14 12:05:46,383 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-halftime-fullzedd 9-2
+2022-07-14 12:05:46,798 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-halftime-fullzedd 9-7
+2022-07-14 12:05:46,798 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-halftime-fullzedd 9-7
+2022-07-14 12:05:46,961 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-halftime-fullzedd 9-10
+2022-07-14 12:05:46,961 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-halftime-fullzedd 9-10
+2022-07-14 12:05:47,854 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-halftime-fullzedd 9-1
+2022-07-14 12:05:47,854 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-halftime-fullzedd 9-1
+2022-07-14 12:05:48,274 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-halftime-fullzedd 9-8
+2022-07-14 12:05:48,274 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-halftime-fullzedd 9-8
+2022-07-14 12:05:48,326 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-halftime-fullzedd 9-6
+2022-07-14 12:05:48,326 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-halftime-fullzedd 9-6
+2022-07-14 12:05:48,713 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-halftime-fullzedd 9-3
+2022-07-14 12:05:48,713 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-halftime-fullzedd 9-3
+2022-07-14 12:05:48,713 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 10 : NCPPServerlessWestGFSPosition-fulltime-1zedd
+2022-07-14 12:05:48,713 INFO o.a.j.e.StandardJMeterEngine: Starting 10 threads for group NCPPServerlessWestGFSPosition-fulltime-1zedd.
+2022-07-14 12:05:48,713 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-07-14 12:05:48,713 INFO o.a.j.t.ThreadGroup: Starting thread group... number=10 threads=10 ramp-up=10 delayedStart=false
+2022-07-14 12:05:48,714 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-fulltime-1zedd 10-1
+2022-07-14 12:05:48,714 INFO o.a.j.t.ThreadGroup: Started thread group number 10
+2022-07-14 12:05:48,714 INFO o.a.j.e.StandardJMeterEngine: Waiting for thread group: NCPPServerlessWestGFSPosition-fulltime-1zedd to finish before starting next group
+2022-07-14 12:05:49,722 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-fulltime-1zedd 10-2
+2022-07-14 12:05:50,714 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-fulltime-1zedd 10-3
+2022-07-14 12:05:51,719 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-fulltime-1zedd 10-4
+2022-07-14 12:05:52,714 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-fulltime-1zedd 10-5
+2022-07-14 12:05:53,714 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-fulltime-1zedd 10-6
+2022-07-14 12:05:54,713 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-fulltime-1zedd 10-7
+2022-07-14 12:05:55,713 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-fulltime-1zedd 10-8
+2022-07-14 12:05:56,714 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-fulltime-1zedd 10-9
+2022-07-14 12:05:57,715 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-fulltime-1zedd 10-10
+2022-07-14 12:06:00,030 INFO o.a.j.r.Summariser: summary +    166 in 00:00:30 =    5.6/s Avg:  1499 Min:   433 Max:  3832 Err:     0 (0.00%) Active: 10 Started: 100 Finished: 90
+2022-07-14 12:06:00,030 INFO o.a.j.r.Summariser: summary =   7276 in 00:09:24 =   12.9/s Avg:   703 Min:   158 Max:  7139 Err:     0 (0.00%)
+2022-07-14 12:06:30,096 INFO o.a.j.r.Summariser: summary +    530 in 00:00:30 =   17.6/s Avg:   569 Min:   420 Max:  1109 Err:     0 (0.00%) Active: 10 Started: 100 Finished: 90
+2022-07-14 12:06:30,097 INFO o.a.j.r.Summariser: summary =   7806 in 00:09:54 =   13.1/s Avg:   694 Min:   158 Max:  7139 Err:     0 (0.00%)
+2022-07-14 12:06:48,792 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-fulltime-1zedd 10-6
+2022-07-14 12:06:48,792 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-fulltime-1zedd 10-6
+2022-07-14 12:06:48,939 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-fulltime-1zedd 10-1
+2022-07-14 12:06:48,939 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-fulltime-1zedd 10-1
+2022-07-14 12:06:48,963 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-fulltime-1zedd 10-3
+2022-07-14 12:06:48,963 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-fulltime-1zedd 10-3
+2022-07-14 12:06:48,997 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-fulltime-1zedd 10-9
+2022-07-14 12:06:48,997 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-fulltime-1zedd 10-9
+2022-07-14 12:06:49,054 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-fulltime-1zedd 10-4
+2022-07-14 12:06:49,054 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-fulltime-1zedd 10-4
+2022-07-14 12:06:49,061 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-fulltime-1zedd 10-8
+2022-07-14 12:06:49,061 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-fulltime-1zedd 10-8
+2022-07-14 12:06:49,179 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-fulltime-1zedd 10-5
+2022-07-14 12:06:49,180 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-fulltime-1zedd 10-5
+2022-07-14 12:06:49,272 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-fulltime-1zedd 10-10
+2022-07-14 12:06:49,272 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-fulltime-1zedd 10-10
+2022-07-14 12:06:49,307 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-fulltime-1zedd 10-2
+2022-07-14 12:06:49,307 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-fulltime-1zedd 10-2
+2022-07-14 12:06:49,319 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-fulltime-1zedd 10-7
+2022-07-14 12:06:49,319 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-fulltime-1zedd 10-7
+2022-07-14 12:06:49,319 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 11 : NCPPServerlessWestGFSPosition-fulltime-halfzedd
+2022-07-14 12:06:49,319 INFO o.a.j.e.StandardJMeterEngine: Starting 10 threads for group NCPPServerlessWestGFSPosition-fulltime-halfzedd.
+2022-07-14 12:06:49,319 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-07-14 12:06:49,319 INFO o.a.j.t.ThreadGroup: Starting thread group... number=11 threads=10 ramp-up=10 delayedStart=false
+2022-07-14 12:06:49,319 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-fulltime-halfzedd 11-1
+2022-07-14 12:06:49,320 INFO o.a.j.t.ThreadGroup: Started thread group number 11
+2022-07-14 12:06:49,320 INFO o.a.j.e.StandardJMeterEngine: Waiting for thread group: NCPPServerlessWestGFSPosition-fulltime-halfzedd to finish before starting next group
+2022-07-14 12:06:50,330 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-fulltime-halfzedd 11-2
+2022-07-14 12:06:51,322 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-fulltime-halfzedd 11-3
+2022-07-14 12:06:52,320 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-fulltime-halfzedd 11-4
+2022-07-14 12:06:53,321 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-fulltime-halfzedd 11-5
+2022-07-14 12:06:54,320 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-fulltime-halfzedd 11-6
+2022-07-14 12:06:55,319 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-fulltime-halfzedd 11-7
+2022-07-14 12:06:56,319 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-fulltime-halfzedd 11-8
+2022-07-14 12:06:57,320 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-fulltime-halfzedd 11-9
+2022-07-14 12:06:58,319 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-fulltime-halfzedd 11-10
+2022-07-14 12:07:00,125 INFO o.a.j.r.Summariser: summary +    392 in 00:00:30 =   13.1/s Avg:   627 Min:   403 Max:  2205 Err:     0 (0.00%) Active: 10 Started: 110 Finished: 100
+2022-07-14 12:07:00,125 INFO o.a.j.r.Summariser: summary =   8198 in 00:10:24 =   13.1/s Avg:   691 Min:   158 Max:  7139 Err:     0 (0.00%)
+2022-07-14 12:07:30,173 INFO o.a.j.r.Summariser: summary +    164 in 00:00:30 =    5.5/s Avg:  1834 Min:  1458 Max:  2332 Err:     0 (0.00%) Active: 10 Started: 110 Finished: 100
+2022-07-14 12:07:30,174 INFO o.a.j.r.Summariser: summary =   8362 in 00:10:54 =   12.8/s Avg:   713 Min:   158 Max:  7139 Err:     0 (0.00%)
+2022-07-14 12:07:49,908 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-fulltime-halfzedd 11-10
+2022-07-14 12:07:49,908 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-fulltime-halfzedd 11-10
+2022-07-14 12:07:49,973 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-fulltime-halfzedd 11-6
+2022-07-14 12:07:49,973 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-fulltime-halfzedd 11-6
+2022-07-14 12:07:49,991 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-fulltime-halfzedd 11-2
+2022-07-14 12:07:49,991 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-fulltime-halfzedd 11-2
+2022-07-14 12:07:50,015 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-fulltime-halfzedd 11-8
+2022-07-14 12:07:50,015 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-fulltime-halfzedd 11-8
+2022-07-14 12:07:50,116 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-fulltime-halfzedd 11-3
+2022-07-14 12:07:50,116 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-fulltime-halfzedd 11-3
+2022-07-14 12:07:50,276 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-fulltime-halfzedd 11-7
+2022-07-14 12:07:50,276 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-fulltime-halfzedd 11-7
+2022-07-14 12:07:50,281 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-fulltime-halfzedd 11-4
+2022-07-14 12:07:50,281 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-fulltime-halfzedd 11-4
+2022-07-14 12:07:50,282 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-fulltime-halfzedd 11-1
+2022-07-14 12:07:50,282 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-fulltime-halfzedd 11-1
+2022-07-14 12:07:50,468 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-fulltime-halfzedd 11-9
+2022-07-14 12:07:50,468 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-fulltime-halfzedd 11-9
+2022-07-14 12:07:51,308 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-fulltime-halfzedd 11-5
+2022-07-14 12:07:51,308 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-fulltime-halfzedd 11-5
+2022-07-14 12:07:51,308 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 12 : NCPPServerlessWestGFSPosition-fulltime-fullzedd
+2022-07-14 12:07:51,308 INFO o.a.j.e.StandardJMeterEngine: Starting 10 threads for group NCPPServerlessWestGFSPosition-fulltime-fullzedd.
+2022-07-14 12:07:51,308 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-07-14 12:07:51,308 INFO o.a.j.t.ThreadGroup: Starting thread group... number=12 threads=10 ramp-up=10 delayedStart=false
+2022-07-14 12:07:51,309 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-fulltime-fullzedd 12-1
+2022-07-14 12:07:51,310 INFO o.a.j.t.ThreadGroup: Started thread group number 12
+2022-07-14 12:07:51,310 INFO o.a.j.e.StandardJMeterEngine: Waiting for thread group: NCPPServerlessWestGFSPosition-fulltime-fullzedd to finish before starting next group
+2022-07-14 12:07:52,308 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-fulltime-fullzedd 12-2
+2022-07-14 12:07:53,309 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-fulltime-fullzedd 12-3
+2022-07-14 12:07:54,309 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-fulltime-fullzedd 12-4
+2022-07-14 12:07:55,308 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-fulltime-fullzedd 12-5
+2022-07-14 12:07:56,309 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-fulltime-fullzedd 12-6
+2022-07-14 12:07:57,309 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-fulltime-fullzedd 12-7
+2022-07-14 12:07:58,308 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-fulltime-fullzedd 12-8
+2022-07-14 12:07:59,308 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-fulltime-fullzedd 12-9
+2022-07-14 12:08:00,314 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSPosition-fulltime-fullzedd 12-10
+2022-07-14 12:08:00,454 INFO o.a.j.r.Summariser: summary +    128 in 00:00:30 =    4.2/s Avg:  1883 Min:  1451 Max:  3571 Err:     0 (0.00%) Active: 10 Started: 120 Finished: 110
+2022-07-14 12:08:00,455 INFO o.a.j.r.Summariser: summary =   8490 in 00:11:24 =   12.4/s Avg:   731 Min:   158 Max:  7139 Err:     0 (0.00%)
+2022-07-14 12:08:30,026 INFO o.a.j.r.Summariser: summary +     95 in 00:00:30 =    3.2/s Avg:  3137 Min:  2469 Max:  5459 Err:     0 (0.00%) Active: 10 Started: 120 Finished: 110
+2022-07-14 12:08:30,027 INFO o.a.j.r.Summariser: summary =   8585 in 00:11:54 =   12.0/s Avg:   757 Min:   158 Max:  7139 Err:     0 (0.00%)
+2022-07-14 12:08:51,364 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-fulltime-fullzedd 12-10
+2022-07-14 12:08:51,364 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-fulltime-fullzedd 12-10
+2022-07-14 12:08:51,563 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-fulltime-fullzedd 12-6
+2022-07-14 12:08:51,563 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-fulltime-fullzedd 12-6
+2022-07-14 12:08:51,648 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-fulltime-fullzedd 12-1
+2022-07-14 12:08:51,648 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-fulltime-fullzedd 12-1
+2022-07-14 12:08:52,085 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-fulltime-fullzedd 12-7
+2022-07-14 12:08:52,086 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-fulltime-fullzedd 12-7
+2022-07-14 12:08:52,187 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-fulltime-fullzedd 12-8
+2022-07-14 12:08:52,187 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-fulltime-fullzedd 12-8
+2022-07-14 12:08:53,023 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-fulltime-fullzedd 12-3
+2022-07-14 12:08:53,023 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-fulltime-fullzedd 12-3
+2022-07-14 12:08:53,062 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-fulltime-fullzedd 12-2
+2022-07-14 12:08:53,062 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-fulltime-fullzedd 12-2
+2022-07-14 12:08:53,773 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-fulltime-fullzedd 12-9
+2022-07-14 12:08:53,773 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-fulltime-fullzedd 12-9
+2022-07-14 12:08:54,106 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-fulltime-fullzedd 12-4
+2022-07-14 12:08:54,106 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-fulltime-fullzedd 12-4
+2022-07-14 12:08:54,316 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSPosition-fulltime-fullzedd 12-5
+2022-07-14 12:08:54,316 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSPosition-fulltime-fullzedd 12-5
+2022-07-14 12:08:54,316 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 13 : NCPPServerlessWestGFSAreaTexas-1time-1zedd
+2022-07-14 12:08:54,316 INFO o.a.j.e.StandardJMeterEngine: Starting 10 threads for group NCPPServerlessWestGFSAreaTexas-1time-1zedd.
+2022-07-14 12:08:54,317 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-07-14 12:08:54,317 INFO o.a.j.t.ThreadGroup: Starting thread group... number=13 threads=10 ramp-up=10 delayedStart=false
+2022-07-14 12:08:54,318 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaTexas-1time-1zedd 13-1
+2022-07-14 12:08:54,319 INFO o.a.j.t.ThreadGroup: Started thread group number 13
+2022-07-14 12:08:54,319 INFO o.a.j.e.StandardJMeterEngine: Waiting for thread group: NCPPServerlessWestGFSAreaTexas-1time-1zedd to finish before starting next group
+2022-07-14 12:08:55,330 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaTexas-1time-1zedd 13-2
+2022-07-14 12:08:56,319 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaTexas-1time-1zedd 13-3
+2022-07-14 12:08:57,318 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaTexas-1time-1zedd 13-4
+2022-07-14 12:08:58,318 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaTexas-1time-1zedd 13-5
+2022-07-14 12:08:59,318 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaTexas-1time-1zedd 13-6
+2022-07-14 12:09:00,137 INFO o.a.j.r.Summariser: summary +     85 in 00:00:30 =    2.8/s Avg:  2994 Min:   567 Max:  5647 Err:     0 (0.00%) Active: 6 Started: 126 Finished: 120
+2022-07-14 12:09:00,138 INFO o.a.j.r.Summariser: summary =   8670 in 00:12:24 =   11.7/s Avg:   779 Min:   158 Max:  7139 Err:     0 (0.00%)
+2022-07-14 12:09:00,319 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaTexas-1time-1zedd 13-7
+2022-07-14 12:09:01,326 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaTexas-1time-1zedd 13-8
+2022-07-14 12:09:02,318 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaTexas-1time-1zedd 13-9
+2022-07-14 12:09:03,317 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaTexas-1time-1zedd 13-10
+2022-07-14 12:09:30,049 INFO o.a.j.r.Summariser: summary +    490 in 00:00:30 =   16.4/s Avg:   602 Min:   404 Max:  3852 Err:     0 (0.00%) Active: 10 Started: 130 Finished: 120
+2022-07-14 12:09:30,050 INFO o.a.j.r.Summariser: summary =   9160 in 00:12:54 =   11.8/s Avg:   770 Min:   158 Max:  7139 Err:     0 (0.00%)
+2022-07-14 12:09:54,359 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaTexas-1time-1zedd 13-3
+2022-07-14 12:09:54,359 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaTexas-1time-1zedd 13-3
+2022-07-14 12:09:54,407 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaTexas-1time-1zedd 13-1
+2022-07-14 12:09:54,407 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaTexas-1time-1zedd 13-1
+2022-07-14 12:09:54,448 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaTexas-1time-1zedd 13-2
+2022-07-14 12:09:54,448 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaTexas-1time-1zedd 13-2
+2022-07-14 12:09:54,561 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaTexas-1time-1zedd 13-9
+2022-07-14 12:09:54,561 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaTexas-1time-1zedd 13-9
+2022-07-14 12:09:54,687 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaTexas-1time-1zedd 13-6
+2022-07-14 12:09:54,688 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaTexas-1time-1zedd 13-6
+2022-07-14 12:09:54,695 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaTexas-1time-1zedd 13-4
+2022-07-14 12:09:54,695 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaTexas-1time-1zedd 13-4
+2022-07-14 12:09:54,711 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaTexas-1time-1zedd 13-5
+2022-07-14 12:09:54,711 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaTexas-1time-1zedd 13-5
+2022-07-14 12:09:54,771 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaTexas-1time-1zedd 13-8
+2022-07-14 12:09:54,772 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaTexas-1time-1zedd 13-8
+2022-07-14 12:09:54,874 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaTexas-1time-1zedd 13-7
+2022-07-14 12:09:54,875 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaTexas-1time-1zedd 13-7
+2022-07-14 12:09:54,947 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaTexas-1time-1zedd 13-10
+2022-07-14 12:09:54,948 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaTexas-1time-1zedd 13-10
+2022-07-14 12:09:54,948 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 14 : NCPPServerlessWestGFSAreaTexas-1time-halfzedd
+2022-07-14 12:09:54,949 INFO o.a.j.e.StandardJMeterEngine: Starting 10 threads for group NCPPServerlessWestGFSAreaTexas-1time-halfzedd.
+2022-07-14 12:09:54,949 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-07-14 12:09:54,949 INFO o.a.j.t.ThreadGroup: Starting thread group... number=14 threads=10 ramp-up=10 delayedStart=false
+2022-07-14 12:09:54,949 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaTexas-1time-halfzedd 14-1
+2022-07-14 12:09:54,951 INFO o.a.j.t.ThreadGroup: Started thread group number 14
+2022-07-14 12:09:54,951 INFO o.a.j.e.StandardJMeterEngine: Waiting for thread group: NCPPServerlessWestGFSAreaTexas-1time-halfzedd to finish before starting next group
+2022-07-14 12:09:55,954 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaTexas-1time-halfzedd 14-2
+2022-07-14 12:09:56,951 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaTexas-1time-halfzedd 14-3
+2022-07-14 12:09:57,952 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaTexas-1time-halfzedd 14-4
+2022-07-14 12:09:58,950 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaTexas-1time-halfzedd 14-5
+2022-07-14 12:09:59,956 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaTexas-1time-halfzedd 14-6
+2022-07-14 12:10:00,004 INFO o.a.j.r.Summariser: summary +    489 in 00:00:30 =   16.3/s Avg:   536 Min:   414 Max:  2118 Err:     0 (0.00%) Active: 6 Started: 136 Finished: 130
+2022-07-14 12:10:00,006 INFO o.a.j.r.Summariser: summary =   9649 in 00:13:24 =   12.0/s Avg:   758 Min:   158 Max:  7139 Err:     0 (0.00%)
+2022-07-14 12:10:00,950 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaTexas-1time-halfzedd 14-7
+2022-07-14 12:10:01,950 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaTexas-1time-halfzedd 14-8
+2022-07-14 12:10:02,950 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaTexas-1time-halfzedd 14-9
+2022-07-14 12:10:03,950 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaTexas-1time-halfzedd 14-10
+2022-07-14 12:10:30,072 INFO o.a.j.r.Summariser: summary +    421 in 00:00:30 =   14.0/s Avg:   686 Min:   491 Max:  1280 Err:     0 (0.00%) Active: 10 Started: 140 Finished: 130
+2022-07-14 12:10:30,073 INFO o.a.j.r.Summariser: summary =  10070 in 00:13:54 =   12.1/s Avg:   755 Min:   158 Max:  7139 Err:     0 (0.00%)
+2022-07-14 12:10:54,961 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaTexas-1time-halfzedd 14-10
+2022-07-14 12:10:54,961 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaTexas-1time-halfzedd 14-10
+2022-07-14 12:10:54,981 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaTexas-1time-halfzedd 14-5
+2022-07-14 12:10:54,981 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaTexas-1time-halfzedd 14-5
+2022-07-14 12:10:55,002 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaTexas-1time-halfzedd 14-8
+2022-07-14 12:10:55,002 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaTexas-1time-halfzedd 14-8
+2022-07-14 12:10:55,101 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaTexas-1time-halfzedd 14-3
+2022-07-14 12:10:55,101 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaTexas-1time-halfzedd 14-3
+2022-07-14 12:10:55,179 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaTexas-1time-halfzedd 14-4
+2022-07-14 12:10:55,179 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaTexas-1time-halfzedd 14-4
+2022-07-14 12:10:55,206 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaTexas-1time-halfzedd 14-1
+2022-07-14 12:10:55,207 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaTexas-1time-halfzedd 14-1
+2022-07-14 12:10:55,395 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaTexas-1time-halfzedd 14-7
+2022-07-14 12:10:55,395 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaTexas-1time-halfzedd 14-7
+2022-07-14 12:10:55,402 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaTexas-1time-halfzedd 14-6
+2022-07-14 12:10:55,403 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaTexas-1time-halfzedd 14-6
+2022-07-14 12:10:55,441 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaTexas-1time-halfzedd 14-9
+2022-07-14 12:10:55,441 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaTexas-1time-halfzedd 14-9
+2022-07-14 12:10:55,550 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaTexas-1time-halfzedd 14-2
+2022-07-14 12:10:55,550 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaTexas-1time-halfzedd 14-2
+2022-07-14 12:10:55,550 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 15 : NCPPServerlessWestGFSAreaTexas-1time-fullzedd
+2022-07-14 12:10:55,550 INFO o.a.j.e.StandardJMeterEngine: Starting 10 threads for group NCPPServerlessWestGFSAreaTexas-1time-fullzedd.
+2022-07-14 12:10:55,551 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-07-14 12:10:55,551 INFO o.a.j.t.ThreadGroup: Starting thread group... number=15 threads=10 ramp-up=10 delayedStart=false
+2022-07-14 12:10:55,551 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaTexas-1time-fullzedd 15-1
+2022-07-14 12:10:55,553 INFO o.a.j.t.ThreadGroup: Started thread group number 15
+2022-07-14 12:10:55,553 INFO o.a.j.e.StandardJMeterEngine: Waiting for thread group: NCPPServerlessWestGFSAreaTexas-1time-fullzedd to finish before starting next group
+2022-07-14 12:10:56,555 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaTexas-1time-fullzedd 15-2
+2022-07-14 12:10:57,552 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaTexas-1time-fullzedd 15-3
+2022-07-14 12:10:58,552 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaTexas-1time-fullzedd 15-4
+2022-07-14 12:10:59,552 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaTexas-1time-fullzedd 15-5
+2022-07-14 12:11:00,083 INFO o.a.j.r.Summariser: summary +    408 in 00:00:30 =   13.6/s Avg:   650 Min:   494 Max:  1631 Err:     0 (0.00%) Active: 5 Started: 145 Finished: 140
+2022-07-14 12:11:00,084 INFO o.a.j.r.Summariser: summary =  10478 in 00:14:24 =   12.1/s Avg:   751 Min:   158 Max:  7139 Err:     0 (0.00%)
+2022-07-14 12:11:00,552 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaTexas-1time-fullzedd 15-6
+2022-07-14 12:11:01,553 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaTexas-1time-fullzedd 15-7
+2022-07-14 12:11:02,558 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaTexas-1time-fullzedd 15-8
+2022-07-14 12:11:03,552 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaTexas-1time-fullzedd 15-9
+2022-07-14 12:11:04,552 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaTexas-1time-fullzedd 15-10
+2022-07-14 12:11:30,131 INFO o.a.j.r.Summariser: summary +    378 in 00:00:30 =   12.6/s Avg:   758 Min:   560 Max:  1879 Err:     0 (0.00%) Active: 10 Started: 150 Finished: 140
+2022-07-14 12:11:30,133 INFO o.a.j.r.Summariser: summary =  10856 in 00:14:54 =   12.1/s Avg:   751 Min:   158 Max:  7139 Err:     0 (0.00%)
+2022-07-14 12:11:55,595 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaTexas-1time-fullzedd 15-5
+2022-07-14 12:11:55,596 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaTexas-1time-fullzedd 15-5
+2022-07-14 12:11:55,595 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaTexas-1time-fullzedd 15-4
+2022-07-14 12:11:55,596 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaTexas-1time-fullzedd 15-4
+2022-07-14 12:11:55,654 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaTexas-1time-fullzedd 15-7
+2022-07-14 12:11:55,655 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaTexas-1time-fullzedd 15-7
+2022-07-14 12:11:55,841 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaTexas-1time-fullzedd 15-8
+2022-07-14 12:11:55,841 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaTexas-1time-fullzedd 15-8
+2022-07-14 12:11:55,859 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaTexas-1time-fullzedd 15-10
+2022-07-14 12:11:55,859 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaTexas-1time-fullzedd 15-10
+2022-07-14 12:11:55,885 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaTexas-1time-fullzedd 15-3
+2022-07-14 12:11:55,886 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaTexas-1time-fullzedd 15-3
+2022-07-14 12:11:56,080 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaTexas-1time-fullzedd 15-9
+2022-07-14 12:11:56,080 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaTexas-1time-fullzedd 15-9
+2022-07-14 12:11:56,131 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaTexas-1time-fullzedd 15-6
+2022-07-14 12:11:56,131 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaTexas-1time-fullzedd 15-6
+2022-07-14 12:11:56,264 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaTexas-1time-fullzedd 15-2
+2022-07-14 12:11:56,264 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaTexas-1time-fullzedd 15-2
+2022-07-14 12:11:56,891 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaTexas-1time-fullzedd 15-1
+2022-07-14 12:11:56,891 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaTexas-1time-fullzedd 15-1
+2022-07-14 12:11:56,891 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 16 : NCPPServerlessWestGFSAreaTexas-halftime-1zedd
+2022-07-14 12:11:56,891 INFO o.a.j.e.StandardJMeterEngine: Starting 10 threads for group NCPPServerlessWestGFSAreaTexas-halftime-1zedd.
+2022-07-14 12:11:56,891 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-07-14 12:11:56,891 INFO o.a.j.t.ThreadGroup: Starting thread group... number=16 threads=10 ramp-up=10 delayedStart=false
+2022-07-14 12:11:56,892 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaTexas-halftime-1zedd 16-1
+2022-07-14 12:11:56,892 INFO o.a.j.t.ThreadGroup: Started thread group number 16
+2022-07-14 12:11:56,892 INFO o.a.j.e.StandardJMeterEngine: Waiting for thread group: NCPPServerlessWestGFSAreaTexas-halftime-1zedd to finish before starting next group
+2022-07-14 12:11:57,902 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaTexas-halftime-1zedd 16-2
+2022-07-14 12:11:58,891 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaTexas-halftime-1zedd 16-3
+2022-07-14 12:11:59,891 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaTexas-halftime-1zedd 16-4
+2022-07-14 12:12:00,006 INFO o.a.j.r.Summariser: summary +    372 in 00:00:30 =   12.5/s Avg:   718 Min:   511 Max:  1499 Err:     0 (0.00%) Active: 4 Started: 154 Finished: 150
+2022-07-14 12:12:00,007 INFO o.a.j.r.Summariser: summary =  11228 in 00:15:24 =   12.2/s Avg:   750 Min:   158 Max:  7139 Err:     0 (0.00%)
+2022-07-14 12:12:00,891 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaTexas-halftime-1zedd 16-5
+2022-07-14 12:12:01,892 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaTexas-halftime-1zedd 16-6
+2022-07-14 12:12:02,891 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaTexas-halftime-1zedd 16-7
+2022-07-14 12:12:03,895 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaTexas-halftime-1zedd 16-8
+2022-07-14 12:12:04,891 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaTexas-halftime-1zedd 16-9
+2022-07-14 12:12:05,891 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaTexas-halftime-1zedd 16-10
+2022-07-14 12:12:30,104 INFO o.a.j.r.Summariser: summary +    485 in 00:00:30 =   16.1/s Avg:   573 Min:   404 Max:  1480 Err:     0 (0.00%) Active: 10 Started: 160 Finished: 150
+2022-07-14 12:12:30,105 INFO o.a.j.r.Summariser: summary =  11713 in 00:15:54 =   12.3/s Avg:   743 Min:   158 Max:  7139 Err:     0 (0.00%)
+2022-07-14 12:12:56,922 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaTexas-halftime-1zedd 16-8
+2022-07-14 12:12:56,922 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaTexas-halftime-1zedd 16-8
+2022-07-14 12:12:56,965 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaTexas-halftime-1zedd 16-2
+2022-07-14 12:12:56,965 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaTexas-halftime-1zedd 16-2
+2022-07-14 12:12:56,974 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaTexas-halftime-1zedd 16-4
+2022-07-14 12:12:56,974 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaTexas-halftime-1zedd 16-4
+2022-07-14 12:12:57,089 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaTexas-halftime-1zedd 16-9
+2022-07-14 12:12:57,089 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaTexas-halftime-1zedd 16-9
+2022-07-14 12:12:57,099 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaTexas-halftime-1zedd 16-7
+2022-07-14 12:12:57,099 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaTexas-halftime-1zedd 16-7
+2022-07-14 12:12:57,126 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaTexas-halftime-1zedd 16-3
+2022-07-14 12:12:57,126 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaTexas-halftime-1zedd 16-3
+2022-07-14 12:12:57,160 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaTexas-halftime-1zedd 16-5
+2022-07-14 12:12:57,160 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaTexas-halftime-1zedd 16-5
+2022-07-14 12:12:57,184 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaTexas-halftime-1zedd 16-10
+2022-07-14 12:12:57,184 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaTexas-halftime-1zedd 16-10
+2022-07-14 12:12:57,437 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaTexas-halftime-1zedd 16-6
+2022-07-14 12:12:57,437 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaTexas-halftime-1zedd 16-6
+2022-07-14 12:12:57,461 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaTexas-halftime-1zedd 16-1
+2022-07-14 12:12:57,461 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaTexas-halftime-1zedd 16-1
+2022-07-14 12:12:57,461 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 17 : NCPPServerlessWestGFSAreaTexas-halftime-halfzedd
+2022-07-14 12:12:57,461 INFO o.a.j.e.StandardJMeterEngine: Starting 10 threads for group NCPPServerlessWestGFSAreaTexas-halftime-halfzedd.
+2022-07-14 12:12:57,461 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-07-14 12:12:57,462 INFO o.a.j.t.ThreadGroup: Starting thread group... number=17 threads=10 ramp-up=10 delayedStart=false
+2022-07-14 12:12:57,462 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaTexas-halftime-halfzedd 17-1
+2022-07-14 12:12:57,463 INFO o.a.j.t.ThreadGroup: Started thread group number 17
+2022-07-14 12:12:57,463 INFO o.a.j.e.StandardJMeterEngine: Waiting for thread group: NCPPServerlessWestGFSAreaTexas-halftime-halfzedd to finish before starting next group
+2022-07-14 12:12:58,476 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaTexas-halftime-halfzedd 17-2
+2022-07-14 12:12:59,462 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaTexas-halftime-halfzedd 17-3
+2022-07-14 12:13:00,167 INFO o.a.j.r.Summariser: summary +    439 in 00:00:30 =   14.6/s Avg:   631 Min:   406 Max:  1795 Err:     0 (0.00%) Active: 3 Started: 163 Finished: 160
+2022-07-14 12:13:00,168 INFO o.a.j.r.Summariser: summary =  12152 in 00:16:24 =   12.3/s Avg:   739 Min:   158 Max:  7139 Err:     0 (0.00%)
+2022-07-14 12:13:00,462 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaTexas-halftime-halfzedd 17-4
+2022-07-14 12:13:01,463 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaTexas-halftime-halfzedd 17-5
+2022-07-14 12:13:02,464 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaTexas-halftime-halfzedd 17-6
+2022-07-14 12:13:03,462 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaTexas-halftime-halfzedd 17-7
+2022-07-14 12:13:04,463 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaTexas-halftime-halfzedd 17-8
+2022-07-14 12:13:05,463 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaTexas-halftime-halfzedd 17-9
+2022-07-14 12:13:06,463 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaTexas-halftime-halfzedd 17-10
+2022-07-14 12:13:30,017 INFO o.a.j.r.Summariser: summary +    408 in 00:00:30 =   13.7/s Avg:   671 Min:   497 Max:  1707 Err:     0 (0.00%) Active: 10 Started: 170 Finished: 160
+2022-07-14 12:13:30,019 INFO o.a.j.r.Summariser: summary =  12560 in 00:16:54 =   12.4/s Avg:   736 Min:   158 Max:  7139 Err:     0 (0.00%)
+2022-07-14 12:13:57,498 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaTexas-halftime-halfzedd 17-6
+2022-07-14 12:13:57,498 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaTexas-halftime-halfzedd 17-6
+2022-07-14 12:13:57,725 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaTexas-halftime-halfzedd 17-7
+2022-07-14 12:13:57,725 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaTexas-halftime-halfzedd 17-7
+2022-07-14 12:13:57,731 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaTexas-halftime-halfzedd 17-3
+2022-07-14 12:13:57,731 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaTexas-halftime-halfzedd 17-5
+2022-07-14 12:13:57,731 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaTexas-halftime-halfzedd 17-3
+2022-07-14 12:13:57,731 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaTexas-halftime-halfzedd 17-5
+2022-07-14 12:13:57,763 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaTexas-halftime-halfzedd 17-10
+2022-07-14 12:13:57,763 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaTexas-halftime-halfzedd 17-10
+2022-07-14 12:13:57,805 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaTexas-halftime-halfzedd 17-1
+2022-07-14 12:13:57,806 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaTexas-halftime-halfzedd 17-1
+2022-07-14 12:13:57,869 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaTexas-halftime-halfzedd 17-4
+2022-07-14 12:13:57,869 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaTexas-halftime-halfzedd 17-4
+2022-07-14 12:13:57,957 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaTexas-halftime-halfzedd 17-2
+2022-07-14 12:13:57,957 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaTexas-halftime-halfzedd 17-2
+2022-07-14 12:13:57,970 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaTexas-halftime-halfzedd 17-8
+2022-07-14 12:13:57,970 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaTexas-halftime-halfzedd 17-8
+2022-07-14 12:13:58,025 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaTexas-halftime-halfzedd 17-9
+2022-07-14 12:13:58,025 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaTexas-halftime-halfzedd 17-9
+2022-07-14 12:13:58,025 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 18 : NCPPServerlessWestGFSAreaTexas-fulltime-1zedd
+2022-07-14 12:13:58,025 INFO o.a.j.e.StandardJMeterEngine: Starting 10 threads for group NCPPServerlessWestGFSAreaTexas-fulltime-1zedd.
+2022-07-14 12:13:58,025 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-07-14 12:13:58,025 INFO o.a.j.t.ThreadGroup: Starting thread group... number=18 threads=10 ramp-up=10 delayedStart=false
+2022-07-14 12:13:58,026 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaTexas-fulltime-1zedd 18-1
+2022-07-14 12:13:58,026 INFO o.a.j.t.ThreadGroup: Started thread group number 18
+2022-07-14 12:13:58,027 INFO o.a.j.e.StandardJMeterEngine: Waiting for thread group: NCPPServerlessWestGFSAreaTexas-fulltime-1zedd to finish before starting next group
+2022-07-14 12:13:59,026 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaTexas-fulltime-1zedd 18-2
+2022-07-14 12:14:00,025 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaTexas-fulltime-1zedd 18-3
+2022-07-14 12:14:00,353 INFO o.a.j.r.Summariser: summary +    443 in 00:00:30 =   14.6/s Avg:   639 Min:   424 Max:  1713 Err:     0 (0.00%) Active: 3 Started: 173 Finished: 170
+2022-07-14 12:14:00,354 INFO o.a.j.r.Summariser: summary =  13003 in 00:17:24 =   12.5/s Avg:   733 Min:   158 Max:  7139 Err:     0 (0.00%)
+2022-07-14 12:14:01,025 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaTexas-fulltime-1zedd 18-4
+2022-07-14 12:14:02,026 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaTexas-fulltime-1zedd 18-5
+2022-07-14 12:14:03,026 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaTexas-fulltime-1zedd 18-6
+2022-07-14 12:14:04,025 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaTexas-fulltime-1zedd 18-7
+2022-07-14 12:14:05,026 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaTexas-fulltime-1zedd 18-8
+2022-07-14 12:14:06,025 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaTexas-fulltime-1zedd 18-9
+2022-07-14 12:14:07,027 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaTexas-fulltime-1zedd 18-10
+2022-07-14 12:14:30,141 INFO o.a.j.r.Summariser: summary +    481 in 00:00:30 =   16.1/s Avg:   559 Min:   413 Max:  1064 Err:     0 (0.00%) Active: 10 Started: 180 Finished: 170
+2022-07-14 12:14:30,142 INFO o.a.j.r.Summariser: summary =  13484 in 00:17:54 =   12.6/s Avg:   727 Min:   158 Max:  7139 Err:     0 (0.00%)
+2022-07-14 12:14:58,139 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaTexas-fulltime-1zedd 18-6
+2022-07-14 12:14:58,139 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaTexas-fulltime-1zedd 18-6
+2022-07-14 12:14:58,144 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaTexas-fulltime-1zedd 18-5
+2022-07-14 12:14:58,144 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaTexas-fulltime-1zedd 18-5
+2022-07-14 12:14:58,159 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaTexas-fulltime-1zedd 18-7
+2022-07-14 12:14:58,159 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaTexas-fulltime-1zedd 18-7
+2022-07-14 12:14:58,216 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaTexas-fulltime-1zedd 18-2
+2022-07-14 12:14:58,216 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaTexas-fulltime-1zedd 18-2
+2022-07-14 12:14:58,237 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaTexas-fulltime-1zedd 18-3
+2022-07-14 12:14:58,237 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaTexas-fulltime-1zedd 18-3
+2022-07-14 12:14:58,323 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaTexas-fulltime-1zedd 18-4
+2022-07-14 12:14:58,323 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaTexas-fulltime-1zedd 18-4
+2022-07-14 12:14:58,349 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaTexas-fulltime-1zedd 18-9
+2022-07-14 12:14:58,350 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaTexas-fulltime-1zedd 18-9
+2022-07-14 12:14:58,354 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaTexas-fulltime-1zedd 18-8
+2022-07-14 12:14:58,354 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaTexas-fulltime-1zedd 18-8
+2022-07-14 12:14:58,366 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaTexas-fulltime-1zedd 18-1
+2022-07-14 12:14:58,366 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaTexas-fulltime-1zedd 18-1
+2022-07-14 12:14:58,459 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaTexas-fulltime-1zedd 18-10
+2022-07-14 12:14:58,459 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaTexas-fulltime-1zedd 18-10
+2022-07-14 12:14:58,459 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 19 : NCPPServerlessWestGFSAreaUS-1time-1zedd
+2022-07-14 12:14:58,459 INFO o.a.j.e.StandardJMeterEngine: Starting 10 threads for group NCPPServerlessWestGFSAreaUS-1time-1zedd.
+2022-07-14 12:14:58,459 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-07-14 12:14:58,459 INFO o.a.j.t.ThreadGroup: Starting thread group... number=19 threads=10 ramp-up=10 delayedStart=false
+2022-07-14 12:14:58,460 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaUS-1time-1zedd 19-1
+2022-07-14 12:14:58,461 INFO o.a.j.t.ThreadGroup: Started thread group number 19
+2022-07-14 12:14:58,461 INFO o.a.j.e.StandardJMeterEngine: Waiting for thread group: NCPPServerlessWestGFSAreaUS-1time-1zedd to finish before starting next group
+2022-07-14 12:14:59,459 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaUS-1time-1zedd 19-2
+2022-07-14 12:15:00,199 INFO o.a.j.r.Summariser: summary +    532 in 00:00:30 =   17.7/s Avg:   540 Min:   398 Max:  1062 Err:     0 (0.00%) Active: 2 Started: 182 Finished: 180
+2022-07-14 12:15:00,199 INFO o.a.j.r.Summariser: summary =  14016 in 00:18:24 =   12.7/s Avg:   720 Min:   158 Max:  7139 Err:     0 (0.00%)
+2022-07-14 12:15:00,460 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaUS-1time-1zedd 19-3
+2022-07-14 12:15:01,470 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaUS-1time-1zedd 19-4
+2022-07-14 12:15:02,474 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaUS-1time-1zedd 19-5
+2022-07-14 12:15:03,461 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaUS-1time-1zedd 19-6
+2022-07-14 12:15:04,460 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaUS-1time-1zedd 19-7
+2022-07-14 12:15:05,460 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaUS-1time-1zedd 19-8
+2022-07-14 12:15:06,459 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaUS-1time-1zedd 19-9
+2022-07-14 12:15:07,459 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaUS-1time-1zedd 19-10
+2022-07-14 12:15:30,023 INFO o.a.j.r.Summariser: summary +    455 in 00:00:30 =   15.3/s Avg:   584 Min:   398 Max:  1682 Err:     0 (0.00%) Active: 10 Started: 190 Finished: 180
+2022-07-14 12:15:30,024 INFO o.a.j.r.Summariser: summary =  14471 in 00:18:54 =   12.8/s Avg:   715 Min:   158 Max:  7139 Err:     0 (0.00%)
+2022-07-14 12:15:58,584 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaUS-1time-1zedd 19-9
+2022-07-14 12:15:58,584 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaUS-1time-1zedd 19-9
+2022-07-14 12:15:58,599 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaUS-1time-1zedd 19-8
+2022-07-14 12:15:58,599 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaUS-1time-1zedd 19-8
+2022-07-14 12:15:58,626 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaUS-1time-1zedd 19-2
+2022-07-14 12:15:58,626 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaUS-1time-1zedd 19-2
+2022-07-14 12:15:58,662 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaUS-1time-1zedd 19-5
+2022-07-14 12:15:58,662 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaUS-1time-1zedd 19-5
+2022-07-14 12:15:58,726 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaUS-1time-1zedd 19-3
+2022-07-14 12:15:58,726 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaUS-1time-1zedd 19-3
+2022-07-14 12:15:58,726 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaUS-1time-1zedd 19-4
+2022-07-14 12:15:58,726 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaUS-1time-1zedd 19-4
+2022-07-14 12:15:58,843 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaUS-1time-1zedd 19-7
+2022-07-14 12:15:58,843 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaUS-1time-1zedd 19-7
+2022-07-14 12:15:58,852 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaUS-1time-1zedd 19-10
+2022-07-14 12:15:58,852 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaUS-1time-1zedd 19-10
+2022-07-14 12:15:58,877 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaUS-1time-1zedd 19-1
+2022-07-14 12:15:58,877 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaUS-1time-1zedd 19-1
+2022-07-14 12:15:59,127 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaUS-1time-1zedd 19-6
+2022-07-14 12:15:59,127 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaUS-1time-1zedd 19-6
+2022-07-14 12:15:59,127 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 20 : NCPPServerlessWestGFSAreaUS-1time-halfzedd
+2022-07-14 12:15:59,127 INFO o.a.j.e.StandardJMeterEngine: Starting 10 threads for group NCPPServerlessWestGFSAreaUS-1time-halfzedd.
+2022-07-14 12:15:59,128 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-07-14 12:15:59,128 INFO o.a.j.t.ThreadGroup: Starting thread group... number=20 threads=10 ramp-up=10 delayedStart=false
+2022-07-14 12:15:59,129 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaUS-1time-halfzedd 20-1
+2022-07-14 12:15:59,130 INFO o.a.j.t.ThreadGroup: Started thread group number 20
+2022-07-14 12:15:59,130 INFO o.a.j.e.StandardJMeterEngine: Waiting for thread group: NCPPServerlessWestGFSAreaUS-1time-halfzedd to finish before starting next group
+2022-07-14 12:16:00,135 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaUS-1time-halfzedd 20-2
+2022-07-14 12:16:00,156 INFO o.a.j.r.Summariser: summary +    530 in 00:00:30 =   17.6/s Avg:   548 Min:   404 Max:  1622 Err:     0 (0.00%) Active: 2 Started: 192 Finished: 190
+2022-07-14 12:16:00,157 INFO o.a.j.r.Summariser: summary =  15001 in 00:19:24 =   12.9/s Avg:   710 Min:   158 Max:  7139 Err:     0 (0.00%)
+2022-07-14 12:16:01,129 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaUS-1time-halfzedd 20-3
+2022-07-14 12:16:02,129 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaUS-1time-halfzedd 20-4
+2022-07-14 12:16:03,129 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaUS-1time-halfzedd 20-5
+2022-07-14 12:16:04,131 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaUS-1time-halfzedd 20-6
+2022-07-14 12:16:05,130 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaUS-1time-halfzedd 20-7
+2022-07-14 12:16:06,129 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaUS-1time-halfzedd 20-8
+2022-07-14 12:16:07,128 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaUS-1time-halfzedd 20-9
+2022-07-14 12:16:08,128 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaUS-1time-halfzedd 20-10
+2022-07-14 12:16:30,048 INFO o.a.j.r.Summariser: summary +    372 in 00:00:30 =   12.4/s Avg:   697 Min:   499 Max:  1574 Err:     0 (0.00%) Active: 10 Started: 200 Finished: 190
+2022-07-14 12:16:30,049 INFO o.a.j.r.Summariser: summary =  15373 in 00:19:54 =   12.9/s Avg:   709 Min:   158 Max:  7139 Err:     0 (0.00%)
+2022-07-14 12:16:59,144 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaUS-1time-halfzedd 20-2
+2022-07-14 12:16:59,144 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaUS-1time-halfzedd 20-2
+2022-07-14 12:16:59,149 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaUS-1time-halfzedd 20-10
+2022-07-14 12:16:59,150 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaUS-1time-halfzedd 20-10
+2022-07-14 12:16:59,183 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaUS-1time-halfzedd 20-1
+2022-07-14 12:16:59,183 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaUS-1time-halfzedd 20-1
+2022-07-14 12:16:59,380 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaUS-1time-halfzedd 20-6
+2022-07-14 12:16:59,380 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaUS-1time-halfzedd 20-6
+2022-07-14 12:16:59,443 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaUS-1time-halfzedd 20-7
+2022-07-14 12:16:59,443 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaUS-1time-halfzedd 20-7
+2022-07-14 12:16:59,510 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaUS-1time-halfzedd 20-3
+2022-07-14 12:16:59,510 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaUS-1time-halfzedd 20-3
+2022-07-14 12:16:59,537 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaUS-1time-halfzedd 20-9
+2022-07-14 12:16:59,537 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaUS-1time-halfzedd 20-9
+2022-07-14 12:16:59,582 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaUS-1time-halfzedd 20-4
+2022-07-14 12:16:59,582 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaUS-1time-halfzedd 20-4
+2022-07-14 12:16:59,613 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaUS-1time-halfzedd 20-5
+2022-07-14 12:16:59,613 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaUS-1time-halfzedd 20-5
+2022-07-14 12:16:59,699 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaUS-1time-halfzedd 20-8
+2022-07-14 12:16:59,699 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaUS-1time-halfzedd 20-8
+2022-07-14 12:16:59,700 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 21 : NCPPServerlessWestGFSAreaUS-1time-fullzedd
+2022-07-14 12:16:59,700 INFO o.a.j.e.StandardJMeterEngine: Starting 10 threads for group NCPPServerlessWestGFSAreaUS-1time-fullzedd.
+2022-07-14 12:16:59,700 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-07-14 12:16:59,700 INFO o.a.j.t.ThreadGroup: Starting thread group... number=21 threads=10 ramp-up=10 delayedStart=false
+2022-07-14 12:16:59,701 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaUS-1time-fullzedd 21-1
+2022-07-14 12:16:59,702 INFO o.a.j.t.ThreadGroup: Started thread group number 21
+2022-07-14 12:16:59,703 INFO o.a.j.e.StandardJMeterEngine: Waiting for thread group: NCPPServerlessWestGFSAreaUS-1time-fullzedd to finish before starting next group
+2022-07-14 12:17:00,462 INFO o.a.j.r.Summariser: summary +    460 in 00:00:30 =   15.1/s Avg:   647 Min:   491 Max:  1164 Err:     0 (0.00%) Active: 1 Started: 201 Finished: 200
+2022-07-14 12:17:00,464 INFO o.a.j.r.Summariser: summary =  15833 in 00:20:24 =   12.9/s Avg:   707 Min:   158 Max:  7139 Err:     0 (0.00%)
+2022-07-14 12:17:00,709 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaUS-1time-fullzedd 21-2
+2022-07-14 12:17:01,700 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaUS-1time-fullzedd 21-3
+2022-07-14 12:17:02,701 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaUS-1time-fullzedd 21-4
+2022-07-14 12:17:03,704 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaUS-1time-fullzedd 21-5
+2022-07-14 12:17:04,702 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaUS-1time-fullzedd 21-6
+2022-07-14 12:17:05,714 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaUS-1time-fullzedd 21-7
+2022-07-14 12:17:06,701 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaUS-1time-fullzedd 21-8
+2022-07-14 12:17:07,702 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaUS-1time-fullzedd 21-9
+2022-07-14 12:17:08,701 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaUS-1time-fullzedd 21-10
+2022-07-14 12:17:30,023 INFO o.a.j.r.Summariser: summary +    338 in 00:00:30 =   11.4/s Avg:   753 Min:   569 Max:  1308 Err:     0 (0.00%) Active: 10 Started: 210 Finished: 200
+2022-07-14 12:17:30,024 INFO o.a.j.r.Summariser: summary =  16171 in 00:20:54 =   12.9/s Avg:   708 Min:   158 Max:  7139 Err:     0 (0.00%)
+2022-07-14 12:17:59,811 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaUS-1time-fullzedd 21-5
+2022-07-14 12:17:59,811 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaUS-1time-fullzedd 21-5
+2022-07-14 12:17:59,892 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaUS-1time-fullzedd 21-4
+2022-07-14 12:17:59,893 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaUS-1time-fullzedd 21-4
+2022-07-14 12:17:59,935 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaUS-1time-fullzedd 21-3
+2022-07-14 12:17:59,936 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaUS-1time-fullzedd 21-3
+2022-07-14 12:17:59,994 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaUS-1time-fullzedd 21-7
+2022-07-14 12:17:59,994 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaUS-1time-fullzedd 21-7
+2022-07-14 12:18:00,004 INFO o.a.j.r.Summariser: summary +    403 in 00:00:30 =   13.4/s Avg:   742 Min:   560 Max:  1171 Err:     0 (0.00%) Active: 6 Started: 210 Finished: 204
+2022-07-14 12:18:00,006 INFO o.a.j.r.Summariser: summary =  16574 in 00:21:24 =   12.9/s Avg:   709 Min:   158 Max:  7139 Err:     0 (0.00%)
+2022-07-14 12:18:00,006 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaUS-1time-fullzedd 21-1
+2022-07-14 12:18:00,006 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaUS-1time-fullzedd 21-1
+2022-07-14 12:18:00,029 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaUS-1time-fullzedd 21-9
+2022-07-14 12:18:00,029 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaUS-1time-fullzedd 21-9
+2022-07-14 12:18:00,032 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaUS-1time-fullzedd 21-6
+2022-07-14 12:18:00,032 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaUS-1time-fullzedd 21-6
+2022-07-14 12:18:00,130 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaUS-1time-fullzedd 21-2
+2022-07-14 12:18:00,130 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaUS-1time-fullzedd 21-2
+2022-07-14 12:18:00,329 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaUS-1time-fullzedd 21-10
+2022-07-14 12:18:00,329 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaUS-1time-fullzedd 21-10
+2022-07-14 12:18:00,439 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaUS-1time-fullzedd 21-8
+2022-07-14 12:18:00,439 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaUS-1time-fullzedd 21-8
+2022-07-14 12:18:00,441 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 22 : NCPPServerlessWestGFSAreaUS-halftime-1zedd
+2022-07-14 12:18:00,441 INFO o.a.j.e.StandardJMeterEngine: Starting 10 threads for group NCPPServerlessWestGFSAreaUS-halftime-1zedd.
+2022-07-14 12:18:00,441 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-07-14 12:18:00,442 INFO o.a.j.t.ThreadGroup: Starting thread group... number=22 threads=10 ramp-up=10 delayedStart=false
+2022-07-14 12:18:00,443 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaUS-halftime-1zedd 22-1
+2022-07-14 12:18:00,446 INFO o.a.j.t.ThreadGroup: Started thread group number 22
+2022-07-14 12:18:00,446 INFO o.a.j.e.StandardJMeterEngine: Waiting for thread group: NCPPServerlessWestGFSAreaUS-halftime-1zedd to finish before starting next group
+2022-07-14 12:18:01,451 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaUS-halftime-1zedd 22-2
+2022-07-14 12:18:02,443 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaUS-halftime-1zedd 22-3
+2022-07-14 12:18:03,447 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaUS-halftime-1zedd 22-4
+2022-07-14 12:18:04,446 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaUS-halftime-1zedd 22-5
+2022-07-14 12:18:05,446 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaUS-halftime-1zedd 22-6
+2022-07-14 12:18:06,446 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaUS-halftime-1zedd 22-7
+2022-07-14 12:18:07,447 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaUS-halftime-1zedd 22-8
+2022-07-14 12:18:08,446 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaUS-halftime-1zedd 22-9
+2022-07-14 12:18:09,444 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaUS-halftime-1zedd 22-10
+2022-07-14 12:18:30,041 INFO o.a.j.r.Summariser: summary +    385 in 00:00:30 =   12.8/s Avg:   654 Min:   422 Max:  1662 Err:     0 (0.00%) Active: 10 Started: 220 Finished: 210
+2022-07-14 12:18:30,042 INFO o.a.j.r.Summariser: summary =  16959 in 00:21:54 =   12.9/s Avg:   708 Min:   158 Max:  7139 Err:     0 (0.00%)
+2022-07-14 12:19:00,059 INFO o.a.j.r.Summariser: summary +    483 in 00:00:30 =   16.1/s Avg:   618 Min:   412 Max:  1948 Err:     0 (0.00%) Active: 10 Started: 220 Finished: 210
+2022-07-14 12:19:00,060 INFO o.a.j.r.Summariser: summary =  17442 in 00:22:24 =   13.0/s Avg:   706 Min:   158 Max:  7139 Err:     0 (0.00%)
+2022-07-14 12:19:00,481 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaUS-halftime-1zedd 22-1
+2022-07-14 12:19:00,482 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaUS-halftime-1zedd 22-1
+2022-07-14 12:19:00,496 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaUS-halftime-1zedd 22-4
+2022-07-14 12:19:00,496 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaUS-halftime-1zedd 22-4
+2022-07-14 12:19:00,520 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaUS-halftime-1zedd 22-10
+2022-07-14 12:19:00,520 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaUS-halftime-1zedd 22-10
+2022-07-14 12:19:00,713 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaUS-halftime-1zedd 22-2
+2022-07-14 12:19:00,713 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaUS-halftime-1zedd 22-2
+2022-07-14 12:19:00,719 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaUS-halftime-1zedd 22-5
+2022-07-14 12:19:00,719 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaUS-halftime-1zedd 22-5
+2022-07-14 12:19:00,810 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaUS-halftime-1zedd 22-8
+2022-07-14 12:19:00,811 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaUS-halftime-1zedd 22-8
+2022-07-14 12:19:00,857 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaUS-halftime-1zedd 22-7
+2022-07-14 12:19:00,858 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaUS-halftime-1zedd 22-7
+2022-07-14 12:19:00,911 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaUS-halftime-1zedd 22-9
+2022-07-14 12:19:00,911 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaUS-halftime-1zedd 22-9
+2022-07-14 12:19:01,074 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaUS-halftime-1zedd 22-3
+2022-07-14 12:19:01,074 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaUS-halftime-1zedd 22-3
+2022-07-14 12:19:01,812 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaUS-halftime-1zedd 22-6
+2022-07-14 12:19:01,812 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaUS-halftime-1zedd 22-6
+2022-07-14 12:19:01,812 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 23 : NCPPServerlessWestGFSAreaUS-fulltime-1zedd
+2022-07-14 12:19:01,812 INFO o.a.j.e.StandardJMeterEngine: Starting 10 threads for group NCPPServerlessWestGFSAreaUS-fulltime-1zedd.
+2022-07-14 12:19:01,812 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-07-14 12:19:01,812 INFO o.a.j.t.ThreadGroup: Starting thread group... number=23 threads=10 ramp-up=10 delayedStart=false
+2022-07-14 12:19:01,815 INFO o.a.j.t.ThreadGroup: Started thread group number 23
+2022-07-14 12:19:01,815 INFO o.a.j.e.StandardJMeterEngine: Waiting for thread group: NCPPServerlessWestGFSAreaUS-fulltime-1zedd to finish before starting next group
+2022-07-14 12:19:01,816 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaUS-fulltime-1zedd 23-1
+2022-07-14 12:19:02,816 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaUS-fulltime-1zedd 23-2
+2022-07-14 12:19:03,816 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaUS-fulltime-1zedd 23-3
+2022-07-14 12:19:04,834 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaUS-fulltime-1zedd 23-4
+2022-07-14 12:19:05,819 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaUS-fulltime-1zedd 23-5
+2022-07-14 12:19:06,815 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaUS-fulltime-1zedd 23-6
+2022-07-14 12:19:07,815 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaUS-fulltime-1zedd 23-7
+2022-07-14 12:19:08,820 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaUS-fulltime-1zedd 23-8
+2022-07-14 12:19:09,819 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaUS-fulltime-1zedd 23-9
+2022-07-14 12:19:10,813 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaUS-fulltime-1zedd 23-10
+2022-07-14 12:19:30,000 INFO o.a.j.r.Summariser: summary +    312 in 00:00:30 =   10.4/s Avg:   783 Min:   431 Max:  2532 Err:     0 (0.00%) Active: 10 Started: 230 Finished: 220
+2022-07-14 12:19:30,026 INFO o.a.j.r.Summariser: summary =  17754 in 00:22:54 =   12.9/s Avg:   707 Min:   158 Max:  7139 Err:     0 (0.00%)
+2022-07-14 12:20:00,011 INFO o.a.j.r.Summariser: summary +    533 in 00:00:30 =   17.8/s Avg:   565 Min:   403 Max:  2029 Err:     0 (0.00%) Active: 10 Started: 230 Finished: 220
+2022-07-14 12:20:00,013 INFO o.a.j.r.Summariser: summary =  18287 in 00:23:24 =   13.0/s Avg:   703 Min:   158 Max:  7139 Err:     0 (0.00%)
+2022-07-14 12:20:01,831 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaUS-fulltime-1zedd 23-3
+2022-07-14 12:20:01,831 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaUS-fulltime-1zedd 23-3
+2022-07-14 12:20:01,859 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaUS-fulltime-1zedd 23-4
+2022-07-14 12:20:01,860 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaUS-fulltime-1zedd 23-4
+2022-07-14 12:20:02,042 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaUS-fulltime-1zedd 23-7
+2022-07-14 12:20:02,042 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaUS-fulltime-1zedd 23-7
+2022-07-14 12:20:02,076 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaUS-fulltime-1zedd 23-6
+2022-07-14 12:20:02,076 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaUS-fulltime-1zedd 23-6
+2022-07-14 12:20:02,145 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaUS-fulltime-1zedd 23-1
+2022-07-14 12:20:02,145 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaUS-fulltime-1zedd 23-1
+2022-07-14 12:20:02,181 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaUS-fulltime-1zedd 23-2
+2022-07-14 12:20:02,181 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaUS-fulltime-1zedd 23-2
+2022-07-14 12:20:02,235 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaUS-fulltime-1zedd 23-8
+2022-07-14 12:20:02,235 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaUS-fulltime-1zedd 23-8
+2022-07-14 12:20:02,237 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaUS-fulltime-1zedd 23-9
+2022-07-14 12:20:02,237 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaUS-fulltime-1zedd 23-9
+2022-07-14 12:20:02,576 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaUS-fulltime-1zedd 23-10
+2022-07-14 12:20:02,576 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaUS-fulltime-1zedd 23-10
+2022-07-14 12:20:02,583 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaUS-fulltime-1zedd 23-5
+2022-07-14 12:20:02,583 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaUS-fulltime-1zedd 23-5
+2022-07-14 12:20:02,583 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 24 : NCPPServerlessWestGFSAreaHalfGlobe-1time-1zedd
+2022-07-14 12:20:02,583 INFO o.a.j.e.StandardJMeterEngine: Starting 10 threads for group NCPPServerlessWestGFSAreaHalfGlobe-1time-1zedd.
+2022-07-14 12:20:02,583 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-07-14 12:20:02,583 INFO o.a.j.t.ThreadGroup: Starting thread group... number=24 threads=10 ramp-up=10 delayedStart=false
+2022-07-14 12:20:02,584 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaHalfGlobe-1time-1zedd 24-1
+2022-07-14 12:20:02,585 INFO o.a.j.t.ThreadGroup: Started thread group number 24
+2022-07-14 12:20:02,585 INFO o.a.j.e.StandardJMeterEngine: Waiting for thread group: NCPPServerlessWestGFSAreaHalfGlobe-1time-1zedd to finish before starting next group
+2022-07-14 12:20:03,599 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaHalfGlobe-1time-1zedd 24-2
+2022-07-14 12:20:04,584 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaHalfGlobe-1time-1zedd 24-3
+2022-07-14 12:20:05,584 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaHalfGlobe-1time-1zedd 24-4
+2022-07-14 12:20:06,585 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaHalfGlobe-1time-1zedd 24-5
+2022-07-14 12:20:07,586 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaHalfGlobe-1time-1zedd 24-6
+2022-07-14 12:20:08,585 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaHalfGlobe-1time-1zedd 24-7
+2022-07-14 12:20:09,584 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaHalfGlobe-1time-1zedd 24-8
+2022-07-14 12:20:10,584 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaHalfGlobe-1time-1zedd 24-9
+2022-07-14 12:20:11,585 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaHalfGlobe-1time-1zedd 24-10
+2022-07-14 12:20:30,033 INFO o.a.j.r.Summariser: summary +    423 in 00:00:30 =   14.1/s Avg:   591 Min:   401 Max:  1044 Err:     0 (0.00%) Active: 10 Started: 240 Finished: 230
+2022-07-14 12:20:30,034 INFO o.a.j.r.Summariser: summary =  18710 in 00:23:54 =   13.0/s Avg:   700 Min:   158 Max:  7139 Err:     0 (0.00%)
+2022-07-14 12:21:00,012 INFO o.a.j.r.Summariser: summary +    531 in 00:00:30 =   17.7/s Avg:   565 Min:   424 Max:  1619 Err:     0 (0.00%) Active: 10 Started: 240 Finished: 230
+2022-07-14 12:21:00,014 INFO o.a.j.r.Summariser: summary =  19241 in 00:24:24 =   13.1/s Avg:   696 Min:   158 Max:  7139 Err:     0 (0.00%)
+2022-07-14 12:21:02,640 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaHalfGlobe-1time-1zedd 24-6
+2022-07-14 12:21:02,640 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaHalfGlobe-1time-1zedd 24-6
+2022-07-14 12:21:02,833 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaHalfGlobe-1time-1zedd 24-4
+2022-07-14 12:21:02,833 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaHalfGlobe-1time-1zedd 24-4
+2022-07-14 12:21:02,910 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaHalfGlobe-1time-1zedd 24-1
+2022-07-14 12:21:02,910 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaHalfGlobe-1time-1zedd 24-1
+2022-07-14 12:21:03,034 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaHalfGlobe-1time-1zedd 24-9
+2022-07-14 12:21:03,034 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaHalfGlobe-1time-1zedd 24-9
+2022-07-14 12:21:03,051 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaHalfGlobe-1time-1zedd 24-3
+2022-07-14 12:21:03,052 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaHalfGlobe-1time-1zedd 24-3
+2022-07-14 12:21:03,053 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaHalfGlobe-1time-1zedd 24-8
+2022-07-14 12:21:03,054 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaHalfGlobe-1time-1zedd 24-8
+2022-07-14 12:21:03,176 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaHalfGlobe-1time-1zedd 24-7
+2022-07-14 12:21:03,176 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaHalfGlobe-1time-1zedd 24-7
+2022-07-14 12:21:03,223 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaHalfGlobe-1time-1zedd 24-5
+2022-07-14 12:21:03,223 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaHalfGlobe-1time-1zedd 24-5
+2022-07-14 12:21:03,244 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaHalfGlobe-1time-1zedd 24-10
+2022-07-14 12:21:03,244 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaHalfGlobe-1time-1zedd 24-10
+2022-07-14 12:21:03,799 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaHalfGlobe-1time-1zedd 24-2
+2022-07-14 12:21:03,799 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaHalfGlobe-1time-1zedd 24-2
+2022-07-14 12:21:03,799 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 25 : NCPPServerlessWestGFSAreaGlobe-1time-1zedd
+2022-07-14 12:21:03,799 INFO o.a.j.e.StandardJMeterEngine: Starting 10 threads for group NCPPServerlessWestGFSAreaGlobe-1time-1zedd.
+2022-07-14 12:21:03,799 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-07-14 12:21:03,799 INFO o.a.j.t.ThreadGroup: Starting thread group... number=25 threads=10 ramp-up=10 delayedStart=false
+2022-07-14 12:21:03,800 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaGlobe-1time-1zedd 25-1
+2022-07-14 12:21:03,801 INFO o.a.j.t.ThreadGroup: Started thread group number 25
+2022-07-14 12:21:03,801 INFO o.a.j.e.StandardJMeterEngine: Waiting for thread group: NCPPServerlessWestGFSAreaGlobe-1time-1zedd to finish before starting next group
+2022-07-14 12:21:04,806 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaGlobe-1time-1zedd 25-2
+2022-07-14 12:21:05,803 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaGlobe-1time-1zedd 25-3
+2022-07-14 12:21:06,803 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaGlobe-1time-1zedd 25-4
+2022-07-14 12:21:07,803 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaGlobe-1time-1zedd 25-5
+2022-07-14 12:21:08,814 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaGlobe-1time-1zedd 25-6
+2022-07-14 12:21:09,802 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaGlobe-1time-1zedd 25-7
+2022-07-14 12:21:10,802 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaGlobe-1time-1zedd 25-8
+2022-07-14 12:21:11,801 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaGlobe-1time-1zedd 25-9
+2022-07-14 12:21:12,801 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSAreaGlobe-1time-1zedd 25-10
+2022-07-14 12:21:30,141 INFO o.a.j.r.Summariser: summary +    369 in 00:00:30 =   12.2/s Avg:   673 Min:   444 Max:  1297 Err:     0 (0.00%) Active: 10 Started: 250 Finished: 240
+2022-07-14 12:21:30,147 INFO o.a.j.r.Summariser: summary =  19610 in 00:24:54 =   13.1/s Avg:   696 Min:   158 Max:  7139 Err:     0 (0.00%)
+2022-07-14 12:22:00,020 INFO o.a.j.r.Summariser: summary +    515 in 00:00:30 =   17.2/s Avg:   579 Min:   419 Max:  1050 Err:     0 (0.00%) Active: 10 Started: 250 Finished: 240
+2022-07-14 12:22:00,021 INFO o.a.j.r.Summariser: summary =  20125 in 00:25:24 =   13.2/s Avg:   693 Min:   158 Max:  7139 Err:     0 (0.00%)
+2022-07-14 12:22:03,830 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaGlobe-1time-1zedd 25-3
+2022-07-14 12:22:03,831 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaGlobe-1time-1zedd 25-3
+2022-07-14 12:22:03,888 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaGlobe-1time-1zedd 25-9
+2022-07-14 12:22:03,888 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaGlobe-1time-1zedd 25-9
+2022-07-14 12:22:03,911 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaGlobe-1time-1zedd 25-1
+2022-07-14 12:22:03,911 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaGlobe-1time-1zedd 25-1
+2022-07-14 12:22:03,973 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaGlobe-1time-1zedd 25-4
+2022-07-14 12:22:03,973 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaGlobe-1time-1zedd 25-4
+2022-07-14 12:22:04,033 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaGlobe-1time-1zedd 25-8
+2022-07-14 12:22:04,033 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaGlobe-1time-1zedd 25-8
+2022-07-14 12:22:04,049 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaGlobe-1time-1zedd 25-5
+2022-07-14 12:22:04,049 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaGlobe-1time-1zedd 25-5
+2022-07-14 12:22:04,066 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaGlobe-1time-1zedd 25-10
+2022-07-14 12:22:04,067 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaGlobe-1time-1zedd 25-10
+2022-07-14 12:22:04,096 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaGlobe-1time-1zedd 25-6
+2022-07-14 12:22:04,097 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaGlobe-1time-1zedd 25-6
+2022-07-14 12:22:04,135 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaGlobe-1time-1zedd 25-2
+2022-07-14 12:22:04,135 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaGlobe-1time-1zedd 25-2
+2022-07-14 12:22:04,390 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSAreaGlobe-1time-1zedd 25-7
+2022-07-14 12:22:04,391 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSAreaGlobe-1time-1zedd 25-7
+2022-07-14 12:22:04,391 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 26 : NCPPServerlessWestNWM-position-1hour
+2022-07-14 12:22:04,391 INFO o.a.j.e.StandardJMeterEngine: Starting 10 threads for group NCPPServerlessWestNWM-position-1hour.
+2022-07-14 12:22:04,391 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-07-14 12:22:04,391 INFO o.a.j.t.ThreadGroup: Starting thread group... number=26 threads=10 ramp-up=10 delayedStart=false
+2022-07-14 12:22:04,392 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestNWM-position-1hour 26-1
+2022-07-14 12:22:04,393 INFO o.a.j.t.ThreadGroup: Started thread group number 26
+2022-07-14 12:22:04,393 INFO o.a.j.e.StandardJMeterEngine: Waiting for thread group: NCPPServerlessWestNWM-position-1hour to finish before starting next group
+2022-07-14 12:22:05,391 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestNWM-position-1hour 26-2
+2022-07-14 12:22:06,391 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestNWM-position-1hour 26-3
+2022-07-14 12:22:07,392 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestNWM-position-1hour 26-4
+2022-07-14 12:22:08,392 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestNWM-position-1hour 26-5
+2022-07-14 12:22:09,392 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestNWM-position-1hour 26-6
+2022-07-14 12:22:10,392 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestNWM-position-1hour 26-7
+2022-07-14 12:22:11,406 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestNWM-position-1hour 26-8
+2022-07-14 12:22:12,391 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestNWM-position-1hour 26-9
+2022-07-14 12:22:13,392 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestNWM-position-1hour 26-10
+2022-07-14 12:22:30,384 INFO o.a.j.r.Summariser: summary +     95 in 00:00:30 =    3.1/s Avg:  2480 Min:   430 Max: 11774 Err:     0 (0.00%) Active: 10 Started: 260 Finished: 250
+2022-07-14 12:22:30,386 INFO o.a.j.r.Summariser: summary =  20220 in 00:25:54 =   13.0/s Avg:   701 Min:   158 Max: 11774 Err:     0 (0.00%)
+2022-07-14 12:23:00,209 INFO o.a.j.r.Summariser: summary +     50 in 00:00:30 =    1.7/s Avg:  5843 Min:  5038 Max:  9976 Err:     0 (0.00%) Active: 10 Started: 260 Finished: 250
+2022-07-14 12:23:00,210 INFO o.a.j.r.Summariser: summary =  20270 in 00:26:24 =   12.8/s Avg:   714 Min:   158 Max: 11774 Err:     0 (0.00%)
+2022-07-14 12:23:05,803 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestNWM-position-1hour 26-6
+2022-07-14 12:23:05,803 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestNWM-position-1hour 26-6
+2022-07-14 12:23:06,163 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestNWM-position-1hour 26-4
+2022-07-14 12:23:06,163 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestNWM-position-1hour 26-4
+2022-07-14 12:23:06,553 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestNWM-position-1hour 26-8
+2022-07-14 12:23:06,553 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestNWM-position-1hour 26-8
+2022-07-14 12:23:06,721 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestNWM-position-1hour 26-5
+2022-07-14 12:23:06,721 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestNWM-position-1hour 26-5
+2022-07-14 12:23:06,873 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestNWM-position-1hour 26-2
+2022-07-14 12:23:06,873 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestNWM-position-1hour 26-2
+2022-07-14 12:23:07,436 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestNWM-position-1hour 26-1
+2022-07-14 12:23:07,437 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestNWM-position-1hour 26-1
+2022-07-14 12:23:08,694 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestNWM-position-1hour 26-3
+2022-07-14 12:23:08,695 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestNWM-position-1hour 26-3
+2022-07-14 12:23:09,333 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestNWM-position-1hour 26-7
+2022-07-14 12:23:09,333 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestNWM-position-1hour 26-7
+2022-07-14 12:23:09,397 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestNWM-position-1hour 26-9
+2022-07-14 12:23:09,397 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestNWM-position-1hour 26-9
+2022-07-14 12:23:09,585 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestNWM-position-1hour 26-10
+2022-07-14 12:23:09,585 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestNWM-position-1hour 26-10
+2022-07-14 12:23:09,585 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 27 : NCPPServerlessWestNWM-position-1day
+2022-07-14 12:23:09,585 INFO o.a.j.e.StandardJMeterEngine: Starting 10 threads for group NCPPServerlessWestNWM-position-1day.
+2022-07-14 12:23:09,585 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-07-14 12:23:09,586 INFO o.a.j.t.ThreadGroup: Starting thread group... number=27 threads=10 ramp-up=10 delayedStart=false
+2022-07-14 12:23:09,586 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestNWM-position-1day 27-1
+2022-07-14 12:23:09,587 INFO o.a.j.t.ThreadGroup: Started thread group number 27
+2022-07-14 12:23:09,587 INFO o.a.j.e.StandardJMeterEngine: Waiting for thread group: NCPPServerlessWestNWM-position-1day to finish before starting next group
+2022-07-14 12:23:10,596 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestNWM-position-1day 27-2
+2022-07-14 12:23:11,598 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestNWM-position-1day 27-3
+2022-07-14 12:23:12,587 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestNWM-position-1day 27-4
+2022-07-14 12:23:13,586 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestNWM-position-1day 27-5
+2022-07-14 12:23:14,586 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestNWM-position-1day 27-6
+2022-07-14 12:23:15,589 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestNWM-position-1day 27-7
+2022-07-14 12:23:16,587 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestNWM-position-1day 27-8
+2022-07-14 12:23:17,588 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestNWM-position-1day 27-9
+2022-07-14 12:23:18,597 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestNWM-position-1day 27-10
+2022-07-14 12:23:30,577 INFO o.a.j.r.Summariser: summary +     44 in 00:00:30 =    1.4/s Avg:  5462 Min:  4880 Max:  6819 Err:     0 (0.00%) Active: 10 Started: 270 Finished: 260
+2022-07-14 12:23:30,578 INFO o.a.j.r.Summariser: summary =  20314 in 00:26:55 =   12.6/s Avg:   724 Min:   158 Max: 11774 Err:     0 (0.00%)
+2022-07-14 12:24:00,638 INFO o.a.j.r.Summariser: summary +     54 in 00:00:30 =    1.8/s Avg:  5440 Min:  5028 Max:  6282 Err:     0 (0.00%) Active: 10 Started: 270 Finished: 260
+2022-07-14 12:24:00,640 INFO o.a.j.r.Summariser: summary =  20368 in 00:27:25 =   12.4/s Avg:   737 Min:   158 Max: 11774 Err:     0 (0.00%)
+2022-07-14 12:24:11,666 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestNWM-position-1day 27-8
+2022-07-14 12:24:11,667 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestNWM-position-1day 27-8
+2022-07-14 12:24:11,857 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestNWM-position-1day 27-10
+2022-07-14 12:24:11,857 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestNWM-position-1day 27-10
+2022-07-14 12:24:12,034 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestNWM-position-1day 27-5
+2022-07-14 12:24:12,034 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestNWM-position-1day 27-5
+2022-07-14 12:24:12,053 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestNWM-position-1day 27-9
+2022-07-14 12:24:12,053 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestNWM-position-1day 27-9
+2022-07-14 12:24:12,486 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestNWM-position-1day 27-4
+2022-07-14 12:24:12,487 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestNWM-position-1day 27-4
+2022-07-14 12:24:13,567 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestNWM-position-1day 27-1
+2022-07-14 12:24:13,567 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestNWM-position-1day 27-1
+2022-07-14 12:24:13,584 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestNWM-position-1day 27-6
+2022-07-14 12:24:13,584 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestNWM-position-1day 27-6
+2022-07-14 12:24:14,177 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestNWM-position-1day 27-7
+2022-07-14 12:24:14,177 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestNWM-position-1day 27-7
+2022-07-14 12:24:14,290 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestNWM-position-1day 27-2
+2022-07-14 12:24:14,290 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestNWM-position-1day 27-2
+2022-07-14 12:24:18,386 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestNWM-position-1day 27-3
+2022-07-14 12:24:18,387 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestNWM-position-1day 27-3
+2022-07-14 12:24:18,387 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 28 : NCPPServerlessWestNWM-position-1month
+2022-07-14 12:24:18,387 INFO o.a.j.e.StandardJMeterEngine: Starting 10 threads for group NCPPServerlessWestNWM-position-1month.
+2022-07-14 12:24:18,387 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-07-14 12:24:18,387 INFO o.a.j.t.ThreadGroup: Starting thread group... number=28 threads=10 ramp-up=10 delayedStart=false
+2022-07-14 12:24:18,388 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestNWM-position-1month 28-1
+2022-07-14 12:24:18,390 INFO o.a.j.t.ThreadGroup: Started thread group number 28
+2022-07-14 12:24:18,390 INFO o.a.j.e.StandardJMeterEngine: Waiting for thread group: NCPPServerlessWestNWM-position-1month to finish before starting next group
+2022-07-14 12:24:19,388 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestNWM-position-1month 28-2
+2022-07-14 12:24:20,387 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestNWM-position-1month 28-3
+2022-07-14 12:24:21,388 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestNWM-position-1month 28-4
+2022-07-14 12:24:22,388 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestNWM-position-1month 28-5
+2022-07-14 12:24:23,388 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestNWM-position-1month 28-6
+2022-07-14 12:24:24,389 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestNWM-position-1month 28-7
+2022-07-14 12:24:25,392 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestNWM-position-1month 28-8
+2022-07-14 12:24:26,388 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestNWM-position-1month 28-9
+2022-07-14 12:24:27,387 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestNWM-position-1month 28-10
+2022-07-14 12:24:30,612 INFO o.a.j.r.Summariser: summary +     39 in 00:00:30 =    1.3/s Avg:  5510 Min:  4966 Max: 10908 Err:     0 (0.00%) Active: 10 Started: 280 Finished: 270
+2022-07-14 12:24:30,613 INFO o.a.j.r.Summariser: summary =  20407 in 00:27:55 =   12.2/s Avg:   746 Min:   158 Max: 11774 Err:     0 (0.00%)
+2022-07-14 12:25:00,379 INFO o.a.j.r.Summariser: summary +     56 in 00:00:30 =    1.9/s Avg:  5324 Min:  4911 Max:  6883 Err:     0 (0.00%) Active: 10 Started: 280 Finished: 270
+2022-07-14 12:25:00,380 INFO o.a.j.r.Summariser: summary =  20463 in 00:28:24 =   12.0/s Avg:   759 Min:   158 Max: 11774 Err:     0 (0.00%)
+2022-07-14 12:25:18,529 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestNWM-position-1month 28-2
+2022-07-14 12:25:18,529 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestNWM-position-1month 28-2
+2022-07-14 12:25:18,691 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestNWM-position-1month 28-7
+2022-07-14 12:25:18,691 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestNWM-position-1month 28-7
+2022-07-14 12:25:18,701 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestNWM-position-1month 28-6
+2022-07-14 12:25:18,701 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestNWM-position-1month 28-6
+2022-07-14 12:25:18,749 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestNWM-position-1month 28-4
+2022-07-14 12:25:18,749 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestNWM-position-1month 28-4
+2022-07-14 12:25:19,744 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestNWM-position-1month 28-9
+2022-07-14 12:25:19,744 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestNWM-position-1month 28-9
+2022-07-14 12:25:19,899 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestNWM-position-1month 28-8
+2022-07-14 12:25:19,899 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestNWM-position-1month 28-8
+2022-07-14 12:25:20,739 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestNWM-position-1month 28-10
+2022-07-14 12:25:20,740 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestNWM-position-1month 28-10
+2022-07-14 12:25:20,866 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestNWM-position-1month 28-5
+2022-07-14 12:25:20,866 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestNWM-position-1month 28-5
+2022-07-14 12:25:21,581 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestNWM-position-1month 28-3
+2022-07-14 12:25:21,581 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestNWM-position-1month 28-3
+2022-07-14 12:25:21,878 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestNWM-position-1month 28-1
+2022-07-14 12:25:21,878 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestNWM-position-1month 28-1
+2022-07-14 12:25:21,880 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 29 : NCPPServerlessWestGFSTrajectory5waypoints
+2022-07-14 12:25:21,880 INFO o.a.j.e.StandardJMeterEngine: Starting 10 threads for group NCPPServerlessWestGFSTrajectory5waypoints.
+2022-07-14 12:25:21,880 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-07-14 12:25:21,880 INFO o.a.j.t.ThreadGroup: Starting thread group... number=29 threads=10 ramp-up=10 delayedStart=false
+2022-07-14 12:25:21,880 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSTrajectory5waypoints 29-1
+2022-07-14 12:25:21,883 INFO o.a.j.t.ThreadGroup: Started thread group number 29
+2022-07-14 12:25:21,883 INFO o.a.j.e.StandardJMeterEngine: Waiting for thread group: NCPPServerlessWestGFSTrajectory5waypoints to finish before starting next group
+2022-07-14 12:25:22,890 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSTrajectory5waypoints 29-2
+2022-07-14 12:25:23,881 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSTrajectory5waypoints 29-3
+2022-07-14 12:25:24,881 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSTrajectory5waypoints 29-4
+2022-07-14 12:25:25,881 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSTrajectory5waypoints 29-5
+2022-07-14 12:25:26,882 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSTrajectory5waypoints 29-6
+2022-07-14 12:25:27,880 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSTrajectory5waypoints 29-7
+2022-07-14 12:25:28,881 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSTrajectory5waypoints 29-8
+2022-07-14 12:25:29,881 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSTrajectory5waypoints 29-9
+2022-07-14 12:25:30,267 INFO o.a.j.r.Summariser: summary +     41 in 00:00:30 =    1.4/s Avg:  5716 Min:  5047 Max:  8108 Err:     0 (0.00%) Active: 9 Started: 289 Finished: 280
+2022-07-14 12:25:30,268 INFO o.a.j.r.Summariser: summary =  20504 in 00:28:54 =   11.8/s Avg:   768 Min:   158 Max: 11774 Err:     0 (0.00%)
+2022-07-14 12:25:30,880 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSTrajectory5waypoints 29-10
+2022-07-14 12:26:00,746 INFO o.a.j.r.Summariser: summary +    128 in 00:00:30 =    4.2/s Avg:  2471 Min:  1844 Max:  7397 Err:     0 (0.00%) Active: 10 Started: 290 Finished: 280
+2022-07-14 12:26:00,747 INFO o.a.j.r.Summariser: summary =  20632 in 00:29:25 =   11.7/s Avg:   779 Min:   158 Max: 11774 Err:     0 (0.00%)
+2022-07-14 12:26:21,945 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSTrajectory5waypoints 29-10
+2022-07-14 12:26:21,945 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSTrajectory5waypoints 29-10
+2022-07-14 12:26:22,091 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSTrajectory5waypoints 29-3
+2022-07-14 12:26:22,092 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSTrajectory5waypoints 29-3
+2022-07-14 12:26:22,341 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSTrajectory5waypoints 29-1
+2022-07-14 12:26:22,342 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSTrajectory5waypoints 29-1
+2022-07-14 12:26:22,629 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSTrajectory5waypoints 29-8
+2022-07-14 12:26:22,629 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSTrajectory5waypoints 29-8
+2022-07-14 12:26:22,759 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSTrajectory5waypoints 29-5
+2022-07-14 12:26:22,759 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSTrajectory5waypoints 29-5
+2022-07-14 12:26:23,349 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSTrajectory5waypoints 29-4
+2022-07-14 12:26:23,349 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSTrajectory5waypoints 29-4
+2022-07-14 12:26:23,395 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSTrajectory5waypoints 29-9
+2022-07-14 12:26:23,395 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSTrajectory5waypoints 29-9
+2022-07-14 12:26:23,566 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSTrajectory5waypoints 29-7
+2022-07-14 12:26:23,566 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSTrajectory5waypoints 29-7
+2022-07-14 12:26:23,623 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSTrajectory5waypoints 29-2
+2022-07-14 12:26:23,623 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSTrajectory5waypoints 29-2
+2022-07-14 12:26:23,967 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSTrajectory5waypoints 29-6
+2022-07-14 12:26:23,967 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSTrajectory5waypoints 29-6
+2022-07-14 12:26:23,968 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 30 : NCPPServerlessWestGFSTrajectory10waypoints
+2022-07-14 12:26:23,968 INFO o.a.j.e.StandardJMeterEngine: Starting 10 threads for group NCPPServerlessWestGFSTrajectory10waypoints.
+2022-07-14 12:26:23,968 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-07-14 12:26:23,969 INFO o.a.j.t.ThreadGroup: Starting thread group... number=30 threads=10 ramp-up=10 delayedStart=false
+2022-07-14 12:26:23,970 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSTrajectory10waypoints 30-1
+2022-07-14 12:26:23,972 INFO o.a.j.t.ThreadGroup: Started thread group number 30
+2022-07-14 12:26:23,972 INFO o.a.j.e.StandardJMeterEngine: Waiting for thread group: NCPPServerlessWestGFSTrajectory10waypoints to finish before starting next group
+2022-07-14 12:26:24,976 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSTrajectory10waypoints 30-2
+2022-07-14 12:26:25,970 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSTrajectory10waypoints 30-3
+2022-07-14 12:26:26,970 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSTrajectory10waypoints 30-4
+2022-07-14 12:26:27,970 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSTrajectory10waypoints 30-5
+2022-07-14 12:26:28,970 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSTrajectory10waypoints 30-6
+2022-07-14 12:26:29,969 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSTrajectory10waypoints 30-7
+2022-07-14 12:26:30,963 INFO o.a.j.r.Summariser: summary +    115 in 00:00:30 =    3.8/s Avg:  2194 Min:  1819 Max:  3090 Err:     0 (0.00%) Active: 7 Started: 297 Finished: 290
+2022-07-14 12:26:30,964 INFO o.a.j.r.Summariser: summary =  20747 in 00:29:55 =   11.6/s Avg:   787 Min:   158 Max: 11774 Err:     0 (0.00%)
+2022-07-14 12:26:30,969 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSTrajectory10waypoints 30-8
+2022-07-14 12:26:31,980 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSTrajectory10waypoints 30-9
+2022-07-14 12:26:32,970 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSTrajectory10waypoints 30-10
+2022-07-14 12:27:00,005 INFO o.a.j.r.Summariser: summary +     97 in 00:00:29 =    3.3/s Avg:  2934 Min:  2501 Max:  3835 Err:     0 (0.00%) Active: 10 Started: 300 Finished: 290
+2022-07-14 12:27:00,006 INFO o.a.j.r.Summariser: summary =  20844 in 00:30:24 =   11.4/s Avg:   797 Min:   158 Max: 11774 Err:     0 (0.00%)
+2022-07-14 12:27:24,043 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSTrajectory10waypoints 30-10
+2022-07-14 12:27:24,044 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSTrajectory10waypoints 30-10
+2022-07-14 12:27:24,105 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSTrajectory10waypoints 30-6
+2022-07-14 12:27:24,106 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSTrajectory10waypoints 30-6
+2022-07-14 12:27:24,461 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSTrajectory10waypoints 30-9
+2022-07-14 12:27:24,462 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSTrajectory10waypoints 30-9
+2022-07-14 12:27:24,752 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSTrajectory10waypoints 30-4
+2022-07-14 12:27:24,753 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSTrajectory10waypoints 30-4
+2022-07-14 12:27:25,041 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSTrajectory10waypoints 30-5
+2022-07-14 12:27:25,041 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSTrajectory10waypoints 30-5
+2022-07-14 12:27:25,131 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSTrajectory10waypoints 30-2
+2022-07-14 12:27:25,133 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSTrajectory10waypoints 30-2
+2022-07-14 12:27:25,146 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSTrajectory10waypoints 30-7
+2022-07-14 12:27:25,146 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSTrajectory10waypoints 30-7
+2022-07-14 12:27:25,242 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSTrajectory10waypoints 30-1
+2022-07-14 12:27:25,242 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSTrajectory10waypoints 30-1
+2022-07-14 12:27:26,001 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSTrajectory10waypoints 30-3
+2022-07-14 12:27:26,001 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSTrajectory10waypoints 30-3
+2022-07-14 12:27:26,163 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSTrajectory10waypoints 30-8
+2022-07-14 12:27:26,163 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSTrajectory10waypoints 30-8
+2022-07-14 12:27:26,164 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 31 : NCPPServerlessWestGFSTrajectory20waypoints
+2022-07-14 12:27:26,164 INFO o.a.j.e.StandardJMeterEngine: Starting 10 threads for group NCPPServerlessWestGFSTrajectory20waypoints.
+2022-07-14 12:27:26,164 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-07-14 12:27:26,164 INFO o.a.j.t.ThreadGroup: Starting thread group... number=31 threads=10 ramp-up=10 delayedStart=false
+2022-07-14 12:27:26,166 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSTrajectory20waypoints 31-1
+2022-07-14 12:27:26,168 INFO o.a.j.t.ThreadGroup: Started thread group number 31
+2022-07-14 12:27:26,168 INFO o.a.j.e.StandardJMeterEngine: Waiting for thread group: NCPPServerlessWestGFSTrajectory20waypoints to finish before starting next group
+2022-07-14 12:27:27,166 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSTrajectory20waypoints 31-2
+2022-07-14 12:27:28,166 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSTrajectory20waypoints 31-3
+2022-07-14 12:27:29,166 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSTrajectory20waypoints 31-4
+2022-07-14 12:27:30,166 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSTrajectory20waypoints 31-5
+2022-07-14 12:27:30,770 INFO o.a.j.r.Summariser: summary +     93 in 00:00:31 =    3.0/s Avg:  2914 Min:  2450 Max:  3480 Err:     0 (0.00%) Active: 5 Started: 305 Finished: 300
+2022-07-14 12:27:30,771 INFO o.a.j.r.Summariser: summary =  20937 in 00:30:55 =   11.3/s Avg:   806 Min:   158 Max: 11774 Err:     0 (0.00%)
+2022-07-14 12:27:31,166 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSTrajectory20waypoints 31-6
+2022-07-14 12:27:32,166 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSTrajectory20waypoints 31-7
+2022-07-14 12:27:33,165 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSTrajectory20waypoints 31-8
+2022-07-14 12:27:34,166 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSTrajectory20waypoints 31-9
+2022-07-14 12:27:35,166 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSTrajectory20waypoints 31-10
+2022-07-14 12:28:00,168 INFO o.a.j.r.Summariser: summary +    105 in 00:00:29 =    3.6/s Avg:  2648 Min:  2332 Max:  3660 Err:     0 (0.00%) Active: 10 Started: 310 Finished: 300
+2022-07-14 12:28:00,169 INFO o.a.j.r.Summariser: summary =  21042 in 00:31:24 =   11.2/s Avg:   815 Min:   158 Max: 11774 Err:     0 (0.00%)
+2022-07-14 12:28:26,284 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSTrajectory20waypoints 31-6
+2022-07-14 12:28:26,284 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSTrajectory20waypoints 31-6
+2022-07-14 12:28:26,566 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSTrajectory20waypoints 31-3
+2022-07-14 12:28:26,566 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSTrajectory20waypoints 31-3
+2022-07-14 12:28:26,575 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSTrajectory20waypoints 31-7
+2022-07-14 12:28:26,575 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSTrajectory20waypoints 31-7
+2022-07-14 12:28:27,057 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSTrajectory20waypoints 31-8
+2022-07-14 12:28:27,057 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSTrajectory20waypoints 31-8
+2022-07-14 12:28:27,503 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSTrajectory20waypoints 31-1
+2022-07-14 12:28:27,504 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSTrajectory20waypoints 31-1
+2022-07-14 12:28:27,653 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSTrajectory20waypoints 31-9
+2022-07-14 12:28:27,653 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSTrajectory20waypoints 31-9
+2022-07-14 12:28:28,088 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSTrajectory20waypoints 31-2
+2022-07-14 12:28:28,089 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSTrajectory20waypoints 31-2
+2022-07-14 12:28:28,121 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSTrajectory20waypoints 31-4
+2022-07-14 12:28:28,121 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSTrajectory20waypoints 31-4
+2022-07-14 12:28:28,200 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSTrajectory20waypoints 31-10
+2022-07-14 12:28:28,200 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSTrajectory20waypoints 31-10
+2022-07-14 12:28:28,386 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSTrajectory20waypoints 31-5
+2022-07-14 12:28:28,386 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSTrajectory20waypoints 31-5
+2022-07-14 12:28:28,387 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 32 : NCPPServerlessWestGFSCorridor5waypoints
+2022-07-14 12:28:28,387 INFO o.a.j.e.StandardJMeterEngine: Starting 10 threads for group NCPPServerlessWestGFSCorridor5waypoints.
+2022-07-14 12:28:28,387 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-07-14 12:28:28,388 INFO o.a.j.t.ThreadGroup: Starting thread group... number=32 threads=10 ramp-up=10 delayedStart=false
+2022-07-14 12:28:28,388 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSCorridor5waypoints 32-1
+2022-07-14 12:28:28,389 INFO o.a.j.t.ThreadGroup: Started thread group number 32
+2022-07-14 12:28:28,389 INFO o.a.j.e.StandardJMeterEngine: Waiting for thread group: NCPPServerlessWestGFSCorridor5waypoints to finish before starting next group
+2022-07-14 12:28:29,397 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSCorridor5waypoints 32-2
+2022-07-14 12:28:30,388 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSCorridor5waypoints 32-3
+2022-07-14 12:28:31,388 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSCorridor5waypoints 32-4
+2022-07-14 12:28:32,390 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSCorridor5waypoints 32-5
+2022-07-14 12:28:33,390 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSCorridor5waypoints 32-6
+2022-07-14 12:28:34,388 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSCorridor5waypoints 32-7
+2022-07-14 12:28:35,388 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSCorridor5waypoints 32-8
+2022-07-14 12:28:36,388 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSCorridor5waypoints 32-9
+2022-07-14 12:28:37,388 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSCorridor5waypoints 32-10
+2022-07-14 12:29:00,004 INFO o.a.j.r.Summariser: summary +    164 in 00:01:00 =    2.7/s Avg:  3277 Min:  2289 Max:  9840 Err:     0 (0.00%) Active: 10 Started: 320 Finished: 310
+2022-07-14 12:29:00,005 INFO o.a.j.r.Summariser: summary =  21206 in 00:32:24 =   10.9/s Avg:   834 Min:   158 Max: 11774 Err:     0 (0.00%)
+2022-07-14 12:29:28,838 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSCorridor5waypoints 32-5
+2022-07-14 12:29:28,838 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSCorridor5waypoints 32-5
+2022-07-14 12:29:28,974 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSCorridor5waypoints 32-9
+2022-07-14 12:29:28,975 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSCorridor5waypoints 32-9
+2022-07-14 12:29:29,167 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSCorridor5waypoints 32-4
+2022-07-14 12:29:29,168 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSCorridor5waypoints 32-4
+2022-07-14 12:29:29,821 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSCorridor5waypoints 32-7
+2022-07-14 12:29:29,821 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSCorridor5waypoints 32-7
+2022-07-14 12:29:29,933 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSCorridor5waypoints 32-8
+2022-07-14 12:29:29,933 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSCorridor5waypoints 32-8
+2022-07-14 12:29:30,965 INFO o.a.j.r.Summariser: summary +     84 in 00:00:31 =    2.7/s Avg:  3626 Min:  3072 Max:  4714 Err:     0 (0.00%) Active: 5 Started: 320 Finished: 315
+2022-07-14 12:29:30,967 INFO o.a.j.r.Summariser: summary =  21290 in 00:32:55 =   10.8/s Avg:   845 Min:   158 Max: 11774 Err:     0 (0.00%)
+2022-07-14 12:29:30,968 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSCorridor5waypoints 32-3
+2022-07-14 12:29:30,968 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSCorridor5waypoints 32-3
+2022-07-14 12:29:31,186 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSCorridor5waypoints 32-2
+2022-07-14 12:29:31,186 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSCorridor5waypoints 32-2
+2022-07-14 12:29:31,243 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSCorridor5waypoints 32-6
+2022-07-14 12:29:31,244 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSCorridor5waypoints 32-6
+2022-07-14 12:29:31,465 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSCorridor5waypoints 32-1
+2022-07-14 12:29:31,465 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSCorridor5waypoints 32-1
+2022-07-14 12:29:31,854 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSCorridor5waypoints 32-10
+2022-07-14 12:29:31,854 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSCorridor5waypoints 32-10
+2022-07-14 12:29:31,854 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 33 : NCPPServerlessWestGFSCorridor10waypoints
+2022-07-14 12:29:31,854 INFO o.a.j.e.StandardJMeterEngine: Starting 10 threads for group NCPPServerlessWestGFSCorridor10waypoints.
+2022-07-14 12:29:31,854 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-07-14 12:29:31,854 INFO o.a.j.t.ThreadGroup: Starting thread group... number=33 threads=10 ramp-up=10 delayedStart=false
+2022-07-14 12:29:31,855 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSCorridor10waypoints 33-1
+2022-07-14 12:29:31,857 INFO o.a.j.t.ThreadGroup: Started thread group number 33
+2022-07-14 12:29:31,858 INFO o.a.j.e.StandardJMeterEngine: Waiting for thread group: NCPPServerlessWestGFSCorridor10waypoints to finish before starting next group
+2022-07-14 12:29:32,865 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSCorridor10waypoints 33-2
+2022-07-14 12:29:33,856 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSCorridor10waypoints 33-3
+2022-07-14 12:29:34,870 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSCorridor10waypoints 33-4
+2022-07-14 12:29:35,855 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSCorridor10waypoints 33-5
+2022-07-14 12:29:36,856 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSCorridor10waypoints 33-6
+2022-07-14 12:29:37,856 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSCorridor10waypoints 33-7
+2022-07-14 12:29:38,856 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSCorridor10waypoints 33-8
+2022-07-14 12:29:39,856 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSCorridor10waypoints 33-9
+2022-07-14 12:29:40,856 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSCorridor10waypoints 33-10
+2022-07-14 12:30:00,490 INFO o.a.j.r.Summariser: summary +     57 in 00:00:30 =    1.9/s Avg:  4051 Min:  3345 Max:  4925 Err:     0 (0.00%) Active: 10 Started: 330 Finished: 320
+2022-07-14 12:30:00,491 INFO o.a.j.r.Summariser: summary =  21347 in 00:33:24 =   10.6/s Avg:   854 Min:   158 Max: 11774 Err:     0 (0.00%)
+2022-07-14 12:30:30,943 INFO o.a.j.r.Summariser: summary +     69 in 00:00:30 =    2.3/s Avg:  4409 Min:  3661 Max:  5368 Err:     0 (0.00%) Active: 10 Started: 330 Finished: 320
+2022-07-14 12:30:30,944 INFO o.a.j.r.Summariser: summary =  21416 in 00:33:55 =   10.5/s Avg:   866 Min:   158 Max: 11774 Err:     0 (0.00%)
+2022-07-14 12:30:31,869 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSCorridor10waypoints 33-10
+2022-07-14 12:30:31,869 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSCorridor10waypoints 33-10
+2022-07-14 12:30:32,529 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSCorridor10waypoints 33-2
+2022-07-14 12:30:32,529 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSCorridor10waypoints 33-2
+2022-07-14 12:30:32,759 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSCorridor10waypoints 33-7
+2022-07-14 12:30:32,760 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSCorridor10waypoints 33-7
+2022-07-14 12:30:32,877 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSCorridor10waypoints 33-6
+2022-07-14 12:30:32,877 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSCorridor10waypoints 33-6
+2022-07-14 12:30:33,442 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSCorridor10waypoints 33-8
+2022-07-14 12:30:33,442 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSCorridor10waypoints 33-8
+2022-07-14 12:30:33,644 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSCorridor10waypoints 33-4
+2022-07-14 12:30:33,644 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSCorridor10waypoints 33-4
+2022-07-14 12:30:35,223 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSCorridor10waypoints 33-5
+2022-07-14 12:30:35,223 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSCorridor10waypoints 33-5
+2022-07-14 12:30:35,243 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSCorridor10waypoints 33-9
+2022-07-14 12:30:35,243 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSCorridor10waypoints 33-9
+2022-07-14 12:30:35,443 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSCorridor10waypoints 33-1
+2022-07-14 12:30:35,443 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSCorridor10waypoints 33-1
+2022-07-14 12:30:35,514 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSCorridor10waypoints 33-3
+2022-07-14 12:30:35,514 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSCorridor10waypoints 33-3
+2022-07-14 12:30:35,515 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 34 : NCPPServerlessWestGFSCorridor20waypoints
+2022-07-14 12:30:35,515 INFO o.a.j.e.StandardJMeterEngine: Starting 10 threads for group NCPPServerlessWestGFSCorridor20waypoints.
+2022-07-14 12:30:35,515 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-07-14 12:30:35,515 INFO o.a.j.t.ThreadGroup: Starting thread group... number=34 threads=10 ramp-up=10 delayedStart=false
+2022-07-14 12:30:35,516 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSCorridor20waypoints 34-1
+2022-07-14 12:30:35,517 INFO o.a.j.t.ThreadGroup: Started thread group number 34
+2022-07-14 12:30:35,517 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2022-07-14 12:30:36,521 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSCorridor20waypoints 34-2
+2022-07-14 12:30:37,516 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSCorridor20waypoints 34-3
+2022-07-14 12:30:38,516 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSCorridor20waypoints 34-4
+2022-07-14 12:30:39,516 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSCorridor20waypoints 34-5
+2022-07-14 12:30:40,516 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSCorridor20waypoints 34-6
+2022-07-14 12:30:41,516 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSCorridor20waypoints 34-7
+2022-07-14 12:30:42,516 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSCorridor20waypoints 34-8
+2022-07-14 12:30:43,516 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSCorridor20waypoints 34-9
+2022-07-14 12:30:44,516 INFO o.a.j.t.JMeterThread: Thread started: NCPPServerlessWestGFSCorridor20waypoints 34-10
+2022-07-14 12:31:00,042 INFO o.a.j.r.Summariser: summary +     96 in 00:00:29 =    3.3/s Avg:  2513 Min:  1927 Max:  4524 Err:    83 (86.46%) Active: 10 Started: 340 Finished: 330
+2022-07-14 12:31:00,043 INFO o.a.j.r.Summariser: summary =  21512 in 00:34:24 =   10.4/s Avg:   873 Min:   158 Max: 11774 Err:    83 (0.39%)
+2022-07-14 12:31:30,075 INFO o.a.j.r.Summariser: summary +    123 in 00:00:30 =    4.1/s Avg:  2439 Min:  2070 Max:  3357 Err:   123 (100.00%) Active: 10 Started: 340 Finished: 330
+2022-07-14 12:31:30,076 INFO o.a.j.r.Summariser: summary =  21635 in 00:34:54 =   10.3/s Avg:   882 Min:   158 Max: 11774 Err:   206 (0.95%)
+2022-07-14 12:31:36,284 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSCorridor20waypoints 34-1
+2022-07-14 12:31:36,285 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSCorridor20waypoints 34-1
+2022-07-14 12:31:36,659 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSCorridor20waypoints 34-8
+2022-07-14 12:31:36,659 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSCorridor20waypoints 34-8
+2022-07-14 12:31:36,886 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSCorridor20waypoints 34-3
+2022-07-14 12:31:36,886 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSCorridor20waypoints 34-3
+2022-07-14 12:31:36,898 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSCorridor20waypoints 34-6
+2022-07-14 12:31:36,898 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSCorridor20waypoints 34-6
+2022-07-14 12:31:37,271 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSCorridor20waypoints 34-5
+2022-07-14 12:31:37,271 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSCorridor20waypoints 34-5
+2022-07-14 12:31:37,659 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSCorridor20waypoints 34-2
+2022-07-14 12:31:37,660 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSCorridor20waypoints 34-2
+2022-07-14 12:31:37,736 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSCorridor20waypoints 34-10
+2022-07-14 12:31:37,736 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSCorridor20waypoints 34-10
+2022-07-14 12:31:38,025 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSCorridor20waypoints 34-7
+2022-07-14 12:31:38,025 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSCorridor20waypoints 34-7
+2022-07-14 12:31:38,386 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSCorridor20waypoints 34-4
+2022-07-14 12:31:38,386 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSCorridor20waypoints 34-4
+2022-07-14 12:31:39,116 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NCPPServerlessWestGFSCorridor20waypoints 34-9
+2022-07-14 12:31:39,116 INFO o.a.j.t.JMeterThread: Thread finished: NCPPServerlessWestGFSCorridor20waypoints 34-9
+2022-07-14 12:31:39,116 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2022-07-14 12:31:39,117 INFO o.a.j.r.Summariser: summary +     32 in 00:00:09 =    3.5/s Avg:  2717 Min:  2258 Max:  3880 Err:    32 (100.00%) Active: 0 Started: 340 Finished: 340
+2022-07-14 12:31:39,118 INFO o.a.j.r.Summariser: summary =  21667 in 00:35:03 =   10.3/s Avg:   884 Min:   158 Max: 11774 Err:   238 (1.10%)
+2022-07-14 12:31:39,119 INFO o.a.j.JMeter: Generating Dashboard
+2022-07-14 12:31:39,119 INFO o.a.j.r.d.ReportGenerator: Flushing result collector before report Generation
+2022-07-14 12:31:39,179 INFO o.a.j.r.p.NormalizerSampleConsumer: Using format, 'ms', to parse timeStamp field
+2022-07-14 12:31:42,637 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.AggregateConsumer#stopProducing(): beginDate produced 0 samples
+2022-07-14 12:31:42,637 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.AggregateConsumer#stopProducing(): endDate produced 0 samples
+2022-07-14 12:31:42,642 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.ApdexSummaryConsumer#stopProducing(): apdexSummary produced 0 samples
+2022-07-14 12:31:42,642 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.RequestsSummaryConsumer#stopProducing(): requestsSummary produced 0 samples
+2022-07-14 12:31:42,665 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.StatisticsSummaryConsumer#stopProducing(): statisticsSummary produced 0 samples
+2022-07-14 12:31:42,669 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.Top5ErrorsBySamplerConsumer#stopProducing(): top5ErrorsBySampler produced 0 samples
+2022-07-14 12:31:42,669 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.ErrorsSummaryConsumer#stopProducing(): errorsSummary produced 0 samples
+2022-07-14 12:31:42,669 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.HitsPerSecondGraphConsumer#stopProducing(): hitsPerSecond produced 0 samples
+2022-07-14 12:31:43,577 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.LatencyVSRequestGraphConsumer#stopProducing(): latencyVsRequest produced 0 samples
+2022-07-14 12:31:43,578 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.SyntheticResponseTimeDistributionGraphConsumer#stopProducing(): syntheticResponseTimeDistribution produced 0 samples
+2022-07-14 12:31:43,579 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.BytesThroughputGraphConsumer#stopProducing(): bytesThroughputOverTime produced 0 samples
+2022-07-14 12:31:43,579 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.CodesPerSecondGraphConsumer#stopProducing(): codesPerSecond produced 0 samples
+2022-07-14 12:31:44,527 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeVSRequestGraphConsumer#stopProducing(): responseTimeVsRequest produced 0 samples
+2022-07-14 12:31:44,530 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): startIntervalControlerFilter produced 303338 samples
+2022-07-14 12:31:44,530 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TotalTPSGraphConsumer#stopProducing(): totalTPS produced 0 samples
+2022-07-14 12:31:44,530 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ActiveThreadsGraphConsumer#stopProducing(): activeThreadsOverTime produced 0 samples
+2022-07-14 12:31:44,531 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TimeVSThreadGraphConsumer#stopProducing(): timeVsThreads produced 0 samples
+2022-07-14 12:31:44,534 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeDistributionGraphConsumer#stopProducing(): responseTimeDistribution produced 0 samples
+2022-07-14 12:31:44,536 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TransactionsPerSecondGraphConsumer#stopProducing(): transactionsPerSecond produced 0 samples
+2022-07-14 12:31:44,536 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimePercentilesGraphConsumer#stopProducing(): responseTimePercentiles produced 0 samples
+2022-07-14 12:31:44,545 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimePercentilesOverTimeGraphConsumer#stopProducing(): responseTimePercentilesOverTime produced 0 samples
+2022-07-14 12:31:44,548 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeOverTimeGraphConsumer#stopProducing(): responseTimesOverTime produced 0 samples
+2022-07-14 12:31:44,548 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ConnectTimeOverTimeGraphConsumer#stopProducing(): connectTimeOverTime produced 0 samples
+2022-07-14 12:31:44,550 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.LatencyOverTimeGraphConsumer#stopProducing(): latenciesOverTime produced 0 samples
+2022-07-14 12:31:44,550 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): nameFilter produced 650010 samples
+2022-07-14 12:31:44,550 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): dateRangeFilter produced 130002 samples
+2022-07-14 12:31:44,550 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.NormalizerSampleConsumer#stopProducing(): normalizer produced 43334 samples
+2022-07-14 12:31:44,550 INFO o.a.j.r.p.CsvFileSampleSource: produce(): 43334 samples produced in 5s 339 ms on channel 0
+2022-07-14 12:31:44,551 INFO o.a.j.r.d.ReportGenerator: Exporting data using exporter:'json' of className:'org.apache.jmeter.report.dashboard.JsonExporter'
+2022-07-14 12:31:44,750 INFO o.a.j.r.d.JsonExporter: Found data for consumer statisticsSummary in context
+2022-07-14 12:31:44,750 INFO o.a.j.r.d.JsonExporter: Creating statistics for overall
+2022-07-14 12:31:44,751 INFO o.a.j.r.d.JsonExporter: Creating statistics for other transactions
+2022-07-14 12:31:44,752 INFO o.a.j.r.d.JsonExporter: Checking output folder
+2022-07-14 12:31:44,752 INFO o.a.j.r.d.JsonExporter: Writing statistics JSON to C:\Users\Shane.Mill\Desktop\jtl_testing\NCPPServerlessWest3\10concurrent1min\statistics.json
+2022-07-14 12:31:44,827 INFO o.a.j.r.d.ReportGenerator: Exporting data using exporter:'html' of className:'org.apache.jmeter.report.dashboard.HtmlTemplateExporter'
+2022-07-14 12:31:44,835 INFO o.a.j.r.d.HtmlTemplateExporter: Will generate dashboard in folder: C:\Users\Shane.Mill\Desktop\jtl_testing\NCPPServerlessWest3\10concurrent1min
+2022-07-14 12:31:45,112 INFO o.a.j.r.d.HtmlTemplateExporter: Report will be generated in: C:\Users\Shane.Mill\Desktop\jtl_testing\NCPPServerlessWest3\10concurrent1min, creating folder structure
+2022-07-14 12:31:45,115 INFO o.a.j.r.d.TemplateVisitor: Copying folder from 'C:\Users\Shane.Mill\Desktop\apache-jmeter-5.5\apache-jmeter-5.5\bin\report-template' to 'C:\Users\Shane.Mill\Desktop\jtl_testing\NCPPServerlessWest3\10concurrent1min', got message: C:\Users\Shane.Mill\Desktop\jtl_testing\NCPPServerlessWest3\10concurrent1min, found non empty folder with following content [C:\Users\Shane.Mill\Desktop\jtl_testing\NCPPServerlessWest3\10concurrent1min\statistics.json], will be ignored
+2022-07-14 12:31:45,723 INFO o.a.j.JMeter: Dashboard generated

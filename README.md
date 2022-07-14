@@ -55,3 +55,43 @@
 ### 10 Concurrent - 1 minute per test 
 
 [https://shanemill1.github.io/NCPPServerEast2/10concurrent1min/index.html](https://shanemill1.github.io/NCPPServerEast2/10concurrent1min/index.html)
+
+
+# Round 3 of testing
+
+- Changes were to increase memory GetEDRCollections Lambda function to 512mb (previously 128mb)
+- Rewrite of the GetEDRCollections Lambda function and GetEDRInstances Lambda function to use s3fs for a more streamlined lookup of the available collections and instances from the s3 buckets.
+
+
+## ServerlessEast Tests
+
+### 10 Concurrent - 1 minute per test 
+
+[https://shanemill1.github.io/NCPPServerlessEast3/10concurrent1min/index.html](https://shanemill1.github.io/NCPPServerlessEast3/10concurrent1min/index.html)  
+
+## ServerlessEast with CloudFront Tests
+
+### 10 Concurrent - 1 minute per test
+
+[https://shanemill1.github.io/NCPPServerlessEast3CF/10concurrent1min/index.html](https://shanemill1.github.io/NCPPServerlessEast3CF/10concurrent1min/index.html)
+
+## ServerlessWest Tests
+
+### 10 Concurrent - 1 minute per test 
+
+[https://shanemill1.github.io/NCPPServerlessWest3/10concurrent1min/index.html](https://shanemill1.github.io/NCPPServerlessWest3/10concurrent1min/index.html)  
+
+## Serverless West with CloudFront Tests
+
+### 10 Concurrent - 1 minute per test
+
+[https://shanemill1.github.io/NCPPServerlessWest3CF/10concurrent1min/index.html](https://shanemill1.github.io/NCPPServerlessWest3CF/10concurrent1min/index.html)
+
+
+## ServerEast Tests
+
+### 10 Concurrent - 1 minute per test (taken from Round 2, because no changes occurred on the Server implementation)
+
+[https://shanemill1.github.io/NCPPServerEast2/10concurrent1min/index.html](https://shanemill1.github.io/NCPPServerEast2/10concurrent1min/index.html)
+
+
