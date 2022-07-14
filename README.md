@@ -31,12 +31,23 @@
 
 [https://shanemill1.github.io/NCPPServerlessEast2/10concurrent1min/index.html](https://shanemill1.github.io/NCPPServerlessEast2/10concurrent1min/index.html)
 
+## ServerlessEast with CloudFront Tests
+
+### 10 Concurrent - 1 minute per test
+
+[https://shanemill1.github.io/NCPPServerlessEast2CF/10concurrent1min/index.html](https://shanemill1.github.io/NCPPServerlessEast2CF/10concurrent1min/index.html)
 
 ## ServerlessWest Tests
 
 ### 10 Concurrent - 1 minute per test 
 
 [https://shanemill1.github.io/NCPPServerlessWest2/10concurrent1min/index.html](https://shanemill1.github.io/NCPPServerlessWest2/10concurrent1min/index.html)
+
+## Serverless West with CloudFront Tests
+
+### 10 Concurrent - 1 minute per test
+
+[https://shanemill1.github.io/NCPPServerlessWest2CF/10concurrent1min/index.html](https://shanemill1.github.io/NCPPServerlessWest2CF/10concurrent1min/index.html)
 
 
 ## ServerEast Tests
