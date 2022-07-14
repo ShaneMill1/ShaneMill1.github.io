@@ -68,6 +68,10 @@
 
 [https://shanemill1.github.io/NCPPServerlessEast3/10concurrent1min/index.html](https://shanemill1.github.io/NCPPServerlessEast3/10concurrent1min/index.html)  
 
+### 50 Concurrent - 1 minute per test
+
+[https://shanemill1.github.io/NCPPServerlessEast3/50concurrent1min/index.html](https://shanemill1.github.io/NCPPServerlessEast3/50concurrent1min/index.html)
+
 ## ServerlessEast with CloudFront Tests
 
 ### 10 Concurrent - 1 minute per test
@@ -79,6 +83,10 @@
 ### 10 Concurrent - 1 minute per test 
 
 [https://shanemill1.github.io/NCPPServerlessWest3/10concurrent1min/index.html](https://shanemill1.github.io/NCPPServerlessWest3/10concurrent1min/index.html)  
+
+### 50 Concurrent - 1 minute per test
+
+[https://shanemill1.github.io/NCPPServerlessWest3/50concurrent1min/index.html](https://shanemill1.github.io/NCPPServerlessWest3/50concurrent1min/index.html)
 
 ## Serverless West with CloudFront Tests
 
@@ -93,4 +101,6 @@
 
 [https://shanemill1.github.io/NCPPServerEast2/10concurrent1min/index.html](https://shanemill1.github.io/NCPPServerEast2/10concurrent1min/index.html)
 
+### 50 concurrent - 1 minute per test
 
+[https://shanemill1.github.io/NCPPServerEast3/50concurrent1min/index.html](https://shanemill1.github.io/NCPPServerEast3/50concurrent1min/index.html)
