@@ -22,8 +22,7 @@
 
 # Round 2 of testing
 
-- Changes were made to the Memory Allocations for Each Lambda function (decreased from 10240 to 256/512) to conserve costs
-- Changes were made to Dask Fargate Cluster to conserve costs (CPU to 256, Memory to 2046)
+- Changes were made to the Memory Allocations for Each Lambda function (decreased from 10240 to 1024,512,and 256) to conserve costs
 
 ## ServerlessEast Tests
 
