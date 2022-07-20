@@ -1,0 +1,34 @@
+{
+  "NCPPServerEastGFSAreaUS-1time-fullzedd" : {
+    "transaction" : "NCPPServerEastGFSAreaUS-1time-fullzedd",
+    "sampleCount" : 1154,
+    "errorCount" : 0,
+    "errorPct" : 0.0,
+    "meanResTime" : 207023.90987868284,
+    "medianResTime" : 212392.0,
+    "minResTime" : 5479.0,
+    "maxResTime" : 371484.0,
+    "pct1ResTime" : 364164.0,
+    "pct2ResTime" : 367436.0,
+    "pct3ResTime" : 368701.0,
+    "throughput" : 2.699314177714986,
+    "receivedKBytesPerSec" : 4670.836314459576,
+    "sentKBytesPerSec" : 3.044636596934384
+  },
+  "Total" : {
+    "transaction" : "Total",
+    "sampleCount" : 1154,
+    "errorCount" : 0,
+    "errorPct" : 0.0,
+    "meanResTime" : 207023.90987868284,
+    "medianResTime" : 212392.0,
+    "minResTime" : 5479.0,
+    "maxResTime" : 371484.0,
+    "pct1ResTime" : 364164.0,
+    "pct2ResTime" : 367436.0,
+    "pct3ResTime" : 368701.0,
+    "throughput" : 2.699314177714986,
+    "receivedKBytesPerSec" : 4670.836314459576,
+    "sentKBytesPerSec" : 3.044636596934384
+  }
+}

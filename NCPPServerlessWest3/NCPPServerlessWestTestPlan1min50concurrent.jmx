@@ -3562,7 +3562,7 @@
           <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/Prod/collections/national_water_model/instances/latest/position?coords=POINT(-76.992188%2038.901352)&amp;parameter-name=streamflow&amp;datetime=1979-02-01T01:00:00/1979-02-01T01:00:00&amp;crs=EPSG:4326&amp;f=CoverageJSON</stringProp>
+          <stringProp name="HTTPSampler.path">/Prod/collections/national_water_model/instances/latest/position?coords=POINT(-76.992188%2038.901352)&amp;parameter-name=streamflow&amp;datetime=2000-02-01T01:00:00/2000-02-01T01:00:00&amp;crs=EPSG:4326&amp;f=CoverageJSON</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -3634,7 +3634,7 @@
           <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/Prod/collections/national_water_model/instances/latest/position?coords=POINT(-76.992188%2038.901352)&amp;parameter-name=streamflow&amp;datetime=1979-02-01T01:00:00/1979-02-02T01:00:00&amp;crs=EPSG:4326&amp;f=CoverageJSON</stringProp>
+          <stringProp name="HTTPSampler.path">/Prod/collections/national_water_model/instances/latest/position?coords=POINT(-76.992188%2038.901352)&amp;parameter-name=streamflow&amp;datetime=2000-02-01T01:00:00/2000-02-02T01:00:00&amp;crs=EPSG:4326&amp;f=CoverageJSON</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -3706,7 +3706,7 @@
           <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/Prod/collections/national_water_model/instances/latest/position?coords=POINT(-76.992188%2038.901352)&amp;parameter-name=streamflow&amp;datetime=1979-02-01T01:00:00/1979-03-01T01:00:00&amp;crs=EPSG:4326&amp;f=CoverageJSON</stringProp>
+          <stringProp name="HTTPSampler.path">/Prod/collections/national_water_model/instances/latest/position?coords=POINT(-76.992188%2038.901352)&amp;parameter-name=streamflow&amp;datetime=2000-02-01T01:00:00/2000-03-01T01:00:00&amp;crs=EPSG:4326&amp;f=CoverageJSON</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -3778,7 +3778,7 @@
           <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/Prod/collections/national_water_model/instances/latest/position?coords=POINT(-76.992188%2038.901352)&amp;parameter-name=streamflow&amp;datetime=1979-02-01T01:00:00/1980-02-01T01:00:00&amp;crs=EPSG:4326&amp;f=CoverageJSON</stringProp>
+          <stringProp name="HTTPSampler.path">/Prod/collections/national_water_model/instances/latest/position?coords=POINT(-76.992188%2038.901352)&amp;parameter-name=streamflow&amp;datetime=2000-02-01T01:00:00/2001-02-01T01:00:00&amp;crs=EPSG:4326&amp;f=CoverageJSON</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -3850,7 +3850,7 @@
           <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/Prod/collections/national_water_model/instances/latest/position?coords=POINT(-76.992188%2038.901352)&amp;parameter-name=streamflow&amp;datetime=1980-02-01T01:00:00/1985-02-01T01:00:00&amp;crs=EPSG:4326&amp;f=CoverageJSON</stringProp>
+          <stringProp name="HTTPSampler.path">/Prod/collections/national_water_model/instances/latest/position?coords=POINT(-76.992188%2038.901352)&amp;parameter-name=streamflow&amp;datetime=2000-02-01T01:00:00/2005-02-01T01:00:00&amp;crs=EPSG:4326&amp;f=CoverageJSON</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>

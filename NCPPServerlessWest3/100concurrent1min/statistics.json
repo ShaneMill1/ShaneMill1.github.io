@@ -1,0 +1,34 @@
+{
+  "Total" : {
+    "transaction" : "Total",
+    "sampleCount" : 851,
+    "errorCount" : 0,
+    "errorPct" : 0.0,
+    "meanResTime" : 6918.247943595776,
+    "medianResTime" : 6645.0,
+    "minResTime" : 4596.0,
+    "maxResTime" : 12251.0,
+    "pct1ResTime" : 8745.6,
+    "pct2ResTime" : 9887.199999999999,
+    "pct3ResTime" : 11509.44,
+    "throughput" : 12.491009702182623,
+    "receivedKBytesPerSec" : 21613.28923404956,
+    "sentKBytesPerSec" : 14.040187663293164
+  },
+  "NCPPServerlessWestGFSAreaUS-1time-fullzedd" : {
+    "transaction" : "NCPPServerlessWestGFSAreaUS-1time-fullzedd",
+    "sampleCount" : 851,
+    "errorCount" : 0,
+    "errorPct" : 0.0,
+    "meanResTime" : 6918.247943595776,
+    "medianResTime" : 6645.0,
+    "minResTime" : 4596.0,
+    "maxResTime" : 12251.0,
+    "pct1ResTime" : 8745.6,
+    "pct2ResTime" : 9887.199999999999,
+    "pct3ResTime" : 11509.44,
+    "throughput" : 12.491009702182623,
+    "receivedKBytesPerSec" : 21613.28923404956,
+    "sentKBytesPerSec" : 14.040187663293164
+  }
+}
