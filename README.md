@@ -1,56 +1,50 @@
 # NDFD NCPP Testing
 
-## NDFD Testing c5.4xlarge without ALB
+## NDFD Testing c5.4xlarge without ALB and with Local Dask Cluster
 
-### 10 concurrent
-[https://shanemill1.github.io/NDFD_NCPP/NCPP_NDFD_Testing_c5.4xlarge_noALB/10concurrent1min/index.html](https://shanemill1.github.io/NDFD_NCPP/NCPP_NDFD_Testing_c5.4xlarge_noALB/10concurrent1min/index.html)
 
-### 25 concurrent
+### 1 concurrent
 
-[https://shanemill1.github.io/NDFD_NCPP/NCPP_NDFD_Testing_c5.4xlarge_noALB/25concurrent1min/index.html](https://shanemill1.github.io/NDFD_NCPP/NCPP_NDFD_Testing_c5.4xlarge_noALB/25concurrent1min/index.html)
+[https://shanemill1.github.io/NDFD_NCPP/Testing_noALB_c5.4xlarge/1concurrent3min](https://shanemill1.github.io/NDFD_NCPP/Testing_noALB_c5.4xlarge/concurrent3min)
 
 ### 50 concurrent
 
-[https://shanemill1.github.io/NDFD_NCPP/NCPP_NDFD_Testing_c5.4xlarge_noALB/50concurrent1min/index.html](https://shanemill1.github.io/NDFD_NCPP/NCPP_NDFD_Testing_c5.4xlarge_noALB/50concurrent1min/index.html)
+[https://shanemill1.github.io/NDFD_NCPP/Testing_noALB_c5.4xlarge/50concurrent3min](https://shanemill1.github.io/NDFD_NCPP/Testing_noALB_c5.4xlarge/50concurrent3min)
 
 ### 100 concurrent
 
-[https://shanemill1.github.io/NDFD_NCPP/NCPP_NDFD_Testing_c5.4xlarge_noALB/100concurrent1min/index.html](https://shanemill1.github.io/NDFD_NCPP/NCPP_NDFD_Testing_c5.4xlarge_noALB/100concurrent1min/index.html)
+[https://shanemill1.github.io/NDFD_NCPP/Testing_noALB_c5.4xlarge/100concurrent3min](https://shanemill1.github.io/NDFD_NCPP/Testing_noALB_c5.4xlarge/100concurrent3min)
 
-## NDFD Testing c5.2xlarge without ALB
+## NDFD Testing c5.2xlarge without ALB and with Local Dask Cluster
 
-### 10 concurrent
-[https://shanemill1.github.io/NDFD_NCPP/NCPP_NDFD_Testing_c5.2xlarge_noALB/10concurrent1min/index.html](https://shanemill1.github.io/NDFD_NCPP/NCPP_NDFD_Testing_c5.2xlarge_noALB/10concurrent1min/index.html)
+### 1 concurrent
 
-### 25 concurrent
-
-[https://shanemill1.github.io/NDFD_NCPP/NCPP_NDFD_Testing_c5.2xlarge_noALB/25concurrent1min/index.html](https://shanemill1.github.io/NDFD_NCPP/NCPP_NDFD_Testing_c5.2xlarge_noALB/25concurrent1min/index.html)
+[https://shanemill1.github.io/NDFD_NCPP/Testing_noALB_c5.2xlarge/1concurrent3min](https://shanemill1.github.io/NDFD_NCPP/Testing_noALB_c5.2xlarge/1concurrent3min)
 
 ### 50 concurrent
 
-[https://shanemill1.github.io/NDFD_NCPP/NCPP_NDFD_Testing_c5.2xlarge_noALB/50concurrent1min/index.html](https://shanemill1.github.io/NDFD_NCPP/NCPP_NDFD_Testing_c5.2xlarge_noALB/50concurrent1min/index.html)
+[https://shanemill1.github.io/NDFD_NCPP/Testing_noALB_c5.2xlarge/50concurrent3min](https://shanemill1.github.io/NDFD_NCPP/Testing_noALB_c5.2xlarge/50concurrent3min)
 
 ### 100 concurrent
 
-[https://shanemill1.github.io/NDFD_NCPP/NCPP_NDFD_Testing_c5.2xlarge_noALB/100concurrent1min/index.html](https://shanemill1.github.io/NDFD_NCPP/NCPP_NDFD_Testing_c5.2xlarge_noALB/100concurrent1min/index.html)
+[https://shanemill1.github.io/NDFD_NCPP/Testing_noALB_c5.2xlarge/100concurrent3min](https://shanemill1.github.io/NDFD_NCPP/Testing_noALB_c5.2xlarge/100concurrent3min)
 
 
-## NDFD Testing c5.2xlarge with ALB
+## NDFD Testing t3a.medium with ECS Fargate Dask Cluster
 
-### 10 concurrent
-[https://shanemill1.github.io/NDFD_NCPP/NCPP_NDFD_Testing_c5.2xlarge_ALB/10concurrent1min/index.html](https://shanemill1.github.io/NDFD_NCPP/NCPP_NDFD_Testing_c5.2xlarge_ALB/10concurrent1min/index.html)
 
-### 25 concurrent
+### 1 concurrent
 
-[https://shanemill1.github.io/NDFD_NCPP/NCPP_NDFD_Testing_c5.2xlarge_ALB/25concurrent1min/index.html](https://shanemill1.github.io/NDFD_NCPP/NCPP_NDFD_Testing_c5.2xlarge_ALB/25concurrent1min/index.html)
+[https://shanemill1.github.io/NDFD_NCPP/Testing_ALB_t3a.medium_ecs_spot_fargate_512_2048/1concurrent3min](https://shanemill1.github.io/NDFD_NCPP/Testing_ALB_t3a.medium_ecs_spot_fargate_512_2048/1concurrent3min)
 
 ### 50 concurrent
 
-[https://shanemill1.github.io/NDFD_NCPP/NCPP_NDFD_Testing_c5.2xlarge_ALB/50concurrent1min/index.html](https://shanemill1.github.io/NDFD_NCPP/NCPP_NDFD_Testing_c5.2xlarge_ALB/50concurrent1min/index.html)
+[https://shanemill1.github.io/NDFD_NCPP/Testing_ALB_t3a.medium_ecs_spot_fargate_512_2048/50concurrent3min](https://shanemill1.github.io/NDFD_NCPP/Testing_ALB_t3a.medium_ecs_spot_fargate_512_2048/50concurrent3min)
 
 ### 100 concurrent
 
-[https://shanemill1.github.io/NDFD_NCPP/NCPP_NDFD_Testing_c5.2xlarge_ALB/100concurrent1min/index.html](https://shanemill1.github.io/NDFD_NCPP/NCPP_NDFD_Testing_c5.2xlarge_ALB/100concurrent1min/index.html)
+[https://shanemill1.github.io/NDFD_NCPP/Testing_ALB_t3a.medium_ecs_spot_fargate_512_2048/100concurrent3min](https://shanemill1.github.io/NDFD_NCPP/Testing_ALB_t3a.medium_ecs_spot_fargate_512_2048/100concurrent3min)
+
 
 
 # Initial NCPP Testing
