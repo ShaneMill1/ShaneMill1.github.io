@@ -64,6 +64,24 @@
 
 [https://shanemill1.github.io/NDFD_NCPP/Testing_ALB_t3a.medium_ecs_spot_fargate_512_2048_Updates9-22-22_DaskQuitClientDisconnect/100concurrent3min](https://shanemill1.github.io/NDFD_NCPP/Testing_ALB_t3a.medium_ecs_spot_fargate_512_2048_Updates9-22-22_DaskQuitClientDisconnect/100concurrent3min)
 
+
+## NDFD Testing t3a.medium with ECS Fargate Dask Cluster - Application Adjustment needed or Flask calling of Dask Future - 9/22/22
+
+- Application level adjustment to the calling of a Dask Future (was checking every second, turned off the interval check).
+
+### 1 concurrent
+
+[https://shanemill1.github.io/NDFD_NCPP/Testing_ALB_t3a.medium_ecs_spot_fargate_512_2048_9-22-22-application-adjustment/1concurrent3min](https://shanemill1.github.io/NDFD_NCPP/Testing_ALB_t3a.medium_ecs_spot_fargate_512_2048_9-22-22-application-adjustment/1concurrent3min)
+
+### 50 concurrent
+
+[https://shanemill1.github.io/NDFD_NCPP/Testing_ALB_t3a.medium_ecs_spot_fargate_512_2048_9-22-22-application-adjustment/50concurrent3min](https://shanemill1.github.io/NDFD_NCPP/Testing_ALB_t3a.medium_ecs_spot_fargate_512_2048_9-22-22-application-adjustment/50concurrent3min)
+
+### 100 concurrent
+
+[https://shanemill1.github.io/NDFD_NCPP/Testing_ALB_t3a.medium_ecs_spot_fargate_512_2048_9-22-22-application-adjustment/100concurrent3min](https://shanemill1.github.io/NDFD_NCPP/Testing_ALB_t3a.medium_ecs_spot_fargate_512_2048_9-22-22-application-adjustment/100concurrent3min)
+
+
 # Initial NCPP Testing
 
 ## ServerlessEast Tests
