@@ -82,6 +82,25 @@
 [https://shanemill1.github.io/NDFD_NCPP/Testing_ALB_t3a.medium_ecs_spot_fargate_512_2048_9-22-22-application-adjustment/100concurrent3min](https://shanemill1.github.io/NDFD_NCPP/Testing_ALB_t3a.medium_ecs_spot_fargate_512_2048_9-22-22-application-adjustment/100concurrent3min)
 
 
+### NDFD Testing t3a.medium with ec2 backed ECS Dask Cluster
+
+- t3a.medium instances on the frontend as well as the Dask Cluster on the backend.
+- We hit the AWS ec2 32 vCPU limit during testing so we need to request more vCPUs.
+
+
+### 1 concurrent
+
+[https://shanemill1.github.io/NDFD_NCPP/Testing_ALB_t3a.medium_ecs_ec2Backendt3a.medium-9-28-22/1concurrent3min](https://shanemill1.github.io/NDFD_NCPP/Testing_ALB_t3a.medium_ecs_ec2Backendt3a.medium-9-28-22/1concurrent3min)
+
+### 50 concurrent
+
+[https://shanemill1.github.io/NDFD_NCPP/Testing_ALB_t3a.medium_ecs_ec2Backendt3a.medium-9-28-22/50concurrent3min]([https://shanemill1.github.io/NDFD_NCPP/Testing_ALB_t3a.medium_ecs_ec2Backendt3a.medium-9-28-22/50concurrent3min)
+
+### 100 concurrent
+
+[https://shanemill1.github.io/NDFD_NCPP/Testing_ALB_t3a.medium_ecs_ec2Backendt3a.medium-9-28-22/100concurrent3min]([https://shanemill1.github.io/NDFD_NCPP/Testing_ALB_t3a.medium_ecs_ec2Backendt3a.medium-9-28-22/100concurrent3min)
+
+
 # Initial NCPP Testing
 
 ## ServerlessEast Tests
