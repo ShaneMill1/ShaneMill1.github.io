@@ -100,6 +100,23 @@
 [https://shanemill1.github.io/NDFD_NCPP/Testing_ALB_t3a.medium_ecs_ec2Backendt3a.medium-9-28-22/100concurrent3min](https://shanemill1.github.io/NDFD_NCPP/Testing_ALB_t3a.medium_ecs_ec2Backendt3a.medium-9-28-22/100concurrent3min)
 
 
+Testing_ALB_t3a.medium_ecs_ec2Backendt3a.medium-10-3-22
+
+### NDFD Testing t3a.medium with ec2 backed ECS Dask Cluster
+
+- Requested more vCPU's from AWS
+- Adjusted ECS Dask Scheduler and Worker allocations for CPU from 512 -> 2048, and Memory from 2048 -> 3895 to match the cpu/memory available by a t3a.medium (2vCPU and 4GB Memory).
+- Adjusted cpu utilization autoscaling to 25% to make Dask Cluster more reactive to increased workload (because the dask scheduler is included in the autoscaling group, so cpu utilization for Workers that needed autoscaling wasn't reactive enough.
+
+### 1 concurrent
+
+[https://shanemill1.github.io/NDFD_NCPP/Testing_ALB_t3a.medium_ecs_ec2Backendt3a.medium-10-3-22/1concurrent3min](https://shanemill1.github.io/NDFD_NCPP/Testing_ALB_t3a.medium_ecs_ec2Backendt3a.medium-10-3-22/1concurrent3min)
+
+### 50 concurrent
+
+### 100 concurrent
+
+
 # Initial NCPP Testing
 
 ## ServerlessEast Tests
