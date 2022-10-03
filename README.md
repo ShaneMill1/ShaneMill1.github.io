@@ -65,7 +65,7 @@
 [https://shanemill1.github.io/NDFD_NCPP/Testing_ALB_t3a.medium_ecs_spot_fargate_512_2048_Updates9-22-22_DaskQuitClientDisconnect/100concurrent3min](https://shanemill1.github.io/NDFD_NCPP/Testing_ALB_t3a.medium_ecs_spot_fargate_512_2048_Updates9-22-22_DaskQuitClientDisconnect/100concurrent3min)
 
 
-## NDFD Testing t3a.medium with ECS Fargate Dask Cluster - Application Adjustment needed or Flask calling of Dask Future - 9/22/22
+## NDFD Testing t3a.medium with ECS Fargate Dask Cluster - Application Adjustment needed for Flask calling of Dask Future - 9/22/22
 
 - Application level adjustment to the calling of a Dask Future (was checking every second, turned off the interval check).
 
@@ -82,7 +82,7 @@
 [https://shanemill1.github.io/NDFD_NCPP/Testing_ALB_t3a.medium_ecs_spot_fargate_512_2048_9-22-22-application-adjustment/100concurrent3min](https://shanemill1.github.io/NDFD_NCPP/Testing_ALB_t3a.medium_ecs_spot_fargate_512_2048_9-22-22-application-adjustment/100concurrent3min)
 
 
-### NDFD Testing t3a.medium with ec2 backed ECS Dask Cluster
+## NDFD Testing t3a.medium with ec2 backed ECS Dask Cluster 9/28/22
 
 - t3a.medium instances on the frontend as well as the Dask Cluster on the backend.
 - We hit the AWS ec2 32 vCPU limit during testing so we need to request more vCPUs.
@@ -100,9 +100,8 @@
 [https://shanemill1.github.io/NDFD_NCPP/Testing_ALB_t3a.medium_ecs_ec2Backendt3a.medium-9-28-22/100concurrent3min](https://shanemill1.github.io/NDFD_NCPP/Testing_ALB_t3a.medium_ecs_ec2Backendt3a.medium-9-28-22/100concurrent3min)
 
 
-Testing_ALB_t3a.medium_ecs_ec2Backendt3a.medium-10-3-22
 
-### NDFD Testing t3a.medium with ec2 backed ECS Dask Cluster
+## NDFD Testing t3a.medium with ec2 backed ECS Dask Cluster 10/3/22
 
 - Requested more vCPU's from AWS
 - Adjusted ECS Dask Scheduler and Worker allocations for CPU from 512 -> 2048, and Memory from 2048 -> 3895 to match the cpu/memory available by a t3a.medium (2vCPU and 4GB Memory).
