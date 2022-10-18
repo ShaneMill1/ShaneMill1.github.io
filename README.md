@@ -151,6 +151,23 @@
 [https://shanemill1.github.io/NDFD_NCPP/Testing_ALB_t3a.medium_ecs_ec2Backendm5a.largeLustre-10-17-22/100concurrent3min](https://shanemill1.github.io/NDFD_NCPP/Testing_ALB_t3a.medium_ecs_ec2Backendm5a.largeLustre-10-17-22/100concurrent3min)
 
 
+/NDFD_NCPP/Testing_ALB_t3a.medium_ecs_ec2Backendt3a.mediumLustre-10-17-22
+
+
+## NDFD Testing - t3a.medium front end with ec2 backed ECS Dask Cluster 10/17/22 - mfa.large backend instances with Lustre FSx file system
+
+### 1 concurrent
+
+[https://shanemill1.github.io/NDFD_NCPP/Testing_ALB_t3a.medium_ecs_ec2Backendt3a.mediumLustre-10-17-22/1concurrent3min](https://shanemill1.github.io/NDFD_NCPP/Testing_ALB_t3a.medium_ecs_ec2Backendt3a.mediumLustre-10-17-22/1concurrent3min)
+
+### 50 concurrent
+
+[https://shanemill1.github.io/NDFD_NCPP/Testing_ALB_t3a.medium_ecs_ec2Backendt3a.mediumLustre-10-17-22/50concurrent3min](https://shanemill1.github.io/NDFD_NCPP/Testing_ALB_t3a.medium_ecs_ec2Backendt3a.mediumLustre-10-17-22/50concurrent3min)
+
+### 100 concurrent
+
+[https://shanemill1.github.io/NDFD_NCPP/Testing_ALB_t3a.medium_ecs_ec2Backendt3a.mediumLustre-10-17-22/100concurrent3min](https://shanemill1.github.io/NDFD_NCPP/Testing_ALB_t3a.medium_ecs_ec2Backendt3a.mediumLustre-10-17-22/100concurrent3min)
+
 
 # Initial NCPP Testing
 
