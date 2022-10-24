@@ -172,8 +172,6 @@
 ## NDFD Testing - t3a.medium front end with ec2 backed ECS Dask Cluster 10/21/22 - t3a.medium backend instances with Lustre FSx file system - Slight modification to the scaling at 25%, with a min ec2 instance set at 4 instances
 
 
-Testing_ALB_t3a.medium_ecs_ec2Backendt3a.medium-10-21-22-Lustre-3WorkersOnStart
-
 ### 1 concurrent
 
 [https://shanemill1.github.io/NDFD_NCPP/Testing_ALB_t3a.medium_ecs_ec2Backendt3a.medium-10-21-22-Lustre-3WorkersOnStart/1concurrent3min](https://shanemill1.github.io/NDFD_NCPP/Testing_ALB_t3a.medium_ecs_ec2Backendt3a.medium-10-21-22-Lustre-3WorkersOnStart/1concurrent3min)
@@ -185,6 +183,32 @@ Testing_ALB_t3a.medium_ecs_ec2Backendt3a.medium-10-21-22-Lustre-3WorkersOnStart
 ## 100 concurrent
 
 [https://shanemill1.github.io/NDFD_NCPP/Testing_ALB_t3a.medium_ecs_ec2Backendt3a.medium-10-21-22-Lustre-3WorkersOnStart/100concurrent3min](https://shanemill1.github.io/NDFD_NCPP/Testing_ALB_t3a.medium_ecs_ec2Backendt3a.medium-10-21-22-Lustre-3WorkersOnStart/100concurrent3min)
+
+
+Testing_ALB_t3a.medium_ecs_ec2Backendt3a.medium-10-24-22-Lustre-3WorkersOnStart
+
+## NDFD Testing - t3a.medium front end with ec2 backed ECS Dask Cluster 10/21/22 - t3a.medium backend instances with Lustre FSx file system - Slight modification to the scaling at 25%, with a min ec2 instance set at 4 instances
+
+### 1 concurrent
+
+[https://shanemill1.github.io/NDFD_NCPP/Testing_ALB_t3a.medium_ecs_ec2Backendt3a.medium-10-24-22-Lustre-3WorkersOnStart/1concurrent3min](https://shanemill1.github.io/NDFD_NCPP/Testing_ALB_t3a.medium_ecs_ec2Backendt3a.medium-10-24-22-Lustre-3WorkersOnStart/1concurrent3min)
+
+### 50 concurrent
+
+[https://shanemill1.github.io/NDFD_NCPP/Testing_ALB_t3a.medium_ecs_ec2Backendt3a.medium-10-24-22-Lustre-3WorkersOnStart/50concurrent3min](https://shanemill1.github.io/NDFD_NCPP/Testing_ALB_t3a.medium_ecs_ec2Backendt3a.medium-10-24-22-Lustre-3WorkersOnStart/50concurrent3min)
+
+### 100 concurrent
+
+[https://shanemill1.github.io/NDFD_NCPP/Testing_ALB_t3a.medium_ecs_ec2Backendt3a.medium-10-24-22-Lustre-3WorkersOnStart/100concurrent3min](https://shanemill1.github.io/NDFD_NCPP/Testing_ALB_t3a.medium_ecs_ec2Backendt3a.medium-10-24-22-Lustre-3WorkersOnStart/100concurrent3min)
+
+### 250 concurrent
+
+[https://shanemill1.github.io/NDFD_NCPP/Testing_ALB_t3a.medium_ecs_ec2Backendt3a.medium-10-24-22-Lustre-3WorkersOnStart/250concurrent3min](https://shanemill1.github.io/NDFD_NCPP/Testing_ALB_t3a.medium_ecs_ec2Backendt3a.medium-10-24-22-Lustre-3WorkersOnStart/250concurrent3min)
+
+### 500 concurrent
+
+[https://shanemill1.github.io/NDFD_NCPP/Testing_ALB_t3a.medium_ecs_ec2Backendt3a.medium-10-24-22-Lustre-3WorkersOnStart/500concurrent3min](https://shanemill1.github.io/NDFD_NCPP/Testing_ALB_t3a.medium_ecs_ec2Backendt3a.medium-10-24-22-Lustre-3WorkersOnStart/500concurrent3min)
+
 
 # Initial NCPP Testing
 
