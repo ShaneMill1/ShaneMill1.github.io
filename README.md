@@ -219,27 +219,27 @@ Testing_ALB_t3a.medium_ecs_ec2Backendt3a.medium-10-24-22-Lustre-3WorkersOnStart
 
 ### 1 Concurrent
 
-[https://shanemill1.github.io/NDFD_NCPP/Testing_WOC_Architecture_11-7-22/1concurrent3min](https://shanemill1.github.io/NDFD_NCPP/Testing_WOC_Architecture_11-7-22/1concurrent3min)
+[https://shanemill1.github.io/NDFD_NCPP/Testing_WOC_Architecture_11-7-22/1concurrent3minall](https://shanemill1.github.io/NDFD_NCPP/Testing_WOC_Architecture_11-7-22/1concurrent3minall)
 
 ### 50 Concurrent
 
-[https://shanemill1.github.io/NDFD_NCPP/Testing_WOC_Architecture_11-7-22/50concurrent3min](https://shanemill1.github.io/NDFD_NCPP/Testing_WOC_Architecture_11-7-22/50concurrent3min)
+[https://shanemill1.github.io/NDFD_NCPP/Testing_WOC_Architecture_11-7-22/50concurrent3minall](https://shanemill1.github.io/NDFD_NCPP/Testing_WOC_Architecture_11-7-22/50concurrent3minall)
 
 ### 100 Concurrent
 
-[https://shanemill1.github.io/NDFD_NCPP/Testing_WOC_Architecture_11-7-22/100concurrent3min](https://shanemill1.github.io/NDFD_NCPP/Testing_WOC_Architecture_11-7-22/100concurrent3min)
+[https://shanemill1.github.io/NDFD_NCPP/Testing_WOC_Architecture_11-7-22/100concurrent3minall](https://shanemill1.github.io/NDFD_NCPP/Testing_WOC_Architecture_11-7-22/100concurrent3minall)
 
 ### 250 Concurrent
 
-[https://shanemill1.github.io/NDFD_NCPP/Testing_WOC_Architecture_11-7-22/250concurrent3min](https://shanemill1.github.io/NDFD_NCPP/Testing_WOC_Architecture_11-7-22/250concurrent3min)
+[https://shanemill1.github.io/NDFD_NCPP/Testing_WOC_Architecture_11-7-22/250concurrent3minall](https://shanemill1.github.io/NDFD_NCPP/Testing_WOC_Architecture_11-7-22/250concurrent3minall)
 
 ### 500 Concurrent
 
-[https://shanemill1.github.io/NDFD_NCPP/Testing_WOC_Architecture_11-7-22/500concurrent3min](https://shanemill1.github.io/NDFD_NCPP/Testing_WOC_Architecture_11-7-22/500concurrent3min)
+[https://shanemill1.github.io/NDFD_NCPP/Testing_WOC_Architecture_11-7-22/500concurrent3minall](https://shanemill1.github.io/NDFD_NCPP/Testing_WOC_Architecture_11-7-22/500concurrent3minall)
 
 ### 1000 Concurrent
 
-[https://shanemill1.github.io/NDFD_NCPP/Testing_WOC_Architecture_11-7-22/1000concurrent3min](https://shanemill1.github.io/NDFD_NCPP/Testing_WOC_Architecture_11-7-22/1000concurrent3min)
+[https://shanemill1.github.io/NDFD_NCPP/Testing_WOC_Architecture_11-7-22/1000concurrent3minall](https://shanemill1.github.io/NDFD_NCPP/Testing_WOC_Architecture_11-7-22/1000concurrent3minall)
 
 
 
