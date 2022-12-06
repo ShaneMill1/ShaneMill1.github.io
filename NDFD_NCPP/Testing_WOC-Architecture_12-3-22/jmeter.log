@@ -1,0 +1,14 @@
+2022-12-05 15:16:10,343 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2022-12-05 15:16:10,353 INFO o.a.j.JMeter: Loading user properties from: /home/ec2-user/apache-jmeter-5.5/bin/user.properties
+2022-12-05 15:16:10,354 INFO o.a.j.JMeter: Loading system properties from: /home/ec2-user/apache-jmeter-5.5/bin/system.properties
+2022-12-05 15:16:10,360 INFO o.a.j.JMeter: Copyright (c) 1998-2022 The Apache Software Foundation
+2022-12-05 15:16:10,360 INFO o.a.j.JMeter: Version 5.5
+2022-12-05 15:16:10,360 INFO o.a.j.JMeter: java.version=1.8.0_342
+2022-12-05 15:16:10,360 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2022-12-05 15:16:10,360 INFO o.a.j.JMeter: os.name=Linux
+2022-12-05 15:16:10,360 INFO o.a.j.JMeter: os.arch=amd64
+2022-12-05 15:16:10,360 INFO o.a.j.JMeter: os.version=5.10.149-133.644.amzn2.x86_64
+2022-12-05 15:16:10,360 INFO o.a.j.JMeter: file.encoding=UTF-8
+2022-12-05 15:16:10,360 INFO o.a.j.JMeter: java.awt.headless=true
+2022-12-05 15:16:10,360 INFO o.a.j.JMeter: Max memory     =26843545600
+2022-12-05 15:16:10,360 INFO o.a.j.JMeter: Available Processors =16
