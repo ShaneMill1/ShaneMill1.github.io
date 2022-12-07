@@ -297,6 +297,8 @@ Testing_ALB_t3a.medium_ecs_ec2Backendt3a.medium-10-24-22-Lustre-3WorkersOnStart
 
 ## WOC Architecture Testing - 12/6/22
 
+* Problematic results for t3a.medium, potential scaling issues
+
 ### 1 Concurrent
 
 [https://shanemill1.github.io/NDFD_NCPP/Testing_WOC-Architecture_12-6-22/1concurrent3min](https://shanemill1.github.io/NDFD_NCPP/Testing_WOC-Architecture_12-6-22/1concurrent3min)
@@ -320,6 +322,64 @@ Testing_ALB_t3a.medium_ecs_ec2Backendt3a.medium-10-24-22-Lustre-3WorkersOnStart
 ### 1000 Concurrent
 
 [https://shanemill1.github.io/NDFD_NCPP/Testing_WOC-Architecture_12-6-22/1000concurrent3min](https://shanemill1.github.io/NDFD_NCPP/Testing_WOC-Architecture_12-6-22/1000concurrent3min)
+
+
+## WOC Architecture Testing - 12/7/22 - m6a.large
+
+* Testing of m6a.large without warm pool
+
+### 1 Concurrent
+
+[https://shanemill1.github.io/NDFD_NCPP/Testing_WOC-Architecture_12-7-22-m6a.large/1concurrent3min](https://shanemill1.github.io/NDFD_NCPP/Testing_WOC-Architecture_12-7-22-m6a.large/1concurrent3min)
+
+### 50 Concurrent
+
+[https://shanemill1.github.io/NDFD_NCPP/Testing_WOC-Architecture_12-7-22-m6a.large/50concurrent3min](https://shanemill1.github.io/NDFD_NCPP/Testing_WOC-Architecture_12-7-22-m6a.large/50concurrent3min)
+
+### 100 Concurrent
+
+[https://shanemill1.github.io/NDFD_NCPP/Testing_WOC-Architecture_12-7-22-m6a.large/100concurrent3min](https://shanemill1.github.io/NDFD_NCPP/Testing_WOC-Architecture_12-7-22-m6a.large/100concurrent3min)
+
+### 250 Concurrent
+
+[https://shanemill1.github.io/NDFD_NCPP/Testing_WOC-Architecture_12-7-22-m6a.large/250concurrent3min](https://shanemill1.github.io/NDFD_NCPP/Testing_WOC-Architecture_12-7-22-m6a.large/250concurrent3min)
+
+### 500 Concurrent
+
+[https://shanemill1.github.io/NDFD_NCPP/Testing_WOC-Architecture_12-7-22-m6a.large/500concurrent3min](https://shanemill1.github.io/NDFD_NCPP/Testing_WOC-Architecture_12-7-22-m6a.large/500concurrent3min)
+
+### 1000 Concurrent
+
+[https://shanemill1.github.io/NDFD_NCPP/Testing_WOC-Architecture_12-7-22-m6a.large/1000concurrent3min](https://shanemill1.github.io/NDFD_NCPP/Testing_WOC-Architecture_12-7-22-m6a.large/1000concurrent3min)
+
+
+## WOC Architecture Testing - 12/7/22 - t3a.medium
+
+* Rerun t3a.medium on frontend, without the warm pool
+
+### 1 Concurrent
+
+[https://shanemill1.github.io/NDFD_NCPP/Testing_WOC-Architecture_12-7-22-t3a.medium/1concurrent3min](https://shanemill1.github.io/NDFD_NCPP/Testing_WOC-Architecture_12-7-22-t3a.medium/1concurrent3min)
+
+### 50 Concurrent
+
+[https://shanemill1.github.io/NDFD_NCPP/Testing_WOC-Architecture_12-7-22-t3a.medium/50concurrent3min](https://shanemill1.github.io/NDFD_NCPP/Testing_WOC-Architecture_12-7-22-t3a.medium/50concurrent3min)
+
+### 100 Concurrent
+
+[https://shanemill1.github.io/NDFD_NCPP/Testing_WOC-Architecture_12-7-22-t3a.medium/100concurrent3min](https://shanemill1.github.io/NDFD_NCPP/Testing_WOC-Architecture_12-7-22-t3a.medium/100concurrent3min)
+
+### 250 Concurrent
+
+[https://shanemill1.github.io/NDFD_NCPP/Testing_WOC-Architecture_12-7-22-t3a.medium/250concurrent3min](https://shanemill1.github.io/NDFD_NCPP/Testing_WOC-Architecture_12-7-22-t3a.medium/250concurrent3min)
+
+### 500 Concurrent
+
+[https://shanemill1.github.io/NDFD_NCPP/Testing_WOC-Architecture_12-7-22-t3a.medium/500concurrent3min](https://shanemill1.github.io/NDFD_NCPP/Testing_WOC-Architecture_12-7-22-t3a.medium/500concurrent3min)
+
+### 1000 Concurrent
+
+[https://shanemill1.github.io/NDFD_NCPP/Testing_WOC-Architecture_12-7-22-t3a.medium/1000concurrent3min](https://shanemill1.github.io/NDFD_NCPP/Testing_WOC-Architecture_12-7-22-t3a.medium/1000concurrent3min)
 
 
 # Initial NCPP Testing
