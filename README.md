@@ -382,6 +382,15 @@ Testing_ALB_t3a.medium_ecs_ec2Backendt3a.medium-10-24-22-Lustre-3WorkersOnStart
 [https://shanemill1.github.io/NDFD_NCPP/Testing_WOC-Architecture_12-7-22-t3a.medium/1000concurrent3min](https://shanemill1.github.io/NDFD_NCPP/Testing_WOC-Architecture_12-7-22-t3a.medium/1000concurrent3min)
 
 
+# WIFS Testing
+
+## Initial Testing with Items/Locations only (No Cube Queries)
+
+### 1 hour test with two thread groups (172 hits per second for gridded and 15 per second for opmet occurring at the same time)
+
+[https://shanemill1.github.io/WIFS-t3aMedium/results](https://shanemill1.github.io/WIFS-t3aMedium/results)
+
+
 # Initial NCPP Testing
 
 ## ServerlessEast Tests
