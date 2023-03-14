@@ -393,7 +393,7 @@ Testing_ALB_t3a.medium_ecs_ec2Backendt3a.medium-10-24-22-Lustre-3WorkersOnStart
 
 ## Testing with Items/Locations only (No Cube Queries) - c5a.xlarge
 
-### 1 hour test with two thread groups (172 hits per second for gridded and 15 per second for opmet occurring at the same time)
+### 1 hour test with two thread groups of c5a.xlarge instances (172 hits per second for gridded and 15 per second for opmet occurring at the same time)
 
 [https://shanemill1.github.io/WIFS-c5aXlarge/results](https://shanemill1.github.io/WIFS-c5aXlarge/results)
 
