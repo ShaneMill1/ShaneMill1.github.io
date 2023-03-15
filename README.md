@@ -397,11 +397,17 @@ Testing_ALB_t3a.medium_ecs_ec2Backendt3a.medium-10-24-22-Lustre-3WorkersOnStart
 
 [https://shanemill1.github.io/WIFS-c5aXlarge/results](https://shanemill1.github.io/WIFS-c5aXlarge/results)
 
-## Testing with Items/Locations only (No Cube Queries) - c5a.large and c5a.xlarge
+## Testing with Items/Locations only - c5a.large and c5a.xlarge
 
 ### 1 hour test with two thread groups of c5a.xlarge for /cube and c5a.large for /items and /locations (172 hits per second for gridded and 15 per second for opmet occurring at the same time)
 
 [https://shanemill1.github.io/WIFS-Listener-c5aLarge-c5aXlarge/results](https://shanemill1.github.io/WIFS-Listener-c5aLarge-c5aXlarge/results)
+
+## Testing with Items/Locations only - c5a.large and c5a.xlarge - CloudFront
+
+### 1 hour test with two thread groups of c5a.xlarge for /cube and c5a.large for /items and /locations (172 hits per second for gridded and 15 per second for opmet occurring at the same time), along with CloudFront
+
+[https://shanemill1.github.io/WIFS-Listener-c5aLarge-c5aXlarge-CloudFront/results](https://shanemill1.github.io/WIFS-Listener-c5aLarge-c5aXlarge-CloudFront/results)
 
 
 # Initial NCPP Testing
