@@ -410,6 +410,13 @@ Testing_ALB_t3a.medium_ecs_ec2Backendt3a.medium-10-24-22-Lustre-3WorkersOnStart
 [https://shanemill1.github.io/WIFS-Listener-c5aLarge-c5aXlarge-CloudFront/results](https://shanemill1.github.io/WIFS-Listener-c5aLarge-c5aXlarge-CloudFront/results)
 
 
+## Testing with Items/Locations only - all c5a.large - without CloudFront - to capture memory and cpu utilization for this instance type
+
+### Half hour testing with items and locations (82 hits per second for girdded and 15 per second for OPMET)
+
+[https://shanemill1.github.io/WIFS-Listener-c5aLarge-C5aLarge-OPMETandItems-only/results](https://shanemill1.github.io/WIFS-Listener-c5aLarge-C5aLarge-OPMETandItems-only/results)
+
+
 # Initial NCPP Testing
 
 ## ServerlessEast Tests
