@@ -430,6 +430,13 @@ Testing_ALB_t3a.medium_ecs_ec2Backendt3a.medium-10-24-22-Lustre-3WorkersOnStart
 [https://shanemill1.github.io/WIFS-Listener-c5aLarge-C5a2xLarge-CentralizedDask-WarmPool2/results](https://shanemill1.github.io/WIFS-Listener-c5aLarge-C5a2xLarge-CentralizedDask-WarmPool2/results)
 
 
+## Testing - c5a.large for item/location, c5a.2xlarge for cube, t3a.mediums in dask cluster - without CloudFront, with warm pool of 2 instances for Gridded, 2 minute rampup and increase of Gunicorn to 8
+
+### Hour testing with items, locations, and cube queries. (82 hits per second for girdded and 15 per second for OPMET)
+
+[https://shanemill1.github.io/WIFS-Listener-c5aLarge-C5a2xLarge-CentralizedDask-WarmPool2-2minuteRampup/results](https://shanemill1.github.io/WIFS-Listener-c5aLarge-C5a2xLarge-CentralizedDask-WarmPool2-2minuteRampup/results)
+
+
 # Initial NCPP Testing
 
 ## ServerlessEast Tests
