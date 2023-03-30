@@ -418,14 +418,14 @@ Testing_ALB_t3a.medium_ecs_ec2Backendt3a.medium-10-24-22-Lustre-3WorkersOnStart
 
 ## Testing - c5a.large for item/location, c5a.2xlarge for cube, t3a.mediums in dask cluster - without CloudFront 
 
-### Hour testing with items, locations, and cube queries. (82 hits per second for girdded and 15 per second for OPMET)
+### Hour testing with items, locations, and cube queries. (82 hits per second for gridded and 15 per second for OPMET)
 
 [https://shanemill1.github.io/WIFS-Listener-c5aLarge-C5aLarge-CentralizedDask/results](https://shanemill1.github.io/WIFS-Listener-c5aLarge-C5aLarge-CentralizedDask/results)
 
 
 ## Testing - c5a.large for item/location, c5a.2xlarge for cube, t3a.mediums in dask cluster - without CloudFront, with warm pool of 2 instances for Gridded
 
-### Hour testing with items, locations, and cube queries. (82 hits per second for girdded and 15 per second for OPMET)
+### Hour testing with items, locations, and cube queries. (82 hits per second for gridded and 15 per second for OPMET)
 
 [https://shanemill1.github.io/WIFS-Listener-c5aLarge-C5a2xLarge-CentralizedDask-WarmPool2/results](https://shanemill1.github.io/WIFS-Listener-c5aLarge-C5a2xLarge-CentralizedDask-WarmPool2/results)
 
@@ -439,7 +439,7 @@ Testing_ALB_t3a.medium_ecs_ec2Backendt3a.medium-10-24-22-Lustre-3WorkersOnStart
 
 ## Testing - c5a.large for item/location, c5a.2xlarge for cube, c5a.large in dask cluster - without CloudFront, with warm pool of 2 instances for Gridded, 2 minute rampup and increase of Gunicorn to 8
 
-### Hour testing with items, locations, and cube queries. (82 hits per second for girdded and 15 per second for OPMET)
+### Hour testing with items, locations, and cube queries. (82 hits per second for gridded and 15 per second for OPMET)
 
 [https://shanemill1.github.io/WIFS-Listener-c5aLarge-C5a2xLarge-CentralizedDaskc5a.large-WarmPool2-2minuteRampup/results](https://shanemill1.github.io/WIFS-Listener-c5aLarge-C5a2xLarge-CentralizedDaskc5a.large-WarmPool2-2minuteRampup/results)
 
@@ -453,15 +453,16 @@ Testing_ALB_t3a.medium_ecs_ec2Backendt3a.medium-10-24-22-Lustre-3WorkersOnStart
 
 ## Testing - 3/29/23
 
-### Hour testing with items, locations, and cube queries. (82 hits per second for girdded and 15 per second for OPMET)
+### Hour testing with items, locations, and cube queries. (82 hits per second for gridded and 15 per second for OPMET)
 
 - This testing uses the convert to grib module that uses memory. This approach was causing major resource issues with a potential memory leak.
 - This now uses c5a.large on the frontend for non dynamic queries, and m5.4xlarge for dynamic queries. Error rates have luckily decreased.
 
+[https://shanemill1.github.io/WIFS-testing-3-29-23-DiskGRIB/results](https://shanemill1.github.io/WIFS-testing-3-29-23-DiskGRIB/results)
 
 ## Testing - 3/30/23
 
-### Hour testing with items, locations, and cube queries. (82 hits per second for girdded and 15 per second for OPMET)
+### Hour testing with items, locations, and cube queries. (82 hits per second for gridded and 15 per second for OPMET)
 
 - This testing uses the convert to grib module that writes to disk instead of the one that uses memory. The memory approached exhausted resources way too quickly so decided to go back to what was working more effectively.
 - This now uses c5a.large on the frontend for non dynamic queries, and m5.4xlarge for dynamic queries. Error rates have luckily decreased.
