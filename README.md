@@ -451,6 +451,15 @@ Testing_ALB_t3a.medium_ecs_ec2Backendt3a.medium-10-24-22-Lustre-3WorkersOnStart
 [https://shanemill1.github.io/WIFS-Listener-c5aLarge-C5a2xLarge-CentralizedDaskc5a.large-WarmPool2-2minuteRampup-5workers-60secTimeout/results](https://shanemill1.github.io/WIFS-Listener-c5aLarge-C5a2xLarge-CentralizedDaskc5a.large-WarmPool2-2minuteRampup-5workers-60secTimeout/results)
 
 
+## Testing - c5a.large for item/location, m5a.4xlarge for cube, c5a.large in dask cluster - without CloudFront, with warm pool of 2 instances for Gridded, 2 minute rampup and increase of Gunicorn to 8. Upped to 5 workers and set timeout to 60 on LB
+
+### Hour testing with items, locations, and cube queries. (82 hits per second for girdded and 15 per second for OPMET)
+
+- Application fixes such as deletion of temporary grib files and mounting of fsx when instance reboots
+
+[https://shanemill1.github.io/WIFS-testing-3-31-23-DiskGRIB-MountFix/results](https://shanemill1.github.io/WIFS-testing-3-31-23-DiskGRIB-MountFix/results)
+
+
 ## Testing - 3/29/23
 
 ### Hour testing with items, locations, and cube queries. (82 hits per second for gridded and 15 per second for OPMET)
