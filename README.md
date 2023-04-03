@@ -472,11 +472,20 @@ Testing_ALB_t3a.medium_ecs_ec2Backendt3a.medium-10-24-22-Lustre-3WorkersOnStart
 
 ## Testing - 3/31/23
 
-### Hour testing with items, locations, and cube queries. (82 hits per second for girdded and 15 per second for OPMET)
+### Hour testing with items, locations, and cube queries. (82 hits per second for gridded and 15 per second for OPMET)
 
 - Application fixes such as deletion of temporary grib files and mounting of fsx when instance reboots
 
 [https://shanemill1.github.io/WIFS-testing-3-31-23-DiskGRIB-MountFix/results](https://shanemill1.github.io/WIFS-testing-3-31-23-DiskGRIB-MountFix/results)
+
+
+## Continued Testing - 3/31/23
+
+### Hour testing with items, locations, and cube queries. (82 hits per second for gridded and 15 per second for OPMET)
+
+- Application fixes such as deletion of temporary grib files and mounting of fsx when instance reboots
+
+[https://shanemill1.github.io/WIFS-testing-3-31-23-DiskWait-Investigation/results](https://shanemill1.github.io/WIFS-testing-3-31-23-DiskWait-Investigation/results)
 
 
 # Initial NCPP Testing
