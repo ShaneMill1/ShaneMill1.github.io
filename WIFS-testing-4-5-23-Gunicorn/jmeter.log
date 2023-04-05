@@ -1,0 +1,660 @@
+2023-04-05 16:00:01,204 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2023-04-05 16:00:01,214 INFO o.a.j.JMeter: Loading user properties from: /home/ec2-user/apache-jmeter-5.5/bin/user.properties
+2023-04-05 16:00:01,214 INFO o.a.j.JMeter: Loading system properties from: /home/ec2-user/apache-jmeter-5.5/bin/system.properties
+2023-04-05 16:00:01,219 INFO o.a.j.JMeter: Copyright (c) 1998-2022 The Apache Software Foundation
+2023-04-05 16:00:01,219 INFO o.a.j.JMeter: Version 5.5
+2023-04-05 16:00:01,219 INFO o.a.j.JMeter: java.version=1.8.0_362
+2023-04-05 16:00:01,219 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2023-04-05 16:00:01,219 INFO o.a.j.JMeter: os.name=Linux
+2023-04-05 16:00:01,219 INFO o.a.j.JMeter: os.arch=amd64
+2023-04-05 16:00:01,219 INFO o.a.j.JMeter: os.version=5.10.167-147.601.amzn2.x86_64
+2023-04-05 16:00:01,220 INFO o.a.j.JMeter: file.encoding=UTF-8
+2023-04-05 16:00:01,220 INFO o.a.j.JMeter: java.awt.headless=true
+2023-04-05 16:00:01,220 INFO o.a.j.JMeter: Max memory     =26843545600
+2023-04-05 16:00:01,220 INFO o.a.j.JMeter: Available Processors =16
+2023-04-05 16:00:01,224 INFO o.a.j.JMeter: Default Locale=English (EN)
+2023-04-05 16:00:01,224 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2023-04-05 16:00:01,224 INFO o.a.j.JMeter: JMeterHome=/home/ec2-user/apache-jmeter-5.5
+2023-04-05 16:00:01,224 INFO o.a.j.JMeter: user.dir  =/home/ec2-user/ShaneMill1.github.io/WIFS-testing-4-5-23-Gunicorn
+2023-04-05 16:00:01,224 INFO o.a.j.JMeter: PWD       =/home/ec2-user/ShaneMill1.github.io/WIFS-testing-4-5-23-Gunicorn
+2023-04-05 16:00:01,225 INFO o.a.j.JMeter: IP: 172.31.14.115 Name: ip-172-31-14-115.ec2.internal FullName: ip-172-31-14-115.ec2.internal
+2023-04-05 16:00:01,237 INFO o.a.j.JMeter: Setting property 'jmeter.reportgenerator.outputdir' to:'/home/ec2-user/ShaneMill1.github.io/WIFS-testing-4-5-23-Gunicorn/results'
+2023-04-05 16:00:01,239 INFO o.a.j.s.FileServer: Default base='/home/ec2-user/ShaneMill1.github.io/WIFS-testing-4-5-23-Gunicorn'
+2023-04-05 16:00:01,240 INFO o.a.j.s.FileServer: Set new base='/home/ec2-user/ShaneMill1.github.io/WIFS-testing-4-5-23-Gunicorn'
+2023-04-05 16:00:01,337 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2023-04-05 16:00:01,350 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2023-04-05 16:00:01,354 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2023-04-05 16:00:01,359 INFO o.a.j.s.SaveService: Loading file: WIFSTestPlan.jmx
+2023-04-05 16:00:01,395 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2023-04-05 16:00:01,395 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2023-04-05 16:00:01,395 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2023-04-05 16:00:01,395 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2023-04-05 16:00:01,396 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2023-04-05 16:00:01,396 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2023-04-05 16:00:01,603 INFO o.a.j.JMeter: Creating summariser <summary>
+2023-04-05 16:00:01,611 INFO o.a.j.r.d.ReportGenerator: ReportGenerator will use for Parsing the separator: ','
+2023-04-05 16:00:01,611 INFO o.a.j.r.d.ReportGenerator: Will generate report at end of test from  results file: SummaryReport.jtl
+2023-04-05 16:00:01,611 INFO o.a.j.r.d.ReportGenerator: Reading report generator properties from: /home/ec2-user/apache-jmeter-5.5/bin/reportgenerator.properties
+2023-04-05 16:00:01,612 INFO o.a.j.r.d.ReportGenerator: Merging with JMeter properties
+2023-04-05 16:00:01,616 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.temp_dir' not found, using default value 'temp' instead.
+2023-04-05 16:00:01,618 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.apdex_per_transaction' not found, using default value 'null' instead.
+2023-04-05 16:00:01,618 INFO o.a.j.r.c.ReportGeneratorConfiguration: apdex_per_transaction is empty, not APDEX per transaction customization
+2023-04-05 16:00:01,618 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.sample_filter' not found, using default value 'null' instead.
+2023-04-05 16:00:01,618 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.report_title' not found, using default value 'null' instead.
+2023-04-05 16:00:01,618 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.start_date' not found, using default value 'null' instead.
+2023-04-05 16:00:01,619 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.end_date' not found, using default value 'null' instead.
+2023-04-05 16:00:01,619 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.date_format' not found, using default value 'null' instead.
+2023-04-05 16:00:01,619 INFO o.a.j.r.c.ReportGeneratorConfiguration: Will use date range start date: null, end date: null
+2023-04-05 16:00:01,622 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.totalTPS.exclude_controllers' not found, using default value 'false' instead.
+2023-04-05 16:00:01,622 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.activeThreadsOverTime.exclude_controllers' not found, using default value 'false' instead.
+2023-04-05 16:00:01,622 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.timeVsThreads.exclude_controllers' not found, using default value 'false' instead.
+2023-04-05 16:00:01,622 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimeDistribution.exclude_controllers' not found, using default value 'false' instead.
+2023-04-05 16:00:01,622 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.transactionsPerSecond.exclude_controllers' not found, using default value 'false' instead.
+2023-04-05 16:00:01,623 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentiles.exclude_controllers' not found, using default value 'false' instead.
+2023-04-05 16:00:01,625 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentilesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2023-04-05 16:00:01,626 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2023-04-05 16:00:01,626 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.connectTimeOverTime.exclude_controllers' not found, using default value 'false' instead.
+2023-04-05 16:00:01,626 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.latenciesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2023-04-05 16:00:01,626 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.filters_only_sample_series' not found, using default value 'true' instead.
+2023-04-05 16:00:01,627 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.series_filter' not found, using default value '' instead.
+2023-04-05 16:00:01,627 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.show_controllers_only' not found, using default value 'false' instead.
+2023-04-05 16:00:01,627 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.filters_only_sample_series' not found, using default value 'true' instead.
+2023-04-05 16:00:01,627 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.series_filter' not found, using default value '' instead.
+2023-04-05 16:00:01,627 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.show_controllers_only' not found, using default value 'false' instead.
+2023-04-05 16:00:01,633 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2023-04-05 16:00:01,633 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2023-04-05 16:00:01,633 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2023-04-05 16:00:01,637 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2023-04-05 16:00:01,637 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2023-04-05 16:00:01,836 INFO o.a.j.JMeter: Running test (1680710401836)
+2023-04-05 16:00:01,897 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Gridded Thread Group
+2023-04-05 16:00:01,897 INFO o.a.j.e.StandardJMeterEngine: Starting 82 threads for group Gridded Thread Group.
+2023-04-05 16:00:01,897 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2023-04-05 16:00:01,897 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=82 ramp-up=120 delayedStart=false
+2023-04-05 16:00:01,904 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-1
+2023-04-05 16:00:01,924 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = ip-172-31-14-115.ec2.internal
+2023-04-05 16:00:01,926 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2023-04-05 16:00:01,927 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 2 : OPMET Thread Group
+2023-04-05 16:00:01,927 INFO o.a.j.e.StandardJMeterEngine: Starting 14 threads for group OPMET Thread Group.
+2023-04-05 16:00:01,927 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2023-04-05 16:00:01,927 INFO o.a.j.t.ThreadGroup: Starting thread group... number=2 threads=14 ramp-up=120 delayedStart=false
+2023-04-05 16:00:01,927 INFO o.a.j.t.JMeterThread: Thread started: OPMET Thread Group 2-1
+2023-04-05 16:00:01,931 INFO o.a.j.t.ThreadGroup: Started thread group number 2
+2023-04-05 16:00:01,931 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2023-04-05 16:00:01,932 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2023-04-05 16:00:01,934 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2023-04-05 16:00:01,934 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to ISO-8859-1
+2023-04-05 16:00:01,934 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2023-04-05 16:00:01,934 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2023-04-05 16:00:02,299 INFO o.a.j.r.Summariser: summary +      1 in 00:00:00 =    2.2/s Avg:   302 Min:   302 Max:   302 Err:     0 (0.00%) Active: 2 Started: 2 Finished: 0
+2023-04-05 16:00:03,363 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-2
+2023-04-05 16:00:04,825 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-3
+2023-04-05 16:00:06,288 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-4
+2023-04-05 16:00:07,751 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-5
+2023-04-05 16:00:09,214 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-6
+2023-04-05 16:00:10,498 INFO o.a.j.t.JMeterThread: Thread started: OPMET Thread Group 2-2
+2023-04-05 16:00:10,676 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-7
+2023-04-05 16:00:12,140 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-8
+2023-04-05 16:00:13,602 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-9
+2023-04-05 16:00:15,065 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-10
+2023-04-05 16:00:16,528 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-11
+2023-04-05 16:00:17,991 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-12
+2023-04-05 16:00:19,070 INFO o.a.j.t.JMeterThread: Thread started: OPMET Thread Group 2-3
+2023-04-05 16:00:19,454 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-13
+2023-04-05 16:00:20,917 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-14
+2023-04-05 16:00:22,379 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-15
+2023-04-05 16:00:23,843 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-16
+2023-04-05 16:00:25,306 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-17
+2023-04-05 16:00:26,768 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-18
+2023-04-05 16:00:27,640 INFO o.a.j.t.JMeterThread: Thread started: OPMET Thread Group 2-4
+2023-04-05 16:00:28,232 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-19
+2023-04-05 16:00:29,695 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-20
+2023-04-05 16:00:30,128 INFO o.a.j.r.Summariser: summary +    420 in 00:00:28 =   15.1/s Avg:   735 Min:    33 Max:  6682 Err:     0 (0.00%) Active: 24 Started: 24 Finished: 0
+2023-04-05 16:00:30,128 INFO o.a.j.r.Summariser: summary =    421 in 00:00:28 =   14.9/s Avg:   734 Min:    33 Max:  6682 Err:     0 (0.00%)
+2023-04-05 16:00:31,158 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-21
+2023-04-05 16:00:32,621 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-22
+2023-04-05 16:00:34,084 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-23
+2023-04-05 16:00:35,546 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-24
+2023-04-05 16:00:36,211 INFO o.a.j.t.JMeterThread: Thread started: OPMET Thread Group 2-5
+2023-04-05 16:00:37,009 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-25
+2023-04-05 16:00:38,473 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-26
+2023-04-05 16:00:39,936 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-27
+2023-04-05 16:00:41,399 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-28
+2023-04-05 16:00:42,861 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-29
+2023-04-05 16:00:44,325 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-30
+2023-04-05 16:00:44,783 INFO o.a.j.t.JMeterThread: Thread started: OPMET Thread Group 2-6
+2023-04-05 16:00:45,788 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-31
+2023-04-05 16:00:47,250 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-32
+2023-04-05 16:00:48,714 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-33
+2023-04-05 16:00:50,177 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-34
+2023-04-05 16:00:51,640 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-35
+2023-04-05 16:00:53,102 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-36
+2023-04-05 16:00:53,353 INFO o.a.j.t.JMeterThread: Thread started: OPMET Thread Group 2-7
+2023-04-05 16:00:54,566 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-37
+2023-04-05 16:00:56,029 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-38
+2023-04-05 16:00:57,492 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-39
+2023-04-05 16:00:58,954 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-40
+2023-04-05 16:01:00,050 INFO o.a.j.r.Summariser: summary +    558 in 00:00:30 =   18.6/s Avg:  1569 Min:   139 Max: 17196 Err:     0 (0.00%) Active: 47 Started: 47 Finished: 0
+2023-04-05 16:01:00,050 INFO o.a.j.r.Summariser: summary =    979 in 00:00:58 =   16.8/s Avg:  1210 Min:    33 Max: 17196 Err:     0 (0.00%)
+2023-04-05 16:01:00,417 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-41
+2023-04-05 16:01:01,880 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-42
+2023-04-05 16:01:01,924 INFO o.a.j.t.JMeterThread: Thread started: OPMET Thread Group 2-8
+2023-04-05 16:01:03,344 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-43
+2023-04-05 16:01:04,806 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-44
+2023-04-05 16:01:06,270 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-45
+2023-04-05 16:01:07,732 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-46
+2023-04-05 16:01:09,196 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-47
+2023-04-05 16:01:10,496 INFO o.a.j.t.JMeterThread: Thread started: OPMET Thread Group 2-9
+2023-04-05 16:01:10,659 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-48
+2023-04-05 16:01:12,122 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-49
+2023-04-05 16:01:13,584 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-50
+2023-04-05 16:01:15,047 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-51
+2023-04-05 16:01:16,511 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-52
+2023-04-05 16:01:17,975 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-53
+2023-04-05 16:01:19,067 INFO o.a.j.t.JMeterThread: Thread started: OPMET Thread Group 2-10
+2023-04-05 16:01:19,436 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-54
+2023-04-05 16:01:20,899 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-55
+2023-04-05 16:01:22,363 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-56
+2023-04-05 16:01:23,826 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-57
+2023-04-05 16:01:25,290 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-58
+2023-04-05 16:01:26,751 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-59
+2023-04-05 16:01:27,638 INFO o.a.j.t.JMeterThread: Thread started: OPMET Thread Group 2-11
+2023-04-05 16:01:28,214 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-60
+2023-04-05 16:01:29,678 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-61
+2023-04-05 16:01:30,003 INFO o.a.j.r.Summariser: summary +    540 in 00:00:30 =   18.0/s Avg:  2664 Min:   406 Max: 22783 Err:     0 (0.00%) Active: 72 Started: 72 Finished: 0
+2023-04-05 16:01:30,003 INFO o.a.j.r.Summariser: summary =   1519 in 00:01:28 =   17.2/s Avg:  1727 Min:    33 Max: 22783 Err:     0 (0.00%)
+2023-04-05 16:01:31,141 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-62
+2023-04-05 16:01:32,603 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-63
+2023-04-05 16:01:34,066 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-64
+2023-04-05 16:01:35,530 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-65
+2023-04-05 16:01:36,208 INFO o.a.j.t.JMeterThread: Thread started: OPMET Thread Group 2-12
+2023-04-05 16:01:36,993 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-66
+2023-04-05 16:01:38,455 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-67
+2023-04-05 16:01:39,918 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-68
+2023-04-05 16:01:41,381 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-69
+2023-04-05 16:01:42,845 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-70
+2023-04-05 16:01:44,307 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-71
+2023-04-05 16:01:44,780 INFO o.a.j.t.JMeterThread: Thread started: OPMET Thread Group 2-13
+2023-04-05 16:01:45,771 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-72
+2023-04-05 16:01:47,234 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-73
+2023-04-05 16:01:48,697 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-74
+2023-04-05 16:01:50,160 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-75
+2023-04-05 16:01:51,622 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-76
+2023-04-05 16:01:53,085 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-77
+2023-04-05 16:01:53,350 INFO o.a.j.t.JMeterThread: Thread started: OPMET Thread Group 2-14
+2023-04-05 16:01:54,550 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-78
+2023-04-05 16:01:56,012 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-79
+2023-04-05 16:01:57,474 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-80
+2023-04-05 16:01:58,937 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-81
+2023-04-05 16:02:00,213 INFO o.a.j.r.Summariser: summary +    431 in 00:00:30 =   14.3/s Avg:  4959 Min:   724 Max: 34366 Err:     0 (0.00%) Active: 95 Started: 95 Finished: 0
+2023-04-05 16:02:00,213 INFO o.a.j.r.Summariser: summary =   1950 in 00:01:58 =   16.5/s Avg:  2441 Min:    33 Max: 34366 Err:     0 (0.00%)
+2023-04-05 16:02:00,401 INFO o.a.j.t.JMeterThread: Thread started: Gridded Thread Group 1-82
+2023-04-05 16:02:30,009 INFO o.a.j.r.Summariser: summary +    506 in 00:00:30 =   17.0/s Avg:  4936 Min:   881 Max: 36947 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:02:30,009 INFO o.a.j.r.Summariser: summary =   2456 in 00:02:28 =   16.6/s Avg:  2955 Min:    33 Max: 36947 Err:     0 (0.00%)
+2023-04-05 16:03:00,065 INFO o.a.j.r.Summariser: summary +    496 in 00:00:30 =   16.5/s Avg:  5334 Min:   806 Max: 48018 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:03:00,065 INFO o.a.j.r.Summariser: summary =   2952 in 00:02:58 =   16.6/s Avg:  3355 Min:    33 Max: 48018 Err:     0 (0.00%)
+2023-04-05 16:03:30,003 INFO o.a.j.r.Summariser: summary +    524 in 00:00:30 =   17.5/s Avg:  6055 Min:   872 Max: 46232 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:03:30,003 INFO o.a.j.r.Summariser: summary =   3476 in 00:03:28 =   16.7/s Avg:  3762 Min:    33 Max: 48018 Err:     0 (0.00%)
+2023-04-05 16:04:00,039 INFO o.a.j.r.Summariser: summary +    411 in 00:00:30 =   13.7/s Avg:  6642 Min:   937 Max: 45682 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:04:00,039 INFO o.a.j.r.Summariser: summary =   3887 in 00:03:58 =   16.3/s Avg:  4066 Min:    33 Max: 48018 Err:     0 (0.00%)
+2023-04-05 16:04:30,019 INFO o.a.j.r.Summariser: summary +    434 in 00:00:30 =   14.5/s Avg:  7573 Min:   959 Max: 44237 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:04:30,019 INFO o.a.j.r.Summariser: summary =   4321 in 00:04:28 =   16.1/s Avg:  4419 Min:    33 Max: 48018 Err:     0 (0.00%)
+2023-04-05 16:05:00,038 INFO o.a.j.r.Summariser: summary +    565 in 00:00:30 =   18.8/s Avg:  5607 Min:   822 Max: 42647 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:05:00,038 INFO o.a.j.r.Summariser: summary =   4886 in 00:04:58 =   16.4/s Avg:  4556 Min:    33 Max: 48018 Err:     0 (0.00%)
+2023-04-05 16:05:30,035 INFO o.a.j.r.Summariser: summary +    386 in 00:00:30 =   12.9/s Avg:  7601 Min:  1010 Max: 38848 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:05:30,035 INFO o.a.j.r.Summariser: summary =   5272 in 00:05:28 =   16.1/s Avg:  4779 Min:    33 Max: 48018 Err:     0 (0.00%)
+2023-04-05 16:06:00,023 INFO o.a.j.r.Summariser: summary +    551 in 00:00:30 =   18.4/s Avg:  4553 Min:   476 Max: 36685 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:06:00,023 INFO o.a.j.r.Summariser: summary =   5823 in 00:05:58 =   16.3/s Avg:  4758 Min:    33 Max: 48018 Err:     0 (0.00%)
+2023-04-05 16:06:30,015 INFO o.a.j.r.Summariser: summary +    618 in 00:00:30 =   20.6/s Avg:  4345 Min:   502 Max: 42808 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:06:30,015 INFO o.a.j.r.Summariser: summary =   6441 in 00:06:28 =   16.6/s Avg:  4718 Min:    33 Max: 48018 Err:     0 (0.00%)
+2023-04-05 16:07:00,027 INFO o.a.j.r.Summariser: summary +    767 in 00:00:30 =   25.6/s Avg:  3801 Min:   405 Max: 50766 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:07:00,028 INFO o.a.j.r.Summariser: summary =   7208 in 00:06:58 =   17.2/s Avg:  4621 Min:    33 Max: 50766 Err:     0 (0.00%)
+2023-04-05 16:07:30,013 INFO o.a.j.r.Summariser: summary +    692 in 00:00:30 =   23.1/s Avg:  4178 Min:   470 Max: 48523 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:07:30,013 INFO o.a.j.r.Summariser: summary =   7900 in 00:07:28 =   17.6/s Avg:  4582 Min:    33 Max: 50766 Err:     0 (0.00%)
+2023-04-05 16:08:00,064 INFO o.a.j.r.Summariser: summary +    703 in 00:00:30 =   23.4/s Avg:  4112 Min:   485 Max: 46242 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:08:00,064 INFO o.a.j.r.Summariser: summary =   8603 in 00:07:58 =   18.0/s Avg:  4543 Min:    33 Max: 50766 Err:     0 (0.00%)
+2023-04-05 16:08:30,159 INFO o.a.j.r.Summariser: summary +    683 in 00:00:30 =   22.7/s Avg:  4402 Min:   504 Max: 47228 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:08:30,159 INFO o.a.j.r.Summariser: summary =   9286 in 00:08:28 =   18.3/s Avg:  4533 Min:    33 Max: 50766 Err:     0 (0.00%)
+2023-04-05 16:09:00,037 INFO o.a.j.r.Summariser: summary +    433 in 00:00:30 =   14.5/s Avg:  5871 Min:   901 Max: 39563 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:09:00,037 INFO o.a.j.r.Summariser: summary =   9719 in 00:08:58 =   18.1/s Avg:  4593 Min:    33 Max: 50766 Err:     0 (0.00%)
+2023-04-05 16:09:30,006 INFO o.a.j.r.Summariser: summary +    548 in 00:00:30 =   18.3/s Avg:  5111 Min:   858 Max: 56091 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:09:30,006 INFO o.a.j.r.Summariser: summary =  10267 in 00:09:28 =   18.1/s Avg:  4620 Min:    33 Max: 56091 Err:     0 (0.00%)
+2023-04-05 16:10:00,008 INFO o.a.j.r.Summariser: summary +    496 in 00:00:30 =   16.5/s Avg:  6644 Min:   936 Max: 60010 Err:    17 (3.43%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:10:00,009 INFO o.a.j.r.Summariser: summary =  10763 in 00:09:58 =   18.0/s Avg:  4714 Min:    33 Max: 60010 Err:    17 (0.16%)
+2023-04-05 16:10:30,039 INFO o.a.j.r.Summariser: summary +    605 in 00:00:30 =   20.1/s Avg:  5223 Min:   937 Max: 60004 Err:     7 (1.16%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:10:30,039 INFO o.a.j.r.Summariser: summary =  11368 in 00:10:28 =   18.1/s Avg:  4741 Min:    33 Max: 60010 Err:    24 (0.21%)
+2023-04-05 16:11:00,014 INFO o.a.j.r.Summariser: summary +    573 in 00:00:30 =   19.1/s Avg:  5137 Min:   886 Max: 38728 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:11:00,014 INFO o.a.j.r.Summariser: summary =  11941 in 00:10:58 =   18.1/s Avg:  4760 Min:    33 Max: 60010 Err:    24 (0.20%)
+2023-04-05 16:11:30,030 INFO o.a.j.r.Summariser: summary +    747 in 00:00:30 =   24.9/s Avg:  3976 Min:   579 Max: 43595 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:11:30,030 INFO o.a.j.r.Summariser: summary =  12688 in 00:11:28 =   18.4/s Avg:  4714 Min:    33 Max: 60010 Err:    24 (0.19%)
+2023-04-05 16:12:00,118 INFO o.a.j.r.Summariser: summary +    691 in 00:00:30 =   23.0/s Avg:  4444 Min:   457 Max: 36369 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:12:00,119 INFO o.a.j.r.Summariser: summary =  13379 in 00:11:58 =   18.6/s Avg:  4700 Min:    33 Max: 60010 Err:    24 (0.18%)
+2023-04-05 16:12:30,021 INFO o.a.j.r.Summariser: summary +    807 in 00:00:30 =   27.0/s Avg:  3361 Min:   580 Max: 20107 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:12:30,022 INFO o.a.j.r.Summariser: summary =  14186 in 00:12:28 =   19.0/s Avg:  4623 Min:    33 Max: 60010 Err:    24 (0.17%)
+2023-04-05 16:13:00,036 INFO o.a.j.r.Summariser: summary +    654 in 00:00:30 =   21.8/s Avg:  4396 Min:   778 Max: 28669 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:13:00,036 INFO o.a.j.r.Summariser: summary =  14840 in 00:12:58 =   19.1/s Avg:  4613 Min:    33 Max: 60010 Err:    24 (0.16%)
+2023-04-05 16:13:30,045 INFO o.a.j.r.Summariser: summary +    662 in 00:00:30 =   22.1/s Avg:  4290 Min:   837 Max: 30539 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:13:30,046 INFO o.a.j.r.Summariser: summary =  15502 in 00:13:28 =   19.2/s Avg:  4600 Min:    33 Max: 60010 Err:    24 (0.15%)
+2023-04-05 16:14:00,035 INFO o.a.j.r.Summariser: summary +    705 in 00:00:30 =   23.5/s Avg:  4246 Min:   840 Max: 32838 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:14:00,035 INFO o.a.j.r.Summariser: summary =  16207 in 00:13:58 =   19.3/s Avg:  4584 Min:    33 Max: 60010 Err:    24 (0.15%)
+2023-04-05 16:14:30,014 INFO o.a.j.r.Summariser: summary +    572 in 00:00:30 =   19.1/s Avg:  4852 Min:   827 Max: 28015 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:14:30,014 INFO o.a.j.r.Summariser: summary =  16779 in 00:14:28 =   19.3/s Avg:  4593 Min:    33 Max: 60010 Err:    24 (0.14%)
+2023-04-05 16:15:00,038 INFO o.a.j.r.Summariser: summary +    762 in 00:00:30 =   25.4/s Avg:  4034 Min:   811 Max: 28446 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:15:00,038 INFO o.a.j.r.Summariser: summary =  17541 in 00:14:58 =   19.5/s Avg:  4569 Min:    33 Max: 60010 Err:    24 (0.14%)
+2023-04-05 16:15:30,062 INFO o.a.j.r.Summariser: summary +    645 in 00:00:30 =   21.5/s Avg:  4279 Min:   865 Max: 28560 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:15:30,062 INFO o.a.j.r.Summariser: summary =  18186 in 00:15:28 =   19.6/s Avg:  4559 Min:    33 Max: 60010 Err:    24 (0.13%)
+2023-04-05 16:16:00,024 INFO o.a.j.r.Summariser: summary +    684 in 00:00:30 =   22.8/s Avg:  4235 Min:   899 Max: 31101 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:16:00,024 INFO o.a.j.r.Summariser: summary =  18870 in 00:15:58 =   19.7/s Avg:  4547 Min:    33 Max: 60010 Err:    24 (0.13%)
+2023-04-05 16:16:30,059 INFO o.a.j.r.Summariser: summary +    729 in 00:00:30 =   24.3/s Avg:  4106 Min:   822 Max: 27863 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:16:30,059 INFO o.a.j.r.Summariser: summary =  19599 in 00:16:28 =   19.8/s Avg:  4531 Min:    33 Max: 60010 Err:    24 (0.12%)
+2023-04-05 16:17:00,032 INFO o.a.j.r.Summariser: summary +    649 in 00:00:30 =   21.7/s Avg:  4179 Min:   884 Max: 32244 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:17:00,032 INFO o.a.j.r.Summariser: summary =  20248 in 00:16:58 =   19.9/s Avg:  4519 Min:    33 Max: 60010 Err:    24 (0.12%)
+2023-04-05 16:17:30,003 INFO o.a.j.r.Summariser: summary +    471 in 00:00:30 =   15.7/s Avg:  5856 Min:   962 Max: 40448 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:17:30,004 INFO o.a.j.r.Summariser: summary =  20719 in 00:17:28 =   19.8/s Avg:  4550 Min:    33 Max: 60010 Err:    24 (0.12%)
+2023-04-05 16:18:00,046 INFO o.a.j.r.Summariser: summary +    742 in 00:00:30 =   24.7/s Avg:  4179 Min:   833 Max: 32561 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:18:00,046 INFO o.a.j.r.Summariser: summary =  21461 in 00:17:58 =   19.9/s Avg:  4537 Min:    33 Max: 60010 Err:    24 (0.11%)
+2023-04-05 16:18:30,000 INFO o.a.j.r.Summariser: summary +    696 in 00:00:30 =   23.2/s Avg:  4008 Min:   935 Max: 28161 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:18:30,001 INFO o.a.j.r.Summariser: summary =  22157 in 00:18:28 =   20.0/s Avg:  4520 Min:    33 Max: 60010 Err:    24 (0.11%)
+2023-04-05 16:19:00,015 INFO o.a.j.r.Summariser: summary +    670 in 00:00:30 =   22.3/s Avg:  4374 Min:   894 Max: 31844 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:19:00,015 INFO o.a.j.r.Summariser: summary =  22827 in 00:18:58 =   20.1/s Avg:  4516 Min:    33 Max: 60010 Err:    24 (0.11%)
+2023-04-05 16:19:30,016 INFO o.a.j.r.Summariser: summary +    643 in 00:00:30 =   21.4/s Avg:  4375 Min:   892 Max: 39956 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:19:30,016 INFO o.a.j.r.Summariser: summary =  23470 in 00:19:28 =   20.1/s Avg:  4512 Min:    33 Max: 60010 Err:    24 (0.10%)
+2023-04-05 16:20:00,028 INFO o.a.j.r.Summariser: summary +    437 in 00:00:30 =   14.6/s Avg:  6127 Min:   930 Max: 37116 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:20:00,028 INFO o.a.j.r.Summariser: summary =  23907 in 00:19:58 =   20.0/s Avg:  4542 Min:    33 Max: 60010 Err:    24 (0.10%)
+2023-04-05 16:20:30,001 INFO o.a.j.r.Summariser: summary +    645 in 00:00:30 =   21.5/s Avg:  4550 Min:   925 Max: 39831 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:20:30,001 INFO o.a.j.r.Summariser: summary =  24552 in 00:20:28 =   20.0/s Avg:  4542 Min:    33 Max: 60010 Err:    24 (0.10%)
+2023-04-05 16:21:00,061 INFO o.a.j.r.Summariser: summary +    588 in 00:00:30 =   19.6/s Avg:  5319 Min:   864 Max: 34978 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:21:00,062 INFO o.a.j.r.Summariser: summary =  25140 in 00:20:58 =   20.0/s Avg:  4560 Min:    33 Max: 60010 Err:    24 (0.10%)
+2023-04-05 16:21:30,005 INFO o.a.j.r.Summariser: summary +    737 in 00:00:30 =   24.6/s Avg:  3631 Min:   898 Max: 24466 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:21:30,006 INFO o.a.j.r.Summariser: summary =  25877 in 00:21:28 =   20.1/s Avg:  4534 Min:    33 Max: 60010 Err:    24 (0.09%)
+2023-04-05 16:22:00,017 INFO o.a.j.r.Summariser: summary +    720 in 00:00:30 =   24.0/s Avg:  4147 Min:   934 Max: 31718 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:22:00,018 INFO o.a.j.r.Summariser: summary =  26597 in 00:21:58 =   20.2/s Avg:  4523 Min:    33 Max: 60010 Err:    24 (0.09%)
+2023-04-05 16:22:30,012 INFO o.a.j.r.Summariser: summary +    740 in 00:00:30 =   24.7/s Avg:  4081 Min:   822 Max: 31072 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:22:30,013 INFO o.a.j.r.Summariser: summary =  27337 in 00:22:28 =   20.3/s Avg:  4511 Min:    33 Max: 60010 Err:    24 (0.09%)
+2023-04-05 16:23:00,094 INFO o.a.j.r.Summariser: summary +    754 in 00:00:30 =   25.1/s Avg:  3655 Min:   929 Max: 32817 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:23:00,094 INFO o.a.j.r.Summariser: summary =  28091 in 00:22:58 =   20.4/s Avg:  4488 Min:    33 Max: 60010 Err:    24 (0.09%)
+2023-04-05 16:23:30,022 INFO o.a.j.r.Summariser: summary +    467 in 00:00:30 =   15.6/s Avg:  6174 Min:   946 Max: 42072 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:23:30,022 INFO o.a.j.r.Summariser: summary =  28558 in 00:23:28 =   20.3/s Avg:  4516 Min:    33 Max: 60010 Err:    24 (0.08%)
+2023-04-05 16:24:00,015 INFO o.a.j.r.Summariser: summary +    704 in 00:00:30 =   23.5/s Avg:  4243 Min:   938 Max: 33392 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:24:00,015 INFO o.a.j.r.Summariser: summary =  29262 in 00:23:58 =   20.3/s Avg:  4509 Min:    33 Max: 60010 Err:    24 (0.08%)
+2023-04-05 16:24:30,097 INFO o.a.j.r.Summariser: summary +    681 in 00:00:30 =   22.6/s Avg:  4055 Min:   918 Max: 30947 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:24:30,097 INFO o.a.j.r.Summariser: summary =  29943 in 00:24:28 =   20.4/s Avg:  4499 Min:    33 Max: 60010 Err:    24 (0.08%)
+2023-04-05 16:25:00,087 INFO o.a.j.r.Summariser: summary +    717 in 00:00:30 =   23.9/s Avg:  3742 Min:   847 Max: 28395 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:25:00,088 INFO o.a.j.r.Summariser: summary =  30660 in 00:24:58 =   20.5/s Avg:  4481 Min:    33 Max: 60010 Err:    24 (0.08%)
+2023-04-05 16:25:30,067 INFO o.a.j.r.Summariser: summary +    611 in 00:00:30 =   20.4/s Avg:  4738 Min:   831 Max: 30229 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:25:30,067 INFO o.a.j.r.Summariser: summary =  31271 in 00:25:28 =   20.5/s Avg:  4486 Min:    33 Max: 60010 Err:    24 (0.08%)
+2023-04-05 16:26:00,020 INFO o.a.j.r.Summariser: summary +    602 in 00:00:30 =   20.1/s Avg:  5489 Min:   835 Max: 33485 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:26:00,020 INFO o.a.j.r.Summariser: summary =  31873 in 00:25:58 =   20.5/s Avg:  4505 Min:    33 Max: 60010 Err:    24 (0.08%)
+2023-04-05 16:26:30,003 INFO o.a.j.r.Summariser: summary +    759 in 00:00:30 =   25.3/s Avg:  3753 Min:   882 Max: 16224 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:26:30,003 INFO o.a.j.r.Summariser: summary =  32632 in 00:26:28 =   20.5/s Avg:  4488 Min:    33 Max: 60010 Err:    24 (0.07%)
+2023-04-05 16:27:00,004 INFO o.a.j.r.Summariser: summary +    635 in 00:00:30 =   21.2/s Avg:  4597 Min:   774 Max: 22281 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:27:00,005 INFO o.a.j.r.Summariser: summary =  33267 in 00:26:58 =   20.6/s Avg:  4490 Min:    33 Max: 60010 Err:    24 (0.07%)
+2023-04-05 16:27:30,012 INFO o.a.j.r.Summariser: summary +    738 in 00:00:30 =   24.6/s Avg:  3650 Min:   946 Max: 23316 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:27:30,012 INFO o.a.j.r.Summariser: summary =  34005 in 00:27:28 =   20.6/s Avg:  4471 Min:    33 Max: 60010 Err:    24 (0.07%)
+2023-04-05 16:28:00,005 INFO o.a.j.r.Summariser: summary +    589 in 00:00:30 =   19.6/s Avg:  4841 Min:   941 Max: 27107 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:28:00,005 INFO o.a.j.r.Summariser: summary =  34594 in 00:27:58 =   20.6/s Avg:  4478 Min:    33 Max: 60010 Err:    24 (0.07%)
+2023-04-05 16:28:30,026 INFO o.a.j.r.Summariser: summary +    648 in 00:00:30 =   21.6/s Avg:  4687 Min:   873 Max: 28032 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:28:30,026 INFO o.a.j.r.Summariser: summary =  35242 in 00:28:28 =   20.6/s Avg:  4482 Min:    33 Max: 60010 Err:    24 (0.07%)
+2023-04-05 16:29:00,006 INFO o.a.j.r.Summariser: summary +    615 in 00:00:30 =   20.5/s Avg:  4462 Min:   901 Max: 29869 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:29:00,007 INFO o.a.j.r.Summariser: summary =  35857 in 00:28:58 =   20.6/s Avg:  4481 Min:    33 Max: 60010 Err:    24 (0.07%)
+2023-04-05 16:29:30,182 INFO o.a.j.r.Summariser: summary +    707 in 00:00:30 =   23.4/s Avg:  4267 Min:   888 Max: 27125 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:29:30,182 INFO o.a.j.r.Summariser: summary =  36564 in 00:29:28 =   20.7/s Avg:  4477 Min:    33 Max: 60010 Err:    24 (0.07%)
+2023-04-05 16:30:00,017 INFO o.a.j.r.Summariser: summary +    727 in 00:00:30 =   24.4/s Avg:  3911 Min:   779 Max: 36970 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:30:00,018 INFO o.a.j.r.Summariser: summary =  37291 in 00:29:58 =   20.7/s Avg:  4466 Min:    33 Max: 60010 Err:    24 (0.06%)
+2023-04-05 16:30:30,000 INFO o.a.j.r.Summariser: summary +    584 in 00:00:30 =   19.5/s Avg:  4362 Min:   873 Max: 36574 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:30:30,000 INFO o.a.j.r.Summariser: summary =  37875 in 00:30:28 =   20.7/s Avg:  4464 Min:    33 Max: 60010 Err:    24 (0.06%)
+2023-04-05 16:31:00,072 INFO o.a.j.r.Summariser: summary +    573 in 00:00:30 =   19.1/s Avg:  5353 Min:   945 Max: 38809 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:31:00,072 INFO o.a.j.r.Summariser: summary =  38448 in 00:30:58 =   20.7/s Avg:  4478 Min:    33 Max: 60010 Err:    24 (0.06%)
+2023-04-05 16:31:30,060 INFO o.a.j.r.Summariser: summary +    674 in 00:00:30 =   22.5/s Avg:  4156 Min:   917 Max: 35622 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:31:30,060 INFO o.a.j.r.Summariser: summary =  39122 in 00:31:28 =   20.7/s Avg:  4472 Min:    33 Max: 60010 Err:    24 (0.06%)
+2023-04-05 16:32:00,043 INFO o.a.j.r.Summariser: summary +    531 in 00:00:30 =   17.7/s Avg:  5383 Min:   796 Max: 37028 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:32:00,043 INFO o.a.j.r.Summariser: summary =  39653 in 00:31:58 =   20.7/s Avg:  4484 Min:    33 Max: 60010 Err:    24 (0.06%)
+2023-04-05 16:32:30,154 INFO o.a.j.r.Summariser: summary +    710 in 00:00:30 =   23.6/s Avg:  4262 Min:   826 Max: 37309 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:32:30,154 INFO o.a.j.r.Summariser: summary =  40363 in 00:32:28 =   20.7/s Avg:  4480 Min:    33 Max: 60010 Err:    24 (0.06%)
+2023-04-05 16:33:00,098 INFO o.a.j.r.Summariser: summary +    637 in 00:00:30 =   21.3/s Avg:  4570 Min:   684 Max: 31283 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:33:00,098 INFO o.a.j.r.Summariser: summary =  41000 in 00:32:58 =   20.7/s Avg:  4482 Min:    33 Max: 60010 Err:    24 (0.06%)
+2023-04-05 16:33:30,098 INFO o.a.j.r.Summariser: summary +    691 in 00:00:30 =   23.0/s Avg:  4217 Min:   857 Max: 28811 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:33:30,098 INFO o.a.j.r.Summariser: summary =  41691 in 00:33:28 =   20.8/s Avg:  4477 Min:    33 Max: 60010 Err:    24 (0.06%)
+2023-04-05 16:34:00,031 INFO o.a.j.r.Summariser: summary +    602 in 00:00:30 =   20.1/s Avg:  4382 Min:   897 Max: 27568 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:34:00,031 INFO o.a.j.r.Summariser: summary =  42293 in 00:33:58 =   20.8/s Avg:  4476 Min:    33 Max: 60010 Err:    24 (0.06%)
+2023-04-05 16:34:30,029 INFO o.a.j.r.Summariser: summary +    506 in 00:00:30 =   16.9/s Avg:  6093 Min:   940 Max: 29953 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:34:30,030 INFO o.a.j.r.Summariser: summary =  42799 in 00:34:28 =   20.7/s Avg:  4495 Min:    33 Max: 60010 Err:    24 (0.06%)
+2023-04-05 16:35:00,059 INFO o.a.j.r.Summariser: summary +    619 in 00:00:30 =   20.6/s Avg:  4520 Min:   806 Max: 32895 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:35:00,060 INFO o.a.j.r.Summariser: summary =  43418 in 00:34:58 =   20.7/s Avg:  4496 Min:    33 Max: 60010 Err:    24 (0.06%)
+2023-04-05 16:35:30,022 INFO o.a.j.r.Summariser: summary +    608 in 00:00:30 =   20.3/s Avg:  4563 Min:   808 Max: 33543 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:35:30,022 INFO o.a.j.r.Summariser: summary =  44026 in 00:35:28 =   20.7/s Avg:  4497 Min:    33 Max: 60010 Err:    24 (0.05%)
+2023-04-05 16:36:00,056 INFO o.a.j.r.Summariser: summary +    647 in 00:00:30 =   21.5/s Avg:  4691 Min:   773 Max: 35776 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:36:00,056 INFO o.a.j.r.Summariser: summary =  44673 in 00:35:58 =   20.7/s Avg:  4499 Min:    33 Max: 60010 Err:    24 (0.05%)
+2023-04-05 16:36:30,085 INFO o.a.j.r.Summariser: summary +    700 in 00:00:30 =   23.3/s Avg:  4040 Min:   947 Max: 31253 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:36:30,085 INFO o.a.j.r.Summariser: summary =  45373 in 00:36:28 =   20.7/s Avg:  4492 Min:    33 Max: 60010 Err:    24 (0.05%)
+2023-04-05 16:37:00,100 INFO o.a.j.r.Summariser: summary +    641 in 00:00:30 =   21.4/s Avg:  4522 Min:   829 Max: 29573 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:37:00,100 INFO o.a.j.r.Summariser: summary =  46014 in 00:36:58 =   20.7/s Avg:  4493 Min:    33 Max: 60010 Err:    24 (0.05%)
+2023-04-05 16:37:30,045 INFO o.a.j.r.Summariser: summary +    638 in 00:00:30 =   21.3/s Avg:  4626 Min:   920 Max: 27498 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:37:30,045 INFO o.a.j.r.Summariser: summary =  46652 in 00:37:28 =   20.8/s Avg:  4494 Min:    33 Max: 60010 Err:    24 (0.05%)
+2023-04-05 16:38:00,094 INFO o.a.j.r.Summariser: summary +    619 in 00:00:30 =   20.6/s Avg:  4448 Min:   953 Max: 29409 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:38:00,094 INFO o.a.j.r.Summariser: summary =  47271 in 00:37:58 =   20.7/s Avg:  4494 Min:    33 Max: 60010 Err:    24 (0.05%)
+2023-04-05 16:38:30,008 INFO o.a.j.r.Summariser: summary +    566 in 00:00:30 =   18.9/s Avg:  4260 Min:   875 Max: 36661 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:38:30,008 INFO o.a.j.r.Summariser: summary =  47837 in 00:38:28 =   20.7/s Avg:  4491 Min:    33 Max: 60010 Err:    24 (0.05%)
+2023-04-05 16:39:00,128 INFO o.a.j.r.Summariser: summary +    575 in 00:00:30 =   19.1/s Avg:  5347 Min:   881 Max: 50400 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:39:00,129 INFO o.a.j.r.Summariser: summary =  48412 in 00:38:58 =   20.7/s Avg:  4501 Min:    33 Max: 60010 Err:    24 (0.05%)
+2023-04-05 16:39:30,035 INFO o.a.j.r.Summariser: summary +    708 in 00:00:30 =   23.7/s Avg:  4376 Min:   901 Max: 48994 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:39:30,035 INFO o.a.j.r.Summariser: summary =  49120 in 00:39:28 =   20.7/s Avg:  4499 Min:    33 Max: 60010 Err:    24 (0.05%)
+2023-04-05 16:40:00,070 INFO o.a.j.r.Summariser: summary +    637 in 00:00:30 =   21.2/s Avg:  4214 Min:   830 Max: 41617 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:40:00,070 INFO o.a.j.r.Summariser: summary =  49757 in 00:39:58 =   20.7/s Avg:  4496 Min:    33 Max: 60010 Err:    24 (0.05%)
+2023-04-05 16:40:30,001 INFO o.a.j.r.Summariser: summary +    494 in 00:00:30 =   16.5/s Avg:  6336 Min:   851 Max: 46695 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:40:30,001 INFO o.a.j.r.Summariser: summary =  50251 in 00:40:28 =   20.7/s Avg:  4514 Min:    33 Max: 60010 Err:    24 (0.05%)
+2023-04-05 16:41:00,074 INFO o.a.j.r.Summariser: summary +    548 in 00:00:30 =   18.2/s Avg:  5439 Min:   994 Max: 44472 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:41:00,075 INFO o.a.j.r.Summariser: summary =  50799 in 00:40:58 =   20.7/s Avg:  4524 Min:    33 Max: 60010 Err:    24 (0.05%)
+2023-04-05 16:41:30,033 INFO o.a.j.r.Summariser: summary +    443 in 00:00:30 =   14.8/s Avg:  6498 Min:   850 Max: 25600 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:41:30,033 INFO o.a.j.r.Summariser: summary =  51242 in 00:41:28 =   20.6/s Avg:  4541 Min:    33 Max: 60010 Err:    24 (0.05%)
+2023-04-05 16:42:00,042 INFO o.a.j.r.Summariser: summary +    585 in 00:00:30 =   19.5/s Avg:  4954 Min:   869 Max: 22481 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:42:00,042 INFO o.a.j.r.Summariser: summary =  51827 in 00:41:58 =   20.6/s Avg:  4546 Min:    33 Max: 60010 Err:    24 (0.05%)
+2023-04-05 16:42:30,043 INFO o.a.j.r.Summariser: summary +    524 in 00:00:30 =   17.5/s Avg:  4997 Min:   863 Max: 26759 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:42:30,044 INFO o.a.j.r.Summariser: summary =  52351 in 00:42:28 =   20.5/s Avg:  4550 Min:    33 Max: 60010 Err:    24 (0.05%)
+2023-04-05 16:43:00,141 INFO o.a.j.r.Summariser: summary +    611 in 00:00:30 =   20.3/s Avg:  4992 Min:   803 Max: 25684 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:43:00,141 INFO o.a.j.r.Summariser: summary =  52962 in 00:42:58 =   20.5/s Avg:  4555 Min:    33 Max: 60010 Err:    24 (0.05%)
+2023-04-05 16:43:30,111 INFO o.a.j.r.Summariser: summary +    623 in 00:00:30 =   20.8/s Avg:  4667 Min:   842 Max: 22870 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:43:30,111 INFO o.a.j.r.Summariser: summary =  53585 in 00:43:28 =   20.5/s Avg:  4557 Min:    33 Max: 60010 Err:    24 (0.04%)
+2023-04-05 16:44:00,024 INFO o.a.j.r.Summariser: summary +    502 in 00:00:30 =   16.8/s Avg:  5511 Min:   867 Max: 26943 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:44:00,025 INFO o.a.j.r.Summariser: summary =  54087 in 00:43:58 =   20.5/s Avg:  4565 Min:    33 Max: 60010 Err:    24 (0.04%)
+2023-04-05 16:44:30,096 INFO o.a.j.r.Summariser: summary +    536 in 00:00:30 =   17.8/s Avg:  4905 Min:   849 Max: 37002 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:44:30,096 INFO o.a.j.r.Summariser: summary =  54623 in 00:44:28 =   20.5/s Avg:  4569 Min:    33 Max: 60010 Err:    24 (0.04%)
+2023-04-05 16:45:00,045 INFO o.a.j.r.Summariser: summary +    515 in 00:00:30 =   17.2/s Avg:  6032 Min:   915 Max: 37380 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:45:00,045 INFO o.a.j.r.Summariser: summary =  55138 in 00:44:58 =   20.4/s Avg:  4582 Min:    33 Max: 60010 Err:    24 (0.04%)
+2023-04-05 16:45:30,093 INFO o.a.j.r.Summariser: summary +    548 in 00:00:30 =   18.2/s Avg:  5436 Min:   271 Max: 34427 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:45:30,093 INFO o.a.j.r.Summariser: summary =  55686 in 00:45:28 =   20.4/s Avg:  4591 Min:    33 Max: 60010 Err:    24 (0.04%)
+2023-04-05 16:46:00,261 INFO o.a.j.r.Summariser: summary +    538 in 00:00:30 =   17.8/s Avg:  4895 Min:   939 Max: 28355 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:46:00,262 INFO o.a.j.r.Summariser: summary =  56224 in 00:45:58 =   20.4/s Avg:  4594 Min:    33 Max: 60010 Err:    24 (0.04%)
+2023-04-05 16:46:30,012 INFO o.a.j.r.Summariser: summary +    513 in 00:00:30 =   17.2/s Avg:  5724 Min:   915 Max: 34632 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:46:30,013 INFO o.a.j.r.Summariser: summary =  56737 in 00:46:28 =   20.3/s Avg:  4604 Min:    33 Max: 60010 Err:    24 (0.04%)
+2023-04-05 16:47:00,107 INFO o.a.j.r.Summariser: summary +    620 in 00:00:30 =   20.6/s Avg:  4650 Min:   848 Max: 28618 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:47:00,108 INFO o.a.j.r.Summariser: summary =  57357 in 00:46:58 =   20.4/s Avg:  4604 Min:    33 Max: 60010 Err:    24 (0.04%)
+2023-04-05 16:47:30,006 INFO o.a.j.r.Summariser: summary +    747 in 00:00:30 =   25.0/s Avg:  4064 Min:   501 Max: 37764 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:47:30,006 INFO o.a.j.r.Summariser: summary =  58104 in 00:47:28 =   20.4/s Avg:  4597 Min:    33 Max: 60010 Err:    24 (0.04%)
+2023-04-05 16:48:00,017 INFO o.a.j.r.Summariser: summary +    530 in 00:00:30 =   17.7/s Avg:  5146 Min:   507 Max: 33974 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:48:00,017 INFO o.a.j.r.Summariser: summary =  58634 in 00:47:58 =   20.4/s Avg:  4602 Min:    33 Max: 60010 Err:    24 (0.04%)
+2023-04-05 16:48:30,005 INFO o.a.j.r.Summariser: summary +    852 in 00:00:30 =   28.4/s Avg:  3591 Min:   458 Max: 33968 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:48:30,005 INFO o.a.j.r.Summariser: summary =  59486 in 00:48:28 =   20.5/s Avg:  4588 Min:    33 Max: 60010 Err:    24 (0.04%)
+2023-04-05 16:49:00,083 INFO o.a.j.r.Summariser: summary +    754 in 00:00:30 =   25.1/s Avg:  3893 Min:   429 Max: 32269 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:49:00,083 INFO o.a.j.r.Summariser: summary =  60240 in 00:48:58 =   20.5/s Avg:  4579 Min:    33 Max: 60010 Err:    24 (0.04%)
+2023-04-05 16:49:30,039 INFO o.a.j.r.Summariser: summary +    522 in 00:00:30 =   17.4/s Avg:  5610 Min:   774 Max: 27308 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:49:30,039 INFO o.a.j.r.Summariser: summary =  60762 in 00:49:28 =   20.5/s Avg:  4588 Min:    33 Max: 60010 Err:    24 (0.04%)
+2023-04-05 16:50:00,014 INFO o.a.j.r.Summariser: summary +    617 in 00:00:30 =   20.6/s Avg:  4483 Min:   751 Max: 29242 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:50:00,014 INFO o.a.j.r.Summariser: summary =  61379 in 00:49:58 =   20.5/s Avg:  4587 Min:    33 Max: 60010 Err:    24 (0.04%)
+2023-04-05 16:50:30,032 INFO o.a.j.r.Summariser: summary +    424 in 00:00:30 =   14.1/s Avg:  6540 Min:   832 Max: 31744 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:50:30,032 INFO o.a.j.r.Summariser: summary =  61803 in 00:50:28 =   20.4/s Avg:  4600 Min:    33 Max: 60010 Err:    24 (0.04%)
+2023-04-05 16:51:00,110 INFO o.a.j.r.Summariser: summary +    506 in 00:00:30 =   16.8/s Avg:  5498 Min:   949 Max: 38280 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:51:00,110 INFO o.a.j.r.Summariser: summary =  62309 in 00:50:58 =   20.4/s Avg:  4608 Min:    33 Max: 60010 Err:    24 (0.04%)
+2023-04-05 16:51:30,001 INFO o.a.j.r.Summariser: summary +    549 in 00:00:30 =   18.4/s Avg:  5324 Min:   814 Max: 36620 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:51:30,001 INFO o.a.j.r.Summariser: summary =  62858 in 00:51:28 =   20.4/s Avg:  4614 Min:    33 Max: 60010 Err:    24 (0.04%)
+2023-04-05 16:52:00,100 INFO o.a.j.r.Summariser: summary +    659 in 00:00:30 =   21.9/s Avg:  4701 Min:   874 Max: 34848 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:52:00,100 INFO o.a.j.r.Summariser: summary =  63517 in 00:51:58 =   20.4/s Avg:  4615 Min:    33 Max: 60010 Err:    24 (0.04%)
+2023-04-05 16:52:30,030 INFO o.a.j.r.Summariser: summary +    657 in 00:00:30 =   22.0/s Avg:  4293 Min:   959 Max: 32828 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:52:30,030 INFO o.a.j.r.Summariser: summary =  64174 in 00:52:28 =   20.4/s Avg:  4612 Min:    33 Max: 60010 Err:    24 (0.04%)
+2023-04-05 16:53:00,052 INFO o.a.j.r.Summariser: summary +    527 in 00:00:30 =   17.6/s Avg:  5621 Min:   935 Max: 35043 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:53:00,052 INFO o.a.j.r.Summariser: summary =  64701 in 00:52:58 =   20.4/s Avg:  4620 Min:    33 Max: 60010 Err:    24 (0.04%)
+2023-04-05 16:53:30,090 INFO o.a.j.r.Summariser: summary +    589 in 00:00:30 =   19.6/s Avg:  4878 Min:   949 Max: 28367 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:53:30,090 INFO o.a.j.r.Summariser: summary =  65290 in 00:53:28 =   20.4/s Avg:  4622 Min:    33 Max: 60010 Err:    24 (0.04%)
+2023-04-05 16:54:00,179 INFO o.a.j.r.Summariser: summary +    553 in 00:00:30 =   18.4/s Avg:  4619 Min:   984 Max: 30864 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:54:00,179 INFO o.a.j.r.Summariser: summary =  65843 in 00:53:58 =   20.3/s Avg:  4622 Min:    33 Max: 60010 Err:    24 (0.04%)
+2023-04-05 16:54:30,031 INFO o.a.j.r.Summariser: summary +    583 in 00:00:30 =   19.5/s Avg:  4472 Min:   941 Max: 60009 Err:     5 (0.86%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:54:30,032 INFO o.a.j.r.Summariser: summary =  66426 in 00:54:28 =   20.3/s Avg:  4621 Min:    33 Max: 60010 Err:    29 (0.04%)
+2023-04-05 16:55:00,000 INFO o.a.j.r.Summariser: summary +    477 in 00:00:30 =   15.9/s Avg:  5708 Min:   931 Max: 60010 Err:    12 (2.52%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:55:00,000 INFO o.a.j.r.Summariser: summary =  66903 in 00:54:58 =   20.3/s Avg:  4629 Min:    33 Max: 60010 Err:    41 (0.06%)
+2023-04-05 16:55:30,071 INFO o.a.j.r.Summariser: summary +    573 in 00:00:30 =   19.1/s Avg:  5383 Min:   943 Max: 60011 Err:    18 (3.14%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:55:30,071 INFO o.a.j.r.Summariser: summary =  67476 in 00:55:28 =   20.3/s Avg:  4635 Min:    33 Max: 60011 Err:    59 (0.09%)
+2023-04-05 16:56:00,138 INFO o.a.j.r.Summariser: summary +    551 in 00:00:30 =   18.3/s Avg:  4830 Min:   941 Max: 60009 Err:    12 (2.18%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:56:00,138 INFO o.a.j.r.Summariser: summary =  68027 in 00:55:58 =   20.3/s Avg:  4637 Min:    33 Max: 60011 Err:    71 (0.10%)
+2023-04-05 16:56:30,355 INFO o.a.j.r.Summariser: summary +    569 in 00:00:30 =   18.8/s Avg:  5344 Min:   870 Max: 60012 Err:    20 (3.51%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:56:30,356 INFO o.a.j.r.Summariser: summary =  68596 in 00:56:29 =   20.2/s Avg:  4642 Min:    33 Max: 60012 Err:    91 (0.13%)
+2023-04-05 16:57:00,029 INFO o.a.j.r.Summariser: summary +    470 in 00:00:30 =   15.8/s Avg:  7059 Min:   941 Max: 60010 Err:    16 (3.40%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:57:00,029 INFO o.a.j.r.Summariser: summary =  69066 in 00:56:58 =   20.2/s Avg:  4659 Min:    33 Max: 60012 Err:   107 (0.15%)
+2023-04-05 16:57:30,225 INFO o.a.j.r.Summariser: summary +    605 in 00:00:30 =   20.0/s Avg:  4846 Min:   939 Max: 60007 Err:     1 (0.17%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:57:30,225 INFO o.a.j.r.Summariser: summary =  69671 in 00:57:28 =   20.2/s Avg:  4660 Min:    33 Max: 60012 Err:   108 (0.16%)
+2023-04-05 16:58:00,180 INFO o.a.j.r.Summariser: summary +    463 in 00:00:30 =   15.5/s Avg:  6213 Min:  1032 Max: 31949 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:58:00,180 INFO o.a.j.r.Summariser: summary =  70134 in 00:57:58 =   20.2/s Avg:  4671 Min:    33 Max: 60012 Err:   108 (0.15%)
+2023-04-05 16:58:30,064 INFO o.a.j.r.Summariser: summary +    427 in 00:00:30 =   14.3/s Avg:  6932 Min:   983 Max: 30282 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:58:30,064 INFO o.a.j.r.Summariser: summary =  70561 in 00:58:28 =   20.1/s Avg:  4684 Min:    33 Max: 60012 Err:   108 (0.15%)
+2023-04-05 16:59:00,072 INFO o.a.j.r.Summariser: summary +    557 in 00:00:30 =   18.6/s Avg:  5216 Min:   942 Max: 26440 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:59:00,072 INFO o.a.j.r.Summariser: summary =  71118 in 00:58:58 =   20.1/s Avg:  4689 Min:    33 Max: 60012 Err:   108 (0.15%)
+2023-04-05 16:59:30,187 INFO o.a.j.r.Summariser: summary +    572 in 00:00:30 =   19.0/s Avg:  4983 Min:   867 Max: 27730 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 16:59:30,187 INFO o.a.j.r.Summariser: summary =  71690 in 00:59:28 =   20.1/s Avg:  4691 Min:    33 Max: 60012 Err:   108 (0.15%)
+2023-04-05 17:00:00,000 INFO o.a.j.r.Summariser: summary +    363 in 00:00:30 =   12.2/s Avg:  7822 Min:   942 Max: 31324 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2023-04-05 17:00:00,000 INFO o.a.j.r.Summariser: summary =  72053 in 00:59:58 =   20.0/s Avg:  4707 Min:    33 Max: 60012 Err:   108 (0.15%)
+2023-04-05 17:00:01,916 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-30
+2023-04-05 17:00:01,916 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-30
+2023-04-05 17:00:01,924 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-25
+2023-04-05 17:00:01,924 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-25
+2023-04-05 17:00:01,929 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-45
+2023-04-05 17:00:01,929 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-45
+2023-04-05 17:00:02,018 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-48
+2023-04-05 17:00:02,019 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-48
+2023-04-05 17:00:02,100 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: OPMET Thread Group 2-8
+2023-04-05 17:00:02,100 INFO o.a.j.t.JMeterThread: Thread finished: OPMET Thread Group 2-8
+2023-04-05 17:00:02,108 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-33
+2023-04-05 17:00:02,108 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-33
+2023-04-05 17:00:02,232 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: OPMET Thread Group 2-2
+2023-04-05 17:00:02,232 INFO o.a.j.t.JMeterThread: Thread finished: OPMET Thread Group 2-2
+2023-04-05 17:00:02,272 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-3
+2023-04-05 17:00:02,272 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-3
+2023-04-05 17:00:02,272 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-68
+2023-04-05 17:00:02,272 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-68
+2023-04-05 17:00:02,272 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-51
+2023-04-05 17:00:02,272 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-51
+2023-04-05 17:00:02,303 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-22
+2023-04-05 17:00:02,303 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-22
+2023-04-05 17:00:02,312 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-82
+2023-04-05 17:00:02,312 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-82
+2023-04-05 17:00:02,367 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-70
+2023-04-05 17:00:02,368 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-70
+2023-04-05 17:00:02,434 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-73
+2023-04-05 17:00:02,434 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-63
+2023-04-05 17:00:02,434 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-63
+2023-04-05 17:00:02,434 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-73
+2023-04-05 17:00:02,480 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-15
+2023-04-05 17:00:02,480 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-72
+2023-04-05 17:00:02,480 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-15
+2023-04-05 17:00:02,480 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-72
+2023-04-05 17:00:02,482 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-43
+2023-04-05 17:00:02,482 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-43
+2023-04-05 17:00:02,488 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-20
+2023-04-05 17:00:02,488 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-20
+2023-04-05 17:00:02,546 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-1
+2023-04-05 17:00:02,546 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-1
+2023-04-05 17:00:02,586 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: OPMET Thread Group 2-3
+2023-04-05 17:00:02,586 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: OPMET Thread Group 2-1
+2023-04-05 17:00:02,586 INFO o.a.j.t.JMeterThread: Thread finished: OPMET Thread Group 2-3
+2023-04-05 17:00:02,586 INFO o.a.j.t.JMeterThread: Thread finished: OPMET Thread Group 2-1
+2023-04-05 17:00:02,622 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-58
+2023-04-05 17:00:02,622 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-58
+2023-04-05 17:00:02,661 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: OPMET Thread Group 2-7
+2023-04-05 17:00:02,661 INFO o.a.j.t.JMeterThread: Thread finished: OPMET Thread Group 2-7
+2023-04-05 17:00:02,673 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: OPMET Thread Group 2-9
+2023-04-05 17:00:02,673 INFO o.a.j.t.JMeterThread: Thread finished: OPMET Thread Group 2-9
+2023-04-05 17:00:02,685 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-27
+2023-04-05 17:00:02,685 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-27
+2023-04-05 17:00:02,689 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-16
+2023-04-05 17:00:02,689 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-16
+2023-04-05 17:00:02,760 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-5
+2023-04-05 17:00:02,760 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-5
+2023-04-05 17:00:02,771 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-17
+2023-04-05 17:00:02,771 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-17
+2023-04-05 17:00:02,839 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: OPMET Thread Group 2-13
+2023-04-05 17:00:02,839 INFO o.a.j.t.JMeterThread: Thread finished: OPMET Thread Group 2-13
+2023-04-05 17:00:02,871 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: OPMET Thread Group 2-12
+2023-04-05 17:00:02,871 INFO o.a.j.t.JMeterThread: Thread finished: OPMET Thread Group 2-12
+2023-04-05 17:00:02,871 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-26
+2023-04-05 17:00:02,871 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-26
+2023-04-05 17:00:02,873 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-13
+2023-04-05 17:00:02,873 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-13
+2023-04-05 17:00:02,911 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-10
+2023-04-05 17:00:02,911 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-10
+2023-04-05 17:00:02,975 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: OPMET Thread Group 2-4
+2023-04-05 17:00:02,975 INFO o.a.j.t.JMeterThread: Thread finished: OPMET Thread Group 2-4
+2023-04-05 17:00:03,117 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: OPMET Thread Group 2-14
+2023-04-05 17:00:03,117 INFO o.a.j.t.JMeterThread: Thread finished: OPMET Thread Group 2-14
+2023-04-05 17:00:03,475 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: OPMET Thread Group 2-10
+2023-04-05 17:00:03,475 INFO o.a.j.t.JMeterThread: Thread finished: OPMET Thread Group 2-10
+2023-04-05 17:00:03,528 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-12
+2023-04-05 17:00:03,528 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-12
+2023-04-05 17:00:03,545 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-31
+2023-04-05 17:00:03,545 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-31
+2023-04-05 17:00:03,748 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: OPMET Thread Group 2-5
+2023-04-05 17:00:03,748 INFO o.a.j.t.JMeterThread: Thread finished: OPMET Thread Group 2-5
+2023-04-05 17:00:03,786 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-29
+2023-04-05 17:00:03,786 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-29
+2023-04-05 17:00:03,944 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: OPMET Thread Group 2-6
+2023-04-05 17:00:03,944 INFO o.a.j.t.JMeterThread: Thread finished: OPMET Thread Group 2-6
+2023-04-05 17:00:03,999 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-79
+2023-04-05 17:00:03,999 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-79
+2023-04-05 17:00:04,145 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-52
+2023-04-05 17:00:04,145 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-52
+2023-04-05 17:00:04,165 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-23
+2023-04-05 17:00:04,166 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-23
+2023-04-05 17:00:04,169 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-69
+2023-04-05 17:00:04,169 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-69
+2023-04-05 17:00:04,224 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: OPMET Thread Group 2-11
+2023-04-05 17:00:04,224 INFO o.a.j.t.JMeterThread: Thread finished: OPMET Thread Group 2-11
+2023-04-05 17:00:04,560 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-41
+2023-04-05 17:00:04,560 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-41
+2023-04-05 17:00:04,571 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-21
+2023-04-05 17:00:04,571 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-21
+2023-04-05 17:00:04,594 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-6
+2023-04-05 17:00:04,594 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-6
+2023-04-05 17:00:04,599 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-61
+2023-04-05 17:00:04,599 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-61
+2023-04-05 17:00:04,600 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-37
+2023-04-05 17:00:04,601 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-37
+2023-04-05 17:00:04,769 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-62
+2023-04-05 17:00:04,769 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-62
+2023-04-05 17:00:04,807 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-54
+2023-04-05 17:00:04,807 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-54
+2023-04-05 17:00:04,961 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-19
+2023-04-05 17:00:04,961 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-19
+2023-04-05 17:00:04,962 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-80
+2023-04-05 17:00:04,962 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-80
+2023-04-05 17:00:05,729 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-9
+2023-04-05 17:00:05,729 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-9
+2023-04-05 17:00:05,837 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-81
+2023-04-05 17:00:05,837 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-81
+2023-04-05 17:00:05,899 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-50
+2023-04-05 17:00:05,899 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-50
+2023-04-05 17:00:05,924 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-4
+2023-04-05 17:00:05,924 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-4
+2023-04-05 17:00:06,533 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-55
+2023-04-05 17:00:06,533 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-55
+2023-04-05 17:00:06,548 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-74
+2023-04-05 17:00:06,548 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-74
+2023-04-05 17:00:06,642 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-66
+2023-04-05 17:00:06,642 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-66
+2023-04-05 17:00:06,661 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-57
+2023-04-05 17:00:06,661 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-57
+2023-04-05 17:00:06,744 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-56
+2023-04-05 17:00:06,744 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-56
+2023-04-05 17:00:06,752 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-36
+2023-04-05 17:00:06,752 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-36
+2023-04-05 17:00:06,889 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-40
+2023-04-05 17:00:06,889 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-40
+2023-04-05 17:00:06,966 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-47
+2023-04-05 17:00:06,966 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-47
+2023-04-05 17:00:07,002 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-24
+2023-04-05 17:00:07,002 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-24
+2023-04-05 17:00:07,090 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-18
+2023-04-05 17:00:07,090 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-18
+2023-04-05 17:00:07,344 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-39
+2023-04-05 17:00:07,344 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-39
+2023-04-05 17:00:07,490 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-2
+2023-04-05 17:00:07,490 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-2
+2023-04-05 17:00:08,297 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-67
+2023-04-05 17:00:08,297 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-67
+2023-04-05 17:00:08,439 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-53
+2023-04-05 17:00:08,439 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-53
+2023-04-05 17:00:08,597 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-7
+2023-04-05 17:00:08,597 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-7
+2023-04-05 17:00:08,812 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-59
+2023-04-05 17:00:08,812 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-59
+2023-04-05 17:00:08,853 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-65
+2023-04-05 17:00:08,853 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-65
+2023-04-05 17:00:09,126 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-60
+2023-04-05 17:00:09,126 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-60
+2023-04-05 17:00:09,127 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-35
+2023-04-05 17:00:09,127 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-35
+2023-04-05 17:00:09,273 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-49
+2023-04-05 17:00:09,273 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-49
+2023-04-05 17:00:09,608 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-8
+2023-04-05 17:00:09,608 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-8
+2023-04-05 17:00:10,179 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-11
+2023-04-05 17:00:10,179 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-11
+2023-04-05 17:00:11,159 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-77
+2023-04-05 17:00:11,159 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-77
+2023-04-05 17:00:11,415 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-32
+2023-04-05 17:00:11,415 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-32
+2023-04-05 17:00:11,641 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-75
+2023-04-05 17:00:11,641 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-75
+2023-04-05 17:00:11,727 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-42
+2023-04-05 17:00:11,727 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-42
+2023-04-05 17:00:12,277 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-71
+2023-04-05 17:00:12,277 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-71
+2023-04-05 17:00:12,544 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-34
+2023-04-05 17:00:12,544 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-34
+2023-04-05 17:00:12,564 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-46
+2023-04-05 17:00:12,564 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-46
+2023-04-05 17:00:13,017 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-78
+2023-04-05 17:00:13,017 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-78
+2023-04-05 17:00:13,056 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-38
+2023-04-05 17:00:13,057 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-38
+2023-04-05 17:00:13,343 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-44
+2023-04-05 17:00:13,343 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-44
+2023-04-05 17:00:13,920 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-14
+2023-04-05 17:00:13,920 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-14
+2023-04-05 17:00:15,446 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-64
+2023-04-05 17:00:15,446 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-64
+2023-04-05 17:00:17,093 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-76
+2023-04-05 17:00:17,093 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-76
+2023-04-05 17:00:18,042 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Gridded Thread Group 1-28
+2023-04-05 17:00:18,042 INFO o.a.j.t.JMeterThread: Thread finished: Gridded Thread Group 1-28
+2023-04-05 17:00:18,042 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2023-04-05 17:00:18,043 INFO o.a.j.r.Summariser: summary +    117 in 00:00:18 =    6.5/s Avg:  9958 Min:  1352 Max: 31837 Err:     0 (0.00%) Active: 0 Started: 96 Finished: 96
+2023-04-05 17:00:18,043 INFO o.a.j.r.Summariser: summary =  72170 in 01:00:16 =   20.0/s Avg:  4715 Min:    33 Max: 60012 Err:   108 (0.15%)
+2023-04-05 17:00:18,043 INFO o.a.j.JMeter: Generating Dashboard
+2023-04-05 17:00:18,043 INFO o.a.j.r.d.ReportGenerator: Flushing result collector before report Generation
+2023-04-05 17:00:18,053 INFO o.a.j.r.p.NormalizerSampleConsumer: Using format, 'ms', to parse timeStamp field
+2023-04-05 17:00:19,903 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.AggregateConsumer#stopProducing(): beginDate produced 0 samples
+2023-04-05 17:00:19,903 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.AggregateConsumer#stopProducing(): endDate produced 0 samples
+2023-04-05 17:00:19,905 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.ApdexSummaryConsumer#stopProducing(): apdexSummary produced 0 samples
+2023-04-05 17:00:19,905 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.RequestsSummaryConsumer#stopProducing(): requestsSummary produced 0 samples
+2023-04-05 17:00:19,923 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.StatisticsSummaryConsumer#stopProducing(): statisticsSummary produced 0 samples
+2023-04-05 17:00:19,926 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.Top5ErrorsBySamplerConsumer#stopProducing(): top5ErrorsBySampler produced 0 samples
+2023-04-05 17:00:19,926 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.ErrorsSummaryConsumer#stopProducing(): errorsSummary produced 0 samples
+2023-04-05 17:00:19,926 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.HitsPerSecondGraphConsumer#stopProducing(): hitsPerSecond produced 0 samples
+2023-04-05 17:00:20,296 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.LatencyVSRequestGraphConsumer#stopProducing(): latencyVsRequest produced 0 samples
+2023-04-05 17:00:20,298 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.SyntheticResponseTimeDistributionGraphConsumer#stopProducing(): syntheticResponseTimeDistribution produced 0 samples
+2023-04-05 17:00:20,298 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.BytesThroughputGraphConsumer#stopProducing(): bytesThroughputOverTime produced 0 samples
+2023-04-05 17:00:20,299 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.CodesPerSecondGraphConsumer#stopProducing(): codesPerSecond produced 0 samples
+2023-04-05 17:00:20,611 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeVSRequestGraphConsumer#stopProducing(): responseTimeVsRequest produced 0 samples
+2023-04-05 17:00:20,613 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): startIntervalControlerFilter produced 505190 samples
+2023-04-05 17:00:20,613 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TotalTPSGraphConsumer#stopProducing(): totalTPS produced 0 samples
+2023-04-05 17:00:20,613 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ActiveThreadsGraphConsumer#stopProducing(): activeThreadsOverTime produced 0 samples
+2023-04-05 17:00:20,613 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TimeVSThreadGraphConsumer#stopProducing(): timeVsThreads produced 0 samples
+2023-04-05 17:00:20,615 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeDistributionGraphConsumer#stopProducing(): responseTimeDistribution produced 0 samples
+2023-04-05 17:00:20,617 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TransactionsPerSecondGraphConsumer#stopProducing(): transactionsPerSecond produced 0 samples
+2023-04-05 17:00:20,618 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimePercentilesGraphConsumer#stopProducing(): responseTimePercentiles produced 0 samples
+2023-04-05 17:00:20,661 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimePercentilesOverTimeGraphConsumer#stopProducing(): responseTimePercentilesOverTime produced 0 samples
+2023-04-05 17:00:20,665 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeOverTimeGraphConsumer#stopProducing(): responseTimesOverTime produced 0 samples
+2023-04-05 17:00:20,666 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ConnectTimeOverTimeGraphConsumer#stopProducing(): connectTimeOverTime produced 0 samples
+2023-04-05 17:00:20,666 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.LatencyOverTimeGraphConsumer#stopProducing(): latenciesOverTime produced 0 samples
+2023-04-05 17:00:20,666 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): nameFilter produced 1082550 samples
+2023-04-05 17:00:20,667 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): dateRangeFilter produced 216510 samples
+2023-04-05 17:00:20,667 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.NormalizerSampleConsumer#stopProducing(): normalizer produced 72170 samples
+2023-04-05 17:00:20,667 INFO o.a.j.r.p.CsvFileSampleSource: produce(): 72170 samples produced in 2s 594 ms on channel 0
+2023-04-05 17:00:20,667 INFO o.a.j.r.d.ReportGenerator: Exporting data using exporter:'json' of className:'org.apache.jmeter.report.dashboard.JsonExporter'
+2023-04-05 17:00:20,771 INFO o.a.j.r.d.JsonExporter: Found data for consumer statisticsSummary in context
+2023-04-05 17:00:20,771 INFO o.a.j.r.d.JsonExporter: Creating statistics for overall
+2023-04-05 17:00:20,771 INFO o.a.j.r.d.JsonExporter: Creating statistics for other transactions
+2023-04-05 17:00:20,771 INFO o.a.j.r.d.JsonExporter: Checking output folder
+2023-04-05 17:00:20,772 INFO o.a.j.r.d.JsonExporter: Writing statistics JSON to /home/ec2-user/ShaneMill1.github.io/WIFS-testing-4-5-23-Gunicorn/results/statistics.json
+2023-04-05 17:00:20,809 INFO o.a.j.r.d.ReportGenerator: Exporting data using exporter:'html' of className:'org.apache.jmeter.report.dashboard.HtmlTemplateExporter'
+2023-04-05 17:00:20,811 INFO o.a.j.r.d.HtmlTemplateExporter: Will generate dashboard in folder: /home/ec2-user/ShaneMill1.github.io/WIFS-testing-4-5-23-Gunicorn/results
+2023-04-05 17:00:20,938 INFO o.a.j.r.d.HtmlTemplateExporter: Report will be generated in: /home/ec2-user/ShaneMill1.github.io/WIFS-testing-4-5-23-Gunicorn/results, creating folder structure
+2023-04-05 17:00:20,940 INFO o.a.j.r.d.TemplateVisitor: Copying folder from '/home/ec2-user/apache-jmeter-5.5/bin/report-template' to '/home/ec2-user/ShaneMill1.github.io/WIFS-testing-4-5-23-Gunicorn/results', got message: /home/ec2-user/ShaneMill1.github.io/WIFS-testing-4-5-23-Gunicorn/results, found non empty folder with following content [/home/ec2-user/ShaneMill1.github.io/WIFS-testing-4-5-23-Gunicorn/results/statistics.json], will be ignored
+2023-04-05 17:00:21,093 INFO o.a.j.JMeter: Dashboard generated
