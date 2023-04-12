@@ -523,7 +523,14 @@ Testing_ALB_t3a.medium_ecs_ec2Backendt3a.medium-10-24-22-Lustre-3WorkersOnStart
 
 - Previously only 1 scheduler and a min of workers at 5.
 
-[https://shanemill1.github.io/WIFS-testing-4-12-23-Round1/results][https://shanemill1.github.io/WIFS-testing-4-12-23-Round1/results]
+[https://shanemill1.github.io/WIFS-testing-4-12-23-Round1/results](https://shanemill1.github.io/WIFS-testing-4-12-23-Round1/results)
+
+
+## Continued testing - 4/12/23 Round 2
+
+## Changed autoscaling group for dynamic queries to contain m5n.xlarge instances
+
+[https://shanemill1.github.io/WIFS-testing-4-12-23-Round2/results](https://shanemill1.github.io/WIFS-testing-4-12-23-Round2/results)
 
 
 # Initial NCPP Testing
