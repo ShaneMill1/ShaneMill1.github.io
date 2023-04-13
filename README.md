@@ -551,6 +551,14 @@ Testing_ALB_t3a.medium_ecs_ec2Backendt3a.medium-10-24-22-Lustre-3WorkersOnStart
 [https://shanemill1.github.io/WIFS-testing-4-13-23-Round1/results](https://shanemill1.github.io/WIFS-testing-4-13-23-Round1/results)
 
 
+## Continued testing -4/13/23
+
+- I am thinking that the least_outstanding_requests method of load balancing might make more sense than round_robin for the dynamic requests. So, I can switch this algorithm for target group 2 and redeploy. I think this should balance things better because there is some latency with dynamic requests and this may balance things better.
+- I am also changing gunicorn workers from 3 to 8.
+- Finally, I am changing the t3a.2xlarge instances to c6a.2xlarge.
+
+[https://shanemill1.github.io/WIFS-testing-4-13-23-Round2/results](https://shanemill1.github.io/WIFS-testing-4-13-23-Round2/results)
+
 # Initial NCPP Testing
 
 ## ServerlessEast Tests
