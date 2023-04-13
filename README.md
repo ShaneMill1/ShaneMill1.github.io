@@ -542,7 +542,7 @@ Testing_ALB_t3a.medium_ecs_ec2Backendt3a.medium-10-24-22-Lustre-3WorkersOnStart
 [https://shanemill1.github.io/WIFS-testing-4-12-23-Round4/results](https://shanemill1.github.io/WIFS-testing-4-12-23-Round4/results)
 
 
-## Continued testing -4/13/23
+## Continued testing -4/13/23 Round 1
 
 - Gunicorn with 3 workers, no threading within t3a.2xlarge instances. 10 frontend instances for dynamic queries with 5 instances warmed and stopped
 - Scheduler instance of m5n.large, worker instances of m5a.large instances (min of 5).
@@ -551,13 +551,21 @@ Testing_ALB_t3a.medium_ecs_ec2Backendt3a.medium-10-24-22-Lustre-3WorkersOnStart
 [https://shanemill1.github.io/WIFS-testing-4-13-23-Round1/results](https://shanemill1.github.io/WIFS-testing-4-13-23-Round1/results)
 
 
-## Continued testing -4/13/23
+## Continued testing -4/13/23 Round 2
 
 - I am thinking that the least_outstanding_requests method of load balancing might make more sense than round_robin for the dynamic requests. So, I can switch this algorithm for target group 2 and redeploy. I think this should balance things better because there is some latency with dynamic requests and this may balance things better.
 - I am also changing gunicorn workers from 3 to 8.
 - Finally, I am changing the t3a.2xlarge instances to c6a.2xlarge.
 
 [https://shanemill1.github.io/WIFS-testing-4-13-23-Round2/results](https://shanemill1.github.io/WIFS-testing-4-13-23-Round2/results)
+
+
+## Continued testing -4/13/23 Round 3
+
+- Switched dynamic target group and load balancer back from "least_outstanding_requests" to "round_robin" to see if this lowered error rates.
+
+[https://shanemill1.github.io/WIFS-testing-4-13-23-Round3/results](https://shanemill1.github.io/WIFS-testing-4-13-23-Round3/results)
+
 
 # Initial NCPP Testing
 
