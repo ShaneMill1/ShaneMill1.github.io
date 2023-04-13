@@ -541,6 +541,16 @@ Testing_ALB_t3a.medium_ecs_ec2Backendt3a.medium-10-24-22-Lustre-3WorkersOnStart
 
 [https://shanemill1.github.io/WIFS-testing-4-12-23-Round4/results](https://shanemill1.github.io/WIFS-testing-4-12-23-Round4/results)
 
+
+## Continued testing -4/13/23
+
+- Gunicorn with 3 workers, no threading within t3a.2xlarge instances. 10 frontend instances for dynamic queries with 5 instances warmed and stopped
+- Scheduler instance of m5n.large, worker instances of m5a.large instances (min of 5).
+
+
+[https://shanemill1.github.io/WIFS-testing-4-13-23-Round1/results](https://shanemill1.github.io/WIFS-testing-4-13-23-Round1/results)
+
+
 # Initial NCPP Testing
 
 ## ServerlessEast Tests
