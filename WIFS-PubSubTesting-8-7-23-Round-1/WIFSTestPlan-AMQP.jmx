@@ -1,0 +1,2425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.6.2">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="AMQP Test Plan" enabled="true">
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.tearDown_on_shutdown">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">true</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+    </TestPlan>
+    <hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group - 5 users" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <intProp name="LoopController.loops">-1</intProp>
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">5</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">60</stringProp>
+        <boolProp name="ThreadGroup.delayedStart">false</boolProp>
+        <boolProp name="ThreadGroup.scheduler">true</boolProp>
+        <stringProp name="ThreadGroup.duration">180</stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/GLOBAL" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.GLOBAL</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/EUR-NAT" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.EUR-NAT</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/NAM-CAR" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.NAM-CAR</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/SAM" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.SAM</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/AFI" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.AFI</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/MID" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.MID</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/ASIA-PAC" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.ASIA-PAC</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+          <stringProp name="filename"></stringProp>
+          <stringProp name="parameters"></stringProp>
+          <boolProp name="resetInterpreter">false</boolProp>
+          <stringProp name="script">if (prev.getResponseCode().equals(&quot;500&quot;) == true) { 
+    prev.setResponseOK();  
+
+    /* the same is 
+    prev.setSuccessful(true);
+    prev.setResponseCodeOK();
+    prev.setResponseMessageOK();
+    */
+}</stringProp>
+        </BeanShellPostProcessor>
+        <hashTree/>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group - 10 users" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <intProp name="LoopController.loops">-1</intProp>
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">10</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">60</stringProp>
+        <boolProp name="ThreadGroup.delayedStart">false</boolProp>
+        <boolProp name="ThreadGroup.scheduler">true</boolProp>
+        <stringProp name="ThreadGroup.duration">120</stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/GLOBAL" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.GLOBAL</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/EUR-NAT" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.EUR-NAT</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/NAM-CAR" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.NAM-CAR</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/SAM" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.SAM</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/AFI" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.AFI</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/MID" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.MID</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/ASIA-PAC" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.ASIA-PAC</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+          <stringProp name="filename"></stringProp>
+          <stringProp name="parameters"></stringProp>
+          <boolProp name="resetInterpreter">false</boolProp>
+          <stringProp name="script">if (prev.getResponseCode().equals(&quot;500&quot;) == true) { 
+    prev.setResponseOK();  
+
+    /* the same is 
+    prev.setSuccessful(true);
+    prev.setResponseCodeOK();
+    prev.setResponseMessageOK();
+    */
+}</stringProp>
+        </BeanShellPostProcessor>
+        <hashTree/>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group - 25 users" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <intProp name="LoopController.loops">-1</intProp>
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">25</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">60</stringProp>
+        <boolProp name="ThreadGroup.delayedStart">false</boolProp>
+        <boolProp name="ThreadGroup.scheduler">true</boolProp>
+        <stringProp name="ThreadGroup.duration">120</stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/GLOBAL" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.GLOBAL</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/EUR-NAT" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.EUR-NAT</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/NAM-CAR" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.NAM-CAR</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/SAM" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.SAM</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/AFI" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.AFI</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/MID" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.MID</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/ASIA-PAC" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.ASIA-PAC</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+          <stringProp name="filename"></stringProp>
+          <stringProp name="parameters"></stringProp>
+          <boolProp name="resetInterpreter">false</boolProp>
+          <stringProp name="script">if (prev.getResponseCode().equals(&quot;500&quot;) == true) { 
+    prev.setResponseOK();  
+
+    /* the same is 
+    prev.setSuccessful(true);
+    prev.setResponseCodeOK();
+    prev.setResponseMessageOK();
+    */
+}</stringProp>
+        </BeanShellPostProcessor>
+        <hashTree/>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group - 50 users" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <intProp name="LoopController.loops">-1</intProp>
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">50</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">60</stringProp>
+        <boolProp name="ThreadGroup.delayedStart">false</boolProp>
+        <boolProp name="ThreadGroup.scheduler">true</boolProp>
+        <stringProp name="ThreadGroup.duration">120</stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/GLOBAL" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.GLOBAL</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/EUR-NAT" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.EUR-NAT</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/NAM-CAR" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.NAM-CAR</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/SAM" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.SAM</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/AFI" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.AFI</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/MID" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.MID</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/ASIA-PAC" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.ASIA-PAC</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+          <stringProp name="filename"></stringProp>
+          <stringProp name="parameters"></stringProp>
+          <boolProp name="resetInterpreter">false</boolProp>
+          <stringProp name="script">if (prev.getResponseCode().equals(&quot;500&quot;) == true) { 
+    prev.setResponseOK();  
+
+    /* the same is 
+    prev.setSuccessful(true);
+    prev.setResponseCodeOK();
+    prev.setResponseMessageOK();
+    */
+}</stringProp>
+        </BeanShellPostProcessor>
+        <hashTree/>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group - 100 users" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <intProp name="LoopController.loops">-1</intProp>
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">100</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">60</stringProp>
+        <boolProp name="ThreadGroup.delayedStart">false</boolProp>
+        <boolProp name="ThreadGroup.scheduler">true</boolProp>
+        <stringProp name="ThreadGroup.duration">120</stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/GLOBAL" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.GLOBAL</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/EUR-NAT" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.EUR-NAT</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/NAM-CAR" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.NAM-CAR</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/SAM" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.SAM</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/AFI" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.AFI</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/MID" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.MID</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/ASIA-PAC" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.ASIA-PAC</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+          <stringProp name="filename"></stringProp>
+          <stringProp name="parameters"></stringProp>
+          <boolProp name="resetInterpreter">false</boolProp>
+          <stringProp name="script">if (prev.getResponseCode().equals(&quot;500&quot;) == true) { 
+    prev.setResponseOK();  
+
+    /* the same is 
+    prev.setSuccessful(true);
+    prev.setResponseCodeOK();
+    prev.setResponseMessageOK();
+    */
+}</stringProp>
+        </BeanShellPostProcessor>
+        <hashTree/>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group - 250 users" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <intProp name="LoopController.loops">-1</intProp>
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">250</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">60</stringProp>
+        <boolProp name="ThreadGroup.delayedStart">false</boolProp>
+        <boolProp name="ThreadGroup.scheduler">true</boolProp>
+        <stringProp name="ThreadGroup.duration">120</stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/GLOBAL" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.GLOBAL</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/EUR-NAT" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.EUR-NAT</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/NAM-CAR" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.NAM-CAR</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/SAM" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.SAM</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/AFI" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.AFI</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/MID" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.MID</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/ASIA-PAC" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.ASIA-PAC</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+          <stringProp name="filename"></stringProp>
+          <stringProp name="parameters"></stringProp>
+          <boolProp name="resetInterpreter">false</boolProp>
+          <stringProp name="script">if (prev.getResponseCode().equals(&quot;500&quot;) == true) { 
+    prev.setResponseOK();  
+
+    /* the same is 
+    prev.setSuccessful(true);
+    prev.setResponseCodeOK();
+    prev.setResponseMessageOK();
+    */
+}</stringProp>
+        </BeanShellPostProcessor>
+        <hashTree/>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group - 500 users" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <intProp name="LoopController.loops">-1</intProp>
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">500</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">60</stringProp>
+        <boolProp name="ThreadGroup.delayedStart">false</boolProp>
+        <boolProp name="ThreadGroup.scheduler">true</boolProp>
+        <stringProp name="ThreadGroup.duration">120</stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/GLOBAL" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.GLOBAL</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/EUR-NAT" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.EUR-NAT</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/NAM-CAR" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.NAM-CAR</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/SAM" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.SAM</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/AFI" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.AFI</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/MID" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.MID</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/ASIA-PAC" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.ASIA-PAC</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+          <stringProp name="filename"></stringProp>
+          <stringProp name="parameters"></stringProp>
+          <boolProp name="resetInterpreter">false</boolProp>
+          <stringProp name="script">if (prev.getResponseCode().equals(&quot;500&quot;) == true) { 
+    prev.setResponseOK();  
+
+    /* the same is 
+    prev.setSuccessful(true);
+    prev.setResponseCodeOK();
+    prev.setResponseMessageOK();
+    */
+}</stringProp>
+        </BeanShellPostProcessor>
+        <hashTree/>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group - 1000 users" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <intProp name="LoopController.loops">-1</intProp>
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1000</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">60</stringProp>
+        <boolProp name="ThreadGroup.delayedStart">false</boolProp>
+        <boolProp name="ThreadGroup.scheduler">true</boolProp>
+        <stringProp name="ThreadGroup.duration">120</stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/GLOBAL" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.GLOBAL</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/EUR-NAT" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.EUR-NAT</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/NAM-CAR" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.NAM-CAR</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/SAM" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.SAM</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/AFI" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.AFI</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/MID" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.MID</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/ASIA-PAC" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.ASIA-PAC</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+          <stringProp name="filename"></stringProp>
+          <stringProp name="parameters"></stringProp>
+          <boolProp name="resetInterpreter">false</boolProp>
+          <stringProp name="script">if (prev.getResponseCode().equals(&quot;500&quot;) == true) { 
+    prev.setResponseOK();  
+
+    /* the same is 
+    prev.setSuccessful(true);
+    prev.setResponseCodeOK();
+    prev.setResponseMessageOK();
+    */
+}</stringProp>
+        </BeanShellPostProcessor>
+        <hashTree/>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group - 5000 users" enabled="false">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <intProp name="LoopController.loops">-1</intProp>
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">5000</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">60</stringProp>
+        <boolProp name="ThreadGroup.delayedStart">false</boolProp>
+        <boolProp name="ThreadGroup.scheduler">true</boolProp>
+        <stringProp name="ThreadGroup.duration">120</stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/GLOBAL" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.GLOBAL</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/EUR-NAT" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.EUR-NAT</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/NAM-CAR" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.NAM-CAR</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/SAM" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.SAM</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/AFI" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.AFI</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/MID" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.MID</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/ASIA-PAC" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.ASIA-PAC</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+          <stringProp name="filename"></stringProp>
+          <stringProp name="parameters"></stringProp>
+          <boolProp name="resetInterpreter">false</boolProp>
+          <stringProp name="script">if (prev.getResponseCode().equals(&quot;500&quot;) == true) { 
+    prev.setResponseOK();  
+
+    /* the same is 
+    prev.setSuccessful(true);
+    prev.setResponseCodeOK();
+    prev.setResponseMessageOK();
+    */
+}</stringProp>
+        </BeanShellPostProcessor>
+        <hashTree/>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group - 10000 users" enabled="false">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <intProp name="LoopController.loops">-1</intProp>
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">10000</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">60</stringProp>
+        <boolProp name="ThreadGroup.delayedStart">false</boolProp>
+        <boolProp name="ThreadGroup.scheduler">true</boolProp>
+        <stringProp name="ThreadGroup.duration">120</stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/GLOBAL" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.GLOBAL</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/EUR-NAT" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.EUR-NAT</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/NAM-CAR" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.NAM-CAR</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/SAM" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.SAM</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/AFI" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.AFI</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/MID" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.MID</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer - collections/tac_opmet_reports/locations/ASIA-PAC" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">test_queue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.ASIA-PAC</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">false</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">5000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">10</stringProp>
+          <stringProp name="AMQPSampler.Host">ec2-52-204-134-57.compute-1.amazonaws.com</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">guest</stringProp>
+          <stringProp name="AMQPSampler.Password">guest</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+        <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+          <stringProp name="filename"></stringProp>
+          <stringProp name="parameters"></stringProp>
+          <boolProp name="resetInterpreter">false</boolProp>
+          <stringProp name="script">if (prev.getResponseCode().equals(&quot;500&quot;) == true) { 
+    prev.setResponseOK();  
+
+    /* the same is 
+    prev.setSuccessful(true);
+    prev.setResponseCodeOK();
+    prev.setResponseMessageOK();
+    */
+}</stringProp>
+        </BeanShellPostProcessor>
+        <hashTree/>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>
