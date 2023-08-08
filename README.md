@@ -11,6 +11,17 @@
 [https://shanemill1.github.io/WIFS-PubSubTesting-8-7-23-Round-1/results_amqp](https://shanemill1.github.io/WIFS-PubSubTesting-8-7-23-Round-1/results_amqp)
 
 
+### 8/7/23 one hour testing for each Thread Group
+
+### MQTT Testing
+
+[https://shanemill1.github.io/WIFS-PubSubTesting-8-7-23-Round-2/results_mqtt](https://shanemill1.github.io/WIFS-PubSubTesting-8-7-23-Round-2/results_mqtt)
+
+### AMQP Testing
+
+[https://shanemill1.github.io/WIFS-PubSubTesting-8-7-23-Round-2/results_amqp](https://shanemill1.github.io/WIFS-PubSubTesting-8-7-23-Round-2/results_amqp)
+
+
 # NDFD NCPP Testing
 
 ## NDFD Testing c5.4xlarge without ALB and with Local Dask Cluster
