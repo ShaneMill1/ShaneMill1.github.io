@@ -1,0 +1,236 @@
+2024-03-27 21:06:12,609 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2024-03-27 21:06:12,621 INFO o.a.j.JMeter: Loading user properties from: /home/shane.mill/apache-jmeter-5.6.3/bin/user.properties
+2024-03-27 21:06:12,622 INFO o.a.j.JMeter: Loading system properties from: /home/shane.mill/apache-jmeter-5.6.3/bin/system.properties
+2024-03-27 21:06:12,626 INFO o.a.j.JMeter: Copyright (c) 1998-2024 The Apache Software Foundation
+2024-03-27 21:06:12,626 INFO o.a.j.JMeter: Version 5.6.3
+2024-03-27 21:06:12,627 INFO o.a.j.JMeter: java.version=1.8.0_402
+2024-03-27 21:06:12,627 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2024-03-27 21:06:12,627 INFO o.a.j.JMeter: os.name=Linux
+2024-03-27 21:06:12,627 INFO o.a.j.JMeter: os.arch=amd64
+2024-03-27 21:06:12,627 INFO o.a.j.JMeter: os.version=3.10.0-1160.108.1.el7.x86_64
+2024-03-27 21:06:12,627 INFO o.a.j.JMeter: file.encoding=UTF-8
+2024-03-27 21:06:12,627 INFO o.a.j.JMeter: java.awt.headless=true
+2024-03-27 21:06:12,627 INFO o.a.j.JMeter: Max memory     =1073741824
+2024-03-27 21:06:12,627 INFO o.a.j.JMeter: Available Processors =16
+2024-03-27 21:06:12,631 INFO o.a.j.JMeter: Default Locale=English (EN)
+2024-03-27 21:06:12,631 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2024-03-27 21:06:12,631 INFO o.a.j.JMeter: JMeterHome=/home/shane.mill/apache-jmeter-5.6.3
+2024-03-27 21:06:12,632 INFO o.a.j.JMeter: user.dir  =/home/shane.mill/ShaneMill1.github.io/NDFD_NCPP/Testing_Operational_Architecture2
+2024-03-27 21:06:12,632 INFO o.a.j.JMeter: PWD       =/home/shane.mill/ShaneMill1.github.io/NDFD_NCPP/Testing_Operational_Architecture2
+2024-03-27 21:06:12,633 INFO o.a.j.JMeter: IP: 205.156.8.80 Name: ip-205-156-8-80.ec2.internal FullName: ip-205-156-8-80.ec2.internal
+2024-03-27 21:06:12,650 INFO o.a.j.JMeter: Setting property 'jmeter.reportgenerator.outputdir' to:'/home/shane.mill/ShaneMill1.github.io/NDFD_NCPP/Testing_Operational_Architecture2/results'
+2024-03-27 21:06:12,652 INFO o.a.j.s.FileServer: Default base='/home/shane.mill/ShaneMill1.github.io/NDFD_NCPP/Testing_Operational_Architecture2'
+2024-03-27 21:06:12,654 INFO o.a.j.s.FileServer: Set new base='/home/shane.mill/ShaneMill1.github.io/NDFD_NCPP/Testing_Operational_Architecture2'
+2024-03-27 21:06:12,766 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2024-03-27 21:06:12,780 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2024-03-27 21:06:12,784 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2024-03-27 21:06:12,790 INFO o.a.j.s.SaveService: Loading file: test_plan.jmx
+2024-03-27 21:06:12,861 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2024-03-27 21:06:12,861 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2024-03-27 21:06:12,861 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2024-03-27 21:06:12,861 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2024-03-27 21:06:12,861 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2024-03-27 21:06:12,861 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2024-03-27 21:06:13,111 INFO o.a.j.JMeter: Creating summariser <summary>
+2024-03-27 21:06:13,115 INFO o.a.j.r.d.ReportGenerator: ReportGenerator will use for Parsing the separator: ','
+2024-03-27 21:06:13,115 INFO o.a.j.r.d.ReportGenerator: Will generate report at end of test from  results file: SummaryReport.jtl
+2024-03-27 21:06:13,116 INFO o.a.j.r.d.ReportGenerator: Reading report generator properties from: /home/shane.mill/apache-jmeter-5.6.3/bin/reportgenerator.properties
+2024-03-27 21:06:13,116 INFO o.a.j.r.d.ReportGenerator: Merging with JMeter properties
+2024-03-27 21:06:13,120 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.temp_dir' not found, using default value 'temp' instead.
+2024-03-27 21:06:13,123 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.apdex_per_transaction' not found, using default value 'null' instead.
+2024-03-27 21:06:13,123 INFO o.a.j.r.c.ReportGeneratorConfiguration: apdex_per_transaction is empty, not APDEX per transaction customization
+2024-03-27 21:06:13,123 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.sample_filter' not found, using default value 'null' instead.
+2024-03-27 21:06:13,123 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.report_title' not found, using default value 'null' instead.
+2024-03-27 21:06:13,123 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.start_date' not found, using default value 'null' instead.
+2024-03-27 21:06:13,123 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.end_date' not found, using default value 'null' instead.
+2024-03-27 21:06:13,123 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.date_format' not found, using default value 'null' instead.
+2024-03-27 21:06:13,126 INFO o.a.j.r.c.ReportGeneratorConfiguration: Will use date range start date: null, end date: null
+2024-03-27 21:06:13,130 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.totalTPS.exclude_controllers' not found, using default value 'false' instead.
+2024-03-27 21:06:13,130 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.activeThreadsOverTime.exclude_controllers' not found, using default value 'false' instead.
+2024-03-27 21:06:13,130 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.timeVsThreads.exclude_controllers' not found, using default value 'false' instead.
+2024-03-27 21:06:13,131 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimeDistribution.exclude_controllers' not found, using default value 'false' instead.
+2024-03-27 21:06:13,131 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.transactionsPerSecond.exclude_controllers' not found, using default value 'false' instead.
+2024-03-27 21:06:13,131 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentiles.exclude_controllers' not found, using default value 'false' instead.
+2024-03-27 21:06:13,131 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentilesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2024-03-27 21:06:13,131 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2024-03-27 21:06:13,131 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.connectTimeOverTime.exclude_controllers' not found, using default value 'false' instead.
+2024-03-27 21:06:13,131 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.latenciesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2024-03-27 21:06:13,132 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.filters_only_sample_series' not found, using default value 'true' instead.
+2024-03-27 21:06:13,132 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.series_filter' not found, using default value '' instead.
+2024-03-27 21:06:13,132 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.show_controllers_only' not found, using default value 'false' instead.
+2024-03-27 21:06:13,133 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.filters_only_sample_series' not found, using default value 'true' instead.
+2024-03-27 21:06:13,133 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.series_filter' not found, using default value '' instead.
+2024-03-27 21:06:13,133 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.show_controllers_only' not found, using default value 'false' instead.
+2024-03-27 21:06:13,140 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2024-03-27 21:06:13,141 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2024-03-27 21:06:13,141 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2024-03-27 21:06:13,146 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2024-03-27 21:06:13,146 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2024-03-27 21:06:13,394 INFO o.a.j.JMeter: Running test (1711573573394)
+2024-03-27 21:06:13,452 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Testing_Thread_Group
+2024-03-27 21:06:13,453 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Testing_Thread_Group.
+2024-03-27 21:06:13,453 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2024-03-27 21:06:13,453 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2024-03-27 21:06:13,457 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2024-03-27 21:06:13,457 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 2 : Testing_Thread_Group
+2024-03-27 21:06:13,457 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Testing_Thread_Group.
+2024-03-27 21:06:13,457 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2024-03-27 21:06:13,457 INFO o.a.j.t.ThreadGroup: Starting thread group... number=2 threads=1 ramp-up=1 delayedStart=false
+2024-03-27 21:06:13,457 INFO o.a.j.t.ThreadGroup: Started thread group number 2
+2024-03-27 21:06:13,458 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 3 : Testing_Thread_Group
+2024-03-27 21:06:13,458 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Testing_Thread_Group.
+2024-03-27 21:06:13,458 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2024-03-27 21:06:13,458 INFO o.a.j.t.ThreadGroup: Starting thread group... number=3 threads=1 ramp-up=1 delayedStart=false
+2024-03-27 21:06:13,458 INFO o.a.j.t.ThreadGroup: Started thread group number 3
+2024-03-27 21:06:13,458 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 4 : Testing_Thread_Group
+2024-03-27 21:06:13,458 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Testing_Thread_Group.
+2024-03-27 21:06:13,458 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2024-03-27 21:06:13,458 INFO o.a.j.t.ThreadGroup: Starting thread group... number=4 threads=1 ramp-up=1 delayedStart=false
+2024-03-27 21:06:13,459 INFO o.a.j.t.ThreadGroup: Started thread group number 4
+2024-03-27 21:06:13,459 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 5 : Testing_Thread_Group
+2024-03-27 21:06:13,459 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Testing_Thread_Group.
+2024-03-27 21:06:13,459 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2024-03-27 21:06:13,459 INFO o.a.j.t.ThreadGroup: Starting thread group... number=5 threads=1 ramp-up=1 delayedStart=false
+2024-03-27 21:06:13,459 INFO o.a.j.t.ThreadGroup: Started thread group number 5
+2024-03-27 21:06:13,459 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 6 : Testing_Thread_Group
+2024-03-27 21:06:13,459 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Testing_Thread_Group.
+2024-03-27 21:06:13,459 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2024-03-27 21:06:13,459 INFO o.a.j.t.ThreadGroup: Starting thread group... number=6 threads=1 ramp-up=1 delayedStart=false
+2024-03-27 21:06:13,460 INFO o.a.j.t.ThreadGroup: Started thread group number 6
+2024-03-27 21:06:13,460 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 1-1
+2024-03-27 21:06:13,460 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 7 : Testing_Thread_Group
+2024-03-27 21:06:13,460 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 2-1
+2024-03-27 21:06:13,460 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 6-1
+2024-03-27 21:06:13,460 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 3-1
+2024-03-27 21:06:13,461 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 4-1
+2024-03-27 21:06:13,461 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 5-1
+2024-03-27 21:06:13,461 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Testing_Thread_Group.
+2024-03-27 21:06:13,461 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2024-03-27 21:06:13,461 INFO o.a.j.t.ThreadGroup: Starting thread group... number=7 threads=1 ramp-up=1 delayedStart=false
+2024-03-27 21:06:13,461 INFO o.a.j.t.ThreadGroup: Started thread group number 7
+2024-03-27 21:06:13,461 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 8 : Testing_Thread_Group
+2024-03-27 21:06:13,461 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Testing_Thread_Group.
+2024-03-27 21:06:13,461 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2024-03-27 21:06:13,461 INFO o.a.j.t.ThreadGroup: Starting thread group... number=8 threads=1 ramp-up=1 delayedStart=false
+2024-03-27 21:06:13,461 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 7-1
+2024-03-27 21:06:13,462 INFO o.a.j.t.ThreadGroup: Started thread group number 8
+2024-03-27 21:06:13,462 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 9 : Testing_Thread_Group
+2024-03-27 21:06:13,462 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Testing_Thread_Group.
+2024-03-27 21:06:13,462 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2024-03-27 21:06:13,462 INFO o.a.j.t.ThreadGroup: Starting thread group... number=9 threads=1 ramp-up=1 delayedStart=false
+2024-03-27 21:06:13,462 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 8-1
+2024-03-27 21:06:13,462 INFO o.a.j.t.ThreadGroup: Started thread group number 9
+2024-03-27 21:06:13,462 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 10 : Testing_Thread_Group
+2024-03-27 21:06:13,462 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Testing_Thread_Group.
+2024-03-27 21:06:13,462 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2024-03-27 21:06:13,462 INFO o.a.j.t.ThreadGroup: Starting thread group... number=10 threads=1 ramp-up=1 delayedStart=false
+2024-03-27 21:06:13,462 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 9-1
+2024-03-27 21:06:13,463 INFO o.a.j.t.ThreadGroup: Started thread group number 10
+2024-03-27 21:06:13,464 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 11 : Testing_Thread_Group
+2024-03-27 21:06:13,464 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Testing_Thread_Group.
+2024-03-27 21:06:13,464 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2024-03-27 21:06:13,464 INFO o.a.j.t.ThreadGroup: Starting thread group... number=11 threads=1 ramp-up=1 delayedStart=false
+2024-03-27 21:06:13,464 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 10-1
+2024-03-27 21:06:13,464 INFO o.a.j.t.ThreadGroup: Started thread group number 11
+2024-03-27 21:06:13,464 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 12 : Testing_Thread_Group
+2024-03-27 21:06:13,464 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Testing_Thread_Group.
+2024-03-27 21:06:13,464 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2024-03-27 21:06:13,464 INFO o.a.j.t.ThreadGroup: Starting thread group... number=12 threads=1 ramp-up=1 delayedStart=false
+2024-03-27 21:06:13,464 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 11-1
+2024-03-27 21:06:13,465 INFO o.a.j.t.ThreadGroup: Started thread group number 12
+2024-03-27 21:06:13,465 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 13 : Testing_Thread_Group
+2024-03-27 21:06:13,465 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Testing_Thread_Group.
+2024-03-27 21:06:13,465 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2024-03-27 21:06:13,465 INFO o.a.j.t.ThreadGroup: Starting thread group... number=13 threads=1 ramp-up=1 delayedStart=false
+2024-03-27 21:06:13,466 INFO o.a.j.t.ThreadGroup: Started thread group number 13
+2024-03-27 21:06:13,466 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 14 : Testing_Thread_Group
+2024-03-27 21:06:13,466 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Testing_Thread_Group.
+2024-03-27 21:06:13,466 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2024-03-27 21:06:13,466 INFO o.a.j.t.ThreadGroup: Starting thread group... number=14 threads=1 ramp-up=1 delayedStart=false
+2024-03-27 21:06:13,466 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 13-1
+2024-03-27 21:06:13,466 INFO o.a.j.t.ThreadGroup: Started thread group number 14
+2024-03-27 21:06:13,466 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2024-03-27 21:06:13,466 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 14-1
+2024-03-27 21:06:13,467 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 12-1
+2024-03-27 21:06:13,478 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = ip-205-156-8-80.ec2.internal
+2024-03-27 21:06:13,483 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2024-03-27 21:06:13,485 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2024-03-27 21:06:13,485 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to UTF-8
+2024-03-27 21:06:13,485 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2024-03-27 21:06:13,485 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2024-03-27 21:06:30,046 INFO o.a.j.r.Summariser: summary +     76 in 00:00:17 =    4.6/s Avg:  2049 Min:    31 Max: 14808 Err:    30 (39.47%) Active: 14 Started: 14 Finished: 0
+2024-03-27 21:07:00,022 INFO o.a.j.r.Summariser: summary +   4928 in 00:00:30 =  164.4/s Avg:    86 Min:    28 Max: 29653 Err:  3166 (64.25%) Active: 14 Started: 14 Finished: 0
+2024-03-27 21:07:00,022 INFO o.a.j.r.Summariser: summary =   5004 in 00:00:47 =  107.3/s Avg:   116 Min:    28 Max: 29653 Err:  3196 (63.87%)
+2024-03-27 21:07:13,464 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 3-1
+2024-03-27 21:07:13,464 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 3-1
+2024-03-27 21:07:13,470 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 4-1
+2024-03-27 21:07:13,470 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 4-1
+2024-03-27 21:07:13,470 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 5-1
+2024-03-27 21:07:13,470 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 5-1
+2024-03-27 21:07:13,482 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 6-1
+2024-03-27 21:07:13,483 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 6-1
+2024-03-27 21:07:13,492 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 13-1
+2024-03-27 21:07:13,492 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 13-1
+2024-03-27 21:07:13,496 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 11-1
+2024-03-27 21:07:13,496 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 11-1
+2024-03-27 21:07:13,506 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 2-1
+2024-03-27 21:07:13,506 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 2-1
+2024-03-27 21:07:13,526 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 12-1
+2024-03-27 21:07:13,526 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 12-1
+2024-03-27 21:07:13,539 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 9-1
+2024-03-27 21:07:13,539 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 9-1
+2024-03-27 21:07:13,545 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 1-1
+2024-03-27 21:07:13,545 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 1-1
+2024-03-27 21:07:13,552 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 8-1
+2024-03-27 21:07:13,552 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 8-1
+2024-03-27 21:07:18,741 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 7-1
+2024-03-27 21:07:18,741 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 7-1
+2024-03-27 21:07:28,059 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 14-1
+2024-03-27 21:07:28,060 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 14-1
+2024-03-27 21:07:41,665 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 10-1
+2024-03-27 21:07:41,665 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 10-1
+2024-03-27 21:07:41,665 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2024-03-27 21:07:41,666 INFO o.a.j.r.Summariser: summary +   2792 in 00:00:42 =   67.0/s Avg:   108 Min:    27 Max: 51202 Err:  1751 (62.71%) Active: 0 Started: 14 Finished: 14
+2024-03-27 21:07:41,667 INFO o.a.j.r.Summariser: summary =   7796 in 00:01:28 =   88.3/s Avg:   113 Min:    27 Max: 51202 Err:  4947 (63.46%)
+2024-03-27 21:07:41,667 INFO o.a.j.JMeter: Generating Dashboard
+2024-03-27 21:07:41,667 INFO o.a.j.r.d.ReportGenerator: Flushing result collector before report Generation
+2024-03-27 21:07:41,676 INFO o.a.j.r.p.NormalizerSampleConsumer: Using format, 'ms', to parse timeStamp field
+2024-03-27 21:07:42,143 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.AggregateConsumer#stopProducing(): beginDate produced 0 samples
+2024-03-27 21:07:42,143 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.AggregateConsumer#stopProducing(): endDate produced 0 samples
+2024-03-27 21:07:42,145 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.ApdexSummaryConsumer#stopProducing(): apdexSummary produced 0 samples
+2024-03-27 21:07:42,145 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.RequestsSummaryConsumer#stopProducing(): requestsSummary produced 0 samples
+2024-03-27 21:07:42,154 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.StatisticsSummaryConsumer#stopProducing(): statisticsSummary produced 0 samples
+2024-03-27 21:07:42,157 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.Top5ErrorsBySamplerConsumer#stopProducing(): top5ErrorsBySampler produced 0 samples
+2024-03-27 21:07:42,157 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.ErrorsSummaryConsumer#stopProducing(): errorsSummary produced 0 samples
+2024-03-27 21:07:42,157 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.HitsPerSecondGraphConsumer#stopProducing(): hitsPerSecond produced 0 samples
+2024-03-27 21:07:42,263 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.LatencyVSRequestGraphConsumer#stopProducing(): latencyVsRequest produced 0 samples
+2024-03-27 21:07:42,264 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.SyntheticResponseTimeDistributionGraphConsumer#stopProducing(): syntheticResponseTimeDistribution produced 0 samples
+2024-03-27 21:07:42,265 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.BytesThroughputGraphConsumer#stopProducing(): bytesThroughputOverTime produced 0 samples
+2024-03-27 21:07:42,265 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.CodesPerSecondGraphConsumer#stopProducing(): codesPerSecond produced 0 samples
+2024-03-27 21:07:42,326 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeVSRequestGraphConsumer#stopProducing(): responseTimeVsRequest produced 0 samples
+2024-03-27 21:07:42,327 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): startIntervalControlerFilter produced 54572 samples
+2024-03-27 21:07:42,327 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TotalTPSGraphConsumer#stopProducing(): totalTPS produced 0 samples
+2024-03-27 21:07:42,327 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ActiveThreadsGraphConsumer#stopProducing(): activeThreadsOverTime produced 0 samples
+2024-03-27 21:07:42,327 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TimeVSThreadGraphConsumer#stopProducing(): timeVsThreads produced 0 samples
+2024-03-27 21:07:42,329 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeDistributionGraphConsumer#stopProducing(): responseTimeDistribution produced 0 samples
+2024-03-27 21:07:42,329 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TransactionsPerSecondGraphConsumer#stopProducing(): transactionsPerSecond produced 0 samples
+2024-03-27 21:07:42,329 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimePercentilesGraphConsumer#stopProducing(): responseTimePercentiles produced 0 samples
+2024-03-27 21:07:42,337 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimePercentilesOverTimeGraphConsumer#stopProducing(): responseTimePercentilesOverTime produced 0 samples
+2024-03-27 21:07:42,338 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeOverTimeGraphConsumer#stopProducing(): responseTimesOverTime produced 0 samples
+2024-03-27 21:07:42,338 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ConnectTimeOverTimeGraphConsumer#stopProducing(): connectTimeOverTime produced 0 samples
+2024-03-27 21:07:42,338 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.LatencyOverTimeGraphConsumer#stopProducing(): latenciesOverTime produced 0 samples
+2024-03-27 21:07:42,339 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): nameFilter produced 116940 samples
+2024-03-27 21:07:42,339 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): dateRangeFilter produced 23388 samples
+2024-03-27 21:07:42,339 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.NormalizerSampleConsumer#stopProducing(): normalizer produced 7796 samples
+2024-03-27 21:07:42,339 INFO o.a.j.r.p.CsvFileSampleSource: produce(): 7796 samples produced in 639ms on channel 0
+2024-03-27 21:07:42,340 INFO o.a.j.r.d.ReportGenerator: Exporting data using exporter:'json' of className:'org.apache.jmeter.report.dashboard.JsonExporter'
+2024-03-27 21:07:42,426 INFO o.a.j.r.d.JsonExporter: Found data for consumer statisticsSummary in context
+2024-03-27 21:07:42,427 INFO o.a.j.r.d.JsonExporter: Creating statistics for overall
+2024-03-27 21:07:42,427 INFO o.a.j.r.d.JsonExporter: Creating statistics for other transactions
+2024-03-27 21:07:42,428 INFO o.a.j.r.d.JsonExporter: Checking output folder
+2024-03-27 21:07:42,428 INFO o.a.j.r.d.JsonExporter: Writing statistics JSON to /home/shane.mill/ShaneMill1.github.io/NDFD_NCPP/Testing_Operational_Architecture2/results/statistics.json
+2024-03-27 21:07:42,471 INFO o.a.j.r.d.ReportGenerator: Exporting data using exporter:'html' of className:'org.apache.jmeter.report.dashboard.HtmlTemplateExporter'
+2024-03-27 21:07:42,474 INFO o.a.j.r.d.HtmlTemplateExporter: Will generate dashboard in folder: /home/shane.mill/ShaneMill1.github.io/NDFD_NCPP/Testing_Operational_Architecture2/results
+2024-03-27 21:07:42,721 INFO o.a.j.r.d.HtmlTemplateExporter: Report will be generated in: /home/shane.mill/ShaneMill1.github.io/NDFD_NCPP/Testing_Operational_Architecture2/results, creating folder structure
+2024-03-27 21:07:42,725 INFO o.a.j.r.d.TemplateVisitor: Copying folder from '/home/shane.mill/apache-jmeter-5.6.3/bin/report-template' to '/home/shane.mill/ShaneMill1.github.io/NDFD_NCPP/Testing_Operational_Architecture2/results', got message: /home/shane.mill/ShaneMill1.github.io/NDFD_NCPP/Testing_Operational_Architecture2/results, found non empty folder with following content [/home/shane.mill/ShaneMill1.github.io/NDFD_NCPP/Testing_Operational_Architecture2/results/statistics.json], will be ignored
+2024-03-27 21:07:42,992 INFO o.a.j.JMeter: Dashboard generated
