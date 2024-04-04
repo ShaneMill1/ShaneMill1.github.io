@@ -19,7 +19,7 @@
         <stringProp name="ThreadGroup.num_threads">100</stringProp>
         <stringProp name="ThreadGroup.ramp_time">10</stringProp>
         <boolProp name="ThreadGroup.scheduler">true</boolProp>
-        <stringProp name="ThreadGroup.duration">3600</stringProp>
+        <stringProp name="ThreadGroup.duration">1800</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
         <boolProp name="ThreadGroup.delayedStart">false</boolProp>
@@ -45,10 +45,11 @@
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">internal-Frontend-ALB-1818299523.us-east-1.elb.amazonaws.com</stringProp>
+          <stringProp name="HTTPSampler.domain">localhost</stringProp>
+          <stringProp name="HTTPSampler.port">5400</stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>
-          <stringProp name="HTTPSampler.path">/xml/REST/ndfdXMLclient.php?whichClient=NDFDgen&amp;product=time-series&amp;XMLformat=DWML&amp;begin=2019-10-02T00%3A00%3A00&amp;end=2026-08-15T00%3A00%3A00&amp;Unit=e&amp;maxt=maxt&amp;cachekiller=${__UUID}</stringProp>
-          <!-- <stringProp name="HTTPSampler.path">/OGC-EDR-API/collections/ndfd_xml/instances/latest/position?coords=POINT(-77.011%2038.99)&amp;f=text&amp;datetime=2024-03-02T01:26:00/2028-02-26T05:00:00&amp;parameter-name=maxt</stringProp> -->
+          <!-- <stringProp name="HTTPSampler.path">/collections/ndfd_xml/instances/latest?f=json</stringProp> -->
+          <stringProp name="HTTPSampler.path">/collections/ndfd_xml/instances/latest/position?coords=POINT(-77.011%2038.99)&amp;f=text&amp;datetime=2024-03-02T01:26:00/2028-02-26T05:00:00&amp;parameter-name=maxt</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -64,7 +65,7 @@
         <hashTree/>
         <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
           <collectionProp name="Asserion.test_strings">
-            <stringProp name="0">value</stringProp>
+            <stringProp name="0"></stringProp>
           </collectionProp>
           <stringProp name="Assertion.custom_message">Was not a proper XML response</stringProp>
           <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>

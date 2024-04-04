@@ -16,8 +16,8 @@
           <intProp name="LoopController.loops">-1</intProp>
           <boolProp name="LoopController.continue_forever">false</boolProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">100</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">10</stringProp>
+        <stringProp name="ThreadGroup.num_threads">20</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">60</stringProp>
         <boolProp name="ThreadGroup.scheduler">true</boolProp>
         <stringProp name="ThreadGroup.duration">3600</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
@@ -47,8 +47,7 @@
           </elementProp>
           <stringProp name="HTTPSampler.domain">internal-Frontend-ALB-1818299523.us-east-1.elb.amazonaws.com</stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>
-          <stringProp name="HTTPSampler.path">/xml/REST/ndfdXMLclient.php?whichClient=NDFDgen&amp;product=time-series&amp;XMLformat=DWML&amp;begin=2019-10-02T00%3A00%3A00&amp;end=2026-08-15T00%3A00%3A00&amp;Unit=e&amp;maxt=maxt&amp;cachekiller=${__UUID}</stringProp>
-          <!-- <stringProp name="HTTPSampler.path">/OGC-EDR-API/collections/ndfd_xml/instances/latest/position?coords=POINT(-77.011%2038.99)&amp;f=text&amp;datetime=2024-03-02T01:26:00/2028-02-26T05:00:00&amp;parameter-name=maxt</stringProp> -->
+          <stringProp name="HTTPSampler.path">/xml/REST/ndfdXMLclient.php?whichClient=NDFDgen&amp;product=time-series&amp;XMLformat=DWML&amp;begin=2019-10-02T00%3A00%3A00&amp;end=2026-08-15T00%3A00%3A00&amp;Unit=e&amp;maxt=maxt</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -83,16 +82,16 @@
         </doubleProp>
       </ConstantThroughputTimer>
       <hashTree/>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Testing_Thread_Group" enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Testing_Thread_Group" enable="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <intProp name="LoopController.loops">-1</intProp>
           <boolProp name="LoopController.continue_forever">false</boolProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">10</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">10</stringProp>
+        <stringProp name="ThreadGroup.num_threads">20</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">60</stringProp>
         <boolProp name="ThreadGroup.scheduler">true</boolProp>
-        <stringProp name="ThreadGroup.duration">300</stringProp>
+        <stringProp name="ThreadGroup.duration">3600</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
         <boolProp name="ThreadGroup.delayedStart">false</boolProp>
@@ -120,7 +119,7 @@
           </elementProp>
           <stringProp name="HTTPSampler.domain">internal-Frontend-ALB-1818299523.us-east-1.elb.amazonaws.com</stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>
-          <stringProp name="HTTPSampler.path">/xml/SOAP_server/ndfdXMLclient.php?whichClient=NDFDgen&amp;product=time-series&amp;begin=2004-01-01T00%3A00%3A00&amp;end=2023-02-12T00%3A00%3A00&amp;Unit=e&amp;ptotsvrtstm=ptotsvrtstm</stringProp>
+          <stringProp name="HTTPSampler.path">/xml/SOAP_server/ndfdXMLclient.php?whichClient=NDFDgen&amp;product=time-series&amp;begin=2004-01-01T00%3A00%3A00&amp;end=2026-02-12T00%3A00%3A00&amp;Unit=e&amp;ptotsvrtstm=ptotsvrtstm&amp;XMLformat=DWML</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -136,7 +135,7 @@
         <hashTree/>
         <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
           <collectionProp name="Asserion.test_strings">
-            <stringProp name="0"></stringProp>
+            <stringProp name="0">value</stringProp>
           </collectionProp>
           <stringProp name="Assertion.custom_message">Was not a proper XML response</stringProp>
           <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -146,16 +145,16 @@
         </ResponseAssertion>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Testing_Thread_Group" enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Testing_Thread_Group" enable="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <intProp name="LoopController.loops">-1</intProp>
           <boolProp name="LoopController.continue_forever">false</boolProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">10</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">10</stringProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">60</stringProp>
         <boolProp name="ThreadGroup.scheduler">true</boolProp>
-        <stringProp name="ThreadGroup.duration">300</stringProp>
+        <stringProp name="ThreadGroup.duration">3600</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
         <boolProp name="ThreadGroup.delayedStart">false</boolProp>
@@ -168,7 +167,7 @@
           </elementProp>
           <stringProp name="HTTPSampler.domain">internal-Frontend-ALB-1818299523.us-east-1.elb.amazonaws.com</stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>
-          <stringProp name="HTTPSampler.path">/xml/SOAP_server/ndfdXMLclient.php?whichClient=NDFDgenLatLonList&amp;lat=&amp;lon=&amp;listLatLon=46.808,-91.964%2047.207,-91.184%2047.207,-90.555%2047.611,-90.501%2046.793,-90.404%2047.237,-89.58%2047.858,-89.493%2048.054,-88.323%2047.537,-88.626%2047.829,-87.531%2047.442,-87.456%2047.089,-88.062%2047.486,-86.729%2047.045,-87.011%2047.237,-86.112%2046.652,-87.054%2046.815,-86.144%2046.89,-85.418%2046.585,-84.833%2042.605,-87.586%2042.589,-86.632%2041.98,-87.466%2041.98,-86.784%2045.843,-84.231%2045.468,-83.451%2043.837,-83.711%2045.273,-82.752%2044.687,-83.126%2043.24,-86.697%2044.386,-82.573%2043.708,-82.491%2042.509,-82.833%2041.847,-83.256%2041.531,-82.508%2041.859,-81.597%2042.197,-80.638%2042.425,-79.858%2042.713,-79.191%2043.39,-79.029%2043.52,-78.395%2043.449,-77.679%2043.52,-76.85%2044.024,-76.395%2043.673,-76.379%2043.378,-87.596%2044.048,-86.767%2044.135,-87.474%2044.831,-87.133%2044.935,-86.353%2045.399,-87.255%2045.655,-86.353%2045.519,-85.572&amp;product=time-series&amp;begin=2022-08-15T12:00:31&amp;end=2022-08-21T00:00:00&amp;Unit=e&amp;waveh=waveh&amp;&amp;wdir=wdir&amp;wgust=wgust&amp;wspd=wspd</stringProp>
+          <stringProp name="HTTPSampler.path">/xml/SOAP_server/ndfdXMLclient.php?whichClient=NDFDgenLatLonList&amp;lat=&amp;lon=&amp;listLatLon=46.808,-91.964%2047.207,-91.184%2047.207,-90.555%2047.611,-90.501%2046.793,-90.404%2047.237,-89.58%2047.858,-89.493%2048.054,-88.323%2047.537,-88.626%2047.829,-87.531%2047.442,-87.456%2047.089,-88.062%2047.486,-86.729%2047.045,-87.011%2047.237,-86.112%2046.652,-87.054%2046.815,-86.144%2046.89,-85.418%2046.585,-84.833%2042.605,-87.586%2042.589,-86.632%2041.98,-87.466%2041.98,-86.784%2045.843,-84.231%2045.468,-83.451%2043.837,-83.711%2045.273,-82.752%2044.687,-83.126%2043.24,-86.697%2044.386,-82.573%2043.708,-82.491%2042.509,-82.833%2041.847,-83.256%2041.531,-82.508%2041.859,-81.597%2042.197,-80.638%2042.425,-79.858%2042.713,-79.191%2043.39,-79.029%2043.52,-78.395%2043.449,-77.679%2043.52,-76.85%2044.024,-76.395%2043.673,-76.379%2043.378,-87.596%2044.048,-86.767%2044.135,-87.474%2044.831,-87.133%2044.935,-86.353%2045.399,-87.255%2045.655,-86.353%2045.519,-85.572&amp;product=time-series&amp;begin=2022-08-15T12:00:31&amp;end=2026-08-21T00:00:00&amp;Unit=e&amp;waveh=waveh&amp;&amp;wdir=wdir&amp;wgust=wgust&amp;wspd=wspd&amp;XMLformat=DWML</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -184,7 +183,7 @@
         <hashTree/>
         <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
           <collectionProp name="Asserion.test_strings">
-            <stringProp name="0"></stringProp>
+            <stringProp name="0">value</stringProp>
           </collectionProp>
           <stringProp name="Assertion.custom_message">Was not a proper XML response</stringProp>
           <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -194,16 +193,16 @@
         </ResponseAssertion>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Testing_Thread_Group" enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Testing_Thread_Group" enable="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <intProp name="LoopController.loops">-1</intProp>
           <boolProp name="LoopController.continue_forever">false</boolProp>
         </elementProp>
         <stringProp name="ThreadGroup.num_threads">10</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">10</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">60</stringProp>
         <boolProp name="ThreadGroup.scheduler">true</boolProp>
-        <stringProp name="ThreadGroup.duration">300</stringProp>
+        <stringProp name="ThreadGroup.duration">3600</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
         <boolProp name="ThreadGroup.delayedStart">false</boolProp>
@@ -232,7 +231,7 @@
         <hashTree/>
         <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
           <collectionProp name="Asserion.test_strings">
-            <stringProp name="0"></stringProp>
+            <stringProp name="0">value</stringProp>
           </collectionProp>
           <stringProp name="Assertion.custom_message">Was not a proper XML response</stringProp>
           <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -242,16 +241,16 @@
         </ResponseAssertion>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Testing_Thread_Group" enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Testing_Thread_Group" enable="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <intProp name="LoopController.loops">-1</intProp>
           <boolProp name="LoopController.continue_forever">false</boolProp>
         </elementProp>
         <stringProp name="ThreadGroup.num_threads">10</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">10</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">60</stringProp>
         <boolProp name="ThreadGroup.scheduler">true</boolProp>
-        <stringProp name="ThreadGroup.duration">300</stringProp>
+        <stringProp name="ThreadGroup.duration">3600</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
         <boolProp name="ThreadGroup.delayedStart">false</boolProp>
@@ -264,7 +263,7 @@
           </elementProp>
           <stringProp name="HTTPSampler.domain">internal-Frontend-ALB-1818299523.us-east-1.elb.amazonaws.com</stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>
-          <stringProp name="HTTPSampler.path">/xml/sample_products/browser_interface/ndfdXMLclient.php?whichClient=NDFDgen&amp;lat=${latitude}&amp;lon=${longitude}&amp;product=time-series&amp;begin=2022-08-05T00%3A00%3A00&amp;end=2024-11-09T00%3A00%3A00&amp;Unit=e&amp;conhazo=conhazo&amp;ptotsvrtstm=ptotsvrtstm&amp;XMLformat=TSML&amp;Unit=m</stringProp>
+          <stringProp name="HTTPSampler.path">/xml/sample_products/browser_interface/ndfdXMLclient.php?whichClient=NDFDgen&amp;lat=${latitude}&amp;lon=${longitude}&amp;product=time-series&amp;begin=2022-08-05T00%3A00%3A00&amp;end=2026-11-09T00%3A00%3A00&amp;Unit=e&amp;conhazo=conhazo&amp;ptotsvrtstm=ptotsvrtstm&amp;Unit=m&amp;XMLformat=DWML</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -280,7 +279,7 @@
         <hashTree/>
         <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
           <collectionProp name="Asserion.test_strings">
-            <stringProp name="0"></stringProp>
+            <stringProp name="0">value</stringProp>
           </collectionProp>
           <stringProp name="Assertion.custom_message">Was not a proper XML response</stringProp>
           <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -290,16 +289,16 @@
         </ResponseAssertion>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Testing_Thread_Group" enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Testing_Thread_Group" enable="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <intProp name="LoopController.loops">-1</intProp>
           <boolProp name="LoopController.continue_forever">false</boolProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">10</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">10</stringProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">60</stringProp>
         <boolProp name="ThreadGroup.scheduler">true</boolProp>
-        <stringProp name="ThreadGroup.duration">300</stringProp>
+        <stringProp name="ThreadGroup.duration">3600</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
         <boolProp name="ThreadGroup.delayedStart">false</boolProp>
@@ -328,7 +327,7 @@
         <hashTree/>
         <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
           <collectionProp name="Asserion.test_strings">
-            <stringProp name="0"></stringProp>
+            <stringProp name="0">value</stringProp>
           </collectionProp>
           <stringProp name="Assertion.custom_message">Was not a proper XML response</stringProp>
           <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -338,16 +337,16 @@
         </ResponseAssertion>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Testing_Thread_Group" enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Testing_Thread_Group" enable="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <intProp name="LoopController.loops">-1</intProp>
           <boolProp name="LoopController.continue_forever">false</boolProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">10</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">10</stringProp>
+        <stringProp name="ThreadGroup.num_threads">2</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">60</stringProp>
         <boolProp name="ThreadGroup.scheduler">true</boolProp>
-        <stringProp name="ThreadGroup.duration">300</stringProp>
+        <stringProp name="ThreadGroup.duration">3600</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
         <boolProp name="ThreadGroup.delayedStart">false</boolProp>
@@ -376,7 +375,7 @@
         <hashTree/>
         <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
           <collectionProp name="Asserion.test_strings">
-            <stringProp name="0"></stringProp>
+            <stringProp name="0">value</stringProp>
           </collectionProp>
           <stringProp name="Assertion.custom_message">Was not a proper XML response</stringProp>
           <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -386,16 +385,16 @@
         </ResponseAssertion>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Testing_Thread_Group" enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Testing_Thread_Group" enable="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <intProp name="LoopController.loops">-1</intProp>
           <boolProp name="LoopController.continue_forever">false</boolProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">10</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">10</stringProp>
+        <stringProp name="ThreadGroup.num_threads">5</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">60</stringProp>
         <boolProp name="ThreadGroup.scheduler">true</boolProp>
-        <stringProp name="ThreadGroup.duration">300</stringProp>
+        <stringProp name="ThreadGroup.duration">3600</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
         <boolProp name="ThreadGroup.delayedStart">false</boolProp>
@@ -424,7 +423,7 @@
         <hashTree/>
         <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
           <collectionProp name="Asserion.test_strings">
-            <stringProp name="0"></stringProp>
+            <stringProp name="0">value</stringProp>
           </collectionProp>
           <stringProp name="Assertion.custom_message">Was not a proper XML response</stringProp>
           <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -434,16 +433,16 @@
         </ResponseAssertion>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Testing_Thread_Group" enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Testing_Thread_Group" enable="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <intProp name="LoopController.loops">-1</intProp>
           <boolProp name="LoopController.continue_forever">false</boolProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">10</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">10</stringProp>
+        <stringProp name="ThreadGroup.num_threads">2</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">60</stringProp>
         <boolProp name="ThreadGroup.scheduler">true</boolProp>
-        <stringProp name="ThreadGroup.duration">300</stringProp>
+        <stringProp name="ThreadGroup.duration">3600</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
         <boolProp name="ThreadGroup.delayedStart">false</boolProp>
@@ -472,7 +471,7 @@
         <hashTree/>
         <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
           <collectionProp name="Asserion.test_strings">
-            <stringProp name="0"></stringProp>
+            <stringProp name="0">value</stringProp>
           </collectionProp>
           <stringProp name="Assertion.custom_message">Was not a proper XML response</stringProp>
           <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -482,16 +481,16 @@
         </ResponseAssertion>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Testing_Thread_Group" enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Testing_Thread_Group" enable="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <intProp name="LoopController.loops">-1</intProp>
           <boolProp name="LoopController.continue_forever">false</boolProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">10</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">10</stringProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">60</stringProp>
         <boolProp name="ThreadGroup.scheduler">true</boolProp>
-        <stringProp name="ThreadGroup.duration">300</stringProp>
+        <stringProp name="ThreadGroup.duration">3600</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
         <boolProp name="ThreadGroup.delayedStart">false</boolProp>
@@ -520,7 +519,7 @@
         <hashTree/>
         <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
           <collectionProp name="Asserion.test_strings">
-            <stringProp name="0"></stringProp>
+            <stringProp name="0">value</stringProp>
           </collectionProp>
           <stringProp name="Assertion.custom_message">Was not a proper XML response</stringProp>
           <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -530,16 +529,16 @@
         </ResponseAssertion>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Testing_Thread_Group" enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Testing_Thread_Group" enable="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <intProp name="LoopController.loops">-1</intProp>
           <boolProp name="LoopController.continue_forever">false</boolProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">10</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">10</stringProp>
+        <stringProp name="ThreadGroup.num_threads">2</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">60</stringProp>
         <boolProp name="ThreadGroup.scheduler">true</boolProp>
-        <stringProp name="ThreadGroup.duration">300</stringProp>
+        <stringProp name="ThreadGroup.duration">3600</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
         <boolProp name="ThreadGroup.delayedStart">false</boolProp>
@@ -568,7 +567,7 @@
         <hashTree/>
         <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
           <collectionProp name="Asserion.test_strings">
-            <stringProp name="0"></stringProp>
+            <stringProp name="0">value</stringProp>
           </collectionProp>
           <stringProp name="Assertion.custom_message">Was not a proper XML response</stringProp>
           <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -578,16 +577,16 @@
         </ResponseAssertion>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Testing_Thread_Group" enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Testing_Thread_Group" enable="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <intProp name="LoopController.loops">-1</intProp>
           <boolProp name="LoopController.continue_forever">false</boolProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">10</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">10</stringProp>
+        <stringProp name="ThreadGroup.num_threads">2</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">60</stringProp>
         <boolProp name="ThreadGroup.scheduler">true</boolProp>
-        <stringProp name="ThreadGroup.duration">300</stringProp>
+        <stringProp name="ThreadGroup.duration">3600</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
         <boolProp name="ThreadGroup.delayedStart">false</boolProp>
@@ -616,7 +615,7 @@
         <hashTree/>
         <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
           <collectionProp name="Asserion.test_strings">
-            <stringProp name="0"></stringProp>
+            <stringProp name="0">value</stringProp>
           </collectionProp>
           <stringProp name="Assertion.custom_message">Was not a proper XML response</stringProp>
           <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -626,16 +625,16 @@
         </ResponseAssertion>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Testing_Thread_Group" enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Testing_Thread_Group" enable="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <intProp name="LoopController.loops">-1</intProp>
           <boolProp name="LoopController.continue_forever">false</boolProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">10</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">10</stringProp>
+        <stringProp name="ThreadGroup.num_threads">2</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">60</stringProp>
         <boolProp name="ThreadGroup.scheduler">true</boolProp>
-        <stringProp name="ThreadGroup.duration">300</stringProp>
+        <stringProp name="ThreadGroup.duration">3600</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
         <boolProp name="ThreadGroup.delayedStart">false</boolProp>
@@ -664,7 +663,7 @@
         <hashTree/>
         <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
           <collectionProp name="Asserion.test_strings">
-            <stringProp name="0"></stringProp>
+            <stringProp name="0">value</stringProp>
           </collectionProp>
           <stringProp name="Assertion.custom_message">Was not a proper XML response</stringProp>
           <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -674,16 +673,16 @@
         </ResponseAssertion>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Testing_Thread_Group" enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Testing_Thread_Group" enable="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <intProp name="LoopController.loops">-1</intProp>
           <boolProp name="LoopController.continue_forever">false</boolProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">10</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">10</stringProp>
+        <stringProp name="ThreadGroup.num_threads">2</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">60</stringProp>
         <boolProp name="ThreadGroup.scheduler">true</boolProp>
-        <stringProp name="ThreadGroup.duration">300</stringProp>
+        <stringProp name="ThreadGroup.duration">3600</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
         <boolProp name="ThreadGroup.delayedStart">false</boolProp>
@@ -712,7 +711,7 @@
         <hashTree/>
         <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
           <collectionProp name="Asserion.test_strings">
-            <stringProp name="0"></stringProp>
+            <stringProp name="0">value</stringProp>
           </collectionProp>
           <stringProp name="Assertion.custom_message">Was not a proper XML response</stringProp>
           <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
