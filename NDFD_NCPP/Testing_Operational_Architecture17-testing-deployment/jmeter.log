@@ -1,0 +1,694 @@
+2024-04-11 14:38:34,021 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2024-04-11 14:38:34,032 INFO o.a.j.JMeter: Loading user properties from: /home/shane.mill/apache-jmeter-5.6.3/bin/user.properties
+2024-04-11 14:38:34,033 INFO o.a.j.JMeter: Loading system properties from: /home/shane.mill/apache-jmeter-5.6.3/bin/system.properties
+2024-04-11 14:38:34,037 INFO o.a.j.JMeter: Copyright (c) 1998-2024 The Apache Software Foundation
+2024-04-11 14:38:34,037 INFO o.a.j.JMeter: Version 5.6.3
+2024-04-11 14:38:34,037 INFO o.a.j.JMeter: java.version=1.8.0_402
+2024-04-11 14:38:34,037 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2024-04-11 14:38:34,037 INFO o.a.j.JMeter: os.name=Linux
+2024-04-11 14:38:34,037 INFO o.a.j.JMeter: os.arch=amd64
+2024-04-11 14:38:34,037 INFO o.a.j.JMeter: os.version=3.10.0-1160.114.2.el7.x86_64
+2024-04-11 14:38:34,037 INFO o.a.j.JMeter: file.encoding=UTF-8
+2024-04-11 14:38:34,037 INFO o.a.j.JMeter: java.awt.headless=true
+2024-04-11 14:38:34,037 INFO o.a.j.JMeter: Max memory     =1073741824
+2024-04-11 14:38:34,037 INFO o.a.j.JMeter: Available Processors =16
+2024-04-11 14:38:34,041 INFO o.a.j.JMeter: Default Locale=English (EN)
+2024-04-11 14:38:34,041 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2024-04-11 14:38:34,041 INFO o.a.j.JMeter: JMeterHome=/home/shane.mill/apache-jmeter-5.6.3
+2024-04-11 14:38:34,042 INFO o.a.j.JMeter: user.dir  =/home/shane.mill/ShaneMill1.github.io/NDFD_NCPP/Testing_Operational_Architecture17-testing-deployment
+2024-04-11 14:38:34,042 INFO o.a.j.JMeter: PWD       =/home/shane.mill/ShaneMill1.github.io/NDFD_NCPP/Testing_Operational_Architecture17-testing-deployment
+2024-04-11 14:38:34,042 INFO o.a.j.JMeter: IP: 205.156.8.80 Name: ip-205-156-8-80.ec2.internal FullName: ip-205-156-8-80.ec2.internal
+2024-04-11 14:38:34,060 INFO o.a.j.JMeter: Setting property 'jmeter.reportgenerator.outputdir' to:'/home/shane.mill/ShaneMill1.github.io/NDFD_NCPP/Testing_Operational_Architecture17-testing-deployment/results'
+2024-04-11 14:38:34,062 INFO o.a.j.s.FileServer: Default base='/home/shane.mill/ShaneMill1.github.io/NDFD_NCPP/Testing_Operational_Architecture17-testing-deployment'
+2024-04-11 14:38:34,063 INFO o.a.j.s.FileServer: Set new base='/home/shane.mill/ShaneMill1.github.io/NDFD_NCPP/Testing_Operational_Architecture17-testing-deployment'
+2024-04-11 14:38:34,174 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2024-04-11 14:38:34,188 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2024-04-11 14:38:34,192 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2024-04-11 14:38:34,198 INFO o.a.j.s.SaveService: Loading file: test_plan.jmx
+2024-04-11 14:38:34,271 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2024-04-11 14:38:34,271 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2024-04-11 14:38:34,271 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2024-04-11 14:38:34,271 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2024-04-11 14:38:34,271 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2024-04-11 14:38:34,271 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2024-04-11 14:38:34,500 INFO o.a.j.JMeter: Creating summariser <summary>
+2024-04-11 14:38:34,512 INFO o.a.j.r.d.ReportGenerator: ReportGenerator will use for Parsing the separator: ','
+2024-04-11 14:38:34,512 INFO o.a.j.r.d.ReportGenerator: Will generate report at end of test from  results file: SummaryReport.jtl
+2024-04-11 14:38:34,512 INFO o.a.j.r.d.ReportGenerator: Reading report generator properties from: /home/shane.mill/apache-jmeter-5.6.3/bin/reportgenerator.properties
+2024-04-11 14:38:34,513 INFO o.a.j.r.d.ReportGenerator: Merging with JMeter properties
+2024-04-11 14:38:34,517 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.temp_dir' not found, using default value 'temp' instead.
+2024-04-11 14:38:34,519 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.apdex_per_transaction' not found, using default value 'null' instead.
+2024-04-11 14:38:34,519 INFO o.a.j.r.c.ReportGeneratorConfiguration: apdex_per_transaction is empty, not APDEX per transaction customization
+2024-04-11 14:38:34,519 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.sample_filter' not found, using default value 'null' instead.
+2024-04-11 14:38:34,519 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.report_title' not found, using default value 'null' instead.
+2024-04-11 14:38:34,519 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.start_date' not found, using default value 'null' instead.
+2024-04-11 14:38:34,519 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.end_date' not found, using default value 'null' instead.
+2024-04-11 14:38:34,519 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.date_format' not found, using default value 'null' instead.
+2024-04-11 14:38:34,523 INFO o.a.j.r.c.ReportGeneratorConfiguration: Will use date range start date: null, end date: null
+2024-04-11 14:38:34,526 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.totalTPS.exclude_controllers' not found, using default value 'false' instead.
+2024-04-11 14:38:34,526 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.activeThreadsOverTime.exclude_controllers' not found, using default value 'false' instead.
+2024-04-11 14:38:34,526 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.timeVsThreads.exclude_controllers' not found, using default value 'false' instead.
+2024-04-11 14:38:34,527 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimeDistribution.exclude_controllers' not found, using default value 'false' instead.
+2024-04-11 14:38:34,527 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.transactionsPerSecond.exclude_controllers' not found, using default value 'false' instead.
+2024-04-11 14:38:34,527 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentiles.exclude_controllers' not found, using default value 'false' instead.
+2024-04-11 14:38:34,527 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentilesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2024-04-11 14:38:34,527 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2024-04-11 14:38:34,527 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.connectTimeOverTime.exclude_controllers' not found, using default value 'false' instead.
+2024-04-11 14:38:34,527 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.latenciesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2024-04-11 14:38:34,528 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.filters_only_sample_series' not found, using default value 'true' instead.
+2024-04-11 14:38:34,528 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.series_filter' not found, using default value '' instead.
+2024-04-11 14:38:34,528 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.show_controllers_only' not found, using default value 'false' instead.
+2024-04-11 14:38:34,528 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.filters_only_sample_series' not found, using default value 'true' instead.
+2024-04-11 14:38:34,528 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.series_filter' not found, using default value '' instead.
+2024-04-11 14:38:34,529 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.show_controllers_only' not found, using default value 'false' instead.
+2024-04-11 14:38:34,535 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2024-04-11 14:38:34,536 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2024-04-11 14:38:34,536 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2024-04-11 14:38:34,541 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2024-04-11 14:38:34,541 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2024-04-11 14:38:34,791 INFO o.a.j.JMeter: Running test (1712846314791)
+2024-04-11 14:38:34,847 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Testing_Thread_Group
+2024-04-11 14:38:34,847 INFO o.a.j.e.StandardJMeterEngine: Starting 50 threads for group Testing_Thread_Group.
+2024-04-11 14:38:34,847 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2024-04-11 14:38:34,848 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=50 ramp-up=60 delayedStart=false
+2024-04-11 14:38:34,854 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 1-1
+2024-04-11 14:38:34,866 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2024-04-11 14:38:34,866 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 2 : Testing_Thread_Group
+2024-04-11 14:38:34,866 INFO o.a.j.e.StandardJMeterEngine: Starting 50 threads for group Testing_Thread_Group.
+2024-04-11 14:38:34,866 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2024-04-11 14:38:34,866 INFO o.a.j.t.ThreadGroup: Starting thread group... number=2 threads=50 ramp-up=60 delayedStart=false
+2024-04-11 14:38:34,866 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 2-1
+2024-04-11 14:38:34,873 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = ip-205-156-8-80.ec2.internal
+2024-04-11 14:38:34,877 INFO o.a.j.t.ThreadGroup: Started thread group number 2
+2024-04-11 14:38:34,877 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 3 : Testing_Thread_Group
+2024-04-11 14:38:34,877 INFO o.a.j.e.StandardJMeterEngine: Starting 2 threads for group Testing_Thread_Group.
+2024-04-11 14:38:34,877 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2024-04-11 14:38:34,877 INFO o.a.j.t.ThreadGroup: Starting thread group... number=3 threads=2 ramp-up=60 delayedStart=false
+2024-04-11 14:38:34,878 INFO o.a.j.t.ThreadGroup: Started thread group number 3
+2024-04-11 14:38:34,878 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 4 : Testing_Thread_Group
+2024-04-11 14:38:34,878 INFO o.a.j.e.StandardJMeterEngine: Starting 2 threads for group Testing_Thread_Group.
+2024-04-11 14:38:34,878 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2024-04-11 14:38:34,878 INFO o.a.j.t.ThreadGroup: Starting thread group... number=4 threads=2 ramp-up=60 delayedStart=false
+2024-04-11 14:38:34,878 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 3-1
+2024-04-11 14:38:34,878 INFO o.a.j.t.ThreadGroup: Started thread group number 4
+2024-04-11 14:38:34,879 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2024-04-11 14:38:34,878 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 4-1
+2024-04-11 14:38:34,880 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2024-04-11 14:38:34,881 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2024-04-11 14:38:34,882 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to UTF-8
+2024-04-11 14:38:34,882 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2024-04-11 14:38:34,882 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2024-04-11 14:38:36,051 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 1-2
+2024-04-11 14:38:36,067 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 2-2
+2024-04-11 14:38:36,497 INFO o.a.j.u.JsseSSLManager: Using default SSL protocol: TLS
+2024-04-11 14:38:36,497 INFO o.a.j.u.JsseSSLManager: SSL session context: per-thread
+2024-04-11 14:38:37,250 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 1-3
+2024-04-11 14:38:37,267 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 2-3
+2024-04-11 14:38:38,450 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 1-4
+2024-04-11 14:38:38,467 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 2-4
+2024-04-11 14:38:39,650 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 1-5
+2024-04-11 14:38:39,666 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 2-5
+2024-04-11 14:38:40,849 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 1-6
+2024-04-11 14:38:40,867 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 2-6
+2024-04-11 14:38:42,049 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 1-7
+2024-04-11 14:38:42,066 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 2-7
+2024-04-11 14:38:43,249 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 1-8
+2024-04-11 14:38:43,267 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 2-8
+2024-04-11 14:38:44,448 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 1-9
+2024-04-11 14:38:44,467 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 2-9
+2024-04-11 14:38:45,649 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 1-10
+2024-04-11 14:38:45,666 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 2-10
+2024-04-11 14:38:46,848 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 1-11
+2024-04-11 14:38:46,867 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 2-11
+2024-04-11 14:38:48,048 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 1-12
+2024-04-11 14:38:48,067 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 2-12
+2024-04-11 14:38:49,250 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 1-13
+2024-04-11 14:38:49,266 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 2-13
+2024-04-11 14:38:50,449 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 1-14
+2024-04-11 14:38:50,467 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 2-14
+2024-04-11 14:38:51,648 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 1-15
+2024-04-11 14:38:51,667 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 2-15
+2024-04-11 14:38:52,848 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 1-16
+2024-04-11 14:38:52,866 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 2-16
+2024-04-11 14:38:54,049 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 1-17
+2024-04-11 14:38:54,067 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 2-17
+2024-04-11 14:38:55,250 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 1-18
+2024-04-11 14:38:55,266 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 2-18
+2024-04-11 14:38:56,448 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 1-19
+2024-04-11 14:38:56,466 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 2-19
+2024-04-11 14:38:57,649 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 1-20
+2024-04-11 14:38:57,667 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 2-20
+2024-04-11 14:38:58,848 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 1-21
+2024-04-11 14:38:58,867 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 2-21
+2024-04-11 14:39:00,017 INFO o.a.j.r.Summariser: summary +   1040 in 00:00:25 =   41.2/s Avg:   568 Min:   315 Max:  3725 Err:     0 (0.00%) Active: 44 Started: 44 Finished: 0
+2024-04-11 14:39:00,048 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 1-22
+2024-04-11 14:39:00,066 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 2-22
+2024-04-11 14:39:01,248 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 1-23
+2024-04-11 14:39:01,266 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 2-23
+2024-04-11 14:39:02,449 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 1-24
+2024-04-11 14:39:02,466 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 2-24
+2024-04-11 14:39:03,649 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 1-25
+2024-04-11 14:39:03,667 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 2-25
+2024-04-11 14:39:04,848 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 1-26
+2024-04-11 14:39:04,867 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 2-26
+2024-04-11 14:39:04,877 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 3-2
+2024-04-11 14:39:04,879 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 4-2
+2024-04-11 14:39:06,048 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 1-27
+2024-04-11 14:39:06,066 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 2-27
+2024-04-11 14:39:07,249 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 1-28
+2024-04-11 14:39:07,266 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 2-28
+2024-04-11 14:39:08,449 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 1-29
+2024-04-11 14:39:08,467 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 2-29
+2024-04-11 14:39:09,648 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 1-30
+2024-04-11 14:39:09,667 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 2-30
+2024-04-11 14:39:10,848 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 1-31
+2024-04-11 14:39:10,867 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 2-31
+2024-04-11 14:39:12,048 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 1-32
+2024-04-11 14:39:12,066 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 2-32
+2024-04-11 14:39:13,249 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 1-33
+2024-04-11 14:39:13,266 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 2-33
+2024-04-11 14:39:14,449 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 1-34
+2024-04-11 14:39:14,466 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 2-34
+2024-04-11 14:39:15,649 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 1-35
+2024-04-11 14:39:15,666 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 2-35
+2024-04-11 14:39:16,848 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 1-36
+2024-04-11 14:39:16,867 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 2-36
+2024-04-11 14:39:18,048 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 1-37
+2024-04-11 14:39:18,066 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 2-37
+2024-04-11 14:39:19,249 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 1-38
+2024-04-11 14:39:19,266 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 2-38
+2024-04-11 14:39:20,449 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 1-39
+2024-04-11 14:39:20,466 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 2-39
+2024-04-11 14:39:21,648 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 1-40
+2024-04-11 14:39:21,666 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 2-40
+2024-04-11 14:39:22,848 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 1-41
+2024-04-11 14:39:22,867 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 2-41
+2024-04-11 14:39:24,048 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 1-42
+2024-04-11 14:39:24,067 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 2-42
+2024-04-11 14:39:25,249 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 1-43
+2024-04-11 14:39:25,266 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 2-43
+2024-04-11 14:39:26,449 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 1-44
+2024-04-11 14:39:26,467 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 2-44
+2024-04-11 14:39:27,648 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 1-45
+2024-04-11 14:39:27,666 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 2-45
+2024-04-11 14:39:28,848 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 1-46
+2024-04-11 14:39:28,867 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 2-46
+2024-04-11 14:39:30,036 INFO o.a.j.r.Summariser: summary +   3017 in 00:00:30 =  100.5/s Avg:   701 Min:   365 Max:  2208 Err:     0 (0.00%) Active: 96 Started: 96 Finished: 0
+2024-04-11 14:39:30,036 INFO o.a.j.r.Summariser: summary =   4057 in 00:00:55 =   73.4/s Avg:   667 Min:   315 Max:  3725 Err:     0 (0.00%)
+2024-04-11 14:39:30,049 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 1-47
+2024-04-11 14:39:30,067 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 2-47
+2024-04-11 14:39:31,248 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 1-48
+2024-04-11 14:39:31,266 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 2-48
+2024-04-11 14:39:32,448 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 1-49
+2024-04-11 14:39:32,467 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 2-49
+2024-04-11 14:39:33,649 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 1-50
+2024-04-11 14:39:33,666 INFO o.a.j.t.JMeterThread: Thread started: Testing_Thread_Group 2-50
+2024-04-11 14:40:00,043 INFO o.a.j.r.Summariser: summary +   3148 in 00:00:30 =  104.9/s Avg:   979 Min:   603 Max:  2482 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 14:40:00,043 INFO o.a.j.r.Summariser: summary =   7205 in 00:01:25 =   84.5/s Avg:   803 Min:   315 Max:  3725 Err:     0 (0.00%)
+2024-04-11 14:40:30,001 INFO o.a.j.r.Summariser: summary +   3265 in 00:00:30 =  109.0/s Avg:   957 Min:   539 Max:  2957 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 14:40:30,002 INFO o.a.j.r.Summariser: summary =  10470 in 00:01:55 =   90.9/s Avg:   851 Min:   315 Max:  3725 Err:     0 (0.00%)
+2024-04-11 14:41:00,006 INFO o.a.j.r.Summariser: summary +   3144 in 00:00:30 =  104.8/s Avg:   986 Min:   534 Max:  2462 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 14:41:00,006 INFO o.a.j.r.Summariser: summary =  13614 in 00:02:25 =   93.8/s Avg:   882 Min:   315 Max:  3725 Err:     0 (0.00%)
+2024-04-11 14:41:30,023 INFO o.a.j.r.Summariser: summary +   3012 in 00:00:30 =  100.3/s Avg:  1043 Min:   530 Max:  2611 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 14:41:30,024 INFO o.a.j.r.Summariser: summary =  16626 in 00:02:55 =   94.9/s Avg:   911 Min:   315 Max:  3725 Err:     0 (0.00%)
+2024-04-11 14:42:00,002 INFO o.a.j.r.Summariser: summary +   3026 in 00:00:30 =  100.9/s Avg:  1034 Min:   529 Max:  2567 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 14:42:00,002 INFO o.a.j.r.Summariser: summary =  19652 in 00:03:25 =   95.8/s Avg:   930 Min:   315 Max:  3725 Err:     0 (0.00%)
+2024-04-11 14:42:30,001 INFO o.a.j.r.Summariser: summary +   2962 in 00:00:30 =   98.7/s Avg:  1042 Min:   540 Max:  2605 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 14:42:30,001 INFO o.a.j.r.Summariser: summary =  22614 in 00:03:55 =   96.1/s Avg:   945 Min:   315 Max:  3725 Err:     0 (0.00%)
+2024-04-11 14:43:00,013 INFO o.a.j.r.Summariser: summary +   3047 in 00:00:30 =  101.5/s Avg:  1024 Min:   547 Max:  2806 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 14:43:00,014 INFO o.a.j.r.Summariser: summary =  25661 in 00:04:25 =   96.8/s Avg:   954 Min:   315 Max:  3725 Err:     0 (0.00%)
+2024-04-11 14:43:30,015 INFO o.a.j.r.Summariser: summary +   2905 in 00:00:30 =   96.8/s Avg:  1073 Min:   542 Max:  3430 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 14:43:30,015 INFO o.a.j.r.Summariser: summary =  28566 in 00:04:55 =   96.8/s Avg:   966 Min:   315 Max:  3725 Err:     0 (0.00%)
+2024-04-11 14:44:00,009 INFO o.a.j.r.Summariser: summary +   3003 in 00:00:30 =  100.1/s Avg:  1048 Min:   564 Max:  3234 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 14:44:00,009 INFO o.a.j.r.Summariser: summary =  31569 in 00:05:25 =   97.1/s Avg:   974 Min:   315 Max:  3725 Err:     0 (0.00%)
+2024-04-11 14:44:30,003 INFO o.a.j.r.Summariser: summary +   3008 in 00:00:30 =  100.3/s Avg:  1035 Min:   596 Max:  2943 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 14:44:30,003 INFO o.a.j.r.Summariser: summary =  34577 in 00:05:55 =   97.3/s Avg:   979 Min:   315 Max:  3725 Err:     0 (0.00%)
+2024-04-11 14:45:00,010 INFO o.a.j.r.Summariser: summary +   2984 in 00:00:30 =   99.4/s Avg:  1040 Min:   574 Max:  2708 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 14:45:00,010 INFO o.a.j.r.Summariser: summary =  37561 in 00:06:25 =   97.5/s Avg:   984 Min:   315 Max:  3725 Err:     0 (0.00%)
+2024-04-11 14:45:30,015 INFO o.a.j.r.Summariser: summary +   2963 in 00:00:30 =   98.8/s Avg:  1055 Min:   467 Max:  2757 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 14:45:30,016 INFO o.a.j.r.Summariser: summary =  40524 in 00:06:55 =   97.6/s Avg:   989 Min:   315 Max:  3725 Err:     0 (0.00%)
+2024-04-11 14:46:00,074 INFO o.a.j.r.Summariser: summary +   2934 in 00:00:30 =   97.6/s Avg:  1061 Min:   521 Max:  2543 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 14:46:00,075 INFO o.a.j.r.Summariser: summary =  43458 in 00:07:25 =   97.6/s Avg:   994 Min:   315 Max:  3725 Err:     0 (0.00%)
+2024-04-11 14:46:30,015 INFO o.a.j.r.Summariser: summary +   3093 in 00:00:30 =  103.3/s Avg:  1008 Min:   554 Max:  2501 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 14:46:30,015 INFO o.a.j.r.Summariser: summary =  46551 in 00:07:55 =   98.0/s Avg:   995 Min:   315 Max:  3725 Err:     0 (0.00%)
+2024-04-11 14:47:00,013 INFO o.a.j.r.Summariser: summary +   3155 in 00:00:30 =  105.2/s Avg:   993 Min:   473 Max:  4186 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 14:47:00,013 INFO o.a.j.r.Summariser: summary =  49706 in 00:08:25 =   98.4/s Avg:   995 Min:   315 Max:  4186 Err:     0 (0.00%)
+2024-04-11 14:47:30,023 INFO o.a.j.r.Summariser: summary +   3116 in 00:00:30 =  103.8/s Avg:   994 Min:   487 Max:  2608 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 14:47:30,024 INFO o.a.j.r.Summariser: summary =  52822 in 00:08:55 =   98.7/s Avg:   995 Min:   315 Max:  4186 Err:     0 (0.00%)
+2024-04-11 14:48:00,022 INFO o.a.j.r.Summariser: summary +   3164 in 00:00:30 =  105.5/s Avg:   985 Min:   605 Max:  2778 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 14:48:00,022 INFO o.a.j.r.Summariser: summary =  55986 in 00:09:25 =   99.0/s Avg:   994 Min:   315 Max:  4186 Err:     0 (0.00%)
+2024-04-11 14:48:30,047 INFO o.a.j.r.Summariser: summary +   3181 in 00:00:30 =  105.9/s Avg:   979 Min:   502 Max:  3140 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 14:48:30,048 INFO o.a.j.r.Summariser: summary =  59167 in 00:09:55 =   99.4/s Avg:   994 Min:   315 Max:  4186 Err:     0 (0.00%)
+2024-04-11 14:49:00,017 INFO o.a.j.r.Summariser: summary +   3195 in 00:00:30 =  106.6/s Avg:   974 Min:   506 Max:  2552 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 14:49:00,017 INFO o.a.j.r.Summariser: summary =  62362 in 00:10:25 =   99.7/s Avg:   993 Min:   315 Max:  4186 Err:     0 (0.00%)
+2024-04-11 14:49:30,011 INFO o.a.j.r.Summariser: summary +   3167 in 00:00:30 =  105.6/s Avg:   981 Min:   532 Max:  3535 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 14:49:30,011 INFO o.a.j.r.Summariser: summary =  65529 in 00:10:55 =  100.0/s Avg:   992 Min:   315 Max:  4186 Err:     0 (0.00%)
+2024-04-11 14:50:00,014 INFO o.a.j.r.Summariser: summary +   3177 in 00:00:30 =  105.9/s Avg:   991 Min:   461 Max:  3823 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 14:50:00,014 INFO o.a.j.r.Summariser: summary =  68706 in 00:11:25 =  100.3/s Avg:   992 Min:   315 Max:  4186 Err:     0 (0.00%)
+2024-04-11 14:50:30,048 INFO o.a.j.r.Summariser: summary +   3145 in 00:00:30 =  104.7/s Avg:   988 Min:   524 Max:  2622 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 14:50:30,049 INFO o.a.j.r.Summariser: summary =  71851 in 00:11:55 =  100.5/s Avg:   992 Min:   315 Max:  4186 Err:     0 (0.00%)
+2024-04-11 14:51:00,009 INFO o.a.j.r.Summariser: summary +   3130 in 00:00:30 =  104.5/s Avg:   996 Min:   500 Max:  2541 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 14:51:00,009 INFO o.a.j.r.Summariser: summary =  74981 in 00:12:25 =  100.6/s Avg:   992 Min:   315 Max:  4186 Err:     0 (0.00%)
+2024-04-11 14:51:30,010 INFO o.a.j.r.Summariser: summary +   3128 in 00:00:30 =  104.3/s Avg:   996 Min:   568 Max:  2869 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 14:51:30,010 INFO o.a.j.r.Summariser: summary =  78109 in 00:12:55 =  100.8/s Avg:   992 Min:   315 Max:  4186 Err:     0 (0.00%)
+2024-04-11 14:52:00,011 INFO o.a.j.r.Summariser: summary +   3214 in 00:00:30 =  107.1/s Avg:   974 Min:   544 Max:  2654 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 14:52:00,011 INFO o.a.j.r.Summariser: summary =  81323 in 00:13:25 =  101.0/s Avg:   991 Min:   315 Max:  4186 Err:     0 (0.00%)
+2024-04-11 14:52:30,012 INFO o.a.j.r.Summariser: summary +   3118 in 00:00:30 =  103.9/s Avg:  1001 Min:   484 Max:  3794 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 14:52:30,012 INFO o.a.j.r.Summariser: summary =  84441 in 00:13:55 =  101.1/s Avg:   992 Min:   315 Max:  4186 Err:     0 (0.00%)
+2024-04-11 14:53:00,022 INFO o.a.j.r.Summariser: summary +   3140 in 00:00:30 =  104.6/s Avg:   995 Min:   469 Max:  4881 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 14:53:00,022 INFO o.a.j.r.Summariser: summary =  87581 in 00:14:25 =  101.2/s Avg:   992 Min:   315 Max:  4881 Err:     0 (0.00%)
+2024-04-11 14:53:30,004 INFO o.a.j.r.Summariser: summary +   3127 in 00:00:30 =  104.3/s Avg:   991 Min:   586 Max:  2674 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 14:53:30,004 INFO o.a.j.r.Summariser: summary =  90708 in 00:14:55 =  101.3/s Avg:   992 Min:   315 Max:  4881 Err:     0 (0.00%)
+2024-04-11 14:54:00,016 INFO o.a.j.r.Summariser: summary +   3206 in 00:00:30 =  106.8/s Avg:   978 Min:   473 Max:  2622 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 14:54:00,016 INFO o.a.j.r.Summariser: summary =  93914 in 00:15:25 =  101.5/s Avg:   991 Min:   315 Max:  4881 Err:     0 (0.00%)
+2024-04-11 14:54:30,024 INFO o.a.j.r.Summariser: summary +   3089 in 00:00:30 =  102.9/s Avg:  1006 Min:   529 Max:  2574 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 14:54:30,025 INFO o.a.j.r.Summariser: summary =  97003 in 00:15:55 =  101.5/s Avg:   992 Min:   315 Max:  4881 Err:     0 (0.00%)
+2024-04-11 14:55:00,016 INFO o.a.j.r.Summariser: summary +   3010 in 00:00:30 =  100.4/s Avg:  1035 Min:   629 Max:  2643 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 14:55:00,016 INFO o.a.j.r.Summariser: summary = 100013 in 00:16:25 =  101.5/s Avg:   993 Min:   315 Max:  4881 Err:     0 (0.00%)
+2024-04-11 14:55:30,006 INFO o.a.j.r.Summariser: summary +   3001 in 00:00:30 =  100.1/s Avg:  1034 Min:   557 Max:  3789 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 14:55:30,007 INFO o.a.j.r.Summariser: summary = 103014 in 00:16:55 =  101.5/s Avg:   994 Min:   315 Max:  4881 Err:     0 (0.00%)
+2024-04-11 14:56:00,033 INFO o.a.j.r.Summariser: summary +   3034 in 00:00:30 =  101.0/s Avg:  1028 Min:   471 Max:  4822 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 14:56:00,033 INFO o.a.j.r.Summariser: summary = 106048 in 00:17:25 =  101.5/s Avg:   995 Min:   315 Max:  4881 Err:     0 (0.00%)
+2024-04-11 14:56:30,006 INFO o.a.j.r.Summariser: summary +   2981 in 00:00:30 =   99.5/s Avg:  1053 Min:   578 Max:  2611 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 14:56:30,006 INFO o.a.j.r.Summariser: summary = 109029 in 00:17:55 =  101.4/s Avg:   997 Min:   315 Max:  4881 Err:     0 (0.00%)
+2024-04-11 14:57:00,006 INFO o.a.j.r.Summariser: summary +   3117 in 00:00:30 =  103.9/s Avg:   993 Min:   560 Max:  2974 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 14:57:00,006 INFO o.a.j.r.Summariser: summary = 112146 in 00:18:25 =  101.5/s Avg:   997 Min:   315 Max:  4881 Err:     0 (0.00%)
+2024-04-11 14:57:30,002 INFO o.a.j.r.Summariser: summary +   3130 in 00:00:30 =  104.3/s Avg:   997 Min:   565 Max:  2725 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 14:57:30,002 INFO o.a.j.r.Summariser: summary = 115276 in 00:18:55 =  101.5/s Avg:   997 Min:   315 Max:  4881 Err:     0 (0.00%)
+2024-04-11 14:58:00,036 INFO o.a.j.r.Summariser: summary +   3054 in 00:00:30 =  101.7/s Avg:  1021 Min:   529 Max:  3096 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 14:58:00,036 INFO o.a.j.r.Summariser: summary = 118330 in 00:19:25 =  101.5/s Avg:   997 Min:   315 Max:  4881 Err:     0 (0.00%)
+2024-04-11 14:58:30,002 INFO o.a.j.r.Summariser: summary +   2961 in 00:00:30 =   98.8/s Avg:  1049 Min:   503 Max:  3952 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 14:58:30,002 INFO o.a.j.r.Summariser: summary = 121291 in 00:19:55 =  101.5/s Avg:   999 Min:   315 Max:  4881 Err:     0 (0.00%)
+2024-04-11 14:59:00,020 INFO o.a.j.r.Summariser: summary +   3029 in 00:00:30 =  100.9/s Avg:  1037 Min:   490 Max:  4752 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 14:59:00,020 INFO o.a.j.r.Summariser: summary = 124320 in 00:20:25 =  101.5/s Avg:  1000 Min:   315 Max:  4881 Err:     0 (0.00%)
+2024-04-11 14:59:30,028 INFO o.a.j.r.Summariser: summary +   3114 in 00:00:30 =  103.8/s Avg:  1002 Min:   540 Max:  4455 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 14:59:30,028 INFO o.a.j.r.Summariser: summary = 127434 in 00:20:55 =  101.5/s Avg:  1000 Min:   315 Max:  4881 Err:     0 (0.00%)
+2024-04-11 15:00:00,006 INFO o.a.j.r.Summariser: summary +   3022 in 00:00:30 =  100.8/s Avg:  1030 Min:   594 Max:  3003 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:00:00,006 INFO o.a.j.r.Summariser: summary = 130456 in 00:21:25 =  101.5/s Avg:  1000 Min:   315 Max:  4881 Err:     0 (0.00%)
+2024-04-11 15:00:30,015 INFO o.a.j.r.Summariser: summary +   2940 in 00:00:30 =   98.0/s Avg:  1062 Min:   589 Max:  2843 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:00:30,015 INFO o.a.j.r.Summariser: summary = 133396 in 00:21:55 =  101.4/s Avg:  1002 Min:   315 Max:  4881 Err:     0 (0.00%)
+2024-04-11 15:01:00,037 INFO o.a.j.r.Summariser: summary +   3028 in 00:00:30 =  100.9/s Avg:  1030 Min:   529 Max:  2830 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:01:00,037 INFO o.a.j.r.Summariser: summary = 136424 in 00:22:25 =  101.4/s Avg:  1002 Min:   315 Max:  4881 Err:     0 (0.00%)
+2024-04-11 15:01:30,023 INFO o.a.j.r.Summariser: summary +   2967 in 00:00:30 =   98.9/s Avg:  1047 Min:   594 Max:  3931 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:01:30,023 INFO o.a.j.r.Summariser: summary = 139391 in 00:22:55 =  101.4/s Avg:  1003 Min:   315 Max:  4881 Err:     0 (0.00%)
+2024-04-11 15:02:00,012 INFO o.a.j.r.Summariser: summary +   3049 in 00:00:30 =  101.7/s Avg:  1026 Min:   491 Max:  4263 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:02:00,013 INFO o.a.j.r.Summariser: summary = 142440 in 00:23:25 =  101.4/s Avg:  1004 Min:   315 Max:  4881 Err:     0 (0.00%)
+2024-04-11 15:02:30,010 INFO o.a.j.r.Summariser: summary +   3124 in 00:00:30 =  104.1/s Avg:   993 Min:   475 Max:  4409 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:02:30,010 INFO o.a.j.r.Summariser: summary = 145564 in 00:23:55 =  101.4/s Avg:  1004 Min:   315 Max:  4881 Err:     0 (0.00%)
+2024-04-11 15:03:00,025 INFO o.a.j.r.Summariser: summary +   3186 in 00:00:30 =  106.1/s Avg:   984 Min:   539 Max:  2839 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:03:00,025 INFO o.a.j.r.Summariser: summary = 148750 in 00:24:25 =  101.5/s Avg:  1003 Min:   315 Max:  4881 Err:     0 (0.00%)
+2024-04-11 15:03:30,039 INFO o.a.j.r.Summariser: summary +   3092 in 00:00:30 =  103.0/s Avg:  1008 Min:   545 Max:  2799 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:03:30,040 INFO o.a.j.r.Summariser: summary = 151842 in 00:24:55 =  101.5/s Avg:  1003 Min:   315 Max:  4881 Err:     0 (0.00%)
+2024-04-11 15:04:00,032 INFO o.a.j.r.Summariser: summary +   3074 in 00:00:30 =  102.5/s Avg:  1013 Min:   513 Max:  2815 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:04:00,033 INFO o.a.j.r.Summariser: summary = 154916 in 00:25:25 =  101.6/s Avg:  1003 Min:   315 Max:  4881 Err:     0 (0.00%)
+2024-04-11 15:04:30,013 INFO o.a.j.r.Summariser: summary +   3111 in 00:00:30 =  103.8/s Avg:  1003 Min:   464 Max:  4265 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:04:30,013 INFO o.a.j.r.Summariser: summary = 158027 in 00:25:55 =  101.6/s Avg:  1003 Min:   315 Max:  4881 Err:     0 (0.00%)
+2024-04-11 15:05:00,020 INFO o.a.j.r.Summariser: summary +   3111 in 00:00:30 =  103.7/s Avg:  1002 Min:   465 Max:  5592 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:05:00,021 INFO o.a.j.r.Summariser: summary = 161138 in 00:26:25 =  101.6/s Avg:  1003 Min:   315 Max:  5592 Err:     0 (0.00%)
+2024-04-11 15:05:30,025 INFO o.a.j.r.Summariser: summary +   3096 in 00:00:30 =  103.2/s Avg:  1010 Min:   477 Max:  4577 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:05:30,026 INFO o.a.j.r.Summariser: summary = 164234 in 00:26:55 =  101.7/s Avg:  1004 Min:   315 Max:  5592 Err:     0 (0.00%)
+2024-04-11 15:06:00,037 INFO o.a.j.r.Summariser: summary +   3116 in 00:00:30 =  103.8/s Avg:   999 Min:   540 Max:  2881 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:06:00,037 INFO o.a.j.r.Summariser: summary = 167350 in 00:27:25 =  101.7/s Avg:  1003 Min:   315 Max:  5592 Err:     0 (0.00%)
+2024-04-11 15:06:30,011 INFO o.a.j.r.Summariser: summary +   3068 in 00:00:30 =  102.4/s Avg:  1023 Min:   588 Max:  2748 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:06:30,011 INFO o.a.j.r.Summariser: summary = 170418 in 00:27:55 =  101.7/s Avg:  1004 Min:   315 Max:  5592 Err:     0 (0.00%)
+2024-04-11 15:07:00,024 INFO o.a.j.r.Summariser: summary +   3116 in 00:00:30 =  103.8/s Avg:   992 Min:   522 Max:  2584 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:07:00,025 INFO o.a.j.r.Summariser: summary = 173534 in 00:28:25 =  101.8/s Avg:  1004 Min:   315 Max:  5592 Err:     0 (0.00%)
+2024-04-11 15:07:30,011 INFO o.a.j.r.Summariser: summary +   3093 in 00:00:30 =  103.1/s Avg:  1006 Min:   427 Max:  5527 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:07:30,011 INFO o.a.j.r.Summariser: summary = 176627 in 00:28:55 =  101.8/s Avg:  1004 Min:   315 Max:  5592 Err:     0 (0.00%)
+2024-04-11 15:08:00,017 INFO o.a.j.r.Summariser: summary +   3104 in 00:00:30 =  103.4/s Avg:  1011 Min:   460 Max:  5289 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:08:00,017 INFO o.a.j.r.Summariser: summary = 179731 in 00:29:25 =  101.8/s Avg:  1004 Min:   315 Max:  5592 Err:     0 (0.00%)
+2024-04-11 15:08:30,004 INFO o.a.j.r.Summariser: summary +   3037 in 00:00:30 =  101.3/s Avg:  1027 Min:   561 Max:  4766 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:08:30,004 INFO o.a.j.r.Summariser: summary = 182768 in 00:29:55 =  101.8/s Avg:  1004 Min:   315 Max:  5592 Err:     0 (0.00%)
+2024-04-11 15:09:00,014 INFO o.a.j.r.Summariser: summary +   3094 in 00:00:30 =  103.1/s Avg:  1004 Min:   594 Max:  4768 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:09:00,014 INFO o.a.j.r.Summariser: summary = 185862 in 00:30:25 =  101.8/s Avg:  1004 Min:   315 Max:  5592 Err:     0 (0.00%)
+2024-04-11 15:09:30,015 INFO o.a.j.r.Summariser: summary +   3092 in 00:00:30 =  103.1/s Avg:  1011 Min:   481 Max:  2723 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:09:30,015 INFO o.a.j.r.Summariser: summary = 188954 in 00:30:55 =  101.8/s Avg:  1004 Min:   315 Max:  5592 Err:     0 (0.00%)
+2024-04-11 15:10:00,027 INFO o.a.j.r.Summariser: summary +   3120 in 00:00:30 =  104.0/s Avg:  1002 Min:   527 Max:  2786 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:10:00,027 INFO o.a.j.r.Summariser: summary = 192074 in 00:31:25 =  101.9/s Avg:  1004 Min:   315 Max:  5592 Err:     0 (0.00%)
+2024-04-11 15:10:30,010 INFO o.a.j.r.Summariser: summary +   3134 in 00:00:30 =  104.5/s Avg:   994 Min:   562 Max:  4668 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:10:30,010 INFO o.a.j.r.Summariser: summary = 195208 in 00:31:55 =  101.9/s Avg:  1004 Min:   315 Max:  5592 Err:     0 (0.00%)
+2024-04-11 15:11:00,062 INFO o.a.j.r.Summariser: summary +   3121 in 00:00:30 =  103.9/s Avg:  1000 Min:   472 Max:  5893 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:11:00,063 INFO o.a.j.r.Summariser: summary = 198329 in 00:32:25 =  102.0/s Avg:  1004 Min:   315 Max:  5893 Err:     0 (0.00%)
+2024-04-11 15:11:30,002 INFO o.a.j.r.Summariser: summary +   3113 in 00:00:30 =  104.0/s Avg:  1002 Min:   452 Max:  4739 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:11:30,003 INFO o.a.j.r.Summariser: summary = 201442 in 00:32:55 =  102.0/s Avg:  1004 Min:   315 Max:  5893 Err:     0 (0.00%)
+2024-04-11 15:12:00,013 INFO o.a.j.r.Summariser: summary +   3081 in 00:00:30 =  102.7/s Avg:  1012 Min:   474 Max:  5949 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:12:00,013 INFO o.a.j.r.Summariser: summary = 204523 in 00:33:25 =  102.0/s Avg:  1004 Min:   315 Max:  5949 Err:     0 (0.00%)
+2024-04-11 15:12:30,005 INFO o.a.j.r.Summariser: summary +   3076 in 00:00:30 =  102.6/s Avg:  1010 Min:   578 Max:  2772 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:12:30,005 INFO o.a.j.r.Summariser: summary = 207599 in 00:33:55 =  102.0/s Avg:  1004 Min:   315 Max:  5949 Err:     0 (0.00%)
+2024-04-11 15:13:00,025 INFO o.a.j.r.Summariser: summary +   3122 in 00:00:30 =  104.0/s Avg:  1002 Min:   494 Max:  3129 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:13:00,025 INFO o.a.j.r.Summariser: summary = 210721 in 00:34:25 =  102.0/s Avg:  1004 Min:   315 Max:  5949 Err:     0 (0.00%)
+2024-04-11 15:13:30,085 INFO o.a.j.r.Summariser: summary +   3066 in 00:00:30 =  102.0/s Avg:  1018 Min:   415 Max:  5574 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:13:30,085 INFO o.a.j.r.Summariser: summary = 213787 in 00:34:55 =  102.0/s Avg:  1004 Min:   315 Max:  5949 Err:     0 (0.00%)
+2024-04-11 15:14:00,009 INFO o.a.j.r.Summariser: summary +   2950 in 00:00:30 =   98.6/s Avg:  1054 Min:   521 Max:  6362 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:14:00,009 INFO o.a.j.r.Summariser: summary = 216737 in 00:35:25 =  102.0/s Avg:  1005 Min:   315 Max:  6362 Err:     0 (0.00%)
+2024-04-11 15:14:30,030 INFO o.a.j.r.Summariser: summary +   2984 in 00:00:30 =   99.4/s Avg:  1043 Min:   615 Max:  4540 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:14:30,030 INFO o.a.j.r.Summariser: summary = 219721 in 00:35:55 =  101.9/s Avg:  1006 Min:   315 Max:  6362 Err:     0 (0.00%)
+2024-04-11 15:15:00,018 INFO o.a.j.r.Summariser: summary +   2915 in 00:00:30 =   97.2/s Avg:  1074 Min:   532 Max:  5535 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:15:00,018 INFO o.a.j.r.Summariser: summary = 222636 in 00:36:25 =  101.9/s Avg:  1006 Min:   315 Max:  6362 Err:     0 (0.00%)
+2024-04-11 15:15:30,003 INFO o.a.j.r.Summariser: summary +   2982 in 00:00:30 =   99.4/s Avg:  1048 Min:   504 Max:  2648 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:15:30,004 INFO o.a.j.r.Summariser: summary = 225618 in 00:36:55 =  101.8/s Avg:  1007 Min:   315 Max:  6362 Err:     0 (0.00%)
+2024-04-11 15:16:00,054 INFO o.a.j.r.Summariser: summary +   2961 in 00:00:30 =   98.5/s Avg:  1047 Min:   586 Max:  2910 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:16:00,054 INFO o.a.j.r.Summariser: summary = 228579 in 00:37:25 =  101.8/s Avg:  1007 Min:   315 Max:  6362 Err:     0 (0.00%)
+2024-04-11 15:16:30,004 INFO o.a.j.r.Summariser: summary +   2914 in 00:00:30 =   97.3/s Avg:  1068 Min:   553 Max:  6313 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:16:30,005 INFO o.a.j.r.Summariser: summary = 231493 in 00:37:55 =  101.7/s Avg:  1008 Min:   315 Max:  6362 Err:     0 (0.00%)
+2024-04-11 15:17:00,008 INFO o.a.j.r.Summariser: summary +   3003 in 00:00:30 =  100.1/s Avg:  1040 Min:   526 Max:  6327 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:17:00,008 INFO o.a.j.r.Summariser: summary = 234496 in 00:38:25 =  101.7/s Avg:  1009 Min:   315 Max:  6362 Err:     0 (0.00%)
+2024-04-11 15:17:30,036 INFO o.a.j.r.Summariser: summary +   3051 in 00:00:30 =  101.6/s Avg:  1022 Min:   563 Max:  5684 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:17:30,036 INFO o.a.j.r.Summariser: summary = 237547 in 00:38:55 =  101.7/s Avg:  1009 Min:   315 Max:  6362 Err:     0 (0.00%)
+2024-04-11 15:18:00,024 INFO o.a.j.r.Summariser: summary +   3077 in 00:00:30 =  102.6/s Avg:  1015 Min:   571 Max:  5295 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:18:00,024 INFO o.a.j.r.Summariser: summary = 240624 in 00:39:25 =  101.7/s Avg:  1009 Min:   315 Max:  6362 Err:     0 (0.00%)
+2024-04-11 15:18:30,000 INFO o.a.j.r.Summariser: summary +   3002 in 00:00:30 =  100.1/s Avg:  1038 Min:   532 Max:  5503 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:18:30,001 INFO o.a.j.r.Summariser: summary = 243626 in 00:39:55 =  101.7/s Avg:  1009 Min:   315 Max:  6362 Err:     0 (0.00%)
+2024-04-11 15:19:00,010 INFO o.a.j.r.Summariser: summary +   3073 in 00:00:30 =  102.4/s Avg:  1007 Min:   563 Max:  2834 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:19:00,010 INFO o.a.j.r.Summariser: summary = 246699 in 00:40:25 =  101.7/s Avg:  1009 Min:   315 Max:  6362 Err:     0 (0.00%)
+2024-04-11 15:19:30,009 INFO o.a.j.r.Summariser: summary +   3131 in 00:00:30 =  104.4/s Avg:   988 Min:   573 Max:  4801 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:19:30,009 INFO o.a.j.r.Summariser: summary = 249830 in 00:40:55 =  101.8/s Avg:  1009 Min:   315 Max:  6362 Err:     0 (0.00%)
+2024-04-11 15:20:00,025 INFO o.a.j.r.Summariser: summary +   3026 in 00:00:30 =  100.8/s Avg:  1040 Min:     1 Max: 60003 Err:     2 (0.07%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:20:00,025 INFO o.a.j.r.Summariser: summary = 252856 in 00:41:25 =  101.7/s Avg:  1009 Min:     1 Max: 60003 Err:     2 (0.00%)
+2024-04-11 15:20:30,016 INFO o.a.j.r.Summariser: summary +   3069 in 00:00:30 =  102.3/s Avg:  1026 Min:   487 Max:  5878 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:20:30,016 INFO o.a.j.r.Summariser: summary = 255925 in 00:41:55 =  101.8/s Avg:  1010 Min:     1 Max: 60003 Err:     2 (0.00%)
+2024-04-11 15:21:00,024 INFO o.a.j.r.Summariser: summary +   3118 in 00:00:30 =  103.9/s Avg:   996 Min:   535 Max:  5470 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:21:00,025 INFO o.a.j.r.Summariser: summary = 259043 in 00:42:25 =  101.8/s Avg:  1009 Min:     1 Max: 60003 Err:     2 (0.00%)
+2024-04-11 15:21:30,060 INFO o.a.j.r.Summariser: summary +   3137 in 00:00:30 =  104.4/s Avg:   995 Min:   565 Max:  5949 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:21:30,061 INFO o.a.j.r.Summariser: summary = 262180 in 00:42:55 =  101.8/s Avg:  1009 Min:     1 Max: 60003 Err:     2 (0.00%)
+2024-04-11 15:22:00,017 INFO o.a.j.r.Summariser: summary +   3122 in 00:00:30 =  104.2/s Avg:   999 Min:   557 Max:  2711 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:22:00,018 INFO o.a.j.r.Summariser: summary = 265302 in 00:43:25 =  101.8/s Avg:  1009 Min:     1 Max: 60003 Err:     2 (0.00%)
+2024-04-11 15:22:30,042 INFO o.a.j.r.Summariser: summary +   3098 in 00:00:30 =  103.2/s Avg:  1004 Min:   521 Max:  5196 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:22:30,042 INFO o.a.j.r.Summariser: summary = 268400 in 00:43:55 =  101.8/s Avg:  1009 Min:     1 Max: 60003 Err:     2 (0.00%)
+2024-04-11 15:23:00,014 INFO o.a.j.r.Summariser: summary +   3094 in 00:00:30 =  103.2/s Avg:  1003 Min:   462 Max:  5383 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:23:00,015 INFO o.a.j.r.Summariser: summary = 271494 in 00:44:25 =  101.9/s Avg:  1009 Min:     1 Max: 60003 Err:     2 (0.00%)
+2024-04-11 15:23:30,016 INFO o.a.j.r.Summariser: summary +   3120 in 00:00:30 =  104.0/s Avg:  1005 Min:   427 Max:  6152 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:23:30,017 INFO o.a.j.r.Summariser: summary = 274614 in 00:44:55 =  101.9/s Avg:  1009 Min:     1 Max: 60003 Err:     2 (0.00%)
+2024-04-11 15:24:00,001 INFO o.a.j.r.Summariser: summary +   3187 in 00:00:30 =  106.3/s Avg:   976 Min:   476 Max:  5941 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:24:00,001 INFO o.a.j.r.Summariser: summary = 277801 in 00:45:25 =  101.9/s Avg:  1009 Min:     1 Max: 60003 Err:     2 (0.00%)
+2024-04-11 15:24:30,003 INFO o.a.j.r.Summariser: summary +   3207 in 00:00:30 =  106.9/s Avg:   975 Min:   462 Max:  5431 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:24:30,004 INFO o.a.j.r.Summariser: summary = 281008 in 00:45:55 =  102.0/s Avg:  1008 Min:     1 Max: 60003 Err:     2 (0.00%)
+2024-04-11 15:25:00,010 INFO o.a.j.r.Summariser: summary +   3085 in 00:00:30 =  102.8/s Avg:  1010 Min:   527 Max:  2570 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:25:00,010 INFO o.a.j.r.Summariser: summary = 284093 in 00:46:25 =  102.0/s Avg:  1008 Min:     1 Max: 60003 Err:     2 (0.00%)
+2024-04-11 15:25:30,000 INFO o.a.j.r.Summariser: summary +   3191 in 00:00:30 =  106.4/s Avg:   972 Min:   494 Max:  5258 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:25:30,000 INFO o.a.j.r.Summariser: summary = 287284 in 00:46:55 =  102.0/s Avg:  1008 Min:     1 Max: 60003 Err:     2 (0.00%)
+2024-04-11 15:26:00,028 INFO o.a.j.r.Summariser: summary +   3190 in 00:00:30 =  106.2/s Avg:   982 Min:   438 Max:  6590 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:26:00,028 INFO o.a.j.r.Summariser: summary = 290474 in 00:47:25 =  102.1/s Avg:  1008 Min:     1 Max: 60003 Err:     2 (0.00%)
+2024-04-11 15:26:30,016 INFO o.a.j.r.Summariser: summary +   3088 in 00:00:30 =  103.0/s Avg:  1014 Min:   413 Max:  6877 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:26:30,016 INFO o.a.j.r.Summariser: summary = 293562 in 00:47:55 =  102.1/s Avg:  1008 Min:     1 Max: 60003 Err:     2 (0.00%)
+2024-04-11 15:27:00,013 INFO o.a.j.r.Summariser: summary +   2821 in 00:00:30 =   94.0/s Avg:  1101 Min:   587 Max:  5582 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:27:00,013 INFO o.a.j.r.Summariser: summary = 296383 in 00:48:25 =  102.0/s Avg:  1008 Min:     1 Max: 60003 Err:     2 (0.00%)
+2024-04-11 15:27:30,016 INFO o.a.j.r.Summariser: summary +   2903 in 00:00:30 =   96.8/s Avg:  1080 Min:   613 Max:  2878 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:27:30,016 INFO o.a.j.r.Summariser: summary = 299286 in 00:48:55 =  102.0/s Avg:  1009 Min:     1 Max: 60003 Err:     2 (0.00%)
+2024-04-11 15:28:00,026 INFO o.a.j.r.Summariser: summary +   2779 in 00:00:30 =   92.6/s Avg:  1117 Min:   641 Max:  6116 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:28:00,026 INFO o.a.j.r.Summariser: summary = 302065 in 00:49:25 =  101.9/s Avg:  1010 Min:     1 Max: 60003 Err:     2 (0.00%)
+2024-04-11 15:28:30,003 INFO o.a.j.r.Summariser: summary +   2732 in 00:00:30 =   91.1/s Avg:  1138 Min:   637 Max:  5708 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:28:30,004 INFO o.a.j.r.Summariser: summary = 304797 in 00:49:55 =  101.8/s Avg:  1011 Min:     1 Max: 60003 Err:     2 (0.00%)
+2024-04-11 15:29:00,030 INFO o.a.j.r.Summariser: summary +   2784 in 00:00:30 =   92.7/s Avg:  1119 Min:   597 Max:  5946 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:29:00,030 INFO o.a.j.r.Summariser: summary = 307581 in 00:50:25 =  101.7/s Avg:  1012 Min:     1 Max: 60003 Err:     2 (0.00%)
+2024-04-11 15:29:30,047 INFO o.a.j.r.Summariser: summary +   2738 in 00:00:30 =   91.2/s Avg:  1135 Min:   556 Max:  7365 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:29:30,047 INFO o.a.j.r.Summariser: summary = 310319 in 00:50:55 =  101.6/s Avg:  1013 Min:     1 Max: 60003 Err:     2 (0.00%)
+2024-04-11 15:30:00,014 INFO o.a.j.r.Summariser: summary +   2780 in 00:00:30 =   92.8/s Avg:  1133 Min:   575 Max:  6112 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:30:00,014 INFO o.a.j.r.Summariser: summary = 313099 in 00:51:25 =  101.5/s Avg:  1014 Min:     1 Max: 60003 Err:     2 (0.00%)
+2024-04-11 15:30:30,015 INFO o.a.j.r.Summariser: summary +   2749 in 00:00:30 =   91.6/s Avg:  1129 Min:   514 Max:  6234 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:30:30,015 INFO o.a.j.r.Summariser: summary = 315848 in 00:51:55 =  101.4/s Avg:  1015 Min:     1 Max: 60003 Err:     2 (0.00%)
+2024-04-11 15:31:00,017 INFO o.a.j.r.Summariser: summary +   2752 in 00:00:30 =   91.7/s Avg:  1130 Min:   562 Max:  2921 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:31:00,017 INFO o.a.j.r.Summariser: summary = 318600 in 00:52:25 =  101.3/s Avg:  1016 Min:     1 Max: 60003 Err:     2 (0.00%)
+2024-04-11 15:31:30,004 INFO o.a.j.r.Summariser: summary +   2828 in 00:00:30 =   94.3/s Avg:  1106 Min:   626 Max:  6812 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:31:30,005 INFO o.a.j.r.Summariser: summary = 321428 in 00:52:55 =  101.2/s Avg:  1017 Min:     1 Max: 60003 Err:     2 (0.00%)
+2024-04-11 15:32:00,001 INFO o.a.j.r.Summariser: summary +   2705 in 00:00:30 =   90.2/s Avg:  1153 Min:   640 Max:  5996 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:32:00,001 INFO o.a.j.r.Summariser: summary = 324133 in 00:53:25 =  101.1/s Avg:  1018 Min:     1 Max: 60003 Err:     2 (0.00%)
+2024-04-11 15:32:30,010 INFO o.a.j.r.Summariser: summary +   2996 in 00:00:30 =   99.8/s Avg:  1040 Min:   494 Max:  6312 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:32:30,010 INFO o.a.j.r.Summariser: summary = 327129 in 00:53:55 =  101.1/s Avg:  1019 Min:     1 Max: 60003 Err:     2 (0.00%)
+2024-04-11 15:33:00,072 INFO o.a.j.r.Summariser: summary +   2888 in 00:00:30 =   96.1/s Avg:  1069 Min:   501 Max:  6783 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:33:00,072 INFO o.a.j.r.Summariser: summary = 330017 in 00:54:25 =  101.1/s Avg:  1019 Min:     1 Max: 60003 Err:     2 (0.00%)
+2024-04-11 15:33:30,015 INFO o.a.j.r.Summariser: summary +   3035 in 00:00:30 =  101.4/s Avg:  1036 Min:   470 Max:  6193 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:33:30,015 INFO o.a.j.r.Summariser: summary = 333052 in 00:54:55 =  101.1/s Avg:  1019 Min:     1 Max: 60003 Err:     2 (0.00%)
+2024-04-11 15:34:00,018 INFO o.a.j.r.Summariser: summary +   3117 in 00:00:30 =  103.9/s Avg:  1005 Min:   504 Max:  7798 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:34:00,018 INFO o.a.j.r.Summariser: summary = 336169 in 00:55:25 =  101.1/s Avg:  1019 Min:     1 Max: 60003 Err:     2 (0.00%)
+2024-04-11 15:34:30,009 INFO o.a.j.r.Summariser: summary +   3104 in 00:00:30 =  103.5/s Avg:  1006 Min:   486 Max:  6284 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:34:30,009 INFO o.a.j.r.Summariser: summary = 339273 in 00:55:55 =  101.1/s Avg:  1019 Min:     1 Max: 60003 Err:     2 (0.00%)
+2024-04-11 15:35:00,034 INFO o.a.j.r.Summariser: summary +   3134 in 00:00:30 =  104.4/s Avg:   995 Min:   556 Max:  6986 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:35:00,034 INFO o.a.j.r.Summariser: summary = 342407 in 00:56:25 =  101.1/s Avg:  1019 Min:     1 Max: 60003 Err:     2 (0.00%)
+2024-04-11 15:35:30,024 INFO o.a.j.r.Summariser: summary +   3097 in 00:00:30 =  103.3/s Avg:   998 Min:   479 Max:  6047 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:35:30,024 INFO o.a.j.r.Summariser: summary = 345504 in 00:56:55 =  101.2/s Avg:  1018 Min:     1 Max: 60003 Err:     2 (0.00%)
+2024-04-11 15:36:00,006 INFO o.a.j.r.Summariser: summary +   3089 in 00:00:30 =  103.0/s Avg:  1017 Min:   475 Max:  6665 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:36:00,006 INFO o.a.j.r.Summariser: summary = 348593 in 00:57:25 =  101.2/s Avg:  1018 Min:     1 Max: 60003 Err:     2 (0.00%)
+2024-04-11 15:36:30,067 INFO o.a.j.r.Summariser: summary +   3086 in 00:00:30 =  102.7/s Avg:  1012 Min:   511 Max:  6148 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:36:30,067 INFO o.a.j.r.Summariser: summary = 351679 in 00:57:55 =  101.2/s Avg:  1018 Min:     1 Max: 60003 Err:     2 (0.00%)
+2024-04-11 15:37:00,027 INFO o.a.j.r.Summariser: summary +   3161 in 00:00:30 =  105.5/s Avg:   988 Min:   521 Max:  7231 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:37:00,027 INFO o.a.j.r.Summariser: summary = 354840 in 00:58:25 =  101.2/s Avg:  1018 Min:     1 Max: 60003 Err:     2 (0.00%)
+2024-04-11 15:37:30,068 INFO o.a.j.r.Summariser: summary +   3132 in 00:00:30 =  104.3/s Avg:   992 Min:   505 Max:  2970 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:37:30,068 INFO o.a.j.r.Summariser: summary = 357972 in 00:58:55 =  101.3/s Avg:  1018 Min:     1 Max: 60003 Err:     2 (0.00%)
+2024-04-11 15:38:00,021 INFO o.a.j.r.Summariser: summary +   3074 in 00:00:30 =  102.6/s Avg:  1016 Min:   537 Max:  7579 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:38:00,022 INFO o.a.j.r.Summariser: summary = 361046 in 00:59:25 =  101.3/s Avg:  1018 Min:     1 Max: 60003 Err:     2 (0.00%)
+2024-04-11 15:38:30,009 INFO o.a.j.r.Summariser: summary +   2836 in 00:00:30 =   94.6/s Avg:  1101 Min:   499 Max:  7096 Err:     0 (0.00%) Active: 104 Started: 104 Finished: 0
+2024-04-11 15:38:30,009 INFO o.a.j.r.Summariser: summary = 363882 in 00:59:55 =  101.2/s Avg:  1019 Min:     1 Max: 60003 Err:     2 (0.00%)
+2024-04-11 15:38:34,853 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 1-1
+2024-04-11 15:38:34,853 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 1-1
+2024-04-11 15:38:34,879 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 1-36
+2024-04-11 15:38:34,879 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 1-36
+2024-04-11 15:38:34,879 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 1-12
+2024-04-11 15:38:34,880 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 1-12
+2024-04-11 15:38:34,889 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 1-21
+2024-04-11 15:38:34,890 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 1-21
+2024-04-11 15:38:34,924 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 1-10
+2024-04-11 15:38:34,925 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 1-10
+2024-04-11 15:38:34,925 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 2-4
+2024-04-11 15:38:34,925 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 2-4
+2024-04-11 15:38:34,960 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 1-49
+2024-04-11 15:38:34,960 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 1-49
+2024-04-11 15:38:34,960 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 2-37
+2024-04-11 15:38:34,961 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 2-37
+2024-04-11 15:38:34,962 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 2-19
+2024-04-11 15:38:34,962 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 2-19
+2024-04-11 15:38:34,964 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 2-5
+2024-04-11 15:38:34,964 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 2-5
+2024-04-11 15:38:34,969 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 1-5
+2024-04-11 15:38:34,969 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 1-5
+2024-04-11 15:38:34,975 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 2-38
+2024-04-11 15:38:34,975 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 2-38
+2024-04-11 15:38:34,975 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 2-13
+2024-04-11 15:38:34,975 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 2-13
+2024-04-11 15:38:34,982 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 2-40
+2024-04-11 15:38:34,982 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 2-40
+2024-04-11 15:38:35,014 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 1-28
+2024-04-11 15:38:35,014 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 1-28
+2024-04-11 15:38:35,029 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 2-36
+2024-04-11 15:38:35,029 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 2-36
+2024-04-11 15:38:35,031 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 1-42
+2024-04-11 15:38:35,031 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 1-42
+2024-04-11 15:38:35,049 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 2-10
+2024-04-11 15:38:35,049 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 2-10
+2024-04-11 15:38:35,054 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 1-47
+2024-04-11 15:38:35,054 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 1-47
+2024-04-11 15:38:35,071 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 2-26
+2024-04-11 15:38:35,071 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 2-26
+2024-04-11 15:38:35,080 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 2-12
+2024-04-11 15:38:35,080 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 2-12
+2024-04-11 15:38:35,115 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 1-45
+2024-04-11 15:38:35,115 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 1-45
+2024-04-11 15:38:35,116 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 2-34
+2024-04-11 15:38:35,116 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 2-34
+2024-04-11 15:38:35,119 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 1-38
+2024-04-11 15:38:35,119 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 1-38
+2024-04-11 15:38:35,138 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 1-27
+2024-04-11 15:38:35,138 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 1-27
+2024-04-11 15:38:35,140 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 1-24
+2024-04-11 15:38:35,140 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 1-24
+2024-04-11 15:38:35,153 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 1-9
+2024-04-11 15:38:35,153 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 1-9
+2024-04-11 15:38:35,154 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 2-31
+2024-04-11 15:38:35,154 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 2-31
+2024-04-11 15:38:35,155 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 2-1
+2024-04-11 15:38:35,155 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 2-1
+2024-04-11 15:38:35,184 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 1-16
+2024-04-11 15:38:35,184 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 1-16
+2024-04-11 15:38:35,206 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 1-6
+2024-04-11 15:38:35,207 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 1-6
+2024-04-11 15:38:35,215 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 1-20
+2024-04-11 15:38:35,215 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 1-20
+2024-04-11 15:38:35,227 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 1-29
+2024-04-11 15:38:35,227 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 1-29
+2024-04-11 15:38:35,247 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 2-47
+2024-04-11 15:38:35,247 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 2-47
+2024-04-11 15:38:35,251 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 2-16
+2024-04-11 15:38:35,251 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 2-16
+2024-04-11 15:38:35,263 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 1-46
+2024-04-11 15:38:35,263 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 1-46
+2024-04-11 15:38:35,277 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 1-2
+2024-04-11 15:38:35,278 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 1-2
+2024-04-11 15:38:35,281 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 2-39
+2024-04-11 15:38:35,282 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 2-39
+2024-04-11 15:38:35,302 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 1-22
+2024-04-11 15:38:35,302 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 1-22
+2024-04-11 15:38:35,309 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 2-20
+2024-04-11 15:38:35,309 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 2-20
+2024-04-11 15:38:35,313 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 2-49
+2024-04-11 15:38:35,313 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 2-46
+2024-04-11 15:38:35,313 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 2-49
+2024-04-11 15:38:35,313 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 2-46
+2024-04-11 15:38:35,321 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 2-28
+2024-04-11 15:38:35,321 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 2-28
+2024-04-11 15:38:35,339 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 2-2
+2024-04-11 15:38:35,339 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 2-2
+2024-04-11 15:38:35,340 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 1-14
+2024-04-11 15:38:35,340 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 1-14
+2024-04-11 15:38:35,342 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 2-8
+2024-04-11 15:38:35,342 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 2-8
+2024-04-11 15:38:35,347 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 2-22
+2024-04-11 15:38:35,347 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 2-22
+2024-04-11 15:38:35,347 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 2-23
+2024-04-11 15:38:35,348 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 2-23
+2024-04-11 15:38:35,348 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 2-15
+2024-04-11 15:38:35,348 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 2-15
+2024-04-11 15:38:35,349 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 1-48
+2024-04-11 15:38:35,349 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 1-48
+2024-04-11 15:38:35,361 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 1-37
+2024-04-11 15:38:35,361 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 1-37
+2024-04-11 15:38:35,368 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 2-25
+2024-04-11 15:38:35,368 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 2-25
+2024-04-11 15:38:35,370 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 1-7
+2024-04-11 15:38:35,370 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 1-7
+2024-04-11 15:38:35,371 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 1-41
+2024-04-11 15:38:35,371 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 1-41
+2024-04-11 15:38:35,373 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 2-21
+2024-04-11 15:38:35,373 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 2-21
+2024-04-11 15:38:35,374 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 2-42
+2024-04-11 15:38:35,374 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 2-42
+2024-04-11 15:38:35,376 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 1-26
+2024-04-11 15:38:35,376 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 1-26
+2024-04-11 15:38:35,385 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 1-33
+2024-04-11 15:38:35,385 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 1-33
+2024-04-11 15:38:35,387 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 2-41
+2024-04-11 15:38:35,387 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 2-41
+2024-04-11 15:38:35,388 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 2-29
+2024-04-11 15:38:35,388 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 2-29
+2024-04-11 15:38:35,388 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 2-50
+2024-04-11 15:38:35,388 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 2-50
+2024-04-11 15:38:35,391 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 2-32
+2024-04-11 15:38:35,391 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 2-32
+2024-04-11 15:38:35,395 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 1-40
+2024-04-11 15:38:35,395 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 1-40
+2024-04-11 15:38:35,397 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 1-4
+2024-04-11 15:38:35,397 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 1-4
+2024-04-11 15:38:35,403 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 2-9
+2024-04-11 15:38:35,403 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 2-9
+2024-04-11 15:38:35,412 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 1-23
+2024-04-11 15:38:35,412 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 1-23
+2024-04-11 15:38:35,414 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 1-19
+2024-04-11 15:38:35,414 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 1-19
+2024-04-11 15:38:35,417 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 1-34
+2024-04-11 15:38:35,417 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 1-18
+2024-04-11 15:38:35,417 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 1-34
+2024-04-11 15:38:35,417 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 1-18
+2024-04-11 15:38:35,418 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 1-3
+2024-04-11 15:38:35,418 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 1-3
+2024-04-11 15:38:35,418 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 1-44
+2024-04-11 15:38:35,418 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 1-44
+2024-04-11 15:38:35,427 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 1-13
+2024-04-11 15:38:35,427 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 1-13
+2024-04-11 15:38:35,428 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 1-35
+2024-04-11 15:38:35,428 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 1-35
+2024-04-11 15:38:35,432 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 1-17
+2024-04-11 15:38:35,432 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 1-17
+2024-04-11 15:38:35,433 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 2-43
+2024-04-11 15:38:35,433 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 2-43
+2024-04-11 15:38:35,439 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 1-25
+2024-04-11 15:38:35,439 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 1-25
+2024-04-11 15:38:35,441 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 1-31
+2024-04-11 15:38:35,441 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 1-31
+2024-04-11 15:38:35,443 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 2-6
+2024-04-11 15:38:35,443 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 2-6
+2024-04-11 15:38:35,444 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 2-18
+2024-04-11 15:38:35,444 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 2-18
+2024-04-11 15:38:35,445 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 2-30
+2024-04-11 15:38:35,445 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 2-30
+2024-04-11 15:38:35,445 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 2-35
+2024-04-11 15:38:35,446 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 2-35
+2024-04-11 15:38:35,446 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 2-45
+2024-04-11 15:38:35,446 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 2-45
+2024-04-11 15:38:35,449 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 2-27
+2024-04-11 15:38:35,449 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 2-27
+2024-04-11 15:38:35,449 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 2-11
+2024-04-11 15:38:35,449 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 2-11
+2024-04-11 15:38:35,454 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 1-15
+2024-04-11 15:38:35,454 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 1-15
+2024-04-11 15:38:35,454 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 2-44
+2024-04-11 15:38:35,454 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 2-44
+2024-04-11 15:38:35,454 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 2-3
+2024-04-11 15:38:35,454 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 2-3
+2024-04-11 15:38:35,456 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 1-39
+2024-04-11 15:38:35,456 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 1-39
+2024-04-11 15:38:35,457 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 2-7
+2024-04-11 15:38:35,457 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 2-7
+2024-04-11 15:38:35,457 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 2-17
+2024-04-11 15:38:35,457 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 2-17
+2024-04-11 15:38:35,471 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 2-24
+2024-04-11 15:38:35,471 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 2-24
+2024-04-11 15:38:35,496 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 2-14
+2024-04-11 15:38:35,496 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 2-14
+2024-04-11 15:38:35,514 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 3-2
+2024-04-11 15:38:35,514 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 3-2
+2024-04-11 15:38:35,525 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 3-1
+2024-04-11 15:38:35,525 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 3-1
+2024-04-11 15:38:35,710 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 1-32
+2024-04-11 15:38:35,710 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 1-32
+2024-04-11 15:38:35,756 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 2-48
+2024-04-11 15:38:35,756 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 2-48
+2024-04-11 15:38:36,002 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 4-2
+2024-04-11 15:38:36,002 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 4-2
+2024-04-11 15:38:36,270 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 1-30
+2024-04-11 15:38:36,270 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 1-11
+2024-04-11 15:38:36,270 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 1-30
+2024-04-11 15:38:36,270 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 1-11
+2024-04-11 15:38:36,273 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 1-43
+2024-04-11 15:38:36,273 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 1-43
+2024-04-11 15:38:36,278 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 1-8
+2024-04-11 15:38:36,278 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 1-8
+2024-04-11 15:38:36,278 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 1-50
+2024-04-11 15:38:36,278 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 1-50
+2024-04-11 15:38:36,301 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 4-1
+2024-04-11 15:38:36,301 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 4-1
+2024-04-11 15:38:36,507 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Testing_Thread_Group 2-33
+2024-04-11 15:38:36,507 INFO o.a.j.t.JMeterThread: Thread finished: Testing_Thread_Group 2-33
+2024-04-11 15:38:36,507 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2024-04-11 15:38:36,508 INFO o.a.j.r.Summariser: summary +    615 in 00:00:06 =   94.6/s Avg:  1001 Min:   524 Max:  7655 Err:     0 (0.00%) Active: 0 Started: 104 Finished: 104
+2024-04-11 15:38:36,508 INFO o.a.j.r.Summariser: summary = 364497 in 01:00:02 =  101.2/s Avg:  1018 Min:     1 Max: 60003 Err:     2 (0.00%)
+2024-04-11 15:38:36,508 INFO o.a.j.JMeter: Generating Dashboard
+2024-04-11 15:38:36,508 INFO o.a.j.r.d.ReportGenerator: Flushing result collector before report Generation
+2024-04-11 15:38:36,520 INFO o.a.j.r.p.NormalizerSampleConsumer: Using format, 'ms', to parse timeStamp field
+2024-04-11 15:38:53,201 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.AggregateConsumer#stopProducing(): beginDate produced 0 samples
+2024-04-11 15:38:53,201 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.AggregateConsumer#stopProducing(): endDate produced 0 samples
+2024-04-11 15:38:53,204 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.ApdexSummaryConsumer#stopProducing(): apdexSummary produced 0 samples
+2024-04-11 15:38:53,204 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.RequestsSummaryConsumer#stopProducing(): requestsSummary produced 0 samples
+2024-04-11 15:38:53,219 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.StatisticsSummaryConsumer#stopProducing(): statisticsSummary produced 0 samples
+2024-04-11 15:38:53,226 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.Top5ErrorsBySamplerConsumer#stopProducing(): top5ErrorsBySampler produced 0 samples
+2024-04-11 15:38:53,226 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.ErrorsSummaryConsumer#stopProducing(): errorsSummary produced 0 samples
+2024-04-11 15:38:53,226 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.HitsPerSecondGraphConsumer#stopProducing(): hitsPerSecond produced 0 samples
+2024-04-11 15:38:58,661 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.LatencyVSRequestGraphConsumer#stopProducing(): latencyVsRequest produced 0 samples
+2024-04-11 15:38:58,669 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.SyntheticResponseTimeDistributionGraphConsumer#stopProducing(): syntheticResponseTimeDistribution produced 0 samples
+2024-04-11 15:38:58,669 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.BytesThroughputGraphConsumer#stopProducing(): bytesThroughputOverTime produced 0 samples
+2024-04-11 15:38:58,669 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.CodesPerSecondGraphConsumer#stopProducing(): codesPerSecond produced 0 samples
+2024-04-11 15:39:04,050 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeVSRequestGraphConsumer#stopProducing(): responseTimeVsRequest produced 0 samples
+2024-04-11 15:39:04,056 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): startIntervalControlerFilter produced 2551479 samples
+2024-04-11 15:39:04,056 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TotalTPSGraphConsumer#stopProducing(): totalTPS produced 0 samples
+2024-04-11 15:39:04,056 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ActiveThreadsGraphConsumer#stopProducing(): activeThreadsOverTime produced 0 samples
+2024-04-11 15:39:04,056 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TimeVSThreadGraphConsumer#stopProducing(): timeVsThreads produced 0 samples
+2024-04-11 15:39:04,057 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeDistributionGraphConsumer#stopProducing(): responseTimeDistribution produced 0 samples
+2024-04-11 15:39:04,057 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TransactionsPerSecondGraphConsumer#stopProducing(): transactionsPerSecond produced 0 samples
+2024-04-11 15:39:04,057 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimePercentilesGraphConsumer#stopProducing(): responseTimePercentiles produced 0 samples
+2024-04-11 15:39:04,064 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimePercentilesOverTimeGraphConsumer#stopProducing(): responseTimePercentilesOverTime produced 0 samples
+2024-04-11 15:39:04,082 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeOverTimeGraphConsumer#stopProducing(): responseTimesOverTime produced 0 samples
+2024-04-11 15:39:04,082 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ConnectTimeOverTimeGraphConsumer#stopProducing(): connectTimeOverTime produced 0 samples
+2024-04-11 15:39:04,082 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.LatencyOverTimeGraphConsumer#stopProducing(): latenciesOverTime produced 0 samples
+2024-04-11 15:39:04,082 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): nameFilter produced 5467455 samples
+2024-04-11 15:39:04,082 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): dateRangeFilter produced 1093491 samples
+2024-04-11 15:39:04,082 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.NormalizerSampleConsumer#stopProducing(): normalizer produced 364497 samples
+2024-04-11 15:39:04,083 INFO o.a.j.r.p.CsvFileSampleSource: produce(): 364497 samples produced in 27s 536 ms on channel 0
+2024-04-11 15:39:04,083 INFO o.a.j.r.d.ReportGenerator: Exporting data using exporter:'json' of className:'org.apache.jmeter.report.dashboard.JsonExporter'
+2024-04-11 15:39:04,180 INFO o.a.j.r.d.JsonExporter: Found data for consumer statisticsSummary in context
+2024-04-11 15:39:04,180 INFO o.a.j.r.d.JsonExporter: Creating statistics for overall
+2024-04-11 15:39:04,180 INFO o.a.j.r.d.JsonExporter: Creating statistics for other transactions
+2024-04-11 15:39:04,180 INFO o.a.j.r.d.JsonExporter: Checking output folder
+2024-04-11 15:39:04,181 INFO o.a.j.r.d.JsonExporter: Writing statistics JSON to /home/shane.mill/ShaneMill1.github.io/NDFD_NCPP/Testing_Operational_Architecture17-testing-deployment/results/statistics.json
+2024-04-11 15:39:04,224 INFO o.a.j.r.d.ReportGenerator: Exporting data using exporter:'html' of className:'org.apache.jmeter.report.dashboard.HtmlTemplateExporter'
+2024-04-11 15:39:04,227 INFO o.a.j.r.d.HtmlTemplateExporter: Will generate dashboard in folder: /home/shane.mill/ShaneMill1.github.io/NDFD_NCPP/Testing_Operational_Architecture17-testing-deployment/results
+2024-04-11 15:39:04,341 INFO o.a.j.r.d.HtmlTemplateExporter: Report will be generated in: /home/shane.mill/ShaneMill1.github.io/NDFD_NCPP/Testing_Operational_Architecture17-testing-deployment/results, creating folder structure
+2024-04-11 15:39:04,346 INFO o.a.j.r.d.TemplateVisitor: Copying folder from '/home/shane.mill/apache-jmeter-5.6.3/bin/report-template' to '/home/shane.mill/ShaneMill1.github.io/NDFD_NCPP/Testing_Operational_Architecture17-testing-deployment/results', got message: /home/shane.mill/ShaneMill1.github.io/NDFD_NCPP/Testing_Operational_Architecture17-testing-deployment/results, found non empty folder with following content [/home/shane.mill/ShaneMill1.github.io/NDFD_NCPP/Testing_Operational_Architecture17-testing-deployment/results/statistics.json], will be ignored
+2024-04-11 15:39:04,601 INFO o.a.j.JMeter: Dashboard generated
