@@ -1,0 +1,50 @@
+{
+  "Total" : {
+    "transaction" : "Total",
+    "sampleCount" : 813,
+    "errorCount" : 457,
+    "errorPct" : 56.211563,
+    "meanResTime" : 47981.21033210333,
+    "medianResTime" : 60003.0,
+    "minResTime" : 6147.0,
+    "maxResTime" : 60452.0,
+    "pct1ResTime" : 60031.0,
+    "pct2ResTime" : 60061.0,
+    "pct3ResTime" : 60188.74,
+    "throughput" : 6.737271280827367,
+    "receivedKBytesPerSec" : 1212.9492647165457,
+    "sentKBytesPerSec" : 1.8159051499105012
+  },
+  "Tile-321-MRMS_Tiles_CONUS-ReflectivityAtLowestAltitude" : {
+    "transaction" : "Tile-321-MRMS_Tiles_CONUS-ReflectivityAtLowestAltitude",
+    "sampleCount" : 500,
+    "errorCount" : 147,
+    "errorPct" : 29.4,
+    "meanResTime" : 40462.79000000002,
+    "medianResTime" : 43992.0,
+    "minResTime" : 6147.0,
+    "maxResTime" : 60452.0,
+    "pct1ResTime" : 60039.0,
+    "pct2ResTime" : 60078.8,
+    "pct3ResTime" : 60271.49,
+    "throughput" : 7.158811064658381,
+    "receivedKBytesPerSec" : 2080.9828197482966,
+    "sentKBytesPerSec" : 1.9295232947712047
+  },
+  "Tile-322-MRMS_Tiles_CONUS-ReflectivityAtLowestAltitude" : {
+    "transaction" : "Tile-322-MRMS_Tiles_CONUS-ReflectivityAtLowestAltitude",
+    "sampleCount" : 313,
+    "errorCount" : 310,
+    "errorPct" : 99.041534,
+    "meanResTime" : 59991.46645367411,
+    "medianResTime" : 60004.0,
+    "minResTime" : 56243.0,
+    "maxResTime" : 60177.0,
+    "pct1ResTime" : 60010.0,
+    "pct2ResTime" : 60016.3,
+    "pct3ResTime" : 60159.06,
+    "throughput" : 2.743303884448184,
+    "receivedKBytesPerSec" : 8.982344774356681,
+    "sentKBytesPerSec" : 0.7394061251051746
+  }
+}
