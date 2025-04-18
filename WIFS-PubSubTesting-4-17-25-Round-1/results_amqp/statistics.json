@@ -1,0 +1,34 @@
+{
+  "AMQP Consumer - collections/tac_opmet_reports/locations/GLOBAL" : {
+    "transaction" : "AMQP Consumer - collections/tac_opmet_reports/locations/GLOBAL",
+    "sampleCount" : 2822859,
+    "errorCount" : 0,
+    "errorPct" : 0.0,
+    "meanResTime" : 4.2084992555421616E-4,
+    "medianResTime" : 0.0,
+    "minResTime" : 0.0,
+    "maxResTime" : 4.0,
+    "pct1ResTime" : 0.0,
+    "pct2ResTime" : 0.0,
+    "pct3ResTime" : 0.0,
+    "throughput" : 23531.08041646174,
+    "receivedKBytesPerSec" : 45.95914143840184,
+    "sentKBytesPerSec" : 0.0
+  },
+  "Total" : {
+    "transaction" : "Total",
+    "sampleCount" : 2822859,
+    "errorCount" : 0,
+    "errorPct" : 0.0,
+    "meanResTime" : 4.2084992555421616E-4,
+    "medianResTime" : 0.0,
+    "minResTime" : 0.0,
+    "maxResTime" : 4.0,
+    "pct1ResTime" : 0.0,
+    "pct2ResTime" : 0.0,
+    "pct3ResTime" : 0.0,
+    "throughput" : 23531.08041646174,
+    "receivedKBytesPerSec" : 45.95914143840184,
+    "sentKBytesPerSec" : 0.0
+  }
+}
