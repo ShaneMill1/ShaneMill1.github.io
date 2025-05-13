@@ -1,0 +1,2466 @@
+2025-05-13 14:49:59,484 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2025-05-13 14:49:59,521 INFO o.a.j.JMeter: Loading user properties from: /home/shane.mill/apache-jmeter-5.6.3/bin/user.properties
+2025-05-13 14:49:59,522 INFO o.a.j.JMeter: Loading system properties from: /home/shane.mill/apache-jmeter-5.6.3/bin/system.properties
+2025-05-13 14:49:59,534 INFO o.a.j.JMeter: Copyright (c) 1998-2024 The Apache Software Foundation
+2025-05-13 14:49:59,534 INFO o.a.j.JMeter: Version 5.6.3
+2025-05-13 14:49:59,535 INFO o.a.j.JMeter: java.version=23.0.2-internal
+2025-05-13 14:49:59,535 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2025-05-13 14:49:59,535 INFO o.a.j.JMeter: os.name=Linux
+2025-05-13 14:49:59,535 INFO o.a.j.JMeter: os.arch=amd64
+2025-05-13 14:49:59,535 INFO o.a.j.JMeter: os.version=4.18.0-553.51.1.el8_10.x86_64
+2025-05-13 14:49:59,535 INFO o.a.j.JMeter: file.encoding=UTF-8
+2025-05-13 14:49:59,535 INFO o.a.j.JMeter: java.awt.headless=true
+2025-05-13 14:49:59,535 INFO o.a.j.JMeter: Max memory     =1073741824
+2025-05-13 14:49:59,536 INFO o.a.j.JMeter: Available Processors =16
+2025-05-13 14:49:59,559 INFO o.a.j.JMeter: Default Locale=English (EN)
+2025-05-13 14:49:59,560 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2025-05-13 14:49:59,560 INFO o.a.j.JMeter: JMeterHome=/home/shane.mill/apache-jmeter-5.6.3
+2025-05-13 14:49:59,560 INFO o.a.j.JMeter: user.dir  =/home/shane.mill/PUBSUB_WIFS_TESTING/ShaneMill1.github.io/WIFS-PubSubTesting-5-13-25-Round-1/100_subs
+2025-05-13 14:49:59,560 INFO o.a.j.JMeter: PWD       =/home/shane.mill/PUBSUB_WIFS_TESTING/ShaneMill1.github.io/WIFS-PubSubTesting-5-13-25-Round-1/100_subs
+2025-05-13 14:49:59,562 INFO o.a.j.JMeter: IP: 205.156.8.70 Name: ip-205-156-8-70.ec2.internal FullName: ip-205-156-8-70.ec2.internal
+2025-05-13 14:49:59,593 INFO o.a.j.JMeter: Setting property 'jmeter.reportgenerator.outputdir' to:'/home/shane.mill/PUBSUB_WIFS_TESTING/ShaneMill1.github.io/WIFS-PubSubTesting-5-13-25-Round-1/100_subs/results_amqp'
+2025-05-13 14:49:59,600 INFO o.a.j.s.FileServer: Default base='/home/shane.mill/PUBSUB_WIFS_TESTING/ShaneMill1.github.io/WIFS-PubSubTesting-5-13-25-Round-1/100_subs'
+2025-05-13 14:49:59,601 INFO o.a.j.s.FileServer: Set new base='/home/shane.mill/PUBSUB_WIFS_TESTING/ShaneMill1.github.io/WIFS-PubSubTesting-5-13-25-Round-1/100_subs'
+2025-05-13 14:50:00,012 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2025-05-13 14:50:00,080 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2025-05-13 14:50:00,085 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2025-05-13 14:50:00,092 INFO o.a.j.s.SaveService: Loading file: WIFSTestPlan-AMQP.jmx
+2025-05-13 14:50:00,241 INFO o.a.j.JMeter: Creating summariser <summary>
+2025-05-13 14:50:00,251 INFO o.a.j.r.d.ReportGenerator: ReportGenerator will use for Parsing the separator: ','
+2025-05-13 14:50:00,251 INFO o.a.j.r.d.ReportGenerator: Will generate report at end of test from  results file: SummaryReport-AMQP.jtl
+2025-05-13 14:50:00,251 INFO o.a.j.r.d.ReportGenerator: Reading report generator properties from: /home/shane.mill/apache-jmeter-5.6.3/bin/reportgenerator.properties
+2025-05-13 14:50:00,253 INFO o.a.j.r.d.ReportGenerator: Merging with JMeter properties
+2025-05-13 14:50:00,259 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.temp_dir' not found, using default value 'temp' instead.
+2025-05-13 14:50:00,262 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.apdex_per_transaction' not found, using default value 'null' instead.
+2025-05-13 14:50:00,276 INFO o.a.j.r.c.ReportGeneratorConfiguration: apdex_per_transaction is empty, not APDEX per transaction customization
+2025-05-13 14:50:00,276 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.sample_filter' not found, using default value 'null' instead.
+2025-05-13 14:50:00,276 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.report_title' not found, using default value 'null' instead.
+2025-05-13 14:50:00,277 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.start_date' not found, using default value 'null' instead.
+2025-05-13 14:50:00,277 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.end_date' not found, using default value 'null' instead.
+2025-05-13 14:50:00,277 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.date_format' not found, using default value 'null' instead.
+2025-05-13 14:50:00,278 INFO o.a.j.r.c.ReportGeneratorConfiguration: Will use date range start date: null, end date: null
+2025-05-13 14:50:00,285 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.totalTPS.exclude_controllers' not found, using default value 'false' instead.
+2025-05-13 14:50:00,286 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.activeThreadsOverTime.exclude_controllers' not found, using default value 'false' instead.
+2025-05-13 14:50:00,286 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.timeVsThreads.exclude_controllers' not found, using default value 'false' instead.
+2025-05-13 14:50:00,286 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimeDistribution.exclude_controllers' not found, using default value 'false' instead.
+2025-05-13 14:50:00,287 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.transactionsPerSecond.exclude_controllers' not found, using default value 'false' instead.
+2025-05-13 14:50:00,287 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentiles.exclude_controllers' not found, using default value 'false' instead.
+2025-05-13 14:50:00,287 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentilesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2025-05-13 14:50:00,287 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2025-05-13 14:50:00,288 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.connectTimeOverTime.exclude_controllers' not found, using default value 'false' instead.
+2025-05-13 14:50:00,288 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.latenciesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2025-05-13 14:50:00,289 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.filters_only_sample_series' not found, using default value 'true' instead.
+2025-05-13 14:50:00,289 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.series_filter' not found, using default value '' instead.
+2025-05-13 14:50:00,290 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.show_controllers_only' not found, using default value 'false' instead.
+2025-05-13 14:50:00,290 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.filters_only_sample_series' not found, using default value 'true' instead.
+2025-05-13 14:50:00,290 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.series_filter' not found, using default value '' instead.
+2025-05-13 14:50:00,290 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.show_controllers_only' not found, using default value 'false' instead.
+2025-05-13 14:50:00,311 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-05-13 14:50:00,312 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-05-13 14:50:00,312 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-05-13 14:50:00,318 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2025-05-13 14:50:00,318 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2025-05-13 14:50:00,429 INFO o.a.j.r.ClassFinder: Will scan jar /home/shane.mill/apache-jmeter-5.6.3/lib/ext/JMeterAMQP.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.functions.Function], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-05-13 14:50:00,458 INFO o.a.j.JMeter: Running test (1747147800458)
+2025-05-13 14:50:00,517 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2025-05-13 14:50:00,517 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2025-05-13 14:50:00,518 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-05-13 14:50:00,518 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2025-05-13 14:50:00,524 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-05-13 14:50:00,524 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 2 : Thread Group
+2025-05-13 14:50:00,524 INFO o.a.j.e.StandardJMeterEngine: Starting 100 threads for group Thread Group.
+2025-05-13 14:50:00,524 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-05-13 14:50:00,524 INFO o.a.j.t.ThreadGroup: Starting thread group... number=2 threads=100 ramp-up=10 delayedStart=false
+2025-05-13 14:50:00,528 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-1
+2025-05-13 14:50:00,529 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2025-05-13 14:50:00,535 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2025-05-13 14:50:00,535 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to UTF-8
+2025-05-13 14:50:00,535 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2025-05-13 14:50:00,536 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2025-05-13 14:50:00,537 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:00,537 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:00,537 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPPublisher@e673b486
+2025-05-13 14:50:00,537 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:00,538 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:00,538 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:00,576 INFO o.a.j.t.ThreadGroup: Started thread group number 2
+2025-05-13 14:50:00,576 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-05-13 14:50:00,610 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: 
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:00,617 INFO o.a.j.r.Summariser: summary +      1 in 00:00:00 =    6.4/s Avg:     2 Min:     2 Max:     2 Err:     0 (0.00%) Active: 2 Started: 2 Finished: 0
+2025-05-13 14:50:00,623 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:00,624 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:00,626 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:00,628 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-2
+2025-05-13 14:50:00,628 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:00,628 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:00,629 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:00,637 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:00,638 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:00,638 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:00,727 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-3
+2025-05-13 14:50:00,727 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:00,728 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:00,728 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:00,738 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:00,739 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:00,739 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:00,827 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-4
+2025-05-13 14:50:00,827 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:00,827 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:00,827 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:00,855 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:00,856 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:00,856 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:00,926 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-5
+2025-05-13 14:50:00,926 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:00,926 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:00,926 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:00,935 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:00,936 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:00,936 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:01,025 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-6
+2025-05-13 14:50:01,026 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:01,026 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:01,026 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:01,072 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:01,074 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:01,074 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:01,125 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-7
+2025-05-13 14:50:01,128 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:01,128 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:01,128 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:01,141 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:01,142 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:01,142 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:01,226 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-8
+2025-05-13 14:50:01,227 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:01,227 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:01,227 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:01,270 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:01,271 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:01,271 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:01,325 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-9
+2025-05-13 14:50:01,327 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:01,327 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:01,327 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:01,425 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-10
+2025-05-13 14:50:01,426 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:01,426 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:01,426 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:01,474 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:01,475 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:01,475 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:01,526 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-11
+2025-05-13 14:50:01,526 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:01,527 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:01,527 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:01,625 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-12
+2025-05-13 14:50:01,626 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:01,627 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:01,627 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:01,689 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:01,691 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:01,691 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:01,691 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:01,695 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:01,696 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:01,697 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:01,698 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:01,698 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:01,735 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-13
+2025-05-13 14:50:01,736 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:01,736 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:01,736 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:01,825 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-14
+2025-05-13 14:50:01,826 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:01,826 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:01,826 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:01,925 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-15
+2025-05-13 14:50:01,926 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:01,926 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:01,926 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:01,964 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:01,964 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:01,965 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:02,026 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-16
+2025-05-13 14:50:02,026 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:02,026 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:02,027 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:02,099 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:02,100 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:02,100 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:02,100 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:02,101 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:02,101 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:02,125 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-17
+2025-05-13 14:50:02,126 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:02,126 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:02,126 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:02,212 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:02,213 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:02,213 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:02,224 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-18
+2025-05-13 14:50:02,224 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:02,224 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:02,225 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:02,325 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-19
+2025-05-13 14:50:02,326 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:02,326 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:02,326 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:02,360 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:02,361 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:02,361 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:02,425 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-20
+2025-05-13 14:50:02,425 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:02,426 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:02,426 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:02,426 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:02,427 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:02,427 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:02,440 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:02,440 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:02,440 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:02,526 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-21
+2025-05-13 14:50:02,526 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:02,526 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:02,526 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:02,535 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:02,536 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:02,536 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:02,563 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:02,564 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:02,564 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:02,625 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-22
+2025-05-13 14:50:02,626 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:02,626 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:02,626 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:02,726 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-23
+2025-05-13 14:50:02,726 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:02,727 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:02,727 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:02,767 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:02,768 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:02,768 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:02,825 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-24
+2025-05-13 14:50:02,826 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:02,826 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:02,826 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:02,898 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:02,899 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:02,899 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:02,926 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-25
+2025-05-13 14:50:02,926 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:02,926 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:02,926 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:02,936 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:02,937 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:02,937 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:03,025 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-26
+2025-05-13 14:50:03,025 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:03,026 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:03,026 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:03,027 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:03,028 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:03,028 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:03,125 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-27
+2025-05-13 14:50:03,126 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:03,126 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:03,126 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:03,138 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:03,139 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:03,139 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:03,149 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:03,154 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:03,155 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:03,225 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-28
+2025-05-13 14:50:03,225 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:03,226 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:03,226 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:03,237 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:03,237 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:03,237 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:03,326 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-29
+2025-05-13 14:50:03,326 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:03,326 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:03,326 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:03,425 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-30
+2025-05-13 14:50:03,426 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:03,426 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:03,426 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:03,438 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:03,443 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:03,443 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:03,443 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:03,454 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:03,454 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:03,525 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-31
+2025-05-13 14:50:03,526 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:03,526 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:03,526 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:03,551 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:03,551 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:03,551 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:03,625 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-32
+2025-05-13 14:50:03,626 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:03,626 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:03,626 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:03,636 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:03,637 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:03,637 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:03,724 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-33
+2025-05-13 14:50:03,724 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:03,724 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:03,724 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:03,796 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:03,797 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:03,797 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:03,825 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-34
+2025-05-13 14:50:03,826 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:03,826 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:03,826 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:03,924 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-35
+2025-05-13 14:50:03,924 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:03,924 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:03,924 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:03,999 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:04,010 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:04,011 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:04,025 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-36
+2025-05-13 14:50:04,026 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:04,026 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:04,026 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:04,071 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:04,072 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:04,072 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:04,074 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:04,076 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:04,076 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:04,124 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-37
+2025-05-13 14:50:04,124 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:04,124 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:04,125 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:04,211 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:04,212 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:04,212 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:04,225 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-38
+2025-05-13 14:50:04,225 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:04,225 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:04,225 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:04,244 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:04,245 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:04,245 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:04,325 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-39
+2025-05-13 14:50:04,326 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:04,326 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:04,326 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:04,351 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:04,352 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:04,352 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:04,425 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-40
+2025-05-13 14:50:04,425 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:04,426 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:04,426 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:04,510 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:04,510 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:04,510 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:04,526 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-41
+2025-05-13 14:50:04,526 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:04,526 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:04,526 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:04,622 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:04,623 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:04,623 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:04,625 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-42
+2025-05-13 14:50:04,626 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:04,626 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:04,626 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:04,637 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:04,638 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:04,638 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:04,725 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-43
+2025-05-13 14:50:04,725 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:04,725 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:04,725 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:04,738 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:04,740 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:04,740 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:04,825 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-44
+2025-05-13 14:50:04,826 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:04,826 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:04,826 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:04,864 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:04,864 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:04,865 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:04,924 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-45
+2025-05-13 14:50:04,924 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:04,924 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:04,924 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:05,022 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:05,023 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:05,023 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:05,025 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-46
+2025-05-13 14:50:05,026 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:05,026 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:05,026 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:05,048 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:05,049 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:05,049 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:05,124 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-47
+2025-05-13 14:50:05,125 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:05,125 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:05,125 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:05,151 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:05,151 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:05,151 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:05,225 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-48
+2025-05-13 14:50:05,226 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:05,226 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:05,226 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:05,247 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:05,247 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:05,248 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:05,324 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-49
+2025-05-13 14:50:05,325 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:05,325 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:05,325 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:05,400 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:05,400 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:05,400 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:05,425 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-50
+2025-05-13 14:50:05,426 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:05,426 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:05,426 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:05,484 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:05,493 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:05,493 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:05,524 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-51
+2025-05-13 14:50:05,524 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:05,525 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:05,525 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:05,621 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:05,622 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:05,622 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:05,625 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-52
+2025-05-13 14:50:05,626 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:05,626 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:05,626 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:05,636 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:05,637 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:05,637 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:05,724 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-53
+2025-05-13 14:50:05,724 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:05,725 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:05,725 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:05,735 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:05,736 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:05,736 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:05,825 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-54
+2025-05-13 14:50:05,826 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:05,826 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:05,826 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:05,877 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:05,880 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:05,880 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:05,926 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-55
+2025-05-13 14:50:05,926 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:05,926 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:05,926 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:06,014 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:06,015 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:06,016 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:06,024 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-56
+2025-05-13 14:50:06,025 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:06,025 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:06,025 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:06,093 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:06,094 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:06,094 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:06,125 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-57
+2025-05-13 14:50:06,125 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:06,125 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:06,125 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:06,190 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:06,201 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:06,201 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:06,224 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-58
+2025-05-13 14:50:06,224 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:06,225 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:06,225 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:06,234 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:06,235 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:06,235 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:06,326 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-59
+2025-05-13 14:50:06,326 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:06,326 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:06,326 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:06,343 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:06,343 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:06,343 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:06,425 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-60
+2025-05-13 14:50:06,426 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:06,426 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:06,426 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:06,519 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:06,520 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:06,520 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:06,525 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-61
+2025-05-13 14:50:06,525 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:06,525 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:06,525 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:06,625 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-62
+2025-05-13 14:50:06,625 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:06,625 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:06,626 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:06,658 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:06,660 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:06,660 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:06,694 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:06,695 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:06,695 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:06,725 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-63
+2025-05-13 14:50:06,726 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:06,726 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:06,726 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:06,807 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:06,813 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:06,813 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:06,825 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-64
+2025-05-13 14:50:06,825 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:06,826 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:06,826 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:06,838 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:06,839 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:06,839 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:06,925 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-65
+2025-05-13 14:50:06,926 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:06,926 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:06,926 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:06,981 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:06,982 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:06,982 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:07,024 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-66
+2025-05-13 14:50:07,024 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:07,024 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:07,024 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:07,126 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-67
+2025-05-13 14:50:07,126 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:07,126 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:07,126 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:07,150 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:07,154 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:07,154 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:07,224 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-68
+2025-05-13 14:50:07,224 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:07,224 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:07,224 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:07,242 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:07,243 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:07,243 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:07,305 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:07,315 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:07,316 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:07,325 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-69
+2025-05-13 14:50:07,326 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:07,326 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:07,326 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:07,358 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:07,358 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:07,358 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:07,426 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-70
+2025-05-13 14:50:07,426 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:07,426 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:07,426 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:07,446 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:07,447 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:07,447 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:07,524 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-71
+2025-05-13 14:50:07,524 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:07,525 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:07,525 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:07,534 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:07,535 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:07,535 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:07,626 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-72
+2025-05-13 14:50:07,626 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:07,626 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:07,626 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:07,725 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-73
+2025-05-13 14:50:07,725 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:07,725 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:07,725 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:07,745 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:07,747 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:07,747 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:07,757 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:07,758 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:07,758 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:07,824 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-74
+2025-05-13 14:50:07,825 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:07,825 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:07,825 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:07,881 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:07,881 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:07,882 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:07,926 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-75
+2025-05-13 14:50:07,926 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:07,926 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:07,926 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:07,935 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:07,936 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:07,936 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:08,024 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-76
+2025-05-13 14:50:08,024 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:08,024 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:08,024 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:08,065 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:08,067 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:08,067 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:08,125 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-77
+2025-05-13 14:50:08,126 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:08,126 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:08,126 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:08,225 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-78
+2025-05-13 14:50:08,225 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:08,225 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:08,225 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:08,236 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:08,237 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:08,237 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:08,277 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:08,279 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:08,279 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:08,325 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-79
+2025-05-13 14:50:08,326 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:08,326 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:08,326 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:08,352 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:08,354 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:08,354 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:08,425 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-80
+2025-05-13 14:50:08,425 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:08,425 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:08,425 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:08,446 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:08,446 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:08,447 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:08,524 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-81
+2025-05-13 14:50:08,525 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:08,525 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:08,525 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:08,617 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:08,618 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:08,618 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:08,625 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-82
+2025-05-13 14:50:08,626 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:08,626 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:08,626 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:08,727 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-83
+2025-05-13 14:50:08,727 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:08,727 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:08,727 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:08,748 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:08,749 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:08,749 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:08,788 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:08,789 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:08,789 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:08,825 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-84
+2025-05-13 14:50:08,826 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:08,826 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:08,826 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:08,845 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:08,846 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:08,846 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:08,925 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-85
+2025-05-13 14:50:08,925 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:08,925 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:08,925 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:09,013 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:09,014 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:09,014 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:09,025 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-86
+2025-05-13 14:50:09,025 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:09,025 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:09,026 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:09,124 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-87
+2025-05-13 14:50:09,125 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:09,125 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:09,125 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:09,139 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:09,140 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:09,140 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:09,225 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-88
+2025-05-13 14:50:09,225 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:09,225 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:09,225 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:09,229 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:09,233 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:09,233 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:09,256 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:09,257 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:09,257 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:09,324 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-89
+2025-05-13 14:50:09,324 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:09,324 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:09,324 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:09,424 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-90
+2025-05-13 14:50:09,425 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:09,425 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:09,425 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:09,430 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:09,437 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:09,437 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:09,450 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:09,450 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:09,451 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:09,526 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-91
+2025-05-13 14:50:09,526 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:09,526 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:09,526 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:09,540 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:09,540 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:09,540 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:09,624 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-92
+2025-05-13 14:50:09,624 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:09,624 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:09,624 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:09,700 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:09,702 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:09,702 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:09,724 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-93
+2025-05-13 14:50:09,725 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:09,725 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:09,725 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:09,740 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:09,741 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:09,741 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:09,825 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-94
+2025-05-13 14:50:09,825 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:09,825 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:09,825 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:09,837 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:09,837 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:09,837 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:09,924 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-95
+2025-05-13 14:50:09,925 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:09,925 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:09,925 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:09,943 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:09,944 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:09,944 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:10,026 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-96
+2025-05-13 14:50:10,026 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:10,026 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:10,026 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:10,072 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:10,073 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:10,073 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:10,125 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-97
+2025-05-13 14:50:10,125 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:10,125 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:10,125 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:10,189 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:10,190 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:10,190 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:10,224 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-98
+2025-05-13 14:50:10,225 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:10,225 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:10,225 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:10,270 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:10,271 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:10,271 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:10,325 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-99
+2025-05-13 14:50:10,325 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:10,325 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:10,325 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:10,399 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:10,402 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:10,402 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:10,424 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2-100
+2025-05-13 14:50:10,424 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-13 14:50:10,425 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 1000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@563239f4
+2025-05-13 14:50:10,425 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-13 14:50:10,511 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: jmeterTestQueue
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.NAM-CAR.SPECI
+	 arguments: {}
+2025-05-13 14:50:10,512 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-13 14:50:10,513 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-13 14:50:30,001 INFO o.a.j.r.Summariser: summary + 430701 in 00:00:29 = 14656.7/s Avg:     5 Min:     0 Max:   161 Err:     0 (0.00%) Active: 101 Started: 101 Finished: 0
+2025-05-13 14:50:30,001 INFO o.a.j.r.Summariser: summary = 430702 in 00:00:30 = 14578.8/s Avg:     5 Min:     0 Max:   161 Err:     0 (0.00%)
+2025-05-13 14:51:00,001 INFO o.a.j.r.Summariser: summary + 428177 in 00:00:30 = 14272.6/s Avg:     6 Min:     0 Max:   135 Err:     0 (0.00%) Active: 101 Started: 101 Finished: 0
+2025-05-13 14:51:00,001 INFO o.a.j.r.Summariser: summary = 858879 in 00:01:00 = 14424.5/s Avg:     5 Min:     0 Max:   161 Err:     0 (0.00%)
+2025-05-13 14:51:30,002 INFO o.a.j.r.Summariser: summary + 424885 in 00:00:30 = 14162.8/s Avg:     6 Min:     0 Max:   164 Err:     0 (0.00%) Active: 101 Started: 101 Finished: 0
+2025-05-13 14:51:30,002 INFO o.a.j.r.Summariser: summary = 1283764 in 00:01:30 = 14336.8/s Avg:     5 Min:     0 Max:   164 Err:     0 (0.00%)
+2025-05-13 14:52:00,000 INFO o.a.j.r.Summariser: summary + 408019 in 00:00:30 = 13601.1/s Avg:     6 Min:     0 Max:   163 Err:     0 (0.00%) Active: 101 Started: 101 Finished: 0
+2025-05-13 14:52:00,000 INFO o.a.j.r.Summariser: summary = 1691783 in 00:02:00 = 14152.2/s Avg:     6 Min:     0 Max:   164 Err:     0 (0.00%)
+2025-05-13 14:52:30,000 INFO o.a.j.r.Summariser: summary + 379580 in 00:00:30 = 12652.7/s Avg:     7 Min:     0 Max:   175 Err:     0 (0.00%) Active: 101 Started: 101 Finished: 0
+2025-05-13 14:52:30,000 INFO o.a.j.r.Summariser: summary = 2071363 in 00:02:30 = 13851.4/s Avg:     6 Min:     0 Max:   175 Err:     0 (0.00%)
+2025-05-13 14:53:00,000 INFO o.a.j.r.Summariser: summary + 398767 in 00:00:30 = 13292.2/s Avg:     6 Min:     0 Max:   220 Err:     0 (0.00%) Active: 101 Started: 101 Finished: 0
+2025-05-13 14:53:00,000 INFO o.a.j.r.Summariser: summary = 2470130 in 00:03:00 = 13758.0/s Avg:     6 Min:     0 Max:   220 Err:     0 (0.00%)
+2025-05-13 14:53:30,000 INFO o.a.j.r.Summariser: summary + 402090 in 00:00:30 = 13403.0/s Avg:     6 Min:     0 Max:   166 Err:     0 (0.00%) Active: 101 Started: 101 Finished: 0
+2025-05-13 14:53:30,000 INFO o.a.j.r.Summariser: summary = 2872220 in 00:03:30 = 13707.1/s Avg:     6 Min:     0 Max:   220 Err:     0 (0.00%)
+2025-05-13 14:54:00,000 INFO o.a.j.r.Summariser: summary + 415813 in 00:00:30 = 13860.4/s Avg:     6 Min:     0 Max:   147 Err:     0 (0.00%) Active: 101 Started: 101 Finished: 0
+2025-05-13 14:54:00,000 INFO o.a.j.r.Summariser: summary = 3288033 in 00:04:00 = 13726.3/s Avg:     6 Min:     0 Max:   220 Err:     0 (0.00%)
+2025-05-13 14:54:30,000 INFO o.a.j.r.Summariser: summary + 403404 in 00:00:30 = 13446.8/s Avg:     6 Min:     0 Max:   189 Err:     0 (0.00%) Active: 101 Started: 101 Finished: 0
+2025-05-13 14:54:30,000 INFO o.a.j.r.Summariser: summary = 3691437 in 00:04:30 = 13695.2/s Avg:     6 Min:     0 Max:   220 Err:     0 (0.00%)
+2025-05-13 14:55:00,000 INFO o.a.j.r.Summariser: summary + 433430 in 00:00:30 = 14447.7/s Avg:     6 Min:     0 Max:   142 Err:     0 (0.00%) Active: 101 Started: 101 Finished: 0
+2025-05-13 14:55:00,000 INFO o.a.j.r.Summariser: summary = 4124867 in 00:05:00 = 13770.6/s Avg:     6 Min:     0 Max:   220 Err:     0 (0.00%)
+2025-05-13 14:55:00,526 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-3
+2025-05-13 14:55:00,526 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-3
+2025-05-13 14:55:00,526 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,527 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-2
+2025-05-13 14:55:00,527 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-2
+2025-05-13 14:55:00,527 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,528 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-4
+2025-05-13 14:55:00,528 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-4
+2025-05-13 14:55:00,528 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,530 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-7
+2025-05-13 14:55:00,530 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-7
+2025-05-13 14:55:00,530 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,532 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-10
+2025-05-13 14:55:00,532 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-6
+2025-05-13 14:55:00,532 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-10
+2025-05-13 14:55:00,532 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-6
+2025-05-13 14:55:00,532 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,532 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,534 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-14
+2025-05-13 14:55:00,534 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-15
+2025-05-13 14:55:00,534 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-14
+2025-05-13 14:55:00,534 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-15
+2025-05-13 14:55:00,534 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,534 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,536 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-5
+2025-05-13 14:55:00,536 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-5
+2025-05-13 14:55:00,536 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,537 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-21
+2025-05-13 14:55:00,537 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-21
+2025-05-13 14:55:00,537 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,537 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-8
+2025-05-13 14:55:00,537 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-8
+2025-05-13 14:55:00,537 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,539 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-1
+2025-05-13 14:55:00,539 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-1
+2025-05-13 14:55:00,539 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,540 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-23
+2025-05-13 14:55:00,540 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-23
+2025-05-13 14:55:00,540 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,542 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-18
+2025-05-13 14:55:00,542 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-16
+2025-05-13 14:55:00,542 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-16
+2025-05-13 14:55:00,542 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-18
+2025-05-13 14:55:00,542 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,542 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,543 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-26
+2025-05-13 14:55:00,543 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-26
+2025-05-13 14:55:00,543 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,543 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-22
+2025-05-13 14:55:00,543 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-22
+2025-05-13 14:55:00,543 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,544 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-11
+2025-05-13 14:55:00,544 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-11
+2025-05-13 14:55:00,544 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,544 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-9
+2025-05-13 14:55:00,544 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-9
+2025-05-13 14:55:00,544 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,548 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-12
+2025-05-13 14:55:00,548 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-1
+2025-05-13 14:55:00,548 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-12
+2025-05-13 14:55:00,548 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-40
+2025-05-13 14:55:00,548 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2025-05-13 14:55:00,548 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,548 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-40
+2025-05-13 14:55:00,548 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-30
+2025-05-13 14:55:00,548 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,548 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,548 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-30
+2025-05-13 14:55:00,548 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,548 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-25
+2025-05-13 14:55:00,548 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-25
+2025-05-13 14:55:00,548 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,548 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-31
+2025-05-13 14:55:00,549 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-31
+2025-05-13 14:55:00,549 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,549 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-42
+2025-05-13 14:55:00,549 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-42
+2025-05-13 14:55:00,549 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,553 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-35
+2025-05-13 14:55:00,553 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-35
+2025-05-13 14:55:00,553 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,553 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-34
+2025-05-13 14:55:00,553 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-34
+2025-05-13 14:55:00,553 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,553 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-13
+2025-05-13 14:55:00,553 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-13
+2025-05-13 14:55:00,553 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,553 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-19
+2025-05-13 14:55:00,553 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-19
+2025-05-13 14:55:00,553 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,555 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-27
+2025-05-13 14:55:00,555 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-27
+2025-05-13 14:55:00,555 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,555 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-43
+2025-05-13 14:55:00,555 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-43
+2025-05-13 14:55:00,555 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,555 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-32
+2025-05-13 14:55:00,555 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-32
+2025-05-13 14:55:00,555 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,555 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-54
+2025-05-13 14:55:00,555 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-54
+2025-05-13 14:55:00,555 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,556 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-38
+2025-05-13 14:55:00,556 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-38
+2025-05-13 14:55:00,556 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-47
+2025-05-13 14:55:00,556 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,556 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-47
+2025-05-13 14:55:00,556 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,556 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-20
+2025-05-13 14:55:00,556 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-20
+2025-05-13 14:55:00,556 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-36
+2025-05-13 14:55:00,556 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,556 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-36
+2025-05-13 14:55:00,556 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,556 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-48
+2025-05-13 14:55:00,556 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-48
+2025-05-13 14:55:00,556 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,557 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-28
+2025-05-13 14:55:00,557 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-28
+2025-05-13 14:55:00,557 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,557 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-39
+2025-05-13 14:55:00,557 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-39
+2025-05-13 14:55:00,557 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,557 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-46
+2025-05-13 14:55:00,557 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-46
+2025-05-13 14:55:00,557 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,558 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-45
+2025-05-13 14:55:00,558 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-45
+2025-05-13 14:55:00,558 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,559 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-50
+2025-05-13 14:55:00,559 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-50
+2025-05-13 14:55:00,559 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,559 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-29
+2025-05-13 14:55:00,559 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-41
+2025-05-13 14:55:00,559 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-29
+2025-05-13 14:55:00,559 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-41
+2025-05-13 14:55:00,559 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,559 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,560 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-55
+2025-05-13 14:55:00,560 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-55
+2025-05-13 14:55:00,560 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,562 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-24
+2025-05-13 14:55:00,563 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-24
+2025-05-13 14:55:00,563 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-67
+2025-05-13 14:55:00,563 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,563 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-67
+2025-05-13 14:55:00,563 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,563 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-51
+2025-05-13 14:55:00,563 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-17
+2025-05-13 14:55:00,563 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-51
+2025-05-13 14:55:00,563 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-17
+2025-05-13 14:55:00,563 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,563 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,563 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-33
+2025-05-13 14:55:00,563 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-53
+2025-05-13 14:55:00,563 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-33
+2025-05-13 14:55:00,563 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,563 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-53
+2025-05-13 14:55:00,563 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,564 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-49
+2025-05-13 14:55:00,564 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-49
+2025-05-13 14:55:00,564 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,565 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-57
+2025-05-13 14:55:00,565 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-57
+2025-05-13 14:55:00,565 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,565 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-44
+2025-05-13 14:55:00,565 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-44
+2025-05-13 14:55:00,565 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,565 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-52
+2025-05-13 14:55:00,565 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-52
+2025-05-13 14:55:00,565 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,567 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-70
+2025-05-13 14:55:00,567 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-70
+2025-05-13 14:55:00,567 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,569 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-60
+2025-05-13 14:55:00,570 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-60
+2025-05-13 14:55:00,570 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,570 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-80
+2025-05-13 14:55:00,570 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-37
+2025-05-13 14:55:00,570 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-80
+2025-05-13 14:55:00,570 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-37
+2025-05-13 14:55:00,570 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,570 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,570 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-62
+2025-05-13 14:55:00,570 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-62
+2025-05-13 14:55:00,570 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,570 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-63
+2025-05-13 14:55:00,570 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-63
+2025-05-13 14:55:00,570 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,570 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-66
+2025-05-13 14:55:00,570 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-65
+2025-05-13 14:55:00,570 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-72
+2025-05-13 14:55:00,570 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-66
+2025-05-13 14:55:00,571 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-65
+2025-05-13 14:55:00,571 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-72
+2025-05-13 14:55:00,571 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,571 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,571 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,571 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-56
+2025-05-13 14:55:00,571 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-87
+2025-05-13 14:55:00,571 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-56
+2025-05-13 14:55:00,571 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-87
+2025-05-13 14:55:00,571 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,571 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,573 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-61
+2025-05-13 14:55:00,573 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-61
+2025-05-13 14:55:00,573 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,574 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-59
+2025-05-13 14:55:00,574 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-58
+2025-05-13 14:55:00,574 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-59
+2025-05-13 14:55:00,574 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-58
+2025-05-13 14:55:00,574 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,574 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,575 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-84
+2025-05-13 14:55:00,575 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-95
+2025-05-13 14:55:00,575 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-68
+2025-05-13 14:55:00,575 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-82
+2025-05-13 14:55:00,575 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-88
+2025-05-13 14:55:00,575 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-84
+2025-05-13 14:55:00,575 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-68
+2025-05-13 14:55:00,575 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-94
+2025-05-13 14:55:00,575 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-82
+2025-05-13 14:55:00,575 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-88
+2025-05-13 14:55:00,575 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,575 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-81
+2025-05-13 14:55:00,575 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,575 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-81
+2025-05-13 14:55:00,575 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-90
+2025-05-13 14:55:00,575 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,575 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-90
+2025-05-13 14:55:00,575 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-64
+2025-05-13 14:55:00,575 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-73
+2025-05-13 14:55:00,575 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,575 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-64
+2025-05-13 14:55:00,575 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,575 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-73
+2025-05-13 14:55:00,575 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,575 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,575 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-76
+2025-05-13 14:55:00,575 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,575 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-95
+2025-05-13 14:55:00,575 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-76
+2025-05-13 14:55:00,575 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-94
+2025-05-13 14:55:00,575 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,575 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-89
+2025-05-13 14:55:00,575 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,575 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,575 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-89
+2025-05-13 14:55:00,576 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,576 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-96
+2025-05-13 14:55:00,576 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-96
+2025-05-13 14:55:00,576 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,576 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-93
+2025-05-13 14:55:00,576 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-100
+2025-05-13 14:55:00,576 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-75
+2025-05-13 14:55:00,576 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-100
+2025-05-13 14:55:00,576 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-93
+2025-05-13 14:55:00,576 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-74
+2025-05-13 14:55:00,576 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-75
+2025-05-13 14:55:00,576 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,576 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-92
+2025-05-13 14:55:00,576 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,576 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-74
+2025-05-13 14:55:00,576 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,576 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-77
+2025-05-13 14:55:00,576 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-92
+2025-05-13 14:55:00,576 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-77
+2025-05-13 14:55:00,576 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,576 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,576 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,578 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-78
+2025-05-13 14:55:00,578 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-83
+2025-05-13 14:55:00,578 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-78
+2025-05-13 14:55:00,579 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-83
+2025-05-13 14:55:00,579 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,579 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,586 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-86
+2025-05-13 14:55:00,586 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-86
+2025-05-13 14:55:00,586 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,587 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-71
+2025-05-13 14:55:00,587 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-71
+2025-05-13 14:55:00,587 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,587 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-79
+2025-05-13 14:55:00,587 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-85
+2025-05-13 14:55:00,587 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-98
+2025-05-13 14:55:00,587 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-79
+2025-05-13 14:55:00,587 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-91
+2025-05-13 14:55:00,587 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-85
+2025-05-13 14:55:00,588 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,588 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-98
+2025-05-13 14:55:00,588 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-91
+2025-05-13 14:55:00,588 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,588 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,587 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-97
+2025-05-13 14:55:00,588 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,588 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-97
+2025-05-13 14:55:00,588 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,589 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-99
+2025-05-13 14:55:00,589 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2-69
+2025-05-13 14:55:00,589 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-99
+2025-05-13 14:55:00,589 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2-69
+2025-05-13 14:55:00,589 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,589 INFO c.z.j.p.a.AMQPSampler: AMQPSampler.threadFinished called
+2025-05-13 14:55:00,726 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-05-13 14:55:00,727 INFO o.a.j.r.Summariser: summary +   7072 in 00:00:01 = 9727.6/s Avg:     7 Min:     0 Max:   111 Err:     0 (0.00%) Active: 0 Started: 101 Finished: 101
+2025-05-13 14:55:00,727 INFO o.a.j.r.Summariser: summary = 4131939 in 00:05:00 = 13760.8/s Avg:     6 Min:     0 Max:   220 Err:     0 (0.00%)
+2025-05-13 14:55:00,727 INFO o.a.j.JMeter: Generating Dashboard
+2025-05-13 14:55:00,728 INFO o.a.j.r.d.ReportGenerator: Flushing result collector before report Generation
+2025-05-13 14:55:00,747 INFO o.a.j.r.p.NormalizerSampleConsumer: Using format, 'ms', to parse timeStamp field
+2025-05-13 14:56:16,356 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.AggregateConsumer#stopProducing(): beginDate produced 0 samples
+2025-05-13 14:56:16,356 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.AggregateConsumer#stopProducing(): endDate produced 0 samples
+2025-05-13 14:56:16,358 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.ApdexSummaryConsumer#stopProducing(): apdexSummary produced 0 samples
+2025-05-13 14:56:16,358 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.RequestsSummaryConsumer#stopProducing(): requestsSummary produced 0 samples
+2025-05-13 14:56:16,381 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.StatisticsSummaryConsumer#stopProducing(): statisticsSummary produced 0 samples
+2025-05-13 14:56:16,384 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.Top5ErrorsBySamplerConsumer#stopProducing(): top5ErrorsBySampler produced 0 samples
+2025-05-13 14:56:16,385 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.ErrorsSummaryConsumer#stopProducing(): errorsSummary produced 0 samples
+2025-05-13 14:56:16,385 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.HitsPerSecondGraphConsumer#stopProducing(): hitsPerSecond produced 0 samples
+2025-05-13 14:56:36,137 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.LatencyVSRequestGraphConsumer#stopProducing(): latencyVsRequest produced 0 samples
+2025-05-13 14:56:36,180 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.SyntheticResponseTimeDistributionGraphConsumer#stopProducing(): syntheticResponseTimeDistribution produced 0 samples
+2025-05-13 14:56:36,180 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.BytesThroughputGraphConsumer#stopProducing(): bytesThroughputOverTime produced 0 samples
+2025-05-13 14:56:36,180 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.CodesPerSecondGraphConsumer#stopProducing(): codesPerSecond produced 0 samples
+2025-05-13 14:56:55,751 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeVSRequestGraphConsumer#stopProducing(): responseTimeVsRequest produced 0 samples
+2025-05-13 14:56:55,805 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): startIntervalControlerFilter produced 28923573 samples
+2025-05-13 14:56:55,805 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TotalTPSGraphConsumer#stopProducing(): totalTPS produced 0 samples
+2025-05-13 14:56:55,805 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ActiveThreadsGraphConsumer#stopProducing(): activeThreadsOverTime produced 0 samples
+2025-05-13 14:56:55,805 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TimeVSThreadGraphConsumer#stopProducing(): timeVsThreads produced 0 samples
+2025-05-13 14:56:55,805 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeDistributionGraphConsumer#stopProducing(): responseTimeDistribution produced 0 samples
+2025-05-13 14:56:55,805 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TransactionsPerSecondGraphConsumer#stopProducing(): transactionsPerSecond produced 0 samples
+2025-05-13 14:56:55,805 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimePercentilesGraphConsumer#stopProducing(): responseTimePercentiles produced 0 samples
+2025-05-13 14:56:55,808 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimePercentilesOverTimeGraphConsumer#stopProducing(): responseTimePercentilesOverTime produced 0 samples
+2025-05-13 14:56:55,812 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeOverTimeGraphConsumer#stopProducing(): responseTimesOverTime produced 0 samples
+2025-05-13 14:56:55,812 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ConnectTimeOverTimeGraphConsumer#stopProducing(): connectTimeOverTime produced 0 samples
+2025-05-13 14:56:55,812 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.LatencyOverTimeGraphConsumer#stopProducing(): latenciesOverTime produced 0 samples
+2025-05-13 14:56:55,812 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): nameFilter produced 61979085 samples
+2025-05-13 14:56:55,812 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): dateRangeFilter produced 12395817 samples
+2025-05-13 14:56:55,812 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.NormalizerSampleConsumer#stopProducing(): normalizer produced 4131939 samples
+2025-05-13 14:56:55,813 INFO o.a.j.r.p.CsvFileSampleSource: produce(): 4131939 samples produced in 1m 55s 30 ms on channel 0
+2025-05-13 14:56:55,813 INFO o.a.j.r.d.ReportGenerator: Exporting data using exporter:'json' of className:'org.apache.jmeter.report.dashboard.JsonExporter'
+2025-05-13 14:56:55,915 INFO o.a.j.r.d.JsonExporter: Found data for consumer statisticsSummary in context
+2025-05-13 14:56:55,915 INFO o.a.j.r.d.JsonExporter: Creating statistics for overall
+2025-05-13 14:56:55,916 INFO o.a.j.r.d.JsonExporter: Creating statistics for other transactions
+2025-05-13 14:56:55,916 INFO o.a.j.r.d.JsonExporter: Checking output folder
+2025-05-13 14:56:55,916 INFO o.a.j.r.d.JsonExporter: Writing statistics JSON to /home/shane.mill/PUBSUB_WIFS_TESTING/ShaneMill1.github.io/WIFS-PubSubTesting-5-13-25-Round-1/100_subs/results_amqp/statistics.json
+2025-05-13 14:56:55,968 INFO o.a.j.r.d.ReportGenerator: Exporting data using exporter:'html' of className:'org.apache.jmeter.report.dashboard.HtmlTemplateExporter'
+2025-05-13 14:56:55,972 INFO o.a.j.r.d.HtmlTemplateExporter: Will generate dashboard in folder: /home/shane.mill/PUBSUB_WIFS_TESTING/ShaneMill1.github.io/WIFS-PubSubTesting-5-13-25-Round-1/100_subs/results_amqp
+2025-05-13 14:56:56,142 INFO o.a.j.r.d.HtmlTemplateExporter: Report will be generated in: /home/shane.mill/PUBSUB_WIFS_TESTING/ShaneMill1.github.io/WIFS-PubSubTesting-5-13-25-Round-1/100_subs/results_amqp, creating folder structure
+2025-05-13 14:56:56,145 INFO o.a.j.r.d.TemplateVisitor: Copying folder from '/home/shane.mill/apache-jmeter-5.6.3/bin/report-template' to '/home/shane.mill/PUBSUB_WIFS_TESTING/ShaneMill1.github.io/WIFS-PubSubTesting-5-13-25-Round-1/100_subs/results_amqp', got message: /home/shane.mill/PUBSUB_WIFS_TESTING/ShaneMill1.github.io/WIFS-PubSubTesting-5-13-25-Round-1/100_subs/results_amqp, found non empty folder with following content [/home/shane.mill/PUBSUB_WIFS_TESTING/ShaneMill1.github.io/WIFS-PubSubTesting-5-13-25-Round-1/100_subs/results_amqp/statistics.json], will be ignored
+2025-05-13 14:56:56,552 INFO o.a.j.JMeter: Dashboard generated
