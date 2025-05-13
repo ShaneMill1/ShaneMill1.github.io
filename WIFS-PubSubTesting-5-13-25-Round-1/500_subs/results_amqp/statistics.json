@@ -1,0 +1,50 @@
+{
+  "Total" : {
+    "transaction" : "Total",
+    "sampleCount" : 2676313,
+    "errorCount" : 0,
+    "errorPct" : 0.0,
+    "meanResTime" : 54.256833561697555,
+    "medianResTime" : 97.0,
+    "minResTime" : 0.0,
+    "maxResTime" : 251.0,
+    "pct1ResTime" : 120.0,
+    "pct2ResTime" : 124.0,
+    "pct3ResTime" : 172.0,
+    "throughput" : 8913.615320566194,
+    "receivedKBytesPerSec" : 9280.593353195254,
+    "sentKBytesPerSec" : 0.0
+  },
+  "AMQP Publisher" : {
+    "transaction" : "AMQP Publisher",
+    "sampleCount" : 1341508,
+    "errorCount" : 0,
+    "errorPct" : 0.0,
+    "meanResTime" : 0.21616494273607498,
+    "medianResTime" : 0.0,
+    "minResTime" : 0.0,
+    "maxResTime" : 251.0,
+    "pct1ResTime" : 0.0,
+    "pct2ResTime" : 0.0,
+    "pct3ResTime" : 1.0,
+    "throughput" : 4470.948175304116,
+    "receivedKBytesPerSec" : 9278.09069582153,
+    "sentKBytesPerSec" : 0.0
+  },
+  "AMQP Consumer" : {
+    "transaction" : "AMQP Consumer",
+    "sampleCount" : 1334805,
+    "errorCount" : 0,
+    "errorPct" : 0.0,
+    "meanResTime" : 108.56887860024528,
+    "medianResTime" : 112.0,
+    "minResTime" : 0.0,
+    "maxResTime" : 233.0,
+    "pct1ResTime" : 123.0,
+    "pct2ResTime" : 126.0,
+    "pct3ResTime" : 172.0,
+    "throughput" : 4446.05991566241,
+    "receivedKBytesPerSec" : 8.683710772778145,
+    "sentKBytesPerSec" : 0.0
+  }
+}
