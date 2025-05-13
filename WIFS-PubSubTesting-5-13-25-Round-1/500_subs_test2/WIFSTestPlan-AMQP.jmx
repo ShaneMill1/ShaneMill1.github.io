@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.6.2">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="AMQP Test Plan" enabled="true">
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.tearDown_on_shutdown">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+    </TestPlan>
+    <hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <intProp name="LoopController.loops">-1</intProp>
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.delayedStart">false</boolProp>
+        <boolProp name="ThreadGroup.scheduler">true</boolProp>
+        <stringProp name="ThreadGroup.duration">300</stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPPublisher guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPPublisherGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPPublisher" testname="AMQP Publisher" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue"></stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.NAM-CAR.SPECI</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">true</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">true</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">1000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">1</stringProp>
+          <stringProp name="AMQPSampler.Host">205.156.8.80</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">default_user_Z5epanVCOINoLWn1yDL</stringProp>
+          <stringProp name="AMQPSampler.Password">ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPPublisher.Persistent">false</boolProp>
+          <boolProp name="AMQPPublisher.UseTx">false</boolProp>
+          <stringProp name="AMQPPublisher.MessageRoutingKey">collections.tac_opmet_reports.locations.NAM-CAR.SPECI</stringProp>
+          <stringProp name="AMQPPublisher.Message">{
+   &quot;id&quot;:&quot;514204c5-6b96-4b48-bf3c-37fe29520061&quot;,
+   &quot;type&quot;:&quot;Feature&quot;,
+   &quot;version&quot;:&quot;v01&quot;,
+   &quot;geometry&quot;:{
+      &quot;type&quot;:&quot;MultiPoint&quot;,
+      &quot;coordinates&quot;:[
+         [
+            -74.038708,
+            45.679783
+         ]
+      ]
+   },
+   &quot;properties&quot;:{
+      &quot;pubtime&quot;:&quot;2025-05-08T14:20:14.687784&quot;,
+      &quot;operation&quot;:&quot;create&quot;,
+      &quot;created_time&quot;:&quot;2025-05-08T14:20:13Z&quot;,
+      &quot;data_id&quot;:&quot;collections/tac_opmet_reports/locations/NAM-CAR/SPECI&quot;,
+      &quot;collection&quot;:&quot;tac_opmet_reports&quot;,
+      &quot;location&quot;:&quot;NAM-CAR&quot;,
+      &quot;products&quot;:&quot;SPECI&quot;,
+      &quot;icao_ids&quot;:[
+         &quot;CYMX&quot;
+      ],
+      &quot;values&quot;:{
+         &quot;CYMX&quot;:{
+            &quot;lon_lat&quot;:[
+               &quot;-74.038708&quot;,
+               &quot;45.679783&quot;
+            ],
+            &quot;wind&quot;:{
+               &quot;str&quot;:&quot;01008KT 320V120&quot;,
+               &quot;index&quot;:[
+                  &quot;1.19&quot;,
+                  &quot;1.34&quot;
+               ],
+               &quot;dd&quot;:&quot;010&quot;,
+               &quot;ff&quot;:&quot;08&quot;,
+               &quot;uom&quot;:&quot;[kn_i]&quot;,
+               &quot;ccw&quot;:&quot;320&quot;,
+               &quot;cw&quot;:&quot;120&quot;
+            },
+            &quot;vsby&quot;:{
+               &quot;str&quot;:&quot;25SM&quot;,
+               &quot;index&quot;:[
+                  &quot;1.35&quot;,
+                  &quot;1.39&quot;
+               ],
+               &quot;value&quot;:&quot;25.00&quot;,
+               &quot;uom&quot;:&quot;[mi_i]&quot;,
+               &quot;oper&quot;:null
+            },
+            &quot;temps&quot;:{
+               &quot;str&quot;:&quot;07/03&quot;,
+               &quot;index&quot;:[
+                  &quot;1.54&quot;,
+                  &quot;1.59&quot;
+               ],
+               &quot;uom&quot;:&quot;Cel&quot;,
+               &quot;air&quot;:&quot;7&quot;,
+               &quot;dewpoint&quot;:&quot;3&quot;
+            },
+            &quot;altimeter&quot;:{
+               &quot;str&quot;:&quot;A3014&quot;,
+               &quot;index&quot;:[
+                  &quot;1.60&quot;,
+                  &quot;1.65&quot;
+               ],
+               &quot;uom&quot;:&quot;[in_i&apos;Hg]&quot;,
+               &quot;value&quot;:&quot;30.14&quot;
+            }
+         }
+      },
+      &quot;text&quot;:&quot;\u0001\n\n908 \n\nSPCN31 CWAO 081419\n\nSPECI CYMX 081419Z 01008KT 320V120 25SM BKN024 OVC032 07/03 A3014 RMK SC5SC3 SLP211=\n\n\n\n\u0003&quot;
+   },
+   &quot;links&quot;:[
+      {
+         &quot;href&quot;:&quot;https://aviationweather.gov/wifs-pubsub/api/collections/tac_opmet_reports/locations/NAM-CAR&quot;,
+         &quot;rel&quot;:&quot;data&quot;,
+         &quot;type&quot;:&quot;text/plain&quot;
+      }
+   ]
+}</stringProp>
+          <stringProp name="AMQPPublisher.MessageType"></stringProp>
+          <stringProp name="AMQPPublisher.ReplyToQueue"></stringProp>
+          <stringProp name="AMQPPublisher.CorrelationId"></stringProp>
+          <stringProp name="AMQPPublisher.ContentType">application/json</stringProp>
+          <stringProp name="AMQPPublisher.MessageId">collections/tac_opmet_reports/locations/NAM-CAR/SPECI</stringProp>
+          <elementProp name="AMQPPublisher.Headers" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPPublisher>
+        <hashTree/>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <intProp name="LoopController.loops">-1</intProp>
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1000</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">10</stringProp>
+        <boolProp name="ThreadGroup.delayedStart">false</boolProp>
+        <boolProp name="ThreadGroup.scheduler">true</boolProp>
+        <stringProp name="ThreadGroup.duration">300</stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer" enabled="true">
+          <stringProp name="AMQPSampler.Exchange">amq.topic</stringProp>
+          <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
+          <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
+          <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Queue">jmeterTestQueue</stringProp>
+          <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.NAM-CAR.SPECI</stringProp>
+          <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
+          <stringProp name="AMQPSampler.MessageTTL"></stringProp>
+          <stringProp name="AMQPSampler.MessageExpires"></stringProp>
+          <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">true</stringProp>
+          <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
+          <stringProp name="AMQPSampler.QueueAutoDelete">true</stringProp>
+          <boolProp name="AMQPSampler.Redeclare">false</boolProp>
+          <stringProp name="AMQPSampler.Timeout">1000</stringProp>
+          <stringProp name="AMQPSampler.Iterations">1</stringProp>
+          <stringProp name="AMQPSampler.Host">205.156.8.80</stringProp>
+          <stringProp name="AMQPSampler.Port">5672</stringProp>
+          <stringProp name="AMQPSampler.Username">default_user_Z5epanVCOINoLWn1yDL</stringProp>
+          <stringProp name="AMQPSampler.Password">ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV</stringProp>
+          <stringProp name="AMQPSampler.SSL">false</stringProp>
+          <boolProp name="AMQPConsumer.ReadResponse">false</boolProp>
+          <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
+          <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
+          <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">true</stringProp>
+          <boolProp name="AMQPConsumer.UseTx">false</boolProp>
+        </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
+        <hashTree/>
+      </hashTree>
+      <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="false">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="false">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>
