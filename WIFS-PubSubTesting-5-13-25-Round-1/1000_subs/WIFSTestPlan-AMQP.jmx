@@ -36,7 +36,7 @@
           <stringProp name="AMQPSampler.MessageTTL"></stringProp>
           <stringProp name="AMQPSampler.MessageExpires"></stringProp>
           <stringProp name="AMQPSampler.ExchangeType">topic</stringProp>
-          <stringProp name="AMQPSampler.QueueDurable">false</stringProp>
+          <stringProp name="AMQPSampler.QueueDurable">true</stringProp>
           <stringProp name="AMQPSampler.QueueExclusive">false</stringProp>
           <stringProp name="AMQPSampler.QueueAutoDelete">true</stringProp>
           <boolProp name="AMQPSampler.Redeclare">false</boolProp>
@@ -150,13 +150,13 @@
           <intProp name="LoopController.loops">-1</intProp>
           <boolProp name="LoopController.continue_forever">false</boolProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">10</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <stringProp name="ThreadGroup.num_threads">1000</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">10</stringProp>
         <boolProp name="ThreadGroup.delayedStart">false</boolProp>
         <boolProp name="ThreadGroup.scheduler">true</boolProp>
         <stringProp name="ThreadGroup.duration">300</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
-        <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
       </ThreadGroup>
       <hashTree>
         <com.zeroclue.jmeter.protocol.amqp.AMQPConsumer guiclass="com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui" testclass="com.zeroclue.jmeter.protocol.amqp.AMQPConsumer" testname="AMQP Consumer" enabled="true">
@@ -164,7 +164,7 @@
           <boolProp name="AMQPSampler.ExchangeDurable">true</boolProp>
           <boolProp name="AMQPSampler.ExchangeAutoDelete">false</boolProp>
           <boolProp name="AMQPSampler.ExchangeRedeclare">false</boolProp>
-          <stringProp name="AMQPSampler.Queue">jmeterTestQueue1</stringProp>
+          <stringProp name="AMQPSampler.Queue">jmeterTestQueue</stringProp>
           <stringProp name="AMQPSampler.RoutingKey">collections.tac_opmet_reports.locations.NAM-CAR.SPECI</stringProp>
           <stringProp name="AMQPSampler.VirtualHost">/</stringProp>
           <stringProp name="AMQPSampler.MessageTTL"></stringProp>
@@ -185,7 +185,7 @@
           <stringProp name="AMQPConsumer.PrefetchCount">0</stringProp>
           <stringProp name="AMQPConsumer.ReceiveTimeout"></stringProp>
           <stringProp name="AMQPConsumer.PurgeQueue">false</stringProp>
-          <stringProp name="AMQPConsumer.AutoAck">true</stringProp>
+          <stringProp name="AMQPConsumer.AutoAck">false</stringProp>
           <boolProp name="AMQPConsumer.UseTx">false</boolProp>
         </com.zeroclue.jmeter.protocol.amqp.AMQPConsumer>
         <hashTree/>

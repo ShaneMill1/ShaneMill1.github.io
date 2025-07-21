@@ -1,0 +1,2127 @@
+2025-05-01 19:12:02,492 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2025-05-01 19:12:02,517 INFO o.a.j.JMeter: Loading user properties from: /home/shane.mill/apache-jmeter-5.6.3/bin/user.properties
+2025-05-01 19:12:02,518 INFO o.a.j.JMeter: Loading system properties from: /home/shane.mill/apache-jmeter-5.6.3/bin/system.properties
+2025-05-01 19:12:02,525 INFO o.a.j.JMeter: Copyright (c) 1998-2024 The Apache Software Foundation
+2025-05-01 19:12:02,525 INFO o.a.j.JMeter: Version 5.6.3
+2025-05-01 19:12:02,525 INFO o.a.j.JMeter: java.version=23.0.2-internal
+2025-05-01 19:12:02,526 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2025-05-01 19:12:02,526 INFO o.a.j.JMeter: os.name=Linux
+2025-05-01 19:12:02,526 INFO o.a.j.JMeter: os.arch=amd64
+2025-05-01 19:12:02,526 INFO o.a.j.JMeter: os.version=4.18.0-553.47.1.el8_10.x86_64
+2025-05-01 19:12:02,526 INFO o.a.j.JMeter: file.encoding=UTF-8
+2025-05-01 19:12:02,526 INFO o.a.j.JMeter: java.awt.headless=true
+2025-05-01 19:12:02,526 INFO o.a.j.JMeter: Max memory     =1073741824
+2025-05-01 19:12:02,526 INFO o.a.j.JMeter: Available Processors =16
+2025-05-01 19:12:02,542 INFO o.a.j.JMeter: Default Locale=English (EN)
+2025-05-01 19:12:02,543 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2025-05-01 19:12:02,543 INFO o.a.j.JMeter: JMeterHome=/home/shane.mill/apache-jmeter-5.6.3
+2025-05-01 19:12:02,543 INFO o.a.j.JMeter: user.dir  =/home/shane.mill/PUBSUB_WIFS_TESTING/ShaneMill1.github.io/WIFS-PubSubTesting-5-1-25-Round-1/100_subs
+2025-05-01 19:12:02,544 INFO o.a.j.JMeter: PWD       =/home/shane.mill/PUBSUB_WIFS_TESTING/ShaneMill1.github.io/WIFS-PubSubTesting-5-1-25-Round-1/100_subs
+2025-05-01 19:12:02,545 INFO o.a.j.JMeter: IP: 205.156.8.70 Name: ip-205-156-8-70.ec2.internal FullName: ip-205-156-8-70.ec2.internal
+2025-05-01 19:12:02,563 INFO o.a.j.JMeter: Setting property 'jmeter.reportgenerator.outputdir' to:'/home/shane.mill/PUBSUB_WIFS_TESTING/ShaneMill1.github.io/WIFS-PubSubTesting-5-1-25-Round-1/100_subs/results_amqp'
+2025-05-01 19:12:02,567 INFO o.a.j.s.FileServer: Default base='/home/shane.mill/PUBSUB_WIFS_TESTING/ShaneMill1.github.io/WIFS-PubSubTesting-5-1-25-Round-1/100_subs'
+2025-05-01 19:12:02,568 INFO o.a.j.s.FileServer: Set new base='/home/shane.mill/PUBSUB_WIFS_TESTING/ShaneMill1.github.io/WIFS-PubSubTesting-5-1-25-Round-1/100_subs'
+2025-05-01 19:12:02,921 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2025-05-01 19:12:02,967 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2025-05-01 19:12:02,972 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2025-05-01 19:12:02,978 INFO o.a.j.s.SaveService: Loading file: WIFSTestPlan-AMQP.jmx
+2025-05-01 19:12:03,057 INFO o.a.j.JMeter: Creating summariser <summary>
+2025-05-01 19:12:03,072 INFO o.a.j.r.d.ReportGenerator: ReportGenerator will use for Parsing the separator: ','
+2025-05-01 19:12:03,072 INFO o.a.j.r.d.ReportGenerator: Will generate report at end of test from  results file: SummaryReport-AMQP.jtl
+2025-05-01 19:12:03,072 INFO o.a.j.r.d.ReportGenerator: Reading report generator properties from: /home/shane.mill/apache-jmeter-5.6.3/bin/reportgenerator.properties
+2025-05-01 19:12:03,073 INFO o.a.j.r.d.ReportGenerator: Merging with JMeter properties
+2025-05-01 19:12:03,078 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.temp_dir' not found, using default value 'temp' instead.
+2025-05-01 19:12:03,081 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.apdex_per_transaction' not found, using default value 'null' instead.
+2025-05-01 19:12:03,092 INFO o.a.j.r.c.ReportGeneratorConfiguration: apdex_per_transaction is empty, not APDEX per transaction customization
+2025-05-01 19:12:03,092 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.sample_filter' not found, using default value 'null' instead.
+2025-05-01 19:12:03,093 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.report_title' not found, using default value 'null' instead.
+2025-05-01 19:12:03,093 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.start_date' not found, using default value 'null' instead.
+2025-05-01 19:12:03,093 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.end_date' not found, using default value 'null' instead.
+2025-05-01 19:12:03,093 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.date_format' not found, using default value 'null' instead.
+2025-05-01 19:12:03,094 INFO o.a.j.r.c.ReportGeneratorConfiguration: Will use date range start date: null, end date: null
+2025-05-01 19:12:03,098 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.totalTPS.exclude_controllers' not found, using default value 'false' instead.
+2025-05-01 19:12:03,098 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.activeThreadsOverTime.exclude_controllers' not found, using default value 'false' instead.
+2025-05-01 19:12:03,099 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.timeVsThreads.exclude_controllers' not found, using default value 'false' instead.
+2025-05-01 19:12:03,099 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimeDistribution.exclude_controllers' not found, using default value 'false' instead.
+2025-05-01 19:12:03,099 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.transactionsPerSecond.exclude_controllers' not found, using default value 'false' instead.
+2025-05-01 19:12:03,099 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentiles.exclude_controllers' not found, using default value 'false' instead.
+2025-05-01 19:12:03,099 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentilesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2025-05-01 19:12:03,100 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2025-05-01 19:12:03,100 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.connectTimeOverTime.exclude_controllers' not found, using default value 'false' instead.
+2025-05-01 19:12:03,100 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.latenciesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2025-05-01 19:12:03,101 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.filters_only_sample_series' not found, using default value 'true' instead.
+2025-05-01 19:12:03,102 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.series_filter' not found, using default value '' instead.
+2025-05-01 19:12:03,102 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.show_controllers_only' not found, using default value 'false' instead.
+2025-05-01 19:12:03,102 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.filters_only_sample_series' not found, using default value 'true' instead.
+2025-05-01 19:12:03,102 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.series_filter' not found, using default value '' instead.
+2025-05-01 19:12:03,103 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.show_controllers_only' not found, using default value 'false' instead.
+2025-05-01 19:12:03,118 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-05-01 19:12:03,119 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-05-01 19:12:03,120 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-05-01 19:12:03,125 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2025-05-01 19:12:03,125 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2025-05-01 19:12:03,202 INFO o.a.j.r.ClassFinder: Will scan jar /home/shane.mill/apache-jmeter-5.6.3/lib/ext/JMeterAMQP.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.functions.Function], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-05-01 19:12:03,223 INFO o.a.j.JMeter: Running test (1746126723223)
+2025-05-01 19:12:03,257 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group - 100 users
+2025-05-01 19:12:03,258 INFO o.a.j.e.StandardJMeterEngine: Starting 100 threads for group Thread Group - 100 users.
+2025-05-01 19:12:03,258 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-05-01 19:12:03,258 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=100 ramp-up=1 delayedStart=false
+2025-05-01 19:12:03,270 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-1
+2025-05-01 19:12:03,273 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-2
+2025-05-01 19:12:03,274 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2025-05-01 19:12:03,274 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to UTF-8
+2025-05-01 19:12:03,274 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2025-05-01 19:12:03,274 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2025-05-01 19:12:03,276 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,276 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,276 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,276 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,277 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,277 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,283 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-3
+2025-05-01 19:12:03,284 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,284 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,285 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,292 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-4
+2025-05-01 19:12:03,293 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,294 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,294 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,301 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-5
+2025-05-01 19:12:03,302 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,302 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,302 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,311 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-6
+2025-05-01 19:12:03,312 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,312 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,312 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,315 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-05-01 19:12:03,315 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-05-01 19:12:03,319 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-7
+2025-05-01 19:12:03,320 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,320 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,320 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,329 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-8
+2025-05-01 19:12:03,330 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,330 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,330 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,339 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-9
+2025-05-01 19:12:03,340 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,340 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,340 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,350 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-10
+2025-05-01 19:12:03,350 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,350 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,350 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,359 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-11
+2025-05-01 19:12:03,360 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,360 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,360 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,366 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,368 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,369 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,369 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-12
+2025-05-01 19:12:03,370 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,370 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,370 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,370 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,370 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,371 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,371 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,372 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,372 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,372 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,373 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,373 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,373 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,377 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,377 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,377 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,377 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,377 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,378 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,378 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,378 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,378 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,378 INFO o.a.j.r.Summariser: summary +      1 in 00:00:00 =    6.5/s Avg:     0 Min:     0 Max:     0 Err:     0 (0.00%) Active: 12 Started: 12 Finished: 0
+2025-05-01 19:12:03,378 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,379 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,379 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-13
+2025-05-01 19:12:03,380 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,380 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,381 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,389 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-14
+2025-05-01 19:12:03,390 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,390 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,390 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,393 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,394 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,394 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,394 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,396 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,396 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,397 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,398 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,398 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,399 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-15
+2025-05-01 19:12:03,399 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,399 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,399 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,402 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,404 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,404 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,408 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,409 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-16
+2025-05-01 19:12:03,410 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,410 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,410 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,410 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,410 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,411 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,411 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,411 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,413 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,415 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,415 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,419 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-17
+2025-05-01 19:12:03,419 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,419 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,420 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,422 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,423 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,423 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,429 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-18
+2025-05-01 19:12:03,430 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,430 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,430 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,436 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,438 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,438 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,439 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-19
+2025-05-01 19:12:03,439 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,440 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,440 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,441 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,442 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,442 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,450 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-20
+2025-05-01 19:12:03,450 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,450 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,450 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,453 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,454 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,454 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,459 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-21
+2025-05-01 19:12:03,460 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,460 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,460 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,469 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-22
+2025-05-01 19:12:03,469 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,469 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,470 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,470 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,471 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,472 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,472 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,474 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,474 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,479 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-23
+2025-05-01 19:12:03,480 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,480 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,480 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,481 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,481 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,482 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,489 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-24
+2025-05-01 19:12:03,490 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,490 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,491 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,492 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,493 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,493 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,499 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-25
+2025-05-01 19:12:03,500 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,500 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,500 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,507 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,508 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,508 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,509 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-26
+2025-05-01 19:12:03,509 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,509 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,510 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,519 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,520 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-27
+2025-05-01 19:12:03,520 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,520 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,521 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,522 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,523 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,529 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-28
+2025-05-01 19:12:03,530 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,530 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,530 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,531 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,532 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,532 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,540 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,540 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-29
+2025-05-01 19:12:03,541 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,541 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,541 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,542 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,542 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,549 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-30
+2025-05-01 19:12:03,550 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,550 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,550 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,559 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-31
+2025-05-01 19:12:03,560 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,560 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,560 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,560 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,561 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,561 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,567 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,568 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,568 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,568 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,570 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,570 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,569 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-32
+2025-05-01 19:12:03,570 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,570 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,571 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,574 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,575 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,575 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,579 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-33
+2025-05-01 19:12:03,579 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,579 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,580 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,584 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,586 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,587 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,589 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-34
+2025-05-01 19:12:03,590 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,590 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,590 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,592 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,592 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,593 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,599 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-35
+2025-05-01 19:12:03,599 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,599 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,600 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,600 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,601 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,601 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,609 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-36
+2025-05-01 19:12:03,610 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,610 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,610 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,611 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,612 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,612 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,619 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-37
+2025-05-01 19:12:03,619 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,620 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,620 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,629 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-38
+2025-05-01 19:12:03,630 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,630 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,630 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,631 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,632 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,632 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,638 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,639 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,639 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,639 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-39
+2025-05-01 19:12:03,639 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,640 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,640 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,643 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,644 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,644 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,649 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-40
+2025-05-01 19:12:03,650 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,650 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,650 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,655 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,656 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,656 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,659 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-41
+2025-05-01 19:12:03,659 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,660 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,660 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,669 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-42
+2025-05-01 19:12:03,670 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,670 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,670 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,679 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,679 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-43
+2025-05-01 19:12:03,679 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,680 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,680 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,681 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,681 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,686 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,687 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,687 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,689 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-44
+2025-05-01 19:12:03,690 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,690 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,690 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,691 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,693 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,693 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,699 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-45
+2025-05-01 19:12:03,699 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,699 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,700 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,709 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-46
+2025-05-01 19:12:03,710 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,710 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,711 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,712 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,717 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,717 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,719 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-47
+2025-05-01 19:12:03,720 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,720 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,720 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,725 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,728 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,728 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,729 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-48
+2025-05-01 19:12:03,730 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,730 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,730 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,738 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,738 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,739 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-49
+2025-05-01 19:12:03,739 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,739 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,739 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,740 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,740 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,743 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,743 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,749 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,749 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-50
+2025-05-01 19:12:03,750 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,750 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,750 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,751 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,752 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,756 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,756 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,757 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,759 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-51
+2025-05-01 19:12:03,760 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,760 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,760 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,767 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,768 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,768 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,768 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-52
+2025-05-01 19:12:03,769 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,769 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,769 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,779 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-53
+2025-05-01 19:12:03,780 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,780 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,780 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,789 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,789 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-54
+2025-05-01 19:12:03,790 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,790 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,790 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,793 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,793 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,794 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,795 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,795 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,795 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,801 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-55
+2025-05-01 19:12:03,802 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,802 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,802 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,802 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,802 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,809 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-56
+2025-05-01 19:12:03,810 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,810 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,810 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,820 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-57
+2025-05-01 19:12:03,820 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,820 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,820 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,828 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,828 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,829 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-58
+2025-05-01 19:12:03,829 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,830 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,830 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,830 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,830 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,830 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,831 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,831 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,832 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,832 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,839 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-59
+2025-05-01 19:12:03,839 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,839 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,840 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,845 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,847 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,848 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,848 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,849 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,849 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,849 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-60
+2025-05-01 19:12:03,850 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,850 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,850 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,859 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-61
+2025-05-01 19:12:03,859 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,860 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,860 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,870 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-62
+2025-05-01 19:12:03,870 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,870 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,870 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,875 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,876 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,876 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,877 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,878 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,878 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,879 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,879 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-63
+2025-05-01 19:12:03,880 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,880 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,880 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,883 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,883 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,889 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-64
+2025-05-01 19:12:03,890 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,890 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,890 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,899 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-65
+2025-05-01 19:12:03,900 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,901 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,901 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,901 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,902 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,902 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,909 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,909 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-66
+2025-05-01 19:12:03,910 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,910 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,910 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,910 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,911 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,911 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,914 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,914 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,916 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,919 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,919 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,919 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-67
+2025-05-01 19:12:03,919 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,920 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,920 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,930 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-68
+2025-05-01 19:12:03,930 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,931 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,931 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,935 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,936 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,936 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,939 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-69
+2025-05-01 19:12:03,940 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,940 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,940 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,947 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,949 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,949 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,949 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-70
+2025-05-01 19:12:03,950 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,950 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,950 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,959 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-71
+2025-05-01 19:12:03,959 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,959 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,960 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,969 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,969 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-72
+2025-05-01 19:12:03,970 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,970 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,970 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,970 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,971 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,971 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,973 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,973 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,979 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-73
+2025-05-01 19:12:03,979 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,979 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,979 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,981 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,982 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,982 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,985 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,989 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-74
+2025-05-01 19:12:03,990 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:03,990 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:03,990 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:03,990 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,990 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,991 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:03,992 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:03,992 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:03,999 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-75
+2025-05-01 19:12:04,000 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:04,000 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:04,000 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:04,009 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-76
+2025-05-01 19:12:04,009 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:04,009 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:04,009 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:04,016 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:04,016 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:04,017 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:04,018 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:04,019 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-77
+2025-05-01 19:12:04,020 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:04,020 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:04,020 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:04,020 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:04,020 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:04,034 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:04,034 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-78
+2025-05-01 19:12:04,035 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:04,035 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:04,035 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:04,035 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:04,035 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:04,036 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:04,039 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:04,039 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:04,039 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-79
+2025-05-01 19:12:04,040 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:04,040 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:04,040 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:04,049 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-80
+2025-05-01 19:12:04,050 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:04,050 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:04,050 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:04,053 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:04,054 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:04,054 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:04,055 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:04,056 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:04,056 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:04,058 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-81
+2025-05-01 19:12:04,059 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:04,059 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:04,059 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:04,069 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-82
+2025-05-01 19:12:04,069 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:04,069 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:04,069 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:04,073 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:04,074 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:04,074 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:04,079 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-83
+2025-05-01 19:12:04,080 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:04,080 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:04,080 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:04,089 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-84
+2025-05-01 19:12:04,089 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:04,089 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:04,089 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:04,091 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:04,093 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:04,094 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:04,094 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:04,097 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:04,098 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:04,099 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-85
+2025-05-01 19:12:04,099 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:04,099 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:04,099 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:04,109 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-86
+2025-05-01 19:12:04,110 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:04,110 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:04,110 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:04,111 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:04,111 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:04,112 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:04,115 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:04,112 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:04,115 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:04,119 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-87
+2025-05-01 19:12:04,119 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:04,119 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:04,119 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:04,121 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:04,122 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:04,122 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:04,125 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:04,126 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:04,126 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:04,129 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-88
+2025-05-01 19:12:04,129 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:04,129 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:04,129 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:04,133 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:04,134 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:04,135 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:04,139 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-89
+2025-05-01 19:12:04,140 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:04,140 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:04,140 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:04,148 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-90
+2025-05-01 19:12:04,149 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:04,149 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:04,149 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:04,152 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:04,153 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:04,153 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:04,159 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-91
+2025-05-01 19:12:04,159 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:04,159 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:04,159 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:04,169 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-92
+2025-05-01 19:12:04,170 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:04,170 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:04,170 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:04,179 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-93
+2025-05-01 19:12:04,179 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:04,179 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:04,179 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:04,189 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-94
+2025-05-01 19:12:04,189 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:04,189 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:04,189 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:04,198 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-95
+2025-05-01 19:12:04,199 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:04,199 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:04,199 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:04,205 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:04,207 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:04,207 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:04,209 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-96
+2025-05-01 19:12:04,209 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:04,209 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:04,209 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:04,215 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:04,216 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:04,217 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:04,219 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-97
+2025-05-01 19:12:04,220 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:04,220 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:04,220 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:04,223 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:04,224 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:04,224 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:04,229 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-98
+2025-05-01 19:12:04,229 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:04,229 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:04,229 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:04,237 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:04,237 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:04,237 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:04,237 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:04,238 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:04,238 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:04,238 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:04,238 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:04,239 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:04,239 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:04,239 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:04,239 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:04,239 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-99
+2025-05-01 19:12:04,239 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:04,239 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:04,239 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:04,244 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:04,249 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 100 users 1-100
+2025-05-01 19:12:04,250 INFO c.z.j.p.a.AMQPSampler: Creating channel /:5672
+2025-05-01 19:12:04,250 INFO c.z.j.p.a.AMQPSampler: RabbitMQ ConnectionFactory using:
+	 virtual host: /
+	 host: 205.156.8.80
+	 port: 5672
+	 username: default_user_Z5epanVCOINoLWn1yDL
+	 password: ahQp-hgCK3b1WPvKrb5IHs7FOm-U4xHV
+	 timeout: 5000
+	 heartbeat: 1
+in com.zeroclue.jmeter.protocol.amqp.AMQPConsumer@a226501
+2025-05-01 19:12:04,250 INFO c.z.j.p.a.AMQPSampler: Using hosts: [205.156.8.80] addresses: [205.156.8.80:5672]
+2025-05-01 19:12:04,257 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:04,258 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:04,258 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:04,261 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:04,261 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:04,278 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:04,279 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:04,279 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:04,291 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:04,292 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:04,293 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:04,293 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:04,297 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:04,297 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:04,299 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:04,302 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:04,302 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:04,305 INFO c.z.j.p.a.AMQPSampler: bound to:
+	 queue: collections.tac_opmet_reports.locations.#
+	 exchange: amq.topic
+	 exchange(D)? true
+	 routing key: collections.tac_opmet_reports.locations.#
+	 arguments: {}
+2025-05-01 19:12:04,312 INFO c.z.j.p.a.AMQPConsumer: Creating consumer
+2025-05-01 19:12:04,312 INFO c.z.j.p.a.AMQPConsumer: Starting basic consumer
+2025-05-01 19:12:30,000 INFO o.a.j.r.Summariser: summary + 1155089 in 00:00:27 = 43385.3/s Avg:     0 Min:     0 Max:     8 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+2025-05-01 19:12:30,001 INFO o.a.j.r.Summariser: summary = 1155090 in 00:00:27 = 43137.4/s Avg:     0 Min:     0 Max:     8 Err:     0 (0.00%)
+2025-05-01 19:13:00,000 INFO o.a.j.r.Summariser: summary + 1502515 in 00:00:30 = 50083.8/s Avg:     0 Min:     0 Max:     2 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+2025-05-01 19:13:00,000 INFO o.a.j.r.Summariser: summary = 2657605 in 00:00:57 = 46807.8/s Avg:     0 Min:     0 Max:     8 Err:     0 (0.00%)
+2025-05-01 19:13:30,000 INFO o.a.j.r.Summariser: summary + 1516634 in 00:00:30 = 50554.5/s Avg:     0 Min:     0 Max:     3 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+2025-05-01 19:13:30,001 INFO o.a.j.r.Summariser: summary = 4174239 in 00:01:27 = 48103.1/s Avg:     0 Min:     0 Max:     8 Err:     0 (0.00%)
+2025-05-01 19:14:00,000 INFO o.a.j.r.Summariser: summary + 1602126 in 00:00:30 = 53404.2/s Avg:     0 Min:     0 Max:     3 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+2025-05-01 19:14:00,000 INFO o.a.j.r.Summariser: summary = 5776365 in 00:01:57 = 49464.9/s Avg:     0 Min:     0 Max:     8 Err:     0 (0.00%)
+2025-05-01 19:14:30,000 INFO o.a.j.r.Summariser: summary + 1429434 in 00:00:30 = 47647.8/s Avg:     0 Min:     0 Max:     5 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+2025-05-01 19:14:30,000 INFO o.a.j.r.Summariser: summary = 7205799 in 00:02:27 = 49093.5/s Avg:     0 Min:     0 Max:     8 Err:     0 (0.00%)
+2025-05-01 19:15:00,000 INFO o.a.j.r.Summariser: summary + 1624120 in 00:00:30 = 54137.3/s Avg:     0 Min:     0 Max:     3 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+2025-05-01 19:15:00,000 INFO o.a.j.r.Summariser: summary = 8829919 in 00:02:57 = 49949.5/s Avg:     0 Min:     0 Max:     8 Err:     0 (0.00%)
+2025-05-01 19:15:30,000 INFO o.a.j.r.Summariser: summary + 1584491 in 00:00:30 = 52816.4/s Avg:     0 Min:     0 Max:     2 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+2025-05-01 19:15:30,000 INFO o.a.j.r.Summariser: summary = 10414410 in 00:03:27 = 50365.4/s Avg:     0 Min:     0 Max:     8 Err:     0 (0.00%)
+2025-05-01 19:16:00,000 INFO o.a.j.r.Summariser: summary + 1459365 in 00:00:30 = 48645.5/s Avg:     0 Min:     0 Max:     2 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+2025-05-01 19:16:00,001 INFO o.a.j.r.Summariser: summary = 11873775 in 00:03:57 = 50147.5/s Avg:     0 Min:     0 Max:     8 Err:     0 (0.00%)
+2025-05-01 19:16:30,000 INFO o.a.j.r.Summariser: summary + 1398737 in 00:00:30 = 46624.6/s Avg:     0 Min:     0 Max:     4 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+2025-05-01 19:16:30,000 INFO o.a.j.r.Summariser: summary = 13272512 in 00:04:27 = 49751.3/s Avg:     0 Min:     0 Max:     8 Err:     0 (0.00%)
+2025-05-01 19:17:00,000 INFO o.a.j.r.Summariser: summary + 1421402 in 00:00:30 = 47380.1/s Avg:     0 Min:     0 Max:     2 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+2025-05-01 19:17:00,000 INFO o.a.j.r.Summariser: summary = 14693914 in 00:04:57 = 49511.6/s Avg:     0 Min:     0 Max:     8 Err:     0 (0.00%)
+2025-05-01 19:17:30,000 INFO o.a.j.r.Summariser: summary + 1353438 in 00:00:30 = 45114.6/s Avg:     0 Min:     0 Max:     3 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+2025-05-01 19:17:30,000 INFO o.a.j.r.Summariser: summary = 16047352 in 00:05:27 = 49108.0/s Avg:     0 Min:     0 Max:     8 Err:     0 (0.00%)
+2025-05-01 19:18:00,000 INFO o.a.j.r.Summariser: summary + 1336728 in 00:00:30 = 44557.6/s Avg:     0 Min:     0 Max:     2 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+2025-05-01 19:18:00,001 INFO o.a.j.r.Summariser: summary = 17384080 in 00:05:57 = 48725.3/s Avg:     0 Min:     0 Max:     8 Err:     0 (0.00%)
+2025-05-01 19:18:30,000 INFO o.a.j.r.Summariser: summary + 1327929 in 00:00:30 = 44264.3/s Avg:     0 Min:     0 Max:     2 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+2025-05-01 19:18:30,001 INFO o.a.j.r.Summariser: summary = 18712009 in 00:06:27 = 48379.3/s Avg:     0 Min:     0 Max:     8 Err:     0 (0.00%)
+2025-05-01 19:19:00,000 INFO o.a.j.r.Summariser: summary + 1526833 in 00:00:30 = 50894.4/s Avg:     0 Min:     0 Max:     5 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+2025-05-01 19:19:00,000 INFO o.a.j.r.Summariser: summary = 20238842 in 00:06:57 = 48560.4/s Avg:     0 Min:     0 Max:     8 Err:     0 (0.00%)
+2025-05-01 19:19:30,000 INFO o.a.j.r.Summariser: summary + 1502626 in 00:00:30 = 50087.5/s Avg:     0 Min:     0 Max:     2 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+2025-05-01 19:19:30,000 INFO o.a.j.r.Summariser: summary = 21741468 in 00:07:27 = 48662.9/s Avg:     0 Min:     0 Max:     8 Err:     0 (0.00%)
+2025-05-01 19:20:00,000 INFO o.a.j.r.Summariser: summary + 1486647 in 00:00:30 = 49554.9/s Avg:     0 Min:     0 Max:     2 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+2025-05-01 19:20:00,000 INFO o.a.j.r.Summariser: summary = 23228115 in 00:07:57 = 48719.0/s Avg:     0 Min:     0 Max:     8 Err:     0 (0.00%)
+2025-05-01 19:20:30,000 INFO o.a.j.r.Summariser: summary + 1503969 in 00:00:30 = 50132.3/s Avg:     0 Min:     0 Max:     3 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+2025-05-01 19:20:30,000 INFO o.a.j.r.Summariser: summary = 24732084 in 00:08:27 = 48802.7/s Avg:     0 Min:     0 Max:     8 Err:     0 (0.00%)
+2025-05-01 19:21:00,000 INFO o.a.j.r.Summariser: summary + 1535356 in 00:00:30 = 51178.5/s Avg:     0 Min:     0 Max:     2 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+2025-05-01 19:21:00,000 INFO o.a.j.r.Summariser: summary = 26267440 in 00:08:57 = 48935.5/s Avg:     0 Min:     0 Max:     8 Err:     0 (0.00%)
+2025-05-01 19:21:30,000 INFO o.a.j.r.Summariser: summary + 1526320 in 00:00:30 = 50877.3/s Avg:     0 Min:     0 Max:     2 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+2025-05-01 19:21:30,000 INFO o.a.j.r.Summariser: summary = 27793760 in 00:09:27 = 49038.3/s Avg:     0 Min:     0 Max:     8 Err:     0 (0.00%)
+2025-05-01 19:22:00,000 INFO o.a.j.r.Summariser: summary + 1521940 in 00:00:30 = 50731.3/s Avg:     0 Min:     0 Max:     5 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+2025-05-01 19:22:00,000 INFO o.a.j.r.Summariser: summary = 29315700 in 00:09:57 = 49123.4/s Avg:     0 Min:     0 Max:     8 Err:     0 (0.00%)
+2025-05-01 19:22:30,000 INFO o.a.j.r.Summariser: summary + 1411441 in 00:00:30 = 47048.0/s Avg:     0 Min:     0 Max:     2 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+2025-05-01 19:22:30,000 INFO o.a.j.r.Summariser: summary = 30727141 in 00:10:27 = 49024.0/s Avg:     0 Min:     0 Max:     8 Err:     0 (0.00%)
+2025-05-01 19:23:00,000 INFO o.a.j.r.Summariser: summary + 1524242 in 00:00:30 = 50808.1/s Avg:     0 Min:     0 Max:     2 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+2025-05-01 19:23:00,000 INFO o.a.j.r.Summariser: summary = 32251383 in 00:10:57 = 49105.5/s Avg:     0 Min:     0 Max:     8 Err:     0 (0.00%)
+2025-05-01 19:23:30,000 INFO o.a.j.r.Summariser: summary + 1324463 in 00:00:30 = 44148.8/s Avg:     0 Min:     0 Max:     2 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+2025-05-01 19:23:30,000 INFO o.a.j.r.Summariser: summary = 33575846 in 00:11:27 = 48889.0/s Avg:     0 Min:     0 Max:     8 Err:     0 (0.00%)
+2025-05-01 19:24:00,000 INFO o.a.j.r.Summariser: summary + 1363470 in 00:00:30 = 45449.0/s Avg:     0 Min:     0 Max:     5 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+2025-05-01 19:24:00,000 INFO o.a.j.r.Summariser: summary = 34939316 in 00:11:57 = 48745.0/s Avg:     0 Min:     0 Max:     8 Err:     0 (0.00%)
+2025-05-01 19:24:30,000 INFO o.a.j.r.Summariser: summary + 1404724 in 00:00:30 = 46824.1/s Avg:     0 Min:     0 Max:     2 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+2025-05-01 19:24:30,000 INFO o.a.j.r.Summariser: summary = 36344040 in 00:12:27 = 48667.9/s Avg:     0 Min:     0 Max:     8 Err:     0 (0.00%)
+2025-05-01 19:24:32,034 INFO o.a.j.r.ResultCollector: Shutdown hook started
+2025-05-01 19:24:32,035 INFO o.a.j.r.ResultCollector: Shutdown hook ended
