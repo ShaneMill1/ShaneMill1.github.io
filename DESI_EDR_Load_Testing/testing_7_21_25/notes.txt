@@ -1,0 +1,2 @@
+- Utilization rate at 65 percent, max ec2 at 25
+
