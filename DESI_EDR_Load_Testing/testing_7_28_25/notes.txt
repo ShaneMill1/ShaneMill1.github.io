@@ -1,0 +1,2 @@
+- increase utilization from 55 to 65%
+- Changed min pods in keda to 2 instead of 5
