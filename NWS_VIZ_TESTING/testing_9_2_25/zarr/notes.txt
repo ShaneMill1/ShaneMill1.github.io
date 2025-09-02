@@ -1,0 +1,3 @@
+This testing covers Zarr output
+
+Up Dask workers to min 10 and max 50 from min 5 and max 25
