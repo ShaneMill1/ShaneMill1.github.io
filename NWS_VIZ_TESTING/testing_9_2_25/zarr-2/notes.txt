@@ -1,0 +1,4 @@
+This testing covers Zarr output
+
+Dask workers to min 10 and max 50
+After previous test, up EDR frontend to 10 instances
