@@ -1,0 +1,32 @@
+This testing covers Zarr output
+
+Updated code so that it will try to close/clean up io.BytesIO object if it exists
+Del content object and remove pyinstrument
+Updated the with Client calls to async with client calls
+Changed memory_store to not use a with block and delete once not used
+Changed back from uvicorn to gunicorn and upped to 16 workers
+Changed the specifications for deployment
+
+Dask Scheduler, Worker, EDR API all set to pod spec of:
+
+        resources:
+          requests:
+            memory: "60000Mi"
+            cpu: "15000m"
+          # limits:
+          #   memory: "60000Mi"
+          #   cpu: "16000m"
+
+No longer using limits because I think that was introducing competing pods on the same node when the requests was too low. Now setting requests explicitly to what I want
+
+Keda set at:
+
+keda-hpa-edr-dask-worker-scaler      Deployment/dask-worker-desi      cpu: 12%/70%, memory: 0%/70%    1         25        1          12d
+keda-hpa-edr-scaler                  Deployment/edr-desi-api          cpu: 19%/85%, memory: 5%/85%    5         25        5          12d
+keda-hpa-edr-dask-scheduler-scaler   Deployment/dask-scheduler-desi   cpu: 2%/100%, memory: 1%/100%   1         1         1          12d
+
+After the recent testing, I decreased the EDR-API Keda to a min of 1, and I decreased the CPU target to 30% because 
+I noticed that the dask cluster had low cpu/memory utilization the whole time but I noticed
+that load on the API could be very high at times. 
+
+I updated the keda to decrease utilization target for cpu to 25% and to have two dask workers instead of 1
