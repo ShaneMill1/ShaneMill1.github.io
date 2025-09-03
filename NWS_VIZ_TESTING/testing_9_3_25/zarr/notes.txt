@@ -1,0 +1,9 @@
+This testing covers Zarr output
+
+Dask workers to min 10 and max 50
+EDR frontend to min 10 instances
+Per instance, Updated frontend to use 8 uvicorn workers to leave a little more room for memory. changes from gunicorn to uvicorn
+Updated code so that it will try to close/clean up io.BytesIO object if it exists
+Del content object and remove pyinstrument
+Updated the with Client calls to async with client calls
+Changed memory_store to not use a with block and delete once not used
