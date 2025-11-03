@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.6.3">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Locust EDRLoadTest Translation">
+      <stringProp name="TestPlan.comments">This test plan is a translation of the provided Locust script.
+Locust Concepts Mapping:
+- HttpUser: Thread Group
+- tasks = [...TaskSets]: Top-level Throughput Controllers based on TaskSet weights
+- @task(n): Nested Throughput Controllers based on task weights
+- wait_time = between(1, 3): Uniform Random Timer (1000ms constant + 2000ms random = 1-3 sec)
+- self.client.get(): HTTP Request Sampler
+- Multi-request tasks: Transaction Controller
+- random.choice(valid_chunks): CSV Data Set Config (valid_chunks.csv)</stringProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="base_url_zarr" elementType="Argument">
+            <stringProp name="Argument.name">base_url_zarr</stringProp>
+            <stringProp name="Argument.value">/collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/items/zarr/temperature/8/4326/degF</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </elementProp>
+    </TestPlan>
+    <hashTree>
+      <!--
+      CONFIG ELEMENTS
+      These set up defaults and test data.
+      -->
+      <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults">
+        <stringProp name="HTTPSampler.domain">YOUR_SERVER_HOST</stringProp>
+        <stringProp name="HTTPSampler.protocol">https</stringProp>
+        <stringProp name="HTTPSampler.path"></stringProp>
+        <stringProp name="TestPlan.comments">!!! UPDATE serverName and protocol to match your test environment !!!</stringProp>
+      </ConfigTestElement>
+      <hashTree/>
+      <CSVDataSet guiclass="TestBeanGui" testclass="CSVDataSet" testname="CSV Data Set Config - Valid Chunks">
+        <stringProp name="delimiter">,</stringProp>
+        <stringProp name="fileEncoding"></stringProp>
+        <stringProp name="filename">valid_chunks.csv</stringProp>
+        <boolProp name="ignoreFirstLine">false</boolProp>
+        <boolProp name="quotedData">false</boolProp>
+        <boolProp name="recycle">true</boolProp>
+        <stringProp name="shareMode">shareMode.all</stringProp>
+        <boolProp name="stopThread">false</boolProp>
+        <stringProp name="variableNames">CHUNK</stringProp>
+        <stringProp name="TestPlan.comments">Provides the random chunk for the bbox_selection task.
+Corresponds to: random.choice(valid_chunks)</stringProp>
+      </CSVDataSet>
+      <hashTree/>
+      <!--
+      THREAD GROUP
+      This represents the HttpUser 'EDRLoadTest'
+      -->
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="EDRLoadTest Users">
+        <intProp name="ThreadGroup.num_threads">10</intProp>
+        <intProp name="ThreadGroup.ramp_time">1</intProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller">
+          <intProp name="LoopController.loops">-1</intProp>
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+        </elementProp>
+      </ThreadGroup>
+      <hashTree>
+        <!--
+        TIMER
+        Corresponds to: wait_time = between(1, 3)
+        -->
+        <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer (1-3 seconds)">
+          <stringProp name="ConstantTimer.delay">1000</stringProp>
+          <stringProp name="RandomTimer.range">2000.0</stringProp>
+          <stringProp name="TestPlan.comments">Simulates wait_time = between(1, 3)</stringProp>
+        </UniformRandomTimer>
+        <hashTree/>
+        <!--
+        TOP-LEVEL TASKSET SELECTION
+        Total weight = 3+4+3+2+1+1 = 14
+        -->
+        <!--
+        TaskSet: MetadataOperations
+        Weight: 3 (3/14 = 21.43%)
+        -->
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="TaskSet: MetadataOperations (21.43%)">
+          <intProp name="ThroughputController.style">1</intProp>
+          <boolProp name="ThroughputController.perThread">false</boolProp>
+          <intProp name="ThroughputController.maxThroughput">100</intProp>
+          <FloatProperty>
+            <name>ThroughputController.percentThroughput</name>
+            <value>21.43</value>
+            <savedValue>0.0</savedValue>
+          </FloatProperty>
+        </ThroughputController>
+        <hashTree>
+          <SimpleController guiclass="SimpleControllerGui" testclass="SimpleController" testname="Metadata TaskSet">
+            <stringProp name="TestPlan.comments">Internal tasks total weight = 3+1 = 4</stringProp>
+          </SimpleController>
+          <hashTree>
+            <!-- Task: open_dataset (weight 3/4 = 75%) -->
+            <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="Task: open_dataset (75%)">
+              <intProp name="ThroughputController.style">1</intProp>
+              <boolProp name="ThroughputController.perThread">false</boolProp>
+              <intProp name="ThroughputController.maxThroughput">100</intProp>
+              <FloatProperty>
+                <name>ThroughputController.percentThroughput</name>
+                <value>75.0</value>
+                <savedValue>0.0</savedValue>
+              </FloatProperty>
+            </ThroughputController>
+            <hashTree>
+              <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="TX: open_dataset">
+                <boolProp name="TransactionController.includeTimers">false</boolProp>
+                <boolProp name="TransactionController.parent">true</boolProp>
+              </TransactionController>
+              <hashTree>
+                <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="GET .zgroup">
+                  <stringProp name="HTTPSampler.path">${base_url_zarr}/.zgroup</stringProp>
+                  <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                  <stringProp name="HTTPSampler.method">GET</stringProp>
+                  <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                  <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                </HTTPSamplerProxy>
+                <hashTree/>
+                <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="GET .zattrs">
+                  <stringProp name="HTTPSampler.path">${base_url_zarr}/.zattrs</stringProp>
+                  <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                  <stringProp name="HTTPSampler.method">GET</stringProp>
+                  <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                  <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                </HTTPSamplerProxy>
+                <hashTree/>
+                <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="GET temperature/.zattrs">
+                  <stringProp name="HTTPSampler.path">${base_url_zarr}/temperature/.zattrs</stringProp>
+                  <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                  <stringProp name="HTTPSampler.method">GET</stringProp>
+                  <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                  <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                </HTTPSamplerProxy>
+                <hashTree/>
+              </hashTree>
+            </hashTree>
+            <!-- Task: inspect_coordinates (weight 1/4 = 25%) -->
+            <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="Task: inspect_coordinates (25%)">
+              <intProp name="ThroughputController.style">1</intProp>
+              <boolProp name="ThroughputController.perThread">false</boolProp>
+              <intProp name="ThroughputController.maxThroughput">100</intProp>
+              <FloatProperty>
+                <name>ThroughputController.percentThroughput</name>
+                <value>25.0</value>
+                <savedValue>0.0</savedValue>
+              </FloatProperty>
+            </ThroughputController>
+            <hashTree>
+              <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="TX: inspect_coordinates">
+                <boolProp name="TransactionController.includeTimers">false</boolProp>
+                <boolProp name="TransactionController.parent">true</boolProp>
+              </TransactionController>
+              <hashTree>
+                <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="GET time/.zattrs">
+                  <stringProp name="HTTPSampler.path">${base_url_zarr}/time/.zattrs</stringProp>
+                  <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                  <stringProp name="HTTPSampler.method">GET</stringProp>
+                  <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                  <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                </HTTPSamplerProxy>
+                <hashTree/>
+                <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="GET time/0">
+                  <stringProp name="HTTPSampler.path">${base_url_zarr}/time/0</stringProp>
+                  <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                  <stringProp name="HTTPSampler.method">GET</stringProp>
+                  <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                  <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                </HTTPSamplerProxy>
+                <hashTree/>
+              </hashTree>
+            </hashTree>
+          </hashTree>
+        </hashTree>
+        <!--
+        TaskSet: SpatialQueries
+        Weight: 4 (4/14 = 28.57%)
+        -->
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="TaskSet: SpatialQueries (28.57%)">
+          <intProp name="ThroughputController.style">1</intProp>
+          <boolProp name="ThroughputController.perThread">false</boolProp>
+          <intProp name="ThroughputController.maxThroughput">100</intProp>
+          <FloatProperty>
+            <name>ThroughputController.percentThroughput</name>
+            <value>28.57</value>
+            <savedValue>0.0</savedValue>
+          </FloatProperty>
+        </ThroughputController>
+        <hashTree>
+          <SimpleController guiclass="SimpleControllerGui" testclass="SimpleController" testname="Spatial TaskSet">
+            <stringProp name="TestPlan.comments">Internal tasks total weight = 2+1 = 3</stringProp>
+          </SimpleController>
+          <hashTree>
+            <!-- Task: bbox_selection (weight 2/3 = 66.67%) -->
+            <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="Task: bbox_selection (66.67%)">
+              <intProp name="ThroughputController.style">1</intProp>
+              <boolProp name="ThroughputController.perThread">false</boolProp>
+              <intProp name="ThroughputController.maxThroughput">100</intProp>
+              <FloatProperty>
+                <name>ThroughputController.percentThroughput</name>
+                <value>66.67</value>
+                <savedValue>0.0</savedValue>
+              </FloatProperty>
+            </ThroughputController>
+            <hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="GET temperature/${CHUNK}">
+                <stringProp name="HTTPSampler.path">${base_url_zarr}/temperature/${CHUNK}</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <stringProp name="HTTPSampler.method">GET</stringProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <stringProp name="TestPlan.comments">Uses ${CHUNK} from valid_chunks.csv</stringProp>
+              </HTTPSamplerProxy>
+              <hashTree/>
+            </hashTree>
+            <!-- Task: point_selection (weight 1/3 = 33.33%) -->
+            <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="Task: point_selection (33.33%)">
+              <intProp name="ThroughputController.style">1</intProp>
+              <boolProp name="ThroughputController.perThread">false</boolProp>
+              <intProp name="ThroughputController.maxThroughput">100</intProp>
+              <FloatProperty>
+                <name>ThroughputController.percentThroughput</name>
+                <value>33.33</value>
+                <savedValue>0.0</savedValue>
+              </FloatProperty>
+            </ThroughputController>
+            <hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="GET temperature/0.0.0">
+                <stringProp name="HTTPSampler.path">${base_url_zarr}/temperature/0.0.0</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <stringProp name="HTTPSampler.method">GET</stringProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              </HTTPSamplerProxy>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+        </hashTree>
+        <!--
+        TaskSet: TemporalQueries
+        Weight: 3 (3/14 = 21.43%)
+        -->
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="TaskSet: TemporalQueries (21.43%)">
+          <intProp name="ThroughputController.style">1</intProp>
+          <boolProp name="ThroughputController.perThread">false</boolProp>
+          <intProp name="ThroughputController.maxThroughput">100</intProp>
+          <FloatProperty>
+            <name>ThroughputController.percentThroughput</name>
+            <value>21.43</value>
+            <savedValue>0.0</savedValue>
+          </FloatProperty>
+        </ThroughputController>
+        <hashTree>
+          <SimpleController guiclass="SimpleControllerGui" testclass="SimpleController" testname="Temporal TaskSet">
+            <stringProp name="TestPlan.comments">Internal tasks total weight = 2+1 = 3</stringProp>
+          </SimpleController>
+          <hashTree>
+            <!-- Task: time_slice (weight 2/3 = 66.67%) -->
+            <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="Task: time_slice (66.67%)">
+              <intProp name="ThroughputController.style">1</intProp>
+              <boolProp name="ThroughputController.perThread">false</boolProp>
+              <intProp name="ThroughputController.maxThroughput">100</intProp>
+              <FloatProperty>
+                <name>ThroughputController.percentThroughput</name>
+                <value>66.67</value>
+                <savedValue>0.0</savedValue>
+              </FloatProperty>
+            </ThroughputController>
+            <hashTree>
+              <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="TX: time_slice">
+                <boolProp name="TransactionController.includeTimers">false</boolProp>
+                <boolProp name="TransactionController.parent">true</boolProp>
+              </TransactionController>
+              <hashTree>
+                <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="GET temperature/0.0.0">
+                  <stringProp name="HTTPSampler.path">${base_url_zarr}/temperature/0.0.0</stringProp>
+                  <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                  <stringProp name="HTTPSampler.method">GET</stringProp>
+                  <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                  <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                </HTTPSamplerProxy>
+                <hashTree/>
+                <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="GET temperature/0.0.1">
+                  <stringProp name="HTTPSampler.path">${base_url_zarr}/temperature/0.0.1</stringProp>
+                  <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                  <stringProp name="HTTPSampler.method">GET</stringProp>
+                  <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                  <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                </HTTPSamplerProxy>
+                <hashTree/>
+              </hashTree>
+            </hashTree>
+            <!-- Task: time_series (weight 1/3 = 33.33%) -->
+            <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="Task: time_series (33.33%)">
+              <intProp name="ThroughputController.style">1</intProp>
+              <boolProp name="ThroughputController.perThread">false</boolProp>
+              <intProp name="ThroughputController.maxThroughput">100</intProp>
+              <FloatProperty>
+                <name>ThroughputController.percentThroughput</name>
+                <value>33.33</value>
+                <savedValue>0.0</savedValue>
+              </FloatProperty>
+            </ThroughputController>
+            <hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="GET temperature/0.1.3">
+                <stringProp name="HTTPSampler.path">${base_url_zarr}/temperature/0.1.3</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <stringProp name="HTTPSampler.method">GET</stringProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              </HTTPSamplerProxy>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+        </hashTree>
+        <!--
+        TaskSet: StatisticalOperations
+        Weight: 2 (2/14 = 14.29%)
+        -->
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="TaskSet: StatisticalOperations (14.29%)">
+          <intProp name="ThroughputController.style">1</intProp>
+          <boolProp name="ThroughputController.perThread">false</boolProp>
+          <intProp name="ThroughputController.maxThroughput">100</intProp>
+          <FloatProperty>
+            <name>ThroughputController.percentThroughput</name>
+            <value>14.29</value>
+            <savedValue>0.0</savedValue>
+          </FloatProperty>
+        </ThroughputController>
+        <hashTree>
+          <SimpleController guiclass="SimpleControllerGui" testclass="SimpleController" testname="Statistical TaskSet">
+            <stringProp name="TestPlan.comments">Internal tasks total weight = 1</stringProp>
+          </SimpleController>
+          <hashTree>
+            <!-- Task: spatial_mean (weight 1/1 = 100%) -->
+            <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="Task: spatial_mean (100%)">
+              <intProp name="ThroughputController.style">1</intProp>
+              <boolProp name="ThroughputController.perThread">false</boolProp>
+              <intProp name="ThroughputController.maxThroughput">100</intProp>
+              <FloatProperty>
+                <name>ThroughputController.percentThroughput</name>
+                <value>100.0</value>
+                <savedValue>0.0</savedValue>
+              </FloatProperty>
+            </ThroughputController>
+            <hashTree>
+              <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="TX: spatial_mean">
+                <boolProp name="TransactionController.includeTimers">false</boolProp>
+                <boolProp name="TransactionController.parent">true</boolProp>
+              </TransactionController>
+              <hashTree>
+                <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="GET temperature/0.0.0">
+                  <stringProp name="HTTPSampler.path">${base_url_zarr}/temperature/0.0.0</stringProp>
+                  <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                  <stringProp name="HTTPSampler.method">GET</stringProp>
+                  <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                  <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                </HTTPSamplerProxy>
+                <hashTree/>
+                <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="GET temperature/0.1.1">
+                  <stringProp name="HTTPSampler.path">${base_url_zarr}/temperature/0.1.1</stringProp>
+                  <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                  <stringProp name="HTTPSampler.method">GET</stringProp>
+                  <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                  <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                </HTTPSamplerProxy>
+                <hashTree/>
+                <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="GET temperature/1.1.3">
+                  <stringProp name="HTTPSampler.path">${base_url_zarr}/temperature/1.1.3</stringProp>
+                  <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                  <stringProp name="HTTPSampler.method">GET</stringProp>
+                  <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                  <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                </HTTPSamplerProxy>
+                <hashTree/>
+              </hashTree>
+            </hashTree>
+          </hashTree>
+        </hashTree>
+        <!--
+        TaskSet: ComplexSelections
+        Weight: 1 (1/14 = 7.14%)
+        -->
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="TaskSet: ComplexSelections (7.14%)">
+          <intProp name="ThroughputController.style">1</intProp>
+          <boolProp name="ThroughputController.perThread">false</boolProp>
+          <intProp name="ThroughputController.maxThroughput">100</intProp>
+          <FloatProperty>
+            <name>ThroughputController.percentThroughput</name>
+            <value>7.14</value>
+            <savedValue>0.0</savedValue>
+          </FloatProperty>
+        </ThroughputController>
+        <hashTree>
+          <SimpleController guiclass="SimpleControllerGui" testclass="SimpleController" testname="Complex TaskSet">
+            <stringProp name="TestPlan.comments">Internal tasks total weight = 1</stringProp>
+          </SimpleController>
+          <hashTree>
+            <!-- Task: multi_dim_slice (weight 1/1 = 100%) -->
+            <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="Task: multi_dim_slice (100%)">
+              <intProp name="ThroughputController.style">1</intProp>
+              <boolProp name="ThroughputController.perThread">false</boolProp>
+              <intProp name="ThroughputController.maxThroughput">100</intProp>
+              <FloatProperty>
+                <name>ThroughputController.percentThroughput</name>
+                <value>100.0</value>
+                <savedValue>0.0</savedValue>
+              </FloatProperty>
+            </ThroughputController>
+            <hashTree>
+              <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="TX: multi_dim_slice">
+                <boolProp name="TransactionController.includeTimers">false</boolProp>
+                <boolProp name="TransactionController.parent">true</boolProp>
+              </TransactionController>
+              <hashTree>
+                <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="GET temperature/0.0.0">
+                  <stringProp name="HTTPSampler.path">${base_url_zarr}/temperature/0.0.0</stringProp>
+                  <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                  <stringProp name="HTTPSampler.method">GET</stringProp>
+                  <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                  <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                </HTTPSamplerProxy>
+                <hashTree/>
+                <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="GET temperature/0.1.1">
+                  <stringProp name="HTTPSampler.path">${base_url_zarr}/temperature/0.1.1</stringProp>
+                  <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                  <stringProp name="HTTPSampler.method">GET</stringProp>
+                  <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                  <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                </HTTPSamplerProxy>
+                <hashTree/>
+              </hashTree>
+            </hashTree>
+          </hashTree>
+        </hashTree>
+        <!--
+        TaskSet: APIEndpoints
+        Weight: 1 (1/14 = 7.14%)
+        -->
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="TaskSet: APIEndpoints (7.14%)">
+          <intProp name="ThroughputController.style">1</intProp>
+          <boolProp name="ThroughputController.perThread">false</boolProp>
+          <intProp name="ThroughputController.maxThroughput">100</intProp>
+          <FloatProperty>
+            <name>ThroughputController.percentThroughput</name>
+            <value>7.14</value>
+            <savedValue>0.0</savedValue>
+          </FloatProperty>
+        </ThroughputController>
+        <hashTree>
+          <SimpleController guiclass="SimpleControllerGui" testclass="SimpleController" testname="API TaskSet">
+            <stringProp name="TestPlan.comments">Internal tasks total weight = 2+1+1 = 4</stringProp>
+          </SimpleController>
+          <hashTree>
+            <!-- Task: collections (weight 2/4 = 50%) -->
+            <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="Task: collections (50%)">
+              <intProp name="ThroughputController.style">1</intProp>
+              <boolProp name="ThroughputController.perThread">false</boolProp>
+              <intProp name="ThroughputController.maxThroughput">100</intProp>
+              <FloatProperty>
+                <name>ThroughputController.percentThroughput</name>
+                <value>50.0</value>
+                <savedValue>0.0</savedValue>
+              </FloatProperty>
+            </ThroughputController>
+            <hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="GET /collections">
+                <stringProp name="HTTPSampler.path">/collections</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <stringProp name="HTTPSampler.method">GET</stringProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              </HTTPSamplerProxy>
+              <hashTree/>
+            </hashTree>
+            <!-- Task: conformance (weight 1/4 = 25%) -->
+            <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="Task: conformance (25%)">
+              <intProp name="ThroughputController.style">1</intProp>
+              <boolProp name="ThroughputController.perThread">false</boolProp>
+              <intProp name="ThroughputController.maxThroughput">100</intProp>
+              <FloatProperty>
+                <name>ThroughputController.percentThroughput</name>
+                <value>25.0</value>
+                <savedValue>0.0</savedValue>
+              </FloatProperty>
+            </ThroughputController>
+            <hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="GET /conformance">
+                <stringProp name="HTTPSampler.path">/conformance</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <stringProp name="HTTPSampler.method">GET</stringProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              </HTTPSamplerProxy>
+              <hashTree/>
+            </hashTree>
+            <!-- Task: landing_page (weight 1/4 = 25%) -->
+            <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="Task: landing_page (25%)">
+              <intProp name="ThroughputController.style">1</intProp>
+              <boolProp name="ThroughputController.perThread">false</boolProp>
+              <intProp name="ThroughputController.maxThroughput">100</intProp>
+              <FloatProperty>
+                <name>ThroughputController.percentThroughput</name>
+                <value>25.0</value>
+                <savedValue>0.0</savedValue>
+              </FloatProperty>
+            </ThroughputController>
+            <hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="GET /">
+                <stringProp name="HTTPSampler.path">/</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <stringProp name="HTTPSampler.method">GET</stringProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              </HTTPSamplerProxy>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+        </hashTree>
+        <!--
+        LISTENERS
+        Add listeners to view results.
+        -->
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>
+
