@@ -98,6 +98,24 @@ class APIEndpoints(TaskSet):
     @task(1)
     def landing_page(self):
         self.client.get("/")
+    
+    @task(3)
+    def position_query_apparent_temp(self):
+        endpoint = "/collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/position"
+        # Vary coordinates within decimal points to avoid caching
+        base_x = 10977974.475656517
+        base_y = 18769450.517564356
+        x_offset = random.uniform(-0.1, 0.1)
+        y_offset = random.uniform(-0.1, 0.1)
+        
+        params = {
+            "coords": f"POINT({base_x + x_offset} {base_y + y_offset})",
+            "location": "conus",
+            "datetime": "2025-09-22T01:00:00Z/2025-10-03T00:00:00Z",
+            "parameter-name": "apparent_temperature",
+            "f": "json"
+        }
+        self.client.get(endpoint, params=params)
 
 class EDRLoadTest(HttpUser):
     wait_time = between(1, 3)
