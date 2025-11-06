@@ -67,6 +67,62 @@ class ZarrDifferenceOperations(TaskSet):
                 "instance_b": "2025-09-22T00:00:00Z",
                 "parameter_name": "temperature",
                 "zoom_level": 8,
+                "datetime": "2025-09-22T12:00:00Z"
+            }
+        }
+        self.client.post("/processes/edr-zarr-difference/execution", 
+                        json=payload, 
+                        headers={"Content-Type": "application/json"})
+    
+    @task(1)
+    def zarr_difference_test_crs(self):
+        payload = {
+            "inputs": {
+                "edr_base_url": "https://edr-api-desi-c.mdl.nws.noaa.gov",
+                "collection_a": "NBM_icechunk",
+                "instance_a": "2025-09-22T00:00:00Z",
+                "collection_b": "NBM_icechunk", 
+                "instance_b": "2025-09-22T00:00:00Z",
+                "parameter_name": "temperature",
+                "zoom_level": 8,
+                "crs": 4326,
+                "datetime": "2025-09-22T12:00:00Z"
+            }
+        }
+        self.client.post("/processes/edr-zarr-difference/execution", 
+                        json=payload, 
+                        headers={"Content-Type": "application/json"})
+    
+    @task(1)
+    def zarr_difference_test_unit(self):
+        payload = {
+            "inputs": {
+                "edr_base_url": "https://edr-api-desi-c.mdl.nws.noaa.gov",
+                "collection_a": "NBM_icechunk",
+                "instance_a": "2025-09-22T00:00:00Z",
+                "collection_b": "NBM_icechunk", 
+                "instance_b": "2025-09-22T00:00:00Z",
+                "parameter_name": "temperature",
+                "zoom_level": 8,
+                "unit": "degF",
+                "datetime": "2025-09-22T12:00:00Z"
+            }
+        }
+        self.client.post("/processes/edr-zarr-difference/execution", 
+                        json=payload, 
+                        headers={"Content-Type": "application/json"})
+    
+    @task(1)
+    def zarr_difference_test_crs_unit(self):
+        payload = {
+            "inputs": {
+                "edr_base_url": "https://edr-api-desi-c.mdl.nws.noaa.gov",
+                "collection_a": "NBM_icechunk",
+                "instance_a": "2025-09-22T00:00:00Z",
+                "collection_b": "NBM_icechunk", 
+                "instance_b": "2025-09-22T00:00:00Z",
+                "parameter_name": "temperature",
+                "zoom_level": 8,
                 "crs": 4326,
                 "unit": "degF",
                 "datetime": "2025-09-22T12:00:00Z"
