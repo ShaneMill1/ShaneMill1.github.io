@@ -1,0 +1,16 @@
+Method,Name,Error,Occurrences
+GET,/difference-results/67159a54-8669-4852-b325-203651ca9f8e/zarr/temperature_difference/1.1,CatchResponseError('Server error computing difference for chunk 1.1'),1
+POST,/processes/edr-zarr-difference/execution,HTTPError('504 Server Error: Gateway Time-out for url: /processes/edr-zarr-difference/execution'),1
+GET,/difference-results/67159a54-8669-4852-b325-203651ca9f8e/zarr/temperature_difference/1.0,CatchResponseError('Server error computing difference for chunk 1.0'),2
+GET,/difference-results/67159a54-8669-4852-b325-203651ca9f8e/zarr/x/0,HTTPError('500 Server Error: Internal Server Error for url: /difference-results/67159a54-8669-4852-b325-203651ca9f8e/zarr/x/0'),1
+GET,/difference-results/67159a54-8669-4852-b325-203651ca9f8e/zarr/temperature_difference/0.1,CatchResponseError('Server error computing difference for chunk 0.1'),5
+GET,/collections,HTTPError('502 Server Error: Bad Gateway for url: /collections'),1
+GET,/collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/items/zarr/temperature/8/4326/degF/.zattrs,HTTPError('504 Server Error: Gateway Time-out for url: /collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/items/zarr/temperature/8/4326/degF/.zattrs'),1
+GET,/collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/position?coords=POINT%2810977974.475656526+18769450.517564365%29&location=conus&datetime=2025-09-22T01%3A00%3A00Z%2F2025-10-03T00%3A00%3A00Z&parameter-name=apparent_temperature&f=json,HTTPError('504 Server Error: Gateway Time-out for url: /collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/position?coords=POINT%2810977974.475656526+18769450.517564365%29&location=conus&datetime=2025-09-22T01%3A00%3A00Z%2F2025-10-03T00%3A00%3A00Z&parameter-name=apparent_temperature&f=json'),1
+GET,/difference-results/67159a54-8669-4852-b325-203651ca9f8e/zarr/.zgroup,HTTPError('500 Server Error: Internal Server Error for url: /difference-results/67159a54-8669-4852-b325-203651ca9f8e/zarr/.zgroup'),2
+GET,/difference-results/67159a54-8669-4852-b325-203651ca9f8e/zarr/.zmetadata,HTTPError('500 Server Error: Internal Server Error for url: /difference-results/67159a54-8669-4852-b325-203651ca9f8e/zarr/.zmetadata'),2
+GET,/collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/items/zarr/temperature/8/4326/degF/temperature/.zattrs,HTTPError('504 Server Error: Gateway Time-out for url: /collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/items/zarr/temperature/8/4326/degF/temperature/.zattrs'),1
+GET,/difference-results/67159a54-8669-4852-b325-203651ca9f8e/zarr/y/0,HTTPError('504 Server Error: Gateway Time-out for url: /difference-results/67159a54-8669-4852-b325-203651ca9f8e/zarr/y/0'),1
+GET,/difference-results/67159a54-8669-4852-b325-203651ca9f8e/zarr/temperature_difference/0.0,CatchResponseError('Server error computing difference for chunk 0.0'),2
+POST,/processes/edr-zarr-difference/execution,HTTPError('400 Client Error: Bad Request for url: /processes/edr-zarr-difference/execution'),1
+GET,/collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/items/zarr/temperature/8/4326/degF/temperature/0.1.1,CatchResponseError('Chunk 0.1.1 failed with status 504'),1
