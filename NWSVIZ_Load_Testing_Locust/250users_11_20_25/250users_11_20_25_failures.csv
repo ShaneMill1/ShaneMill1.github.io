@@ -1,0 +1,6 @@
+Method,Name,Error,Occurrences
+GET,/difference-results/b335f5c4-50a6-4dfc-80e3-48b399f328af/zarr/time/0,HTTPError('500 Server Error: Internal Server Error for url: /difference-results/b335f5c4-50a6-4dfc-80e3-48b399f328af/zarr/time/0'),2
+GET,/difference-results/b335f5c4-50a6-4dfc-80e3-48b399f328af/zarr/.zmetadata,CatchResponseError('Job b335f5c4-50a6-4dfc-80e3-48b399f328af not found - may have expired'),9
+GET,/difference-results/b335f5c4-50a6-4dfc-80e3-48b399f328af/zarr/y/0,HTTPError('500 Server Error: Internal Server Error for url: /difference-results/b335f5c4-50a6-4dfc-80e3-48b399f328af/zarr/y/0'),2
+GET,/difference-results/b335f5c4-50a6-4dfc-80e3-48b399f328af/zarr/.zgroup,HTTPError('502 Server Error: Bad Gateway for url: /difference-results/b335f5c4-50a6-4dfc-80e3-48b399f328af/zarr/.zgroup'),1
+GET,/difference-results/b335f5c4-50a6-4dfc-80e3-48b399f328af/zarr/.zgroup,CatchResponseError('Job b335f5c4-50a6-4dfc-80e3-48b399f328af not found - may have expired'),9

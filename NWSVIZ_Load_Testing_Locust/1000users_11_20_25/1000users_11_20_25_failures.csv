@@ -1,0 +1,173 @@
+Method,Name,Error,Occurrences
+GET,/difference-results/88b17eb3-433c-446f-8668-26360c1464f7/zarr/.zgroup,HTTPError('500 Server Error: Internal Server Error for url: /difference-results/88b17eb3-433c-446f-8668-26360c1464f7/zarr/.zgroup'),1
+GET,/collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/items/zarr/temperature/8/4326/degF/time/.zattrs,HTTPError('502 Server Error: Bad Gateway for url: /collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/items/zarr/temperature/8/4326/degF/time/.zattrs'),19
+GET,/difference-results/cf5c936c-4977-4942-8362-7b309fb10f4e/zarr/.zmetadata,CatchResponseError('Job cf5c936c-4977-4942-8362-7b309fb10f4e not found - may have expired'),1
+GET,/difference-results/902a51c3-0e3b-4d41-add8-762598e0218c/zarr/.zgroup,HTTPError('502 Server Error: Bad Gateway for url: /difference-results/902a51c3-0e3b-4d41-add8-762598e0218c/zarr/.zgroup'),1
+GET,/difference-results/e6bbe7e7-9cd5-4215-bb66-7bb23da3166e/zarr/temperature_difference/1.0,CatchResponseError('Server error computing difference for chunk 1.0'),3
+GET,/collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/items/zarr/temperature/8/4326/degF/temperature/0.0.0,CatchResponseError('Chunk 0.0.0 failed with status 502'),6
+GET,/difference-results/ff904df8-e2b8-48c3-a759-2fc2a0899c31/zarr/y/0,HTTPError('500 Server Error: Internal Server Error for url: /difference-results/ff904df8-e2b8-48c3-a759-2fc2a0899c31/zarr/y/0'),1
+GET,/difference-results/3e997a73-8852-455a-b340-04c9671f7942/zarr/x/0,HTTPError('500 Server Error: Internal Server Error for url: /difference-results/3e997a73-8852-455a-b340-04c9671f7942/zarr/x/0'),2
+GET,/difference-results/6a2b9800-3f27-45b0-8924-539ccafafca8/zarr/temperature_difference/0.1,CatchResponseError('Server error computing difference for chunk 0.1'),1
+GET,/collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/items/zarr/temperature/8/4326/degF/temperature/0.1.0,CatchResponseError('Chunk 0.1.0 failed with status 404'),73
+GET,/collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/items/zarr/temperature/8/4326/degF/temperature/0.1.1,CatchResponseError('Chunk 0.1.1 failed with status 404'),100
+GET,/difference-results/7ce13c3d-0099-438c-9382-b72a77ce1f23/zarr/.zmetadata,HTTPError('500 Server Error: Internal Server Error for url: /difference-results/7ce13c3d-0099-438c-9382-b72a77ce1f23/zarr/.zmetadata'),1
+GET,/difference-results/8e26c437-479c-40a9-832c-692cfb5875f9/zarr/temperature_difference/1.0,CatchResponseError('Server error computing difference for chunk 1.0'),1
+POST,/processes/edr-zarr-difference-streaming/execution,HTTPError('400 Client Error: Bad Request for url: /processes/edr-zarr-difference-streaming/execution'),5
+GET,/difference-results/e3a4f8c3-953e-48ae-9b14-a2ad4df7997f/zarr/.zgroup,CatchResponseError('Job e3a4f8c3-953e-48ae-9b14-a2ad4df7997f not found - may have expired'),1
+GET,/difference-results/d9cf4b47-97e2-42b5-aee5-6931f96e8178/zarr/temperature_difference/0.0,CatchResponseError('Server error computing difference for chunk 0.0'),2
+GET,/collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/items/zarr/temperature/8/4326/degF/temperature/0.0.0,CatchResponseError('Chunk 0.0.0 failed with status 404'),88
+GET,/difference-results/b1c4297b-61f9-428d-8311-885bb98a6921/zarr/temperature_difference/0.1,CatchResponseError('Server error computing difference for chunk 0.1'),1
+GET,/difference-results/31b8ed2a-030b-426a-9823-878a3fdbd3ba/zarr/.zmetadata,CatchResponseError('Job 31b8ed2a-030b-426a-9823-878a3fdbd3ba not found - may have expired'),1
+GET,/collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/items/zarr/temperature/8/4326/degF/temperature/0.0.0,HTTPError('404 Client Error: Not Found for url: /collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/items/zarr/temperature/8/4326/degF/temperature/0.0.0'),70
+GET,/difference-results/e6bbe7e7-9cd5-4215-bb66-7bb23da3166e/zarr/temperature_difference/1.1,CatchResponseError('Server error computing difference for chunk 1.1'),1
+GET,/difference-results/c95e746a-a888-416c-827d-ce08eb0a42ab/zarr/.zmetadata,CatchResponseError('Job c95e746a-a888-416c-827d-ce08eb0a42ab not found - may have expired'),1
+GET,/difference-results/704f1999-46c9-442c-9967-6898712cbda3/zarr/temperature_difference/1.0,CatchResponseError('Server error computing difference for chunk 1.0'),1
+GET,/difference-results/71eb8356-e487-44ca-b955-7b6f79b30881/zarr/temperature_difference/1.1,CatchResponseError('Server error computing difference for chunk 1.1'),1
+GET,/difference-results/e3a4f8c3-953e-48ae-9b14-a2ad4df7997f/zarr/temperature_difference/1.1,CatchResponseError('Server error computing difference for chunk 1.1'),2
+GET,/difference-results/95c3385c-6e93-4c8b-a2de-993cba132ed1/zarr/y/0,HTTPError('500 Server Error: Internal Server Error for url: /difference-results/95c3385c-6e93-4c8b-a2de-993cba132ed1/zarr/y/0'),1
+GET,/difference-results/de07cd7a-78f1-4c98-b218-29ece7348335/zarr/temperature_difference/1.1,CatchResponseError('Server error computing difference for chunk 1.1'),1
+GET,/difference-results/efcbfdda-7dae-4a0c-a23f-7c6e2972a0c1/zarr/.zgroup,CatchResponseError('Job efcbfdda-7dae-4a0c-a23f-7c6e2972a0c1 not found - may have expired'),1
+GET,/difference-results/3e997a73-8852-455a-b340-04c9671f7942/zarr/time/0,HTTPError('502 Server Error: Bad Gateway for url: /difference-results/3e997a73-8852-455a-b340-04c9671f7942/zarr/time/0'),2
+GET,/difference-results/1ecaca15-e5a8-4f4d-a444-5fbe4979a568/zarr/temperature_difference/0.0,CatchResponseError('Server error computing difference for chunk 0.0'),1
+GET,/difference-results/cf5c936c-4977-4942-8362-7b309fb10f4e/zarr/temperature_difference/0.1,CatchResponseError('Server error computing difference for chunk 0.1'),1
+GET,/collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/items/zarr/temperature/8/4326/degF/time/.zattrs,HTTPError('404 Client Error: Not Found for url: /collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/items/zarr/temperature/8/4326/degF/time/.zattrs'),115
+GET,/difference-results/efcbfdda-7dae-4a0c-a23f-7c6e2972a0c1/zarr/.zmetadata,CatchResponseError('Job efcbfdda-7dae-4a0c-a23f-7c6e2972a0c1 not found - may have expired'),1
+GET,/difference-results/91d38b0f-0ed3-4ed5-a8db-50fe8a9ce909/zarr/.zgroup,HTTPError('500 Server Error: Internal Server Error for url: /difference-results/91d38b0f-0ed3-4ed5-a8db-50fe8a9ce909/zarr/.zgroup'),1
+GET,/difference-results/3e997a73-8852-455a-b340-04c9671f7942/zarr/x/0,HTTPError('502 Server Error: Bad Gateway for url: /difference-results/3e997a73-8852-455a-b340-04c9671f7942/zarr/x/0'),2
+GET,/difference-results/88b17eb3-433c-446f-8668-26360c1464f7/zarr/temperature_difference/1.0,CatchResponseError('Server error computing difference for chunk 1.0'),4
+GET,/difference-results/ff904df8-e2b8-48c3-a759-2fc2a0899c31/zarr/temperature_difference/1.1,CatchResponseError('Server error computing difference for chunk 1.1'),1
+GET,/difference-results/cf5c936c-4977-4942-8362-7b309fb10f4e/zarr/.zgroup,CatchResponseError('Job cf5c936c-4977-4942-8362-7b309fb10f4e not found - may have expired'),1
+POST,/processes/edr-zarr-difference/execution,HTTPError('504 Server Error: Gateway Time-out for url: /processes/edr-zarr-difference/execution'),2
+GET,/difference-results/e04f60a2-b6d1-4813-9c25-94522663396b/zarr/temperature_difference/1.1,CatchResponseError('Server error computing difference for chunk 1.1'),1
+GET,/difference-results/570667cb-eb35-40f5-ab19-78875039384f/zarr/.zgroup,HTTPError('502 Server Error: Bad Gateway for url: /difference-results/570667cb-eb35-40f5-ab19-78875039384f/zarr/.zgroup'),1
+GET,/,HTTPError('502 Server Error: Bad Gateway for url: /'),8
+GET,/difference-results/3e997a73-8852-455a-b340-04c9671f7942/zarr/.zgroup,HTTPError('500 Server Error: Internal Server Error for url: /difference-results/3e997a73-8852-455a-b340-04c9671f7942/zarr/.zgroup'),12
+GET,/difference-results/49c2a793-b74b-47e8-87c7-3d673684afd8/zarr/.zmetadata,CatchResponseError('Job 49c2a793-b74b-47e8-87c7-3d673684afd8 not found - may have expired'),1
+GET,/collections,HTTPError('504 Server Error: Gateway Time-out for url: /collections'),3
+GET,/difference-results/3e997a73-8852-455a-b340-04c9671f7942/zarr/time/0,HTTPError('500 Server Error: Internal Server Error for url: /difference-results/3e997a73-8852-455a-b340-04c9671f7942/zarr/time/0'),1
+GET,/difference-results/3e997a73-8852-455a-b340-04c9671f7942/zarr/.zgroup,CatchResponseError('Job 3e997a73-8852-455a-b340-04c9671f7942 not found - may have expired'),3
+GET,/difference-results/b32f873b-2489-4406-8acb-40548b794f97/zarr/temperature_difference/1.0,CatchResponseError('Server error computing difference for chunk 1.0'),1
+GET,/difference-results/40f89cdd-5a2b-497b-a7b0-ce3ac558ba3b/zarr/temperature_difference/1.0,CatchResponseError('Server error computing difference for chunk 1.0'),1
+GET,/difference-results/e3a4f8c3-953e-48ae-9b14-a2ad4df7997f/zarr/temperature_difference/0.1,CatchResponseError('Server error computing difference for chunk 0.1'),1
+GET,/difference-results/2da226e5-8e62-480f-9908-64d3e3c201ed/zarr/.zgroup,CatchResponseError('Job 2da226e5-8e62-480f-9908-64d3e3c201ed not found - may have expired'),1
+GET,/difference-results/3e997a73-8852-455a-b340-04c9671f7942/zarr/temperature_difference/1.1,CatchResponseError('Server error computing difference for chunk 1.1'),556
+GET,/difference-results/71eb8356-e487-44ca-b955-7b6f79b30881/zarr/temperature_difference/1.0,CatchResponseError('Server error computing difference for chunk 1.0'),1
+GET,/difference-results/2d86d3f9-5dd6-4503-b5ad-f4541f732dfa/zarr/temperature_difference/1.0,CatchResponseError('Server error computing difference for chunk 1.0'),1
+GET,/difference-results/d9cf4b47-97e2-42b5-aee5-6931f96e8178/zarr/.zgroup,CatchResponseError('Job d9cf4b47-97e2-42b5-aee5-6931f96e8178 not found - may have expired'),1
+GET,/difference-results/c5c3a3b3-9805-43b6-8367-fd7ec9d895f7/zarr/temperature_difference/1.1,CatchResponseError('Server error computing difference for chunk 1.1'),1
+GET,/difference-results/3e997a73-8852-455a-b340-04c9671f7942/zarr/.zmetadata,HTTPError('500 Server Error: Internal Server Error for url: /difference-results/3e997a73-8852-455a-b340-04c9671f7942/zarr/.zmetadata'),16
+GET,/difference-results/4164cb91-fb5e-4b17-bee5-092e867e5b98/zarr/temperature_difference/0.0,CatchResponseError('Server error computing difference for chunk 0.0'),1
+GET,/difference-results/9d7066d2-67b1-464a-b36e-2b49a7dfd2db/zarr/temperature_difference/0.1,CatchResponseError('Server error computing difference for chunk 0.1'),1
+GET,/difference-results/6f4b798b-0641-4d58-a2ee-ff0e0a080770/zarr/temperature_difference/1.0,CatchResponseError('Server error computing difference for chunk 1.0'),1
+GET,/difference-results/6533c770-a950-497c-9a6e-8d1d1d966cea/zarr/temperature_difference/0.1,CatchResponseError('Server error computing difference for chunk 0.1'),1
+GET,/difference-results/ed617c26-ae4a-496c-aa05-d4b9037e8a78/zarr/temperature_difference/0.1,CatchResponseError('Server error computing difference for chunk 0.1'),1
+GET,/difference-results/e3a4f8c3-953e-48ae-9b14-a2ad4df7997f/zarr/temperature_difference/0.0,CatchResponseError('Server error computing difference for chunk 0.0'),3
+GET,/collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/items/zarr/temperature/8/4326/degF/.zgroup,HTTPError('504 Server Error: Gateway Time-out for url: /collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/items/zarr/temperature/8/4326/degF/.zgroup'),2
+GET,/collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/items/zarr/temperature/8/4326/degF/time/0,HTTPError('502 Server Error: Bad Gateway for url: /collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/items/zarr/temperature/8/4326/degF/time/0'),17
+GET,/difference-results/b1c4297b-61f9-428d-8311-885bb98a6921/zarr/temperature_difference/1.1,CatchResponseError('Server error computing difference for chunk 1.1'),1
+GET,/difference-results/749703fd-e704-4865-9dcc-d8431f92752f/zarr/temperature_difference/0.0,CatchResponseError('Server error computing difference for chunk 0.0'),1
+GET,/difference-results/b1c4297b-61f9-428d-8311-885bb98a6921/zarr/temperature_difference/0.0,CatchResponseError('Server error computing difference for chunk 0.0'),1
+GET,/difference-results/9d0fa6a0-6e08-4a59-a26f-ef62919c73a0/zarr/time/0,HTTPError('500 Server Error: Internal Server Error for url: /difference-results/9d0fa6a0-6e08-4a59-a26f-ef62919c73a0/zarr/time/0'),1
+GET,/difference-results/3c5533b1-d080-4ce1-9036-9783730c1176/zarr/time/0,HTTPError('500 Server Error: Internal Server Error for url: /difference-results/3c5533b1-d080-4ce1-9036-9783730c1176/zarr/time/0'),1
+GET,/difference-results/b32f873b-2489-4406-8acb-40548b794f97/zarr/temperature_difference/1.1,CatchResponseError('Server error computing difference for chunk 1.1'),1
+GET,/difference-results/fc15eb8f-7bdf-40f2-84d5-bf0f4e49b730/zarr/temperature_difference/1.0,CatchResponseError('Server error computing difference for chunk 1.0'),1
+GET,/difference-results/9d7066d2-67b1-464a-b36e-2b49a7dfd2db/zarr/temperature_difference/0.0,CatchResponseError('Server error computing difference for chunk 0.0'),2
+GET,/difference-results/7ce13c3d-0099-438c-9382-b72a77ce1f23/zarr/temperature_difference/1.0,CatchResponseError('Server error computing difference for chunk 1.0'),1
+GET,/collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/items/zarr/temperature/8/4326/degF/temperature/0.1.1,HTTPError('502 Server Error: Bad Gateway for url: /collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/items/zarr/temperature/8/4326/degF/temperature/0.1.1'),7
+GET,/collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/items/zarr/temperature/8/4326/degF/time/0,HTTPError('404 Client Error: Not Found for url: /collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/items/zarr/temperature/8/4326/degF/time/0'),146
+GET,/collections,HTTPError('502 Server Error: Bad Gateway for url: /collections'),17
+GET,/difference-results/6f4b798b-0641-4d58-a2ee-ff0e0a080770/zarr/temperature_difference/0.1,CatchResponseError('Server error computing difference for chunk 0.1'),2
+GET,/collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/items/zarr/temperature/8/4326/degF/temperature/0.0.1,CatchResponseError('Chunk 0.0.1 failed with status 502'),9
+GET,/difference-results/1ecaca15-e5a8-4f4d-a444-5fbe4979a568/zarr/temperature_difference/1.1,CatchResponseError('Server error computing difference for chunk 1.1'),1
+GET,/collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/items/zarr/temperature/8/4326/degF/time/0,HTTPError('504 Server Error: Gateway Time-out for url: /collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/items/zarr/temperature/8/4326/degF/time/0'),4
+GET,/difference-results/8e26c437-479c-40a9-832c-692cfb5875f9/zarr/temperature_difference/0.0,CatchResponseError('Server error computing difference for chunk 0.0'),1
+GET,/collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/position?coords=POINT%2810977974.475656526+18769450.517564365%29&location=conus&datetime=2025-09-22T01%3A00%3A00Z%2F2025-10-03T00%3A00%3A00Z&parameter-name=apparent_temperature&f=json,HTTPError('500 Server Error: Internal Server Error for url: /collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/position?coords=POINT%2810977974.475656526+18769450.517564365%29&location=conus&datetime=2025-09-22T01%3A00%3A00Z%2F2025-10-03T00%3A00%3A00Z&parameter-name=apparent_temperature&f=json'),270
+GET,/collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/items/zarr/temperature/8/4326/degF/temperature/0.1.0,CatchResponseError('Chunk 0.1.0 failed with status 502'),10
+GET,/difference-results/c5d9b0e6-5e46-4428-910f-7d0e5fb9b357/zarr/.zmetadata,HTTPError('502 Server Error: Bad Gateway for url: /difference-results/c5d9b0e6-5e46-4428-910f-7d0e5fb9b357/zarr/.zmetadata'),1
+GET,/difference-results/13a73b09-2234-449d-a735-53641d51f32f/zarr/temperature_difference/1.1,CatchResponseError('Server error computing difference for chunk 1.1'),1
+GET,/difference-results/2d86d3f9-5dd6-4503-b5ad-f4541f732dfa/zarr/temperature_difference/0.1,CatchResponseError('Server error computing difference for chunk 0.1'),1
+GET,/difference-results/913b02dd-633b-4e2c-8663-11870d6e8bd5/zarr/.zgroup,HTTPError('500 Server Error: Internal Server Error for url: /difference-results/913b02dd-633b-4e2c-8663-11870d6e8bd5/zarr/.zgroup'),1
+GET,/difference-results/1a3d961d-2579-44ce-bd57-8771aceac294/zarr/temperature_difference/0.0,CatchResponseError('Server error computing difference for chunk 0.0'),1
+GET,/collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/items/zarr/temperature/8/4326/degF/temperature/0.0.1,HTTPError('404 Client Error: Not Found for url: /collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/items/zarr/temperature/8/4326/degF/temperature/0.0.1'),52
+GET,/difference-results/d9cf4b47-97e2-42b5-aee5-6931f96e8178/zarr/.zmetadata,HTTPError('502 Server Error: Bad Gateway for url: /difference-results/d9cf4b47-97e2-42b5-aee5-6931f96e8178/zarr/.zmetadata'),1
+GET,/collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/position?coords=POINT%2810977974.475656526+18769450.517564365%29&location=conus&datetime=2025-09-22T01%3A00%3A00Z%2F2025-10-03T00%3A00%3A00Z&parameter-name=apparent_temperature&f=json,HTTPError('502 Server Error: Bad Gateway for url: /collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/position?coords=POINT%2810977974.475656526+18769450.517564365%29&location=conus&datetime=2025-09-22T01%3A00%3A00Z%2F2025-10-03T00%3A00%3A00Z&parameter-name=apparent_temperature&f=json'),31
+GET,/difference-results/4b2c7a3d-a7ca-4499-aba2-fd14fd993a8c/zarr/temperature_difference/1.0,CatchResponseError('Server error computing difference for chunk 1.0'),1
+GET,/difference-results/83d75803-8cac-41be-849f-277d817f27e4/zarr/temperature_difference/1.0,CatchResponseError('Server error computing difference for chunk 1.0'),1
+GET,/difference-results/0bc67981-b12d-4ab5-a012-58058864f56c/zarr/temperature_difference/0.0,CatchResponseError('Server error computing difference for chunk 0.0'),1
+GET,/difference-results/447a530a-18ad-46d5-8a0c-bdbf8fb133a5/zarr/temperature_difference/1.1,CatchResponseError('Server error computing difference for chunk 1.1'),1
+GET,/collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/items/zarr/temperature/8/4326/degF/temperature/0.0.1,CatchResponseError('Chunk 0.0.1 failed with status 404'),92
+GET,/collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/items/zarr/temperature/8/4326/degF/temperature/0.1.0,CatchResponseError('Chunk 0.1.0 failed with status 504'),1
+GET,/difference-results/40f89cdd-5a2b-497b-a7b0-ce3ac558ba3b/zarr/temperature_difference/1.1,CatchResponseError('Server error computing difference for chunk 1.1'),1
+GET,/difference-results/38b9027b-8a06-417a-b2f7-b7068dc80112/zarr/temperature_difference/0.0,CatchResponseError('Server error computing difference for chunk 0.0'),1
+GET,/difference-results/e6bbe7e7-9cd5-4215-bb66-7bb23da3166e/zarr/.zgroup,HTTPError('500 Server Error: Internal Server Error for url: /difference-results/e6bbe7e7-9cd5-4215-bb66-7bb23da3166e/zarr/.zgroup'),1
+GET,/difference-results/43e48f01-2c43-4750-90a2-d0420ebbabc8/zarr/temperature_difference/0.0,CatchResponseError('Server error computing difference for chunk 0.0'),1
+GET,/difference-results/8616773b-5bc4-4db5-bd2f-8c5a9b68c0e3/zarr/temperature_difference/1.1,CatchResponseError('Server error computing difference for chunk 1.1'),2
+GET,/difference-results/88b17eb3-433c-446f-8668-26360c1464f7/zarr/temperature_difference/0.1,CatchResponseError('Server error computing difference for chunk 0.1'),1
+GET,/difference-results/2cfa364a-3023-4c1f-acbe-42021ad7a878/zarr/temperature_difference/1.0,CatchResponseError('Server error computing difference for chunk 1.0'),1
+GET,/collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/position?coords=POINT%2810977974.475656526+18769450.517564365%29&location=conus&datetime=2025-09-22T01%3A00%3A00Z%2F2025-10-03T00%3A00%3A00Z&parameter-name=apparent_temperature&f=json,HTTPError('504 Server Error: Gateway Time-out for url: /collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/position?coords=POINT%2810977974.475656526+18769450.517564365%29&location=conus&datetime=2025-09-22T01%3A00%3A00Z%2F2025-10-03T00%3A00%3A00Z&parameter-name=apparent_temperature&f=json'),1
+POST,/processes/edr-zarr-difference/execution,HTTPError('502 Server Error: Bad Gateway for url: /processes/edr-zarr-difference/execution'),45
+GET,/difference-results/79b46835-ee81-41b2-bfce-71550ebd5f92/zarr/temperature_difference/0.1,CatchResponseError('Server error computing difference for chunk 0.1'),1
+GET,/difference-results/e21a8b7b-ac1f-46e8-a0fa-b8b572fe478e/zarr/.zmetadata,CatchResponseError('Job e21a8b7b-ac1f-46e8-a0fa-b8b572fe478e not found - may have expired'),1
+GET,/collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/items/zarr/temperature/8/4326/degF/time/.zattrs,HTTPError('504 Server Error: Gateway Time-out for url: /collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/items/zarr/temperature/8/4326/degF/time/.zattrs'),2
+GET,/collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/items/zarr/temperature/8/4326/degF/temperature/0.1.1,CatchResponseError('Chunk 0.1.1 failed with status 502'),10
+GET,/difference-results/13a73b09-2234-449d-a735-53641d51f32f/zarr/time/0,HTTPError('500 Server Error: Internal Server Error for url: /difference-results/13a73b09-2234-449d-a735-53641d51f32f/zarr/time/0'),1
+GET,/difference-results/88b17eb3-433c-446f-8668-26360c1464f7/zarr/temperature_difference/0.0,CatchResponseError('Server error computing difference for chunk 0.0'),2
+POST,/processes/edr-zarr-difference/execution,CatchResponseError('Dask computation cancelled'),5
+GET,/difference-results/3e997a73-8852-455a-b340-04c9671f7942/zarr/x/0,HTTPError('504 Server Error: Gateway Time-out for url: /difference-results/3e997a73-8852-455a-b340-04c9671f7942/zarr/x/0'),1
+GET,/difference-results/16e40f2e-4fdc-4f51-9df1-a304d192d4db/zarr/.zgroup,CatchResponseError('Job 16e40f2e-4fdc-4f51-9df1-a304d192d4db not found - may have expired'),1
+GET,/difference-results/0d0918ed-e0b9-4a77-bbc4-61ad5a114f2c/zarr/temperature_difference/1.0,CatchResponseError('Server error computing difference for chunk 1.0'),1
+GET,/collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/items/zarr/temperature/8/4326/degF/temperature/0.0.1,HTTPError('502 Server Error: Bad Gateway for url: /collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/items/zarr/temperature/8/4326/degF/temperature/0.0.1'),6
+GET,/difference-results/3e997a73-8852-455a-b340-04c9671f7942/zarr/.zmetadata,CatchResponseError('Job 3e997a73-8852-455a-b340-04c9671f7942 not found - may have expired'),3
+GET,/difference-results/3e997a73-8852-455a-b340-04c9671f7942/zarr/.zmetadata,HTTPError('502 Server Error: Bad Gateway for url: /difference-results/3e997a73-8852-455a-b340-04c9671f7942/zarr/.zmetadata'),4
+GET,/difference-results/3e997a73-8852-455a-b340-04c9671f7942/zarr/y/0,HTTPError('502 Server Error: Bad Gateway for url: /difference-results/3e997a73-8852-455a-b340-04c9671f7942/zarr/y/0'),2
+GET,/difference-results/979100b2-2d3a-411d-88de-5b94cdc22f60/zarr/.zgroup,HTTPError('502 Server Error: Bad Gateway for url: /difference-results/979100b2-2d3a-411d-88de-5b94cdc22f60/zarr/.zgroup'),1
+GET,/difference-results/49c2a793-b74b-47e8-87c7-3d673684afd8/zarr/.zgroup,CatchResponseError('Job 49c2a793-b74b-47e8-87c7-3d673684afd8 not found - may have expired'),1
+GET,/difference-results/8e26c437-479c-40a9-832c-692cfb5875f9/zarr/temperature_difference/1.1,CatchResponseError('Server error computing difference for chunk 1.1'),2
+GET,/difference-results/e3a4f8c3-953e-48ae-9b14-a2ad4df7997f/zarr/.zmetadata,CatchResponseError('Job e3a4f8c3-953e-48ae-9b14-a2ad4df7997f not found - may have expired'),1
+GET,/difference-results/b67c61d0-ae1a-4c5f-973b-f64514c41a7e/zarr/y/0,HTTPError('504 Server Error: Gateway Time-out for url: /difference-results/b67c61d0-ae1a-4c5f-973b-f64514c41a7e/zarr/y/0'),1
+GET,/collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/items/zarr/temperature/8/4326/degF/temperature/.zattrs,HTTPError('404 Client Error: Not Found for url: /collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/items/zarr/temperature/8/4326/degF/temperature/.zattrs'),155
+GET,/collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/items/zarr/temperature/8/4326/degF/temperature/.zattrs,HTTPError('504 Server Error: Gateway Time-out for url: /collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/items/zarr/temperature/8/4326/degF/temperature/.zattrs'),2
+GET,/difference-results/8616773b-5bc4-4db5-bd2f-8c5a9b68c0e3/zarr/.zmetadata,CatchResponseError('Job 8616773b-5bc4-4db5-bd2f-8c5a9b68c0e3 not found - may have expired'),1
+GET,/difference-results/e5fc47af-d582-4b7d-b8b7-fbdcfdbb3a07/zarr/temperature_difference/1.0,CatchResponseError('Server error computing difference for chunk 1.0'),1
+GET,/difference-results/e94c0639-169d-455e-b7c6-face2e52e00c/zarr/temperature_difference/0.0,CatchResponseError('Server error computing difference for chunk 0.0'),1
+GET,/collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/items/zarr/temperature/8/4326/degF/.zgroup,HTTPError('404 Client Error: Not Found for url: /collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/items/zarr/temperature/8/4326/degF/.zgroup'),178
+GET,/difference-results/6533c770-a950-497c-9a6e-8d1d1d966cea/zarr/temperature_difference/1.0,CatchResponseError('Server error computing difference for chunk 1.0'),1
+GET,/difference-results/e6bbe7e7-9cd5-4215-bb66-7bb23da3166e/zarr/temperature_difference/0.1,CatchResponseError('Server error computing difference for chunk 0.1'),1
+GET,/difference-results/4b2c7a3d-a7ca-4499-aba2-fd14fd993a8c/zarr/.zmetadata,HTTPError('502 Server Error: Bad Gateway for url: /difference-results/4b2c7a3d-a7ca-4499-aba2-fd14fd993a8c/zarr/.zmetadata'),1
+GET,/difference-results/91d38b0f-0ed3-4ed5-a8db-50fe8a9ce909/zarr/.zmetadata,HTTPError('500 Server Error: Internal Server Error for url: /difference-results/91d38b0f-0ed3-4ed5-a8db-50fe8a9ce909/zarr/.zmetadata'),1
+GET,/difference-results/d9cf4b47-97e2-42b5-aee5-6931f96e8178/zarr/.zmetadata,HTTPError('500 Server Error: Internal Server Error for url: /difference-results/d9cf4b47-97e2-42b5-aee5-6931f96e8178/zarr/.zmetadata'),1
+GET,/difference-results/d9cf4b47-97e2-42b5-aee5-6931f96e8178/zarr/temperature_difference/0.1,CatchResponseError('Server error computing difference for chunk 0.1'),2
+GET,/collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/items/zarr/temperature/8/4326/degF/.zgroup,HTTPError('502 Server Error: Bad Gateway for url: /collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/items/zarr/temperature/8/4326/degF/.zgroup'),21
+GET,/difference-results/ed617c26-ae4a-496c-aa05-d4b9037e8a78/zarr/.zmetadata,HTTPError('500 Server Error: Internal Server Error for url: /difference-results/ed617c26-ae4a-496c-aa05-d4b9037e8a78/zarr/.zmetadata'),1
+GET,/collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/items/zarr/temperature/8/4326/degF/temperature/0.1.0,HTTPError('504 Server Error: Gateway Time-out for url: /collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/items/zarr/temperature/8/4326/degF/temperature/0.1.0'),1
+GET,/collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/items/zarr/temperature/8/4326/degF/.zattrs,HTTPError('502 Server Error: Bad Gateway for url: /collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/items/zarr/temperature/8/4326/degF/.zattrs'),14
+GET,/collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/items/zarr/temperature/8/4326/degF/temperature/0.1.1,HTTPError('404 Client Error: Not Found for url: /collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/items/zarr/temperature/8/4326/degF/temperature/0.1.1'),52
+GET,/collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/items/zarr/temperature/8/4326/degF/temperature/0.1.0,HTTPError('404 Client Error: Not Found for url: /collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/items/zarr/temperature/8/4326/degF/temperature/0.1.0'),65
+GET,/difference-results/ab2036f2-f0b0-4cce-a39e-32411326969e/zarr/x/0,HTTPError('500 Server Error: Internal Server Error for url: /difference-results/ab2036f2-f0b0-4cce-a39e-32411326969e/zarr/x/0'),1
+GET,/collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/items/zarr/temperature/8/4326/degF/temperature/0.0.0,HTTPError('502 Server Error: Bad Gateway for url: /collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/items/zarr/temperature/8/4326/degF/temperature/0.0.0'),4
+GET,/difference-results/e38fad81-02f8-4cc3-9f9d-fc5399f7b9a6/zarr/temperature_difference/0.1,CatchResponseError('Server error computing difference for chunk 0.1'),1
+GET,/difference-results/b64ae55d-809d-4a53-b3fa-7b6fe81f851e/zarr/.zgroup,HTTPError('504 Server Error: Gateway Time-out for url: /difference-results/b64ae55d-809d-4a53-b3fa-7b6fe81f851e/zarr/.zgroup'),1
+POST,/processes/edr-zarr-difference/execution,HTTPError('400 Client Error: Bad Request for url: /processes/edr-zarr-difference/execution'),504
+GET,/difference-results/3e997a73-8852-455a-b340-04c9671f7942/zarr/temperature_difference/0.1,CatchResponseError('Server error computing difference for chunk 0.1'),526
+GET,/difference-results/90fdacef-8041-4e29-9d1c-d8cebb9a0bab/zarr/.zgroup,HTTPError('502 Server Error: Bad Gateway for url: /difference-results/90fdacef-8041-4e29-9d1c-d8cebb9a0bab/zarr/.zgroup'),1
+GET,/difference-results/d9cf4b47-97e2-42b5-aee5-6931f96e8178/zarr/.zmetadata,CatchResponseError('Job d9cf4b47-97e2-42b5-aee5-6931f96e8178 not found - may have expired'),1
+GET,/difference-results/8616773b-5bc4-4db5-bd2f-8c5a9b68c0e3/zarr/temperature_difference/0.1,CatchResponseError('Server error computing difference for chunk 0.1'),1
+GET,/difference-results/3e997a73-8852-455a-b340-04c9671f7942/zarr/temperature_difference/1.0,CatchResponseError('Server error computing difference for chunk 1.0'),568
+GET,/difference-results/1ecaca15-e5a8-4f4d-a444-5fbe4979a568/zarr/.zgroup,HTTPError('500 Server Error: Internal Server Error for url: /difference-results/1ecaca15-e5a8-4f4d-a444-5fbe4979a568/zarr/.zgroup'),1
+GET,/difference-results/d9cf4b47-97e2-42b5-aee5-6931f96e8178/zarr/temperature_difference/1.1,CatchResponseError('Server error computing difference for chunk 1.1'),3
+GET,/difference-results/86204bcc-9c97-4c25-b93d-e38b2ba8b9a4/zarr/temperature_difference/0.1,CatchResponseError('Server error computing difference for chunk 0.1'),1
+GET,/difference-results/3e997a73-8852-455a-b340-04c9671f7942/zarr/temperature_difference/0.0,CatchResponseError('Server error computing difference for chunk 0.0'),530
+GET,/difference-results/8616773b-5bc4-4db5-bd2f-8c5a9b68c0e3/zarr/.zgroup,CatchResponseError('Job 8616773b-5bc4-4db5-bd2f-8c5a9b68c0e3 not found - may have expired'),1
+GET,/collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/items/zarr/temperature/8/4326/degF/temperature/.zattrs,HTTPError('502 Server Error: Bad Gateway for url: /collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/items/zarr/temperature/8/4326/degF/temperature/.zattrs'),7
+GET,/collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/items/zarr/temperature/8/4326/degF/.zattrs,HTTPError('404 Client Error: Not Found for url: /collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/items/zarr/temperature/8/4326/degF/.zattrs'),145
+GET,/difference-results/902a51c3-0e3b-4d41-add8-762598e0218c/zarr/temperature_difference/1.0,CatchResponseError('Server error computing difference for chunk 1.0'),1
+GET,/difference-results/3e997a73-8852-455a-b340-04c9671f7942/zarr/.zgroup,HTTPError('502 Server Error: Bad Gateway for url: /difference-results/3e997a73-8852-455a-b340-04c9671f7942/zarr/.zgroup'),5
+GET,/difference-results/c95e746a-a888-416c-827d-ce08eb0a42ab/zarr/.zgroup,CatchResponseError('Job c95e746a-a888-416c-827d-ce08eb0a42ab not found - may have expired'),1
+GET,/collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/items/zarr/temperature/8/4326/degF/temperature/0.1.0,HTTPError('502 Server Error: Bad Gateway for url: /collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/items/zarr/temperature/8/4326/degF/temperature/0.1.0'),3
+GET,/difference-results/8e26c437-479c-40a9-832c-692cfb5875f9/zarr/temperature_difference/0.1,CatchResponseError('Server error computing difference for chunk 0.1'),5
+GET,/difference-results/9d0fa6a0-6e08-4a59-a26f-ef62919c73a0/zarr/.zmetadata,HTTPError('502 Server Error: Bad Gateway for url: /difference-results/9d0fa6a0-6e08-4a59-a26f-ef62919c73a0/zarr/.zmetadata'),1
+GET,/difference-results/c9d1e780-4a4d-4440-b9c1-d63b7f7c3ba3/zarr/.zgroup,CatchResponseError('Job c9d1e780-4a4d-4440-b9c1-d63b7f7c3ba3 not found - may have expired'),1
+GET,/difference-results/16e40f2e-4fdc-4f51-9df1-a304d192d4db/zarr/temperature_difference/0.0,CatchResponseError('Server error computing difference for chunk 0.0'),3
+GET,/collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/items/zarr/temperature/8/4326/degF/temperature/0.1.1,CatchResponseError('Chunk 0.1.1 failed with status 504'),3
+GET,/difference-results/e21a8b7b-ac1f-46e8-a0fa-b8b572fe478e/zarr/.zgroup,CatchResponseError('Job e21a8b7b-ac1f-46e8-a0fa-b8b572fe478e not found - may have expired'),1
+GET,/difference-results/88b17eb3-433c-446f-8668-26360c1464f7/zarr/temperature_difference/1.1,CatchResponseError('Server error computing difference for chunk 1.1'),1

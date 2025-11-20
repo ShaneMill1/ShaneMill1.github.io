@@ -59,27 +59,35 @@ class APIEndpoints(TaskSet):
 class StreamingZarrDifferenceOperations(TaskSet):
     weight = 3
     shared_job_id = None
+    consecutive_failures = 0
+    
+    def create_new_job(self):
+        """Create a new streaming job."""
+        payload = {
+            "inputs": {
+                "collection_a": "NBM_icechunk",
+                "instance_a": "2025-09-22T00:00:00Z",
+                "collection_b": "NBM_icechunk", 
+                "instance_b": "2025-09-22T00:00:00Z",
+                "parameter_name": "temperature",
+                "zoom_level": 8,
+                "datetime": "2025-09-22T12:00:00Z"
+            }
+        }
+        response = self.client.post("/processes/edr-zarr-difference-streaming/execution", 
+                                   json=payload, 
+                                   headers={"Content-Type": "application/json"})
+        if response.status_code == 200:
+            job_info = response.json()
+            StreamingZarrDifferenceOperations.shared_job_id = job_info['job_id']
+            StreamingZarrDifferenceOperations.consecutive_failures = 0
+            return job_info['job_id']
+        return None
     
     def on_start(self):
         """Use shared job ID or create one if it doesn't exist."""
         if StreamingZarrDifferenceOperations.shared_job_id is None:
-            payload = {
-                "inputs": {
-                    "collection_a": "NBM_icechunk",
-                    "instance_a": "2025-09-22T00:00:00Z",
-                    "collection_b": "NBM_icechunk", 
-                    "instance_b": "2025-09-22T00:00:00Z",
-                    "parameter_name": "temperature",
-                    "zoom_level": 8,
-                    "datetime": "2025-09-22T12:00:00Z"
-                }
-            }
-            response = self.client.post("/processes/edr-zarr-difference-streaming/execution", 
-                                       json=payload, 
-                                       headers={"Content-Type": "application/json"})
-            if response.status_code == 200:
-                job_info = response.json()
-                StreamingZarrDifferenceOperations.shared_job_id = job_info['job_id']
+            self.create_new_job()
         
         self.job_id = StreamingZarrDifferenceOperations.shared_job_id
     
@@ -87,12 +95,22 @@ class StreamingZarrDifferenceOperations(TaskSet):
     def access_zarr_metadata(self):
         """Test metadata access performance."""
         if self.job_id:
+            failed = False
             with self.client.get(f"/difference-results/{self.job_id}/zarr/.zmetadata", catch_response=True) as response:
                 if response.status_code == 404:
                     response.failure(f"Job {self.job_id} not found - may have expired")
+                    failed = True
             with self.client.get(f"/difference-results/{self.job_id}/zarr/.zgroup", catch_response=True) as response:
                 if response.status_code == 404:
                     response.failure(f"Job {self.job_id} not found - may have expired")
+                    failed = True
+            
+            if failed:
+                StreamingZarrDifferenceOperations.consecutive_failures += 1
+                if StreamingZarrDifferenceOperations.consecutive_failures >= 3:
+                    self.job_id = self.create_new_job()
+            else:
+                StreamingZarrDifferenceOperations.consecutive_failures = 0
     
     @task(2)
     def access_coordinate_data(self):
@@ -109,8 +127,16 @@ class StreamingZarrDifferenceOperations(TaskSet):
             with self.client.get(f"/difference-results/{self.job_id}/zarr/temperature_difference/{chunk}", catch_response=True) as response:
                 if response.status_code == 404:
                     response.failure(f"Job {self.job_id} expired or chunk {chunk} not available")
+                    StreamingZarrDifferenceOperations.consecutive_failures += 1
+                    if StreamingZarrDifferenceOperations.consecutive_failures >= 3:
+                        self.job_id = self.create_new_job()
                 elif response.status_code >= 500:
                     response.failure(f"Server error computing difference for chunk {chunk}")
+                    StreamingZarrDifferenceOperations.consecutive_failures += 1
+                    if StreamingZarrDifferenceOperations.consecutive_failures >= 3:
+                        self.job_id = self.create_new_job()
+                else:
+                    StreamingZarrDifferenceOperations.consecutive_failures = 0
 
 class ZarrDifferenceOperations(TaskSet):
     weight = 1
