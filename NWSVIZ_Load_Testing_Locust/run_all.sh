@@ -21,6 +21,11 @@ LOCUST_FILE="locustfile.py"
 # This replaces the hardcoded "11_10_25"
 RUN_TAG=$(date +%m_%d_%y)
 
+# Check if an argument was provided to append to the directory name
+if [ $# -gt 0 ]; then
+    RUN_TAG="${RUN_TAG}_$1"
+fi
+
 # --- Timer Start ---
 start_time=$(date +%s)
 echo "Starting Locust test suite at $(date)"

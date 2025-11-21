@@ -187,4 +187,4 @@ class ZarrDifferenceOperations(TaskSet):
 
 class EDRLoadTest(HttpUser):
     wait_time = between(1, 3)
-    tasks = [MetadataOperations, ZarrDataQueries, APIEndpoints, StreamingZarrDifferenceOperations, ZarrDifferenceOperations]
+    tasks = [MetadataOperations, ZarrDataQueries, APIEndpoints, StreamingZarrDifferenceOperations]
