@@ -1,0 +1,2 @@
+Method,Name,Error,Occurrences
+GET,/difference-results/0e3ecfc8-db12-4cad-abc4-002273532e54/zarr/time/0,HTTPError('502 Server Error: Bad Gateway for url: /difference-results/0e3ecfc8-db12-4cad-abc4-002273532e54/zarr/time/0'),1

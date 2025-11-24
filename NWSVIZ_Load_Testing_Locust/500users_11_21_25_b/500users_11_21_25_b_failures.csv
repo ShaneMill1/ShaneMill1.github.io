@@ -1,0 +1,3 @@
+Method,Name,Error,Occurrences
+GET,/collections/NBM_icechunk/instances/2025-09-22T00:00:00Z/items/zarr/temperature/8/4326/degF/temperature/0.1.0,CatchResponseError('Chunk 0.1.0 failed with status 502'),1
+GET,/difference-results/2ac6663a-8e6b-4a27-b98f-d45f1dddf486/zarr/.zmetadata,HTTPError('502 Server Error: Bad Gateway for url: /difference-results/2ac6663a-8e6b-4a27-b98f-d45f1dddf486/zarr/.zmetadata'),1
