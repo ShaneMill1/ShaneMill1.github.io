@@ -1,6 +1,7 @@
 from locust import HttpUser, TaskSet, task, between
 import json
 import random
+import threading
 
 # Test paths with valid chunks for each
 TEST_CONFIGS = [
@@ -85,6 +86,7 @@ class StreamingZarrDifferenceOperations(TaskSet):
     weight = 3
     shared_job_id = None
     consecutive_failures = 0
+    _lock = threading.Lock()
     
     def create_new_job(self):
         payload = {
@@ -111,44 +113,27 @@ class StreamingZarrDifferenceOperations(TaskSet):
         return None
     
     def on_start(self):
-        if StreamingZarrDifferenceOperations.shared_job_id is None:
-            self.create_new_job()
-        self.job_id = StreamingZarrDifferenceOperations.shared_job_id
+        with StreamingZarrDifferenceOperations._lock:
+            if StreamingZarrDifferenceOperations.shared_job_id is None:
+                self.create_new_job()
+            self.job_id = StreamingZarrDifferenceOperations.shared_job_id
     
     @task(3)
     def access_zarr_metadata(self):
         if self.job_id:
-            with self.client.get(f"/difference-results/{self.job_id}/zarr/.zmetadata", catch_response=True) as response:
-                if response.status_code == 503:
-                    response.failure(f"Job {self.job_id} expired, creating new session")
-                    self.job_id = self.create_new_job()
-                    StreamingZarrDifferenceOperations.shared_job_id = self.job_id
-                else:
-                    StreamingZarrDifferenceOperations.consecutive_failures = 0
+            self.client.get(f"/difference-results/{self.job_id}/zarr/.zmetadata")
     
     @task(2)
     def access_coordinate_data(self):
         if self.job_id:
             coords = random.choice(['time', 'latitude', 'longitude'])
-            with self.client.get(f"/difference-results/{self.job_id}/zarr/{coords}/0", catch_response=True) as response:
-                if response.status_code == 404:
-                    response.failure(f"Job {self.job_id} expired, creating new session")
-                    self.job_id = self.create_new_job()
-                    StreamingZarrDifferenceOperations.shared_job_id = self.job_id
+            self.client.get(f"/difference-results/{self.job_id}/zarr/{coords}/0")
     
     @task(5)
     def access_difference_chunks(self):
         if self.job_id:
             chunk = random.choice(["0.0", "0.1", "1.0", "1.1"])
-            with self.client.get(f"/difference-results/{self.job_id}/zarr/temperature_difference/{chunk}", catch_response=True) as response:
-                if response.status_code == 404:
-                    response.failure(f"Job {self.job_id} expired, creating new session")
-                    self.job_id = self.create_new_job()
-                    StreamingZarrDifferenceOperations.shared_job_id = self.job_id
-                elif response.status_code >= 500:
-                    response.failure(f"Server error for chunk {chunk}")
-                else:
-                    StreamingZarrDifferenceOperations.consecutive_failures = 0
+            self.client.get(f"/difference-results/{self.job_id}/zarr/temperature_difference/{chunk}")
 
 class EDRLoadTest(HttpUser):
     host = 'http://localhost:5401'

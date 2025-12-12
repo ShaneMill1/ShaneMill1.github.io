@@ -1,0 +1,2 @@
+Method,Name,Error,Occurrences
+GET,/collections/nbm_v5p0_conus/instances/2025-11-18T00:00Z/items/zarr/temperature/8/4326/degF/.zgroup,HTTPError('502 Server Error: Bad Gateway for url: /collections/nbm_v5p0_conus/instances/2025-11-18T00:00Z/items/zarr/temperature/8/4326/degF/.zgroup'),1
