@@ -30,7 +30,7 @@ echo "Locust file: $LOCUST_FILE"
 echo "Run tag: $RUN_TAG"
 echo "-------------------------------------------------"
 
-USER_COUNT=10
+USER_COUNT=100
 OUTPUT_DIR="${USER_COUNT}users_${RUN_TAG}"
 echo "Running test 1: $USER_COUNT users for 5 minutes..."
 echo "Output directory: $OUTPUT_DIR"
@@ -40,7 +40,7 @@ else
     mkdir -p "$OUTPUT_DIR"
 fi
 echo "Starting locust command..."
-locust -f "$LOCUST_FILE" --host "$HOST_URL" -u $USER_COUNT -t 5m --headless \
+locust -f "$LOCUST_FILE" --host "$HOST_URL" -u $USER_COUNT -t 30m --headless \
        --html "$OUTPUT_DIR/index.html" \
        --csv "$OUTPUT_DIR/${OUTPUT_DIR}" || true
 echo "Test 1 (100 users) finished successfully."
