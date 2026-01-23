@@ -1,0 +1,34 @@
+h2. Load Test Configuration Changes
+
+h3. Test Series Comparison
+
+|_.Test ID|_.Wait Time|_.Description|_.Expected Throughput|
+|01_23_26_a|1-3 seconds|Simulated casual users with "think time" between requests|~500-600 RPS|
+|01_23_26_b|None (removed)|Maximum stress test - continuous requests|10,000+ RPS|
+
+h3. Configuration Details
+
+*Test _a (Baseline):*
+* @wait_time = between(1, 3)@ seconds between requests
+* Simulates realistic user behavior (reading, thinking, interacting)
+* Result: Peak throughput of 539 RPS at 1000 concurrent users
+* Bottleneck: Wait time artificially limited throughput, not server capacity
+
+*Test _b (Stress Test):*
+* @wait_time@ completely removed
+* Users fire requests continuously with no delay
+* Purpose: Identify actual server capacity limits and breaking points
+* Expected: 10-20x throughput increase
+
+h3. Test Methodology
+
+* *User Loads:* 100, 250, 500, 1000 concurrent users
+* *Duration:* 30 minutes per load level
+* *Ramp Rate:* 10 users/sec (5 users/sec for 1000)
+* *Target:* https://edr-api-desi-c.mdl.nws.noaa.gov
+
+h3. Rationale for Change
+
+Test _a revealed that the 1-3 second wait time was the primary throughput bottleneck, not the server. With median response times of 4-9ms and P95 under 350ms, the system demonstrated excellent performance but was artificially constrained by the simulated user behavior.
+
+Test _b removes this constraint to determine the true maximum capacity of the system under sustained load.

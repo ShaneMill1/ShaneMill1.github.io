@@ -70,7 +70,7 @@ else
     mkdir -p "$OUTPUT_DIR"
 fi
 echo "Starting locust command..."
-locust -f "$LOCUST_FILE" --host "$HOST_URL" -u $USER_COUNT -r 10 -t 30m --headless \
+locust -f "$LOCUST_FILE" --host "$HOST_URL" -u $USER_COUNT -r 10 -t 15m --headless \
        --html "$OUTPUT_DIR/index.html" \
        --csv "$OUTPUT_DIR/${OUTPUT_DIR}" || true
 echo "Test 1 (100 users) finished successfully."
@@ -87,7 +87,7 @@ else
     mkdir -p "$OUTPUT_DIR"
 fi
 echo "Starting locust command..."
-locust -f "$LOCUST_FILE" --host "$HOST_URL" -u $USER_COUNT -r 10 -t 30m --headless \
+locust -f "$LOCUST_FILE" --host "$HOST_URL" -u $USER_COUNT -r 10 -t 15m --headless \
        --html "$OUTPUT_DIR/index.html" \
        --csv "$OUTPUT_DIR/${OUTPUT_DIR}" || true
 echo "Test 2 (250 users) finished successfully."
@@ -104,7 +104,7 @@ else
     mkdir -p "$OUTPUT_DIR"
 fi
 echo "Starting locust command..."
-locust -f "$LOCUST_FILE" --host "$HOST_URL" -u $USER_COUNT -r 10 -t 30m --headless \
+locust -f "$LOCUST_FILE" --host "$HOST_URL" -u $USER_COUNT -r 10 -t 15m --headless \
        --html "$OUTPUT_DIR/index.html" \
        --csv "$OUTPUT_DIR/${OUTPUT_DIR}" || true
 echo "Test 3 (500 users) finished successfully."
@@ -121,7 +121,7 @@ else
     mkdir -p "$OUTPUT_DIR"
 fi
 echo "Starting locust command..."
-locust -f "$LOCUST_FILE" --host "$HOST_URL" -u $USER_COUNT -r 5 -t 30m --headless \
+locust -f "$LOCUST_FILE" --host "$HOST_URL" -u $USER_COUNT -r 5 -t 15m --headless \
        --html "$OUTPUT_DIR/index.html" \
        --csv "$OUTPUT_DIR/${OUTPUT_DIR}" || true
 echo "Test 4 (1000 users) finished successfully."

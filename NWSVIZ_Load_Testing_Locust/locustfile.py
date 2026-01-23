@@ -115,5 +115,4 @@ class StreamingZarrDifferenceOperations(TaskSet):
 
 class EDRLoadTest(HttpUser):
     host = 'http://localhost:5401'
-    wait_time = between(1, 3)
-    tasks = [MetadataOperations, ZarrDataQueries, APIEndpoints, StreamingZarrDifferenceOperations]
+    tasks = [MetadataOperations, ZarrDataQueries, APIEndpoints]

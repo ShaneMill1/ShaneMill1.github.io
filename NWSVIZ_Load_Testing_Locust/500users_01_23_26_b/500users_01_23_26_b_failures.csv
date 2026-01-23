@@ -1,0 +1,2 @@
+Method,Name,Error,Occurrences
+GET,/collections/air_quality_alaska_polar_stereographic/instances/2025-11-06T03:00Z/items/zarr/smoke_01_hour_column_integrated/0/4326/smoke_01_hour_column_integrated/0.0.0,HTTPError('502 Server Error: Bad Gateway for url: /collections/air_quality_alaska_polar_stereographic/instances/2025-11-06T03:00Z/items/zarr/smoke_01_hour_column_integrated/0/4326/smoke_01_hour_column_integrated/0.0.0'),1
