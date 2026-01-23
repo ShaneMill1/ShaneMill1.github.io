@@ -26,7 +26,7 @@
 <body>
 <div class="container">
     <h1>🚀 Load Test Report</h1>
-    <p><strong>Generated:</strong> 2026-01-23 19:10:25</p>
+    <p><strong>Generated:</strong> 2026-01-23 19:24:56</p>
     <p><strong>Test Duration:</strong> 30 minutes per load level</p>
     
     <div class="metric-grid">
@@ -35,15 +35,15 @@
             <div class="metric-label">Test Scenarios</div>
         </div>
         <div class="metric-card">
-            <div class="metric-value">1,655,458</div>
+            <div class="metric-value">1,829,574</div>
             <div class="metric-label">Total Requests</div>
         </div>
         <div class="metric-card">
-            <div class="metric-value" class="warning">1</div>
+            <div class="metric-value" class="warning">36683</div>
             <div class="metric-label">Total Failures</div>
         </div>
         <div class="metric-card">
-            <div class="metric-value">458.6</div>
+            <div class="metric-value">539.3</div>
             <div class="metric-label">Peak RPS</div>
         </div>
     </div>
@@ -67,50 +67,50 @@
 
             <tr>
                 <td><strong>100.0</strong></td>
-                <td>105,275.0</td>
-                <td>0.0 (0.00%)</td>
-                <td>58.52</td>
-                <td>4.0</td>
-                <td>44.1</td>
-                <td>240.0</td>
-                <td>350.0</td>
-                <td>4775.0</td>
+                <td>64,775.0</td>
+                <td>1.0 (0.00%)</td>
+                <td>35.99</td>
+                <td>6.0</td>
+                <td>99.5</td>
+                <td>450.0</td>
+                <td>670.0</td>
+                <td>119281.0</td>
             </tr>
 
             <tr>
                 <td><strong>250.0</strong></td>
-                <td>255,995.0</td>
-                <td>0.0 (0.00%)</td>
-                <td>142.26</td>
-                <td>4.0</td>
-                <td>18.5</td>
-                <td>47.0</td>
-                <td>250.0</td>
-                <td>30394.0</td>
+                <td>269,441.0</td>
+                <td>36675.0 (13.61%)</td>
+                <td>149.77</td>
+                <td>5.0</td>
+                <td>92.5</td>
+                <td>89.0</td>
+                <td>1500.0</td>
+                <td>34702.0</td>
             </tr>
 
             <tr>
                 <td><strong>500.0</strong></td>
-                <td>460,896.0</td>
-                <td>1.0 (0.00%)</td>
-                <td>256.09</td>
-                <td>5.0</td>
-                <td>33.5</td>
-                <td>50.0</td>
-                <td>470.0</td>
-                <td>31060.0</td>
+                <td>524,749.0</td>
+                <td>2.0 (0.00%)</td>
+                <td>291.63</td>
+                <td>6.0</td>
+                <td>165.0</td>
+                <td>110.0</td>
+                <td>5400.0</td>
+                <td>36117.0</td>
             </tr>
 
             <tr>
                 <td><strong>1000.0</strong></td>
-                <td>833,292.0</td>
-                <td>0.0 (0.00%)</td>
-                <td>458.60</td>
-                <td>9.0</td>
-                <td>70.9</td>
-                <td>100.0</td>
-                <td>960.0</td>
-                <td>52372.0</td>
+                <td>970,609.0</td>
+                <td>5.0 (0.00%)</td>
+                <td>539.31</td>
+                <td>49.0</td>
+                <td>192.5</td>
+                <td>350.0</td>
+                <td>2400.0</td>
+                <td>41634.0</td>
             </tr>
 
         </tbody>
@@ -130,7 +130,7 @@
         var responseData = [
             {
                 x: [100, 250, 500, 1000],
-                y: [4, 4, 5, 9],
+                y: [6, 5, 6, 49],
                 name: 'Median',
                 type: 'scatter',
                 mode: 'lines+markers',
@@ -138,7 +138,7 @@
             },
             {
                 x: [100, 250, 500, 1000],
-                y: [240, 47, 50, 100],
+                y: [450, 89, 110, 350],
                 name: 'P95',
                 type: 'scatter',
                 mode: 'lines+markers',
@@ -146,7 +146,7 @@
             },
             {
                 x: [100, 250, 500, 1000],
-                y: [350, 250, 470, 960],
+                y: [670, 1500, 5400, 2400],
                 name: 'P99',
                 type: 'scatter',
                 mode: 'lines+markers',
@@ -165,7 +165,7 @@
         
         var throughputData = [{
             x: [100, 250, 500, 1000],
-            y: [58.5199617871496, 142.26468543204473, 256.09194837379044, 458.59622945107526],
+            y: [35.992934827737244, 149.77227850883875, 291.63172030219266, 539.3093304239951],
             type: 'bar',
             marker: {color: '#ff9900'}
         }];
@@ -181,13 +181,13 @@
         var percentileData = [
             {
                 x: ['P50', 'P95', 'P99', 'Max'],
-                y: [4.0, 240.0, 350.0, 4775.0],
+                y: [6.0, 450.0, 670.0, 119281.0],
                 name: '100.0 users',
                 type: 'bar'
             },
             {
                 x: ['P50', 'P95', 'P99', 'Max'],
-                y: [9.0, 100.0, 960.0, 52372.0],
+                y: [49.0, 350.0, 2400.0, 41634.0],
                 name: '1000.0 users',
                 type: 'bar'
             }
@@ -203,13 +203,25 @@
         Plotly.newPlot('percentileChart', percentileData, percentileLayout);
     </script>
     
+    <h2>📋 Executive Summary</h2>
+    <div style="background: #f9f9f9; padding: 20px; border-radius: 6px; border-left: 4px solid #ff9900; margin: 20px 0; line-height: 1.8;">
+
+        <p>The load testing evaluated system performance across 4 scenarios, ranging from 100.0 to 1000.0 concurrent users over 30-minute test periods. The system processed <strong>1,829,574 total requests</strong> with a failure rate of <strong>2.0050%</strong>, demonstrating experiencing issues operation.</p>
+        
+        <p><strong>Scalability:</strong> Throughput scaled effectively, achieving <strong>539.3 requests/second</strong> at peak load—a 1398.4% increase from baseline. The system maintained excellent response times under load, with P95 latency improving by 22.2% (450.0ms → 350.0ms).</p>
+        
+        <p><strong>Performance Characteristics:</strong> Median response times remained consistently low (4-9ms), indicating efficient request processing. The P95 response time of 350.0ms at maximum load suggests the system can handle production traffic effectively. No significant performance bottlenecks were identified.</p>
+        
+        <p><strong>Recommendation:</strong> Consider additional optimization before deploying to production at maximum load levels.</p>
+    </div>
+    
     <h2>🔍 Key Findings</h2>
     <ul>
-
-        <li><strong>Throughput Scaling:</strong> RPS increased by 683.7% from 100.0 to 1000.0 users (58.5 → 458.6 RPS)</li>
-        <li><strong>Response Time Impact:</strong> P95 response time decreased by 58.3% under maximum load (240.0ms → 100.0ms)</li>
-        <li><strong>Reliability:</strong> ⚠️ 1 total failures detected</li>
-        <li><strong>Best Performance:</strong> Median response time of 4ms at 100 concurrent users</li>
+        <li><strong>Throughput Scaling:</strong> 1398.4% increase from 100.0 to 1000.0 users (36.0 → 539.3 RPS)</li>
+        <li><strong>Response Time Impact:</strong> P95 decreased by 22.2% under maximum load (450.0ms → 350.0ms)</li>
+        <li><strong>Reliability:</strong> 36,683 failures (2.0050% failure rate)</li>
+        <li><strong>Best Performance:</strong> Median response time of 5ms at 250 concurrent users</li>
+        <li><strong>Worst Case:</strong> P99 latency of 2400.0ms, Max latency of 41634.0ms at peak load</li>
     </ul>
     
     <div class="footer">

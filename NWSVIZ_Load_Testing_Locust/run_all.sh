@@ -140,3 +140,15 @@ seconds=$((duration % 60))
 echo "================================================="
 printf "Total test suite duration: %02dh %02dm %02ds\n" $hours $minutes $seconds
 echo "================================================="
+
+# --- Generate Reports ---
+echo "Generating test reports..."
+REPORT_NAME="load_test_report_${RUN_TAG}.html"
+python3 generate_report.py "*users_${RUN_TAG}" "$REPORT_NAME"
+if [ $? -eq 0 ]; then
+    echo "✓ HTML report: $REPORT_NAME"
+    python3 quick_summary.py "*users_${RUN_TAG}"
+else
+    echo "⚠️  Report generation failed"
+fi
+echo "================================================="
