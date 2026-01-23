@@ -1,0 +1,2 @@
+Method,Name,Error,Occurrences
+GET,/collections/gefs0p25_v12p3_global_latlon/instances/2021-02-02T00:00Z/items/zarr/categorical_rain/0/4326/degF/.zgroup,HTTPError('404 Client Error: Not Found for url: /collections/gefs0p25_v12p3_global_latlon/instances/2021-02-02T00:00Z/items/zarr/categorical_rain/0/4326/degF/.zgroup'),1

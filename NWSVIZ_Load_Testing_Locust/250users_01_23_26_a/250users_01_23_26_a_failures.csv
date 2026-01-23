@@ -1,0 +1,8 @@
+Method,Name,Error,Occurrences
+GET,/difference-results/ca262cba-deda-43b2-98f2-206043856ef1/zarr/temperature_difference/0.0,HTTPError('404 Client Error: Not Found for url: /difference-results/ca262cba-deda-43b2-98f2-206043856ef1/zarr/temperature_difference/0.0'),4542
+GET,/difference-results/ca262cba-deda-43b2-98f2-206043856ef1/zarr/temperature_difference/1.1,HTTPError('404 Client Error: Not Found for url: /difference-results/ca262cba-deda-43b2-98f2-206043856ef1/zarr/temperature_difference/1.1'),4690
+GET,/difference-results/ca262cba-deda-43b2-98f2-206043856ef1/zarr/longitude/0,HTTPError('404 Client Error: Not Found for url: /difference-results/ca262cba-deda-43b2-98f2-206043856ef1/zarr/longitude/0'),3619
+GET,/difference-results/ca262cba-deda-43b2-98f2-206043856ef1/zarr/.zmetadata,HTTPError('404 Client Error: Not Found for url: /difference-results/ca262cba-deda-43b2-98f2-206043856ef1/zarr/.zmetadata'),11021
+GET,/difference-results/ca262cba-deda-43b2-98f2-206043856ef1/zarr/latitude/0,HTTPError('404 Client Error: Not Found for url: /difference-results/ca262cba-deda-43b2-98f2-206043856ef1/zarr/latitude/0'),3607
+GET,/difference-results/ca262cba-deda-43b2-98f2-206043856ef1/zarr/temperature_difference/0.1,HTTPError('404 Client Error: Not Found for url: /difference-results/ca262cba-deda-43b2-98f2-206043856ef1/zarr/temperature_difference/0.1'),4662
+GET,/difference-results/ca262cba-deda-43b2-98f2-206043856ef1/zarr/temperature_difference/1.0,HTTPError('404 Client Error: Not Found for url: /difference-results/ca262cba-deda-43b2-98f2-206043856ef1/zarr/temperature_difference/1.0'),4534

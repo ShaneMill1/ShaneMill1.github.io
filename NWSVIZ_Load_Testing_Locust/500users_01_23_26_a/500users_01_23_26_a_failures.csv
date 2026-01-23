@@ -1,0 +1,3 @@
+Method,Name,Error,Occurrences
+GET,/difference-results/2f9529c0-8ee3-4982-948c-bca9bccde7e3/zarr/.zmetadata,HTTPError('502 Server Error: Bad Gateway for url: /difference-results/2f9529c0-8ee3-4982-948c-bca9bccde7e3/zarr/.zmetadata'),1
+GET,/difference-results/2f9529c0-8ee3-4982-948c-bca9bccde7e3/zarr/longitude/0,HTTPError('500 Server Error: Internal Server Error for url: /difference-results/2f9529c0-8ee3-4982-948c-bca9bccde7e3/zarr/longitude/0'),1

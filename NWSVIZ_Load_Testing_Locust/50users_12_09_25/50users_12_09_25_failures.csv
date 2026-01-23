@@ -1,0 +1,5 @@
+Method,Name,Error,Occurrences
+POST,/processes/edr-zarr-difference-streaming/execution,HTTPError('400 Client Error: Bad Request for url: /processes/edr-zarr-difference-streaming/execution'),9
+GET,/collections/aigfs0p25_global/instances/2025-11-23T00:00Z/items/zarr/temperature/0/4326/degF/.zgroup,HTTPError('404 Client Error: Not Found for url: /collections/aigfs0p25_global/instances/2025-11-23T00:00Z/items/zarr/temperature/0/4326/degF/.zgroup'),176
+GET,/collections/aigfs0p25_global/instances/2025-11-23T00:00Z/items/zarr/temperature/0/4326/degF/temperature/0.3.7,HTTPError('404 Client Error: Not Found for url: /collections/aigfs0p25_global/instances/2025-11-23T00:00Z/items/zarr/temperature/0/4326/degF/temperature/0.3.7'),128
+GET,/collections/aigfs0p25_global/instances/2025-11-23T00:00Z/items/zarr/temperature/0/4326/degF/.zattrs,HTTPError('404 Client Error: Not Found for url: /collections/aigfs0p25_global/instances/2025-11-23T00:00Z/items/zarr/temperature/0/4326/degF/.zattrs'),176

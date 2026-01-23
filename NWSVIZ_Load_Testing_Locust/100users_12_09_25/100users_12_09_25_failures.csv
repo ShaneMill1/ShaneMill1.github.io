@@ -1,0 +1,108 @@
+Method,Name,Error,Occurrences
+GET,/difference-results/ec9f8d0b-037b-4b27-be79-121dae3cb52d/zarr/temperature_difference/1.0,CatchResponseError('Server error for chunk 1.0'),3
+GET,/difference-results/eae2dade-8ade-4a55-98bb-ec7330f9402a/zarr/y/0,HTTPError('500 Server Error: Internal Server Error for url: /difference-results/eae2dade-8ade-4a55-98bb-ec7330f9402a/zarr/y/0'),1
+GET,/difference-results/e34487c1-3bc0-4ce6-b38f-6786a6549d74/zarr/temperature_difference/0.0,CatchResponseError('Server error for chunk 0.0'),1
+GET,/difference-results/e0a82771-293a-429d-bad6-24f638cb7275/zarr/y/0,HTTPError('500 Server Error: Internal Server Error for url: /difference-results/e0a82771-293a-429d-bad6-24f638cb7275/zarr/y/0'),1
+GET,/difference-results/18d79347-3341-467d-a176-9b147ffde112/zarr/time/0,HTTPError('500 Server Error: Internal Server Error for url: /difference-results/18d79347-3341-467d-a176-9b147ffde112/zarr/time/0'),1
+GET,/difference-results/bb8ef011-debb-4bf7-8e9a-f7d7828f462a/zarr/y/0,HTTPError('500 Server Error: Internal Server Error for url: /difference-results/bb8ef011-debb-4bf7-8e9a-f7d7828f462a/zarr/y/0'),1
+GET,/difference-results/324ad1ef-fd07-4417-9d66-94aa081799da/zarr/temperature_difference/0.0,CatchResponseError('Server error for chunk 0.0'),1
+GET,/difference-results/a8fee8c6-5ddf-4940-a4d9-ea74ffe680ec/zarr/temperature_difference/1.1,CatchResponseError('Server error for chunk 1.1'),3
+GET,/difference-results/e0a82771-293a-429d-bad6-24f638cb7275/zarr/temperature_difference/0.1,CatchResponseError('Server error for chunk 0.1'),1
+GET,/difference-results/ffc5ce0c-f8d6-4d63-8cc6-61bd5943eed8/zarr/temperature_difference/0.0,CatchResponseError('Server error for chunk 0.0'),1
+GET,/difference-results/73b3b39e-073d-46b8-be89-467726220b8c/zarr/temperature_difference/1.1,CatchResponseError('Server error for chunk 1.1'),1
+GET,/difference-results/34dd5d37-b2d1-42bf-8187-d2be029be7e2/zarr/x/0,HTTPError('500 Server Error: Internal Server Error for url: /difference-results/34dd5d37-b2d1-42bf-8187-d2be029be7e2/zarr/x/0'),1
+GET,/difference-results/3300e585-a5c6-49a6-b023-234575123037/zarr/temperature_difference/0.0,CatchResponseError('Server error for chunk 0.0'),2
+GET,/difference-results/74e80ca5-6a32-4a9b-91ce-19a16898b232/zarr/y/0,HTTPError('500 Server Error: Internal Server Error for url: /difference-results/74e80ca5-6a32-4a9b-91ce-19a16898b232/zarr/y/0'),2
+GET,/difference-results/bb8ef011-debb-4bf7-8e9a-f7d7828f462a/zarr/temperature_difference/1.0,CatchResponseError('Server error for chunk 1.0'),1
+GET,/difference-results/ec9f8d0b-037b-4b27-be79-121dae3cb52d/zarr/temperature_difference/0.0,CatchResponseError('Server error for chunk 0.0'),1
+GET,/difference-results/34dd5d37-b2d1-42bf-8187-d2be029be7e2/zarr/temperature_difference/0.1,CatchResponseError('Server error for chunk 0.1'),1
+GET,/difference-results/72308692-886c-4fa1-8a7a-83e3f0e13768/zarr/temperature_difference/1.0,CatchResponseError('Server error for chunk 1.0'),1
+GET,/difference-results/3c5d346e-a40d-4eca-95fc-f311230fd0d3/zarr/temperature_difference/1.1,CatchResponseError('Server error for chunk 1.1'),1
+GET,/difference-results/2a8dd02f-88ae-420b-a57a-cba569ec69e4/zarr/temperature_difference/1.1,CatchResponseError('Server error for chunk 1.1'),1
+GET,/difference-results/ec9f8d0b-037b-4b27-be79-121dae3cb52d/zarr/temperature_difference/1.1,CatchResponseError('Server error for chunk 1.1'),1
+GET,/difference-results/c690eb90-1f9d-4268-9fe3-4cfb9579b159/zarr/temperature_difference/1.1,CatchResponseError('Server error for chunk 1.1'),1
+GET,/difference-results/330992ce-74c4-4fe4-8a8e-d48c36a0928a/zarr/temperature_difference/1.0,CatchResponseError('Server error for chunk 1.0'),1
+GET,/difference-results/118daeb9-a1b1-48f6-a988-b27219842d72/zarr/time/0,HTTPError('500 Server Error: Internal Server Error for url: /difference-results/118daeb9-a1b1-48f6-a988-b27219842d72/zarr/time/0'),1
+GET,/difference-results/5ca04072-772a-43e9-a66f-8ba1396eaf18/zarr/temperature_difference/1.1,CatchResponseError('Server error for chunk 1.1'),1
+GET,/difference-results/22d5f604-aa29-4640-b268-f9ed5c614fec/zarr/temperature_difference/1.0,CatchResponseError('Server error for chunk 1.0'),2
+GET,/difference-results/28783cba-2490-4e92-824d-3ed0fcfb7f5a/zarr/temperature_difference/1.0,CatchResponseError('Server error for chunk 1.0'),1
+GET,/difference-results/eae2dade-8ade-4a55-98bb-ec7330f9402a/zarr/temperature_difference/0.0,CatchResponseError('Server error for chunk 0.0'),1
+GET,/difference-results/b763a9a5-947b-44b9-bdf2-c8131de44369/zarr/temperature_difference/1.0,CatchResponseError('Server error for chunk 1.0'),11
+GET,/difference-results/103952b8-e586-4573-9e0f-3737abcb3554/zarr/temperature_difference/1.0,CatchResponseError('Server error for chunk 1.0'),1
+GET,/difference-results/9661a06e-7a73-4151-842b-5b49199057d5/zarr/temperature_difference/1.1,CatchResponseError('Server error for chunk 1.1'),1
+GET,/difference-results/bef79aa9-a2b6-424e-ab7f-5114cf956a7c/zarr/temperature_difference/1.0,CatchResponseError('Server error for chunk 1.0'),2
+GET,/difference-results/18d79347-3341-467d-a176-9b147ffde112/zarr/temperature_difference/1.1,CatchResponseError('Server error for chunk 1.1'),1
+GET,/difference-results/339614d2-80a4-429e-b02c-22f986cd0937/zarr/temperature_difference/0.0,CatchResponseError('Server error for chunk 0.0'),2
+GET,/difference-results/a2b055bf-b650-4753-a930-f43a8c1f5295/zarr/y/0,HTTPError('500 Server Error: Internal Server Error for url: /difference-results/a2b055bf-b650-4753-a930-f43a8c1f5295/zarr/y/0'),1
+GET,/difference-results/a8fee8c6-5ddf-4940-a4d9-ea74ffe680ec/zarr/y/0,HTTPError('500 Server Error: Internal Server Error for url: /difference-results/a8fee8c6-5ddf-4940-a4d9-ea74ffe680ec/zarr/y/0'),1
+GET,/difference-results/05645e26-5d8e-43b9-9c35-9a1e9b967cf6/zarr/time/0,HTTPError('500 Server Error: Internal Server Error for url: /difference-results/05645e26-5d8e-43b9-9c35-9a1e9b967cf6/zarr/time/0'),1
+GET,/difference-results/324ad1ef-fd07-4417-9d66-94aa081799da/zarr/temperature_difference/1.1,CatchResponseError('Server error for chunk 1.1'),1
+GET,/difference-results/ec9f8d0b-037b-4b27-be79-121dae3cb52d/zarr/y/0,HTTPError('500 Server Error: Internal Server Error for url: /difference-results/ec9f8d0b-037b-4b27-be79-121dae3cb52d/zarr/y/0'),1
+GET,/difference-results/b763a9a5-947b-44b9-bdf2-c8131de44369/zarr/time/0,HTTPError('500 Server Error: Internal Server Error for url: /difference-results/b763a9a5-947b-44b9-bdf2-c8131de44369/zarr/time/0'),9
+GET,/difference-results/a5bac58a-312b-4f5d-ac56-f5ee2e781ae3/zarr/temperature_difference/0.0,CatchResponseError('Server error for chunk 0.0'),1
+GET,/difference-results/bef79aa9-a2b6-424e-ab7f-5114cf956a7c/zarr/temperature_difference/1.1,CatchResponseError('Server error for chunk 1.1'),1
+GET,/difference-results/91f245e1-3ce0-424b-a573-e6e05effaf5b/zarr/temperature_difference/1.1,CatchResponseError('Server error for chunk 1.1'),1
+GET,/difference-results/a55b1e92-dfb7-4a76-b6cb-e23d42e90e41/zarr/time/0,HTTPError('500 Server Error: Internal Server Error for url: /difference-results/a55b1e92-dfb7-4a76-b6cb-e23d42e90e41/zarr/time/0'),1
+GET,/difference-results/d864d848-6fce-4a39-92d8-3ab5bd00f237/zarr/temperature_difference/1.1,CatchResponseError('Server error for chunk 1.1'),1
+GET,/difference-results/bef79aa9-a2b6-424e-ab7f-5114cf956a7c/zarr/x/0,HTTPError('500 Server Error: Internal Server Error for url: /difference-results/bef79aa9-a2b6-424e-ab7f-5114cf956a7c/zarr/x/0'),2
+GET,/difference-results/ffc5ce0c-f8d6-4d63-8cc6-61bd5943eed8/zarr/temperature_difference/1.1,CatchResponseError('Server error for chunk 1.1'),1
+GET,/difference-results/324ad1ef-fd07-4417-9d66-94aa081799da/zarr/temperature_difference/0.1,CatchResponseError('Server error for chunk 0.1'),1
+GET,/difference-results/a2b055bf-b650-4753-a930-f43a8c1f5295/zarr/temperature_difference/1.1,CatchResponseError('Server error for chunk 1.1'),1
+GET,/difference-results/b763a9a5-947b-44b9-bdf2-c8131de44369/zarr/temperature_difference/1.1,CatchResponseError('Server error for chunk 1.1'),22
+GET,/difference-results/324ad1ef-fd07-4417-9d66-94aa081799da/zarr/temperature_difference/1.0,CatchResponseError('Server error for chunk 1.0'),2
+GET,/difference-results/34dd5d37-b2d1-42bf-8187-d2be029be7e2/zarr/temperature_difference/0.0,CatchResponseError('Server error for chunk 0.0'),1
+GET,/difference-results/91f245e1-3ce0-424b-a573-e6e05effaf5b/zarr/temperature_difference/1.0,CatchResponseError('Server error for chunk 1.0'),1
+GET,/difference-results/28783cba-2490-4e92-824d-3ed0fcfb7f5a/zarr/temperature_difference/0.0,CatchResponseError('Server error for chunk 0.0'),1
+GET,/difference-results/74e80ca5-6a32-4a9b-91ce-19a16898b232/zarr/temperature_difference/0.1,CatchResponseError('Server error for chunk 0.1'),1
+GET,/difference-results/ffc5ce0c-f8d6-4d63-8cc6-61bd5943eed8/zarr/temperature_difference/0.1,CatchResponseError('Server error for chunk 0.1'),1
+GET,/difference-results/bba3fc1b-ccc1-47cb-8258-de6921bb3cf2/zarr/temperature_difference/0.0,CatchResponseError('Server error for chunk 0.0'),1
+GET,/difference-results/3300e585-a5c6-49a6-b023-234575123037/zarr/temperature_difference/1.1,CatchResponseError('Server error for chunk 1.1'),1
+GET,/difference-results/b763a9a5-947b-44b9-bdf2-c8131de44369/zarr/temperature_difference/0.0,CatchResponseError('Server error for chunk 0.0'),14
+GET,/difference-results/d864d848-6fce-4a39-92d8-3ab5bd00f237/zarr/temperature_difference/0.1,CatchResponseError('Server error for chunk 0.1'),1
+GET,/difference-results/d0149d22-6d15-4fb8-93a5-457ec67f5a4c/zarr/temperature_difference/1.1,CatchResponseError('Server error for chunk 1.1'),1
+GET,/difference-results/a2b055bf-b650-4753-a930-f43a8c1f5295/zarr/x/0,HTTPError('500 Server Error: Internal Server Error for url: /difference-results/a2b055bf-b650-4753-a930-f43a8c1f5295/zarr/x/0'),1
+GET,/difference-results/40c0659c-3055-4fd3-a128-9db3465397d4/zarr/temperature_difference/0.0,CatchResponseError('Server error for chunk 0.0'),2
+GET,/difference-results/c640a562-d30f-4f89-92f6-bb10e54b108e/zarr/temperature_difference/1.1,CatchResponseError('Server error for chunk 1.1'),1
+GET,/difference-results/8ecc5d36-2e8a-49ec-8aff-34f1f345fb34/zarr/temperature_difference/0.0,CatchResponseError('Server error for chunk 0.0'),1
+GET,/difference-results/324ad1ef-fd07-4417-9d66-94aa081799da/zarr/x/0,HTTPError('500 Server Error: Internal Server Error for url: /difference-results/324ad1ef-fd07-4417-9d66-94aa081799da/zarr/x/0'),2
+GET,/difference-results/a55b1e92-dfb7-4a76-b6cb-e23d42e90e41/zarr/y/0,HTTPError('500 Server Error: Internal Server Error for url: /difference-results/a55b1e92-dfb7-4a76-b6cb-e23d42e90e41/zarr/y/0'),1
+GET,/difference-results/5a6d68c8-b94b-4d31-b2e3-f6d3c3d26309/zarr/time/0,HTTPError('500 Server Error: Internal Server Error for url: /difference-results/5a6d68c8-b94b-4d31-b2e3-f6d3c3d26309/zarr/time/0'),1
+GET,/difference-results/76d06c96-6f8a-4d9a-809f-871a55ac477c/zarr/temperature_difference/1.1,CatchResponseError('Server error for chunk 1.1'),1
+GET,/difference-results/e3aeab97-b80a-49a9-b23a-67a5f1daef14/zarr/temperature_difference/1.0,CatchResponseError('Server error for chunk 1.0'),1
+GET,/difference-results/eae2dade-8ade-4a55-98bb-ec7330f9402a/zarr/temperature_difference/1.0,CatchResponseError('Server error for chunk 1.0'),1
+GET,/difference-results/103952b8-e586-4573-9e0f-3737abcb3554/zarr/temperature_difference/1.1,CatchResponseError('Server error for chunk 1.1'),1
+GET,/difference-results/91f245e1-3ce0-424b-a573-e6e05effaf5b/zarr/time/0,HTTPError('500 Server Error: Internal Server Error for url: /difference-results/91f245e1-3ce0-424b-a573-e6e05effaf5b/zarr/time/0'),1
+GET,/difference-results/bef79aa9-a2b6-424e-ab7f-5114cf956a7c/zarr/time/0,HTTPError('500 Server Error: Internal Server Error for url: /difference-results/bef79aa9-a2b6-424e-ab7f-5114cf956a7c/zarr/time/0'),4
+GET,/difference-results/e0a82771-293a-429d-bad6-24f638cb7275/zarr/temperature_difference/1.0,CatchResponseError('Server error for chunk 1.0'),1
+GET,/difference-results/3c3e37d6-f6e8-4962-b7a0-cab6e3b3573e/zarr/temperature_difference/0.0,CatchResponseError('Server error for chunk 0.0'),1
+GET,/difference-results/c9e5b4a1-0000-44c0-83e8-05653e74f2b0/zarr/temperature_difference/0.0,CatchResponseError('Server error for chunk 0.0'),1
+GET,/difference-results/339614d2-80a4-429e-b02c-22f986cd0937/zarr/temperature_difference/1.0,CatchResponseError('Server error for chunk 1.0'),3
+GET,/difference-results/b763a9a5-947b-44b9-bdf2-c8131de44369/zarr/temperature_difference/0.1,CatchResponseError('Server error for chunk 0.1'),13
+GET,/difference-results/de81104d-b3dc-4195-83d7-8b3b9288cb18/zarr/time/0,HTTPError('500 Server Error: Internal Server Error for url: /difference-results/de81104d-b3dc-4195-83d7-8b3b9288cb18/zarr/time/0'),1
+GET,/difference-results/a2b055bf-b650-4753-a930-f43a8c1f5295/zarr/temperature_difference/1.0,CatchResponseError('Server error for chunk 1.0'),1
+GET,/difference-results/43816e9c-1517-408a-ae44-2b28bab1f98c/zarr/temperature_difference/1.0,CatchResponseError('Server error for chunk 1.0'),1
+GET,/difference-results/8fc1e3e8-1ded-4452-8d02-9aed7d87fb7e/zarr/temperature_difference/0.1,CatchResponseError('Server error for chunk 0.1'),1
+GET,/difference-results/18d79347-3341-467d-a176-9b147ffde112/zarr/temperature_difference/0.0,CatchResponseError('Server error for chunk 0.0'),1
+GET,/difference-results/76d06c96-6f8a-4d9a-809f-871a55ac477c/zarr/temperature_difference/0.1,CatchResponseError('Server error for chunk 0.1'),1
+GET,/difference-results/56dabf1e-b08a-43ad-b30d-ab649668be54/zarr/temperature_difference/1.0,CatchResponseError('Server error for chunk 1.0'),2
+GET,/difference-results/8ecc5d36-2e8a-49ec-8aff-34f1f345fb34/zarr/temperature_difference/1.1,CatchResponseError('Server error for chunk 1.1'),2
+GET,/difference-results/339614d2-80a4-429e-b02c-22f986cd0937/zarr/x/0,HTTPError('500 Server Error: Internal Server Error for url: /difference-results/339614d2-80a4-429e-b02c-22f986cd0937/zarr/x/0'),1
+GET,/difference-results/ffc5ce0c-f8d6-4d63-8cc6-61bd5943eed8/zarr/time/0,HTTPError('500 Server Error: Internal Server Error for url: /difference-results/ffc5ce0c-f8d6-4d63-8cc6-61bd5943eed8/zarr/time/0'),1
+GET,/difference-results/5a6d68c8-b94b-4d31-b2e3-f6d3c3d26309/zarr/temperature_difference/1.0,CatchResponseError('Server error for chunk 1.0'),1
+GET,/difference-results/c640a562-d30f-4f89-92f6-bb10e54b108e/zarr/time/0,HTTPError('500 Server Error: Internal Server Error for url: /difference-results/c640a562-d30f-4f89-92f6-bb10e54b108e/zarr/time/0'),1
+GET,/difference-results/516169ae-ce4d-475e-ad48-02ca9981ecc3/zarr/x/0,HTTPError('500 Server Error: Internal Server Error for url: /difference-results/516169ae-ce4d-475e-ad48-02ca9981ecc3/zarr/x/0'),1
+GET,/difference-results/b763a9a5-947b-44b9-bdf2-c8131de44369/zarr/y/0,HTTPError('500 Server Error: Internal Server Error for url: /difference-results/b763a9a5-947b-44b9-bdf2-c8131de44369/zarr/y/0'),9
+GET,/difference-results/b763a9a5-947b-44b9-bdf2-c8131de44369/zarr/x/0,HTTPError('500 Server Error: Internal Server Error for url: /difference-results/b763a9a5-947b-44b9-bdf2-c8131de44369/zarr/x/0'),8
+GET,/difference-results/118daeb9-a1b1-48f6-a988-b27219842d72/zarr/temperature_difference/0.0,CatchResponseError('Server error for chunk 0.0'),1
+GET,/difference-results/22d5f604-aa29-4640-b268-f9ed5c614fec/zarr/temperature_difference/0.0,CatchResponseError('Server error for chunk 0.0'),1
+GET,/difference-results/a55b1e92-dfb7-4a76-b6cb-e23d42e90e41/zarr/temperature_difference/0.0,CatchResponseError('Server error for chunk 0.0'),1
+GET,/difference-results/324ad1ef-fd07-4417-9d66-94aa081799da/zarr/time/0,HTTPError('500 Server Error: Internal Server Error for url: /difference-results/324ad1ef-fd07-4417-9d66-94aa081799da/zarr/time/0'),2
+GET,/difference-results/de81104d-b3dc-4195-83d7-8b3b9288cb18/zarr/temperature_difference/1.1,CatchResponseError('Server error for chunk 1.1'),1
+GET,/difference-results/de81104d-b3dc-4195-83d7-8b3b9288cb18/zarr/temperature_difference/1.0,CatchResponseError('Server error for chunk 1.0'),1
+GET,/difference-results/ebb05705-0bd6-4aac-8e73-213c86220466/zarr/temperature_difference/0.1,CatchResponseError('Server error for chunk 0.1'),1
+GET,/difference-results/bef79aa9-a2b6-424e-ab7f-5114cf956a7c/zarr/temperature_difference/0.0,CatchResponseError('Server error for chunk 0.0'),1
+GET,/difference-results/bef79aa9-a2b6-424e-ab7f-5114cf956a7c/zarr/y/0,HTTPError('500 Server Error: Internal Server Error for url: /difference-results/bef79aa9-a2b6-424e-ab7f-5114cf956a7c/zarr/y/0'),1
+GET,/difference-results/e34487c1-3bc0-4ce6-b38f-6786a6549d74/zarr/temperature_difference/1.1,CatchResponseError('Server error for chunk 1.1'),2
+GET,/difference-results/a55b1e92-dfb7-4a76-b6cb-e23d42e90e41/zarr/temperature_difference/1.1,CatchResponseError('Server error for chunk 1.1'),1
+GET,/difference-results/e34487c1-3bc0-4ce6-b38f-6786a6549d74/zarr/x/0,HTTPError('500 Server Error: Internal Server Error for url: /difference-results/e34487c1-3bc0-4ce6-b38f-6786a6549d74/zarr/x/0'),1
+GET,/difference-results/516169ae-ce4d-475e-ad48-02ca9981ecc3/zarr/temperature_difference/1.1,CatchResponseError('Server error for chunk 1.1'),1

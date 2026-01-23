@@ -1,0 +1,2 @@
+Method,Name,Error,Occurrences
+GET,/difference-results/c04141f3-867f-49fa-b60e-518643b2d3c5/zarr/.zmetadata,"CatchResponseError('Job c04141f3-867f-49fa-b60e-518643b2d3c5 expired, creating new session')",4

@@ -16,6 +16,8 @@ trap 'handle_error $LINENO "$BASH_COMMAND"' ERR
 # --- Configuration ---
 HOST_URL="https://edr-api-desi-c.mdl.nws.noaa.gov"
 LOCUST_FILE="locustfile.py"
+VALIDATION_SCRIPT="validate_test_data.py"
+TEST_CONFIG_FILE="validated_test_config.json"
 
 # Generate a unique tag for this test run (format: Month_Day_Year)
 # This replaces the hardcoded "11_10_25"
@@ -35,22 +37,44 @@ echo "Locust file: $LOCUST_FILE"
 echo "Run tag: $RUN_TAG"
 echo "-------------------------------------------------"
 
+# --- Validate Test Data ---
+echo "Validating test data from API..."
+if [ ! -f "$VALIDATION_SCRIPT" ]; then
+    echo "ERROR: $VALIDATION_SCRIPT not found!"
+    exit 1
+fi
+
+python3 "$VALIDATION_SCRIPT" "$HOST_URL" "$TEST_CONFIG_FILE"
+if [ $? -ne 0 ]; then
+    echo "ERROR: Test data validation failed!"
+    exit 1
+fi
+
+if [ ! -f "$TEST_CONFIG_FILE" ]; then
+    echo "ERROR: $TEST_CONFIG_FILE was not created!"
+    exit 1
+fi
+
+echo "Test data validation complete."
+echo "-------------------------------------------------"
+export TEST_CONFIG_FILE="$TEST_CONFIG_FILE"
+
 # --- Test 1: 100 Users ---
-# USER_COUNT=100
-# OUTPUT_DIR="${USER_COUNT}users_${RUN_TAG}"
-# echo "Running test 1: $USER_COUNT users for 30 minutes..."
-# echo "Output directory: $OUTPUT_DIR"
-# if [ -d "$OUTPUT_DIR" ]; then
-#     rm -rf "$OUTPUT_DIR"/*
-# else
-#     mkdir -p "$OUTPUT_DIR"
-# fi
-# echo "Starting locust command..."
-# locust -f "$LOCUST_FILE" --host "$HOST_URL" -u $USER_COUNT -r 10 -t 30m --headless \
-#        --html "$OUTPUT_DIR/index.html" \
-#        --csv "$OUTPUT_DIR/${OUTPUT_DIR}" || true
-# echo "Test 1 (100 users) finished successfully."
-# echo "-------------------------------------------------"
+USER_COUNT=100
+OUTPUT_DIR="${USER_COUNT}users_${RUN_TAG}"
+echo "Running test 1: $USER_COUNT users for 30 minutes..."
+echo "Output directory: $OUTPUT_DIR"
+if [ -d "$OUTPUT_DIR" ]; then
+    rm -rf "$OUTPUT_DIR"/*
+else
+    mkdir -p "$OUTPUT_DIR"
+fi
+echo "Starting locust command..."
+locust -f "$LOCUST_FILE" --host "$HOST_URL" -u $USER_COUNT -r 10 -t 30m --headless \
+       --html "$OUTPUT_DIR/index.html" \
+       --csv "$OUTPUT_DIR/${OUTPUT_DIR}" || true
+echo "Test 1 (100 users) finished successfully."
+echo "-------------------------------------------------"
 
 # --- Test 2: 250 Users ---
 USER_COUNT=250

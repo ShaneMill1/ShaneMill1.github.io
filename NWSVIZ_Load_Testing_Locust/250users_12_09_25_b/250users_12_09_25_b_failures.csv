@@ -1,0 +1,6 @@
+Method,Name,Error,Occurrences
+GET,/collections/nbm_v5p0_conus/instances/2025-11-18T00:00Z/items/zarr/temperature/0/4326/degF/temperature/0.0.1,HTTPError('500 Server Error: Internal Server Error for url: /collections/nbm_v5p0_conus/instances/2025-11-18T00:00Z/items/zarr/temperature/0/4326/degF/temperature/0.0.1'),263
+GET,/collections/nbm_v5p0_conus/instances/2025-11-18T00:00Z/items/zarr/temperature/4/4326/degF/temperature/0.0.1,HTTPError('500 Server Error: Internal Server Error for url: /collections/nbm_v5p0_conus/instances/2025-11-18T00:00Z/items/zarr/temperature/4/4326/degF/temperature/0.0.1'),296
+GET,/collections/nbm_v5p0_conus/instances/2025-11-18T00:00Z/items/zarr/temperature/8/4326/degF/temperature/0.0.1,HTTPError('500 Server Error: Internal Server Error for url: /collections/nbm_v5p0_conus/instances/2025-11-18T00:00Z/items/zarr/temperature/8/4326/degF/temperature/0.0.1'),291
+GET,/difference-results/f0d8bc1d-db1c-4d21-b1af-687aeb449e20/zarr/.zmetadata,CatchResponseError('Job f0d8bc1d-db1c-4d21-b1af-687aeb449e20 not found'),3
+GET,/collections/gefs0p25_global/instances/2025-01-01T00:00Z/items/zarr/temperature/0/4326/degF/temperature/0.0.3.3,HTTPError('500 Server Error: Internal Server Error for url: /collections/gefs0p25_global/instances/2025-01-01T00:00Z/items/zarr/temperature/0/4326/degF/temperature/0.0.3.3'),298

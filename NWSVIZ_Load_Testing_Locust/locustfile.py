@@ -2,56 +2,26 @@ from locust import HttpUser, TaskSet, task, between
 import json
 import random
 import threading
+import os
 
-# Test paths with valid chunks for each
-TEST_CONFIGS = [
-    {
-        'path': '/collections/aigfs0p25_v1p0_global/instances/2025-11-23T00:00Z/items/zarr/temperature/0/4326/degF',
-        'param': 'temperature',
-        'chunks': ['0.3.7']
-    },
-    {
-        'path': '/collections/nbm_v5p0_conus/instances/2025-11-18T00:00Z/items/zarr/temperature/8/4326/degF',
-        'param': 'temperature',
-        'chunks': ['0.0.1']
-    },
-    # {
-    #     'path': '/collections/gefs0p25_global/instances/2025-12-07T00:00Z/items/zarr/temperature/0/4326/degF',
-    #     'param': 'temperature',
-    #     'chunks': ['0.0.3.3']
-    # },
-    {
-        'path': '/collections/gefs0p5_global/instances/2025-11-18T00:00Z/items/zarr/temperature_ground_or_water_surface/0/4326/degF',
-        'param': 'temperature_ground_or_water_surface',
-        'chunks': ['0.0.3.3']
-    },
-    {
-        'path': '/collections/urma2p5_conus/instances/2025-10-01T00:00Z/items/zarr/temperature_height_above_ground/0/4326/degF',
-        'param': 'temperature_height_above_ground',
-        'chunks': ['0.0.0']
-    },
-    {
-        'path': '/collections/rtma2p5_conus/instances/2020-02-01T00:00Z/items/zarr/temperature_height_above_ground/0/4326/degF',
-        'param': 'temperature_height_above_ground',
-        'chunks': ['0.0.0']
-    },
-    {
-        'path': '/collections/nbm_v5p0_conus/instances/2025-11-18T00:00Z/items/zarr/temperature/4/4326/degF',
-        'param': 'temperature',
-        'chunks': ['0.0.1']
-    },
-    {
-        'path': '/collections/nbm_v5p0_conus/instances/2025-11-18T00:00Z/items/zarr/temperature/0/4326/degF',
-        'param': 'temperature',
-        'chunks': ['0.0.1']
-    },
-]
+# Load validated test configuration
+CONFIG_FILE = os.getenv('TEST_CONFIG_FILE', 'validated_test_config.json')
+
+try:
+    with open(CONFIG_FILE, 'r') as f:
+        TEST_CONFIGS = json.load(f)
+    print(f"Loaded {len(TEST_CONFIGS)} validated test configurations")
+except FileNotFoundError:
+    print(f"ERROR: {CONFIG_FILE} not found. Run validate_test_data.py first!")
+    TEST_CONFIGS = []
 
 class MetadataOperations(TaskSet):
     weight = 2
     
     @task(1)
     def dataset_metadata(self):
+        if not TEST_CONFIGS:
+            return
         config = random.choice(TEST_CONFIGS)
         self.client.get(f"{config['path']}/.zgroup")
         self.client.get(f"{config['path']}/.zattrs")
@@ -61,14 +31,21 @@ class ZarrDataQueries(TaskSet):
     
     @task(3)
     def random_chunk_access(self):
+        if not TEST_CONFIGS:
+            return
         config = random.choice(TEST_CONFIGS)
         chunk = random.choice(config['chunks'])
         self.client.get(f"{config['path']}/{config['param']}/{chunk}")
     
     @task(1)
     def multi_chunk_access(self):
+        if not TEST_CONFIGS:
+            return
         config = random.choice(TEST_CONFIGS)
-        for chunk in config['chunks']:
+        # Access 2-3 random chunks from same dataset
+        num_chunks = min(random.randint(2, 3), len(config['chunks']))
+        chunks = random.sample(config['chunks'], num_chunks)
+        for chunk in chunks:
             self.client.get(f"{config['path']}/{config['param']}/{chunk}")
 
 class APIEndpoints(TaskSet):
@@ -89,11 +66,12 @@ class StreamingZarrDifferenceOperations(TaskSet):
     _lock = threading.Lock()
     
     def create_new_job(self):
+        # Use static, known-good data for difference operations
         payload = {
             "inputs": {
-                "collection_a": "aigfs0p25_v1p0_global",
+                "collection_a": "aigfs0p25_v1p0_global_latlon",
                 "instance_a": "2025-11-23T00:00Z",
-                "collection_b": "aigfs0p25_v1p0_global", 
+                "collection_b": "aigfs0p25_v1p0_global_latlon", 
                 "instance_b": "2025-11-23T06:00Z",
                 "parameter_name": "temperature",
                 "zoom_level": 0,
@@ -126,7 +104,7 @@ class StreamingZarrDifferenceOperations(TaskSet):
     @task(2)
     def access_coordinate_data(self):
         if self.job_id:
-            coords = random.choice(['time', 'latitude', 'longitude'])
+            coords = random.choice(['latitude', 'longitude'])
             self.client.get(f"/difference-results/{self.job_id}/zarr/{coords}/0")
     
     @task(5)

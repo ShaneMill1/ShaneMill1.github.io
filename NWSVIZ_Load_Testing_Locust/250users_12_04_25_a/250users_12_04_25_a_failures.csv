@@ -1,0 +1,2 @@
+Method,Name,Error,Occurrences
+GET,/difference-results/f8c4fcb3-4945-4d85-a05d-8b41762c1ce7/zarr/temperature_difference/0.0,CatchResponseError('Server error for chunk 0.0'),1
