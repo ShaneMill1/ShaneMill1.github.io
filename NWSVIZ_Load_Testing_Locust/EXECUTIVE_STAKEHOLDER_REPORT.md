@@ -48,30 +48,37 @@ The EDR API service has demonstrated **exceptional scalability and performance i
 | **500 Users - Avg Response** | 243ms | 34ms | **86% faster** ⬇️ |
 | **1000 Users - Avg Response** | 344ms | 71ms | **79% faster** ⬇️ |
 | **500 Users - P95 Response** | 1,100ms | 50ms | **95% faster** ⬇️ |
-| **1000 Users - Failures** | 72 | 0 | **100% reduction** ✅ |
+
 
 **Impact:**
 - Data chunk access improved by 95-98%
 - Metadata operations 30-60% faster
-- Zero failures at 1000 concurrent users
 - Consistent sub-100ms response times
 
 ---
 
 ### Phase 3: Load Testing Breakthrough (January 2026)
-**Status:** Multi-process load generation revealed true capacity
+**Status:** Testing methodology improvements revealed true capacity
 
-**Critical Discovery:** Previous testing was bottlenecked by single-threaded load generation, not the API server.
+**Critical Discovery 1: Wait Time Removal (Jan 23)**
 
-**Before Multi-Process Testing (Jan 23):**
-- Single-threaded Locust
-- Measured: ~680 RPS maximum
-- **Incorrectly concluded** API had limited capacity
+Previous tests included artificial delays between requests (wait_time), simulating human think time but not measuring true API capacity.
 
-**After Multi-Process Testing (Jan 26):**
-- 8-worker Locust processes
-- Measured: **5,059 RPS maximum**
-- **Revealed true API capacity**
+| Test | Wait Time | 100 Users RPS | 250 Users RPS | Impact |
+|------|-----------|---------------|---------------|--------|
+| Jan 23 "a" | With delays | 36 RPS | 150 RPS | Artificial throttling |
+| Jan 23 "b" | **Removed** | **521 RPS** | **628 RPS** | **+1,348% at 100 users** |
+
+**Critical Discovery 2: Multi-Process Load Generation (Jan 26)**
+
+Single-threaded Locust was CPU-bound, unable to generate sufficient load to stress-test the API.
+
+| Method | Load Generation | Peak Throughput | Bottleneck |
+|--------|----------------|-----------------|------------|
+| Single process | 1 CPU core | ~680 RPS | **Test client** |
+| 8 worker processes | 8 CPU cores | **5,059 RPS** | API server |
+
+**Combined Impact:** Removing wait_time + multi-process testing revealed **7-14x higher capacity**
 
 | User Load | Old Method (RPS) | New Method (RPS) | Actual Improvement |
 |-----------|------------------|------------------|--------------------|
@@ -113,6 +120,7 @@ The EDR API service has demonstrated **exceptional scalability and performance i
 - Comprehensive load testing framework deployed
 - Identified performance characteristics
 - Established monitoring and reporting
+- Tests included wait_time (simulating user think time)
 
 **December 2025: Redis Caching**
 - **83-86% reduction** in average response times
@@ -120,36 +128,77 @@ The EDR API service has demonstrated **exceptional scalability and performance i
 - **95-98% improvement** for data-heavy endpoints
 - Eliminated failures at high load
 
-**January 2026: Testing Methodology**
-- Discovered load generation bottleneck
-- Implemented multi-process testing
-- **Revealed 7x higher actual capacity**
-- Validated true production readiness
+**December 2025 - January 2026: API Code Optimizations**
+- **Simplified antimeridian handling:** Replaced complex rasterio reprojection with odc.geo.CRS approach (+pm=180)
+- **Removed unnecessary rechunking:** Eliminated rechunking logic that was causing non-uniform chunks
+- **Preserved original chunk structure:** Data maintains source chunk structure through reprojection
+- **Updated odc-geo:** Version 0.5.0 fixed antimeridian crossing issues
+- **Consistent collection naming:** Improved API usability and predictability
+
+**January 2026: Testing Methodology Improvements**
+- **Expanded test coverage:** 15-minute sustained tests (vs 5-10 min previously)
+- **Higher request volumes:** 3.5M-4M requests per test (vs 100K-500K)
+- **Jan 23:** Removed wait_time delays → **14x throughput increase**
+- **Jan 26:** Implemented multi-process testing → **additional 7x increase**
+- **Combined:** Revealed true API capacity (5,000+ RPS)
+- Validated production readiness under realistic stress conditions
 
 ---
 
 ## 🔍 Technical Improvements Implemented
 
-### 1. Redis Caching Layer
+### 1. Redis Caching Layer (December 2025)
 **Impact:** Massive performance improvement for data access
 
 - **Data chunks:** 519ms → 9ms (98% faster)
 - **Metadata:** 45-68ms → 35-48ms (30-40% faster)
 - **Difference operations:** 262-271ms → 36-48ms (82-86% faster)
 
-### 2. Load Testing Infrastructure
+### 2. API Code Optimizations (Dec 2025 - Jan 2026)
+**Impact:** Improved data processing efficiency and reliability
+
+**Antimeridian Handling:**
+- Replaced complex rasterio-based reprojection with simple odc.geo.CRS approach
+- Used custom prime meridian shift (+pm=180) for cleaner longitude handling
+- Upgraded odc-geo to v0.5.0 (fixed antimeridian crossing bug)
+
+**Chunk Structure Optimization:**
+- Removed unnecessary rechunking from create_zmetadata() and get_dataset()
+- Eliminated sortby() calls that caused unwanted rechunking (200×200×35 → 145×145×145)
+- Data now preserves original chunk structure from source through serving
+- Result: More predictable performance and reduced processing overhead
+
+**API Improvements:**
+- Standardized collection naming conventions
+- Improved API consistency and usability
+
+### 3. Load Testing Methodology Improvements (January 2026)
 **Impact:** Accurate capacity measurement
 
-- Multi-process load generation (8 workers)
-- Eliminated client-side bottlenecks
-- Revealed true API capacity (5,000+ RPS)
+**Wait Time Removal (Jan 23):**
+- Eliminated artificial delays between requests
+- Changed from "user simulation" to "stress testing" mode
+- Immediate 14x throughput increase (36 → 521 RPS at 100 users)
 
-### 3. Reliability Improvements
-**Impact:** Production-grade stability
+**Multi-Process Load Generation (Jan 26):**
+- 8 worker processes instead of single-threaded
+- Eliminated client-side CPU bottleneck
+- Additional 7x capacity increase (521 → 3,968 RPS at 100 users)
+- Expanded test duration and coverage (15-min sustained, 3.5M+ requests per level)
 
-- Failure rate: 0.87% → 0.00% at 1000 users
-- Zero failures across 10.7M requests (Jan 26 test)
-- Consistent performance under sustained load
+### 4. Test Infrastructure & Coverage Improvements (January 2026)
+**Impact:** Comprehensive, automated, and realistic testing
+
+**Dynamic Test Data Validation:**
+- `validate_test_data.py` queries live API for available datasets
+- Tests use real, current data (not hardcoded fixtures)
+- Automatically adapts to API changes and new collections
+
+**Automated Test Suite (`run_all.sh`):**
+- Runs 4 load levels automatically (100, 250, 500, 1000 users)
+- Generates timestamped reports for comparison
+- Validates data before each test run
+- Produces comprehensive HTML reports and summaries
 
 ---
 
@@ -178,10 +227,11 @@ The EDR API service has demonstrated **exceptional scalability and performance i
 
 ### Comprehensive Test Coverage
 - **89 test runs** over 3-month period
-- **10.7M+ requests** in latest test suite
+- **10.7M+ requests** in latest test suite (Jan 26)
 - **6 load levels** tested (10 to 1000 users)
-- **15-minute sustained load** per test
+- **15-minute sustained load** per test (expanded from 5-10 min)
 - **Real-world usage patterns** simulated
+- **Expanded in Jan 2026:** Longer duration tests with 3.5M-4M requests per load level
 
 ### Test Scenarios
 1. **Metadata Operations** - Collection and dataset discovery
@@ -248,8 +298,8 @@ The EDR API service has undergone rigorous performance testing and optimization,
 
 ---
 
-**Prepared by:** Load Testing Team  
-**Contact:** [Your Contact Information]  
+**Prepared by:** EDR Load Testing Team  
+**Contact:** shane.mill@noaa.gov  
 **Next Review:** Quarterly performance assessment recommended
 
 ---
