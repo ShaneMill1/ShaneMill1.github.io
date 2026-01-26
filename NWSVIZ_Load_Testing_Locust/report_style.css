@@ -1,12 +1,3 @@
-#!/bin/bash
-
-PANDOC="$HOME/mambaforge/envs/nwsviz-load-testing/bin/pandoc"
-
-echo "Generating styled HTML reports..."
-echo ""
-
-# Create CSS file
-cat > report_style.css <<'EOF'
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono&display=swap');
 
 body {
@@ -200,39 +191,3 @@ hr {
         font-size: 0.9em;
     }
 }
-EOF
-
-# Executive Report
-"$PANDOC" EXECUTIVE_STAKEHOLDER_REPORT.md \
-    -o EXECUTIVE_STAKEHOLDER_REPORT.html \
-    --standalone \
-    --toc \
-    --toc-depth=2 \
-    --metadata title="EDR API Performance & Scalability Report" \
-    --css=report_style.css
-
-if [ $? -eq 0 ]; then
-    echo "✓ Created EXECUTIVE_STAKEHOLDER_REPORT.html"
-else
-    echo "✗ Failed to create EXECUTIVE_STAKEHOLDER_REPORT.html"
-fi
-
-# Comprehensive Report
-"$PANDOC" COMPREHENSIVE_PERFORMANCE_REPORT.md \
-    -o COMPREHENSIVE_PERFORMANCE_REPORT.html \
-    --standalone \
-    --toc \
-    --toc-depth=2 \
-    --metadata title="EDR API Load Testing - Comprehensive Performance Report" \
-    --css=report_style.css
-
-if [ $? -eq 0 ]; then
-    echo "✓ Created COMPREHENSIVE_PERFORMANCE_REPORT.html"
-else
-    echo "✗ Failed to create COMPREHENSIVE_PERFORMANCE_REPORT.html"
-fi
-
-echo ""
-echo "Styled HTML reports generated with modern fonts!"
-echo "Open in browser to view or print to PDF"
-ls -lh *REPORT.html 2>/dev/null
