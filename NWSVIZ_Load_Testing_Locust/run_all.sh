@@ -18,6 +18,7 @@ HOST_URL="https://edr-api-desi-c.mdl.nws.noaa.gov"
 LOCUST_FILE="locustfile.py"
 VALIDATION_SCRIPT="validate_test_data.py"
 TEST_CONFIG_FILE="validated_test_config.json"
+NUM_WORKERS=8  # Use 8 worker processes to leverage multiple CPUs
 
 # Generate a unique tag for this test run (format: Month_Day_Year)
 # This replaces the hardcoded "11_10_25"
@@ -69,8 +70,9 @@ if [ -d "$OUTPUT_DIR" ]; then
 else
     mkdir -p "$OUTPUT_DIR"
 fi
-echo "Starting locust command..."
+echo "Starting locust command with $NUM_WORKERS worker processes..."
 locust -f "$LOCUST_FILE" --host "$HOST_URL" -u $USER_COUNT -r 10 -t 15m --headless \
+       --processes $NUM_WORKERS \
        --html "$OUTPUT_DIR/index.html" \
        --csv "$OUTPUT_DIR/${OUTPUT_DIR}" || true
 echo "Test 1 (100 users) finished successfully."
@@ -86,8 +88,9 @@ if [ -d "$OUTPUT_DIR" ]; then
 else
     mkdir -p "$OUTPUT_DIR"
 fi
-echo "Starting locust command..."
+echo "Starting locust command with $NUM_WORKERS worker processes..."
 locust -f "$LOCUST_FILE" --host "$HOST_URL" -u $USER_COUNT -r 10 -t 15m --headless \
+       --processes $NUM_WORKERS \
        --html "$OUTPUT_DIR/index.html" \
        --csv "$OUTPUT_DIR/${OUTPUT_DIR}" || true
 echo "Test 2 (250 users) finished successfully."
@@ -103,8 +106,9 @@ if [ -d "$OUTPUT_DIR" ]; then
 else
     mkdir -p "$OUTPUT_DIR"
 fi
-echo "Starting locust command..."
+echo "Starting locust command with $NUM_WORKERS worker processes..."
 locust -f "$LOCUST_FILE" --host "$HOST_URL" -u $USER_COUNT -r 10 -t 15m --headless \
+       --processes $NUM_WORKERS \
        --html "$OUTPUT_DIR/index.html" \
        --csv "$OUTPUT_DIR/${OUTPUT_DIR}" || true
 echo "Test 3 (500 users) finished successfully."
@@ -120,8 +124,9 @@ if [ -d "$OUTPUT_DIR" ]; then
 else
     mkdir -p "$OUTPUT_DIR"
 fi
-echo "Starting locust command..."
+echo "Starting locust command with $NUM_WORKERS worker processes..."
 locust -f "$LOCUST_FILE" --host "$HOST_URL" -u $USER_COUNT -r 5 -t 15m --headless \
+       --processes $NUM_WORKERS \
        --html "$OUTPUT_DIR/index.html" \
        --csv "$OUTPUT_DIR/${OUTPUT_DIR}" || true
 echo "Test 4 (1000 users) finished successfully."

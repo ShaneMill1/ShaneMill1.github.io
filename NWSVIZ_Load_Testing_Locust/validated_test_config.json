@@ -1,5 +1,30 @@
 [
   {
+    "path": "/collections/aigfs0p25_v1p0_global_latlon/instances/2025-11-23T00:00Z/items/zarr/v_component_wind/0/4326/degF",
+    "param": "v_component_wind",
+    "chunks": [
+      "0.0.0",
+      "0.0.1",
+      "0.0.2",
+      "0.1.0",
+      "0.1.1",
+      "0.1.2",
+      "0.2.0",
+      "0.2.1",
+      "0.2.2",
+      "1.0.0",
+      "1.0.1",
+      "1.0.2",
+      "1.1.0",
+      "1.1.1",
+      "1.1.2"
+    ],
+    "collection": "aigfs0p25_v1p0_global_latlon",
+    "instance": "2025-11-23T00:00Z",
+    "zoom": 0,
+    "unit": "degF"
+  },
+  {
     "path": "/collections/aigfs0p25_v1p0_global_latlon/instances/2025-11-23T00:00Z/items/zarr/pressure_reduced_to_msl/0/4326/degF",
     "param": "pressure_reduced_to_msl",
     "chunks": [
@@ -25,7 +50,32 @@
     "unit": "degF"
   },
   {
-    "path": "/collections/aigfs0p25_v1p0_global_latlon/instances/2025-11-23T00:00Z/items/zarr/temperature/0/4326/degF",
+    "path": "/collections/aigfs0p25_v1p0_global_latlon/instances/2025-11-23T06:00Z/items/zarr/total_precipitation_6h/0/4326/degF",
+    "param": "total_precipitation_6h",
+    "chunks": [
+      "0.0.0",
+      "0.0.1",
+      "0.0.2",
+      "0.1.0",
+      "0.1.1",
+      "0.1.2",
+      "0.2.0",
+      "0.2.1",
+      "0.2.2",
+      "1.0.0",
+      "1.0.1",
+      "1.0.2",
+      "1.1.0",
+      "1.1.1",
+      "1.1.2"
+    ],
+    "collection": "aigfs0p25_v1p0_global_latlon",
+    "instance": "2025-11-23T06:00Z",
+    "zoom": 0,
+    "unit": "degF"
+  },
+  {
+    "path": "/collections/aigfs0p25_v1p0_global_latlon/instances/2025-11-23T06:00Z/items/zarr/temperature/0/4326/degF",
     "param": "temperature",
     "chunks": [
       "0.0.0",
@@ -45,103 +95,9 @@
       "1.1.2"
     ],
     "collection": "aigfs0p25_v1p0_global_latlon",
-    "instance": "2025-11-23T00:00Z",
-    "zoom": 0,
-    "unit": "degF"
-  },
-  {
-    "path": "/collections/aigfs0p25_v1p0_global_latlon/instances/2025-11-23T06:00Z/items/zarr/pressure_reduced_to_msl/0/4326/degF",
-    "param": "pressure_reduced_to_msl",
-    "chunks": [
-      "0.0.0",
-      "0.0.1",
-      "0.0.2",
-      "0.1.0",
-      "0.1.1",
-      "0.1.2",
-      "0.2.0",
-      "0.2.1",
-      "0.2.2",
-      "1.0.0",
-      "1.0.1",
-      "1.0.2",
-      "1.1.0",
-      "1.1.1",
-      "1.1.2"
-    ],
-    "collection": "aigfs0p25_v1p0_global_latlon",
     "instance": "2025-11-23T06:00Z",
     "zoom": 0,
     "unit": "degF"
-  },
-  {
-    "path": "/collections/aigfs0p25_v1p0_global_latlon/instances/2025-11-23T06:00Z/items/zarr/v_component_wind/0/4326/degF",
-    "param": "v_component_wind",
-    "chunks": [
-      "0.0.0",
-      "0.0.1",
-      "0.0.2",
-      "0.1.0",
-      "0.1.1",
-      "0.1.2",
-      "0.2.0",
-      "0.2.1",
-      "0.2.2",
-      "1.0.0",
-      "1.0.1",
-      "1.0.2",
-      "1.1.0",
-      "1.1.1",
-      "1.1.2"
-    ],
-    "collection": "aigfs0p25_v1p0_global_latlon",
-    "instance": "2025-11-23T06:00Z",
-    "zoom": 0,
-    "unit": "degF"
-  },
-  {
-    "path": "/collections/air_quality_alaska_polar_stereographic/instances/2025-11-06T03:00Z/items/zarr/smoke_01_hour_near_surface/0/4326",
-    "param": "smoke_01_hour_near_surface",
-    "chunks": [
-      "0.0.0",
-      "0.0.1",
-      "0.0.2",
-      "0.1.0",
-      "0.1.1",
-      "0.1.2",
-      "0.2.0",
-      "0.2.1",
-      "0.2.2",
-      "1.0.0",
-      "1.0.1",
-      "1.0.2",
-      "1.1.0",
-      "1.1.1",
-      "1.1.2"
-    ],
-    "collection": "air_quality_alaska_polar_stereographic",
-    "instance": "2025-11-06T03:00Z",
-    "zoom": 0,
-    "unit": ""
-  },
-  {
-    "path": "/collections/air_quality_alaska_polar_stereographic/instances/2025-11-06T03:00Z/items/zarr/smoke_01_hour_near_surface/4/4326",
-    "param": "smoke_01_hour_near_surface",
-    "chunks": [
-      "0.0.0",
-      "0.0.1",
-      "0.0.2",
-      "1.0.0",
-      "1.0.1",
-      "1.0.2",
-      "2.0.0",
-      "2.0.1",
-      "2.0.2"
-    ],
-    "collection": "air_quality_alaska_polar_stereographic",
-    "instance": "2025-11-06T03:00Z",
-    "zoom": 4,
-    "unit": ""
   },
   {
     "path": "/collections/air_quality_alaska_polar_stereographic/instances/2025-11-06T03:00Z/items/zarr/smoke_01_hour_column_integrated/0/4326",
@@ -188,8 +144,8 @@
     "unit": ""
   },
   {
-    "path": "/collections/air_quality_conus_lambert/instances/2025-11-06T03:00Z/items/zarr/smoke_01_hour_column_integrated/0/4326",
-    "param": "smoke_01_hour_column_integrated",
+    "path": "/collections/air_quality_alaska_polar_stereographic/instances/2025-11-06T03:00Z/items/zarr/smoke_01_hour_near_surface/0/4326",
+    "param": "smoke_01_hour_near_surface",
     "chunks": [
       "0.0.0",
       "0.0.1",
@@ -207,23 +163,26 @@
       "1.1.1",
       "1.1.2"
     ],
-    "collection": "air_quality_conus_lambert",
+    "collection": "air_quality_alaska_polar_stereographic",
     "instance": "2025-11-06T03:00Z",
     "zoom": 0,
     "unit": ""
   },
   {
-    "path": "/collections/air_quality_conus_lambert/instances/2025-11-06T03:00Z/items/zarr/smoke_01_hour_column_integrated/4/4326",
-    "param": "smoke_01_hour_column_integrated",
+    "path": "/collections/air_quality_alaska_polar_stereographic/instances/2025-11-06T03:00Z/items/zarr/smoke_01_hour_near_surface/4/4326",
+    "param": "smoke_01_hour_near_surface",
     "chunks": [
       "0.0.0",
       "0.0.1",
+      "0.0.2",
       "1.0.0",
       "1.0.1",
+      "1.0.2",
       "2.0.0",
-      "2.0.1"
+      "2.0.1",
+      "2.0.2"
     ],
-    "collection": "air_quality_conus_lambert",
+    "collection": "air_quality_alaska_polar_stereographic",
     "instance": "2025-11-06T03:00Z",
     "zoom": 4,
     "unit": ""
@@ -270,25 +229,44 @@
     "unit": ""
   },
   {
-    "path": "/collections/air_quality_hawaii_mercator/instances/2025-11-06T03:00Z/items/zarr/smoke_01_hour_near_surface/0/4326",
-    "param": "smoke_01_hour_near_surface",
+    "path": "/collections/air_quality_conus_lambert/instances/2025-11-06T03:00Z/items/zarr/smoke_01_hour_column_integrated/0/4326",
+    "param": "smoke_01_hour_column_integrated",
     "chunks": [
       "0.0.0",
       "0.0.1",
+      "0.0.2",
       "0.1.0",
       "0.1.1",
+      "0.1.2",
+      "0.2.0",
+      "0.2.1",
+      "0.2.2",
       "1.0.0",
       "1.0.1",
+      "1.0.2",
       "1.1.0",
       "1.1.1",
-      "2.0.0",
-      "2.0.1",
-      "2.1.0",
-      "2.1.1"
+      "1.1.2"
     ],
-    "collection": "air_quality_hawaii_mercator",
+    "collection": "air_quality_conus_lambert",
     "instance": "2025-11-06T03:00Z",
     "zoom": 0,
+    "unit": ""
+  },
+  {
+    "path": "/collections/air_quality_conus_lambert/instances/2025-11-06T03:00Z/items/zarr/smoke_01_hour_column_integrated/4/4326",
+    "param": "smoke_01_hour_column_integrated",
+    "chunks": [
+      "0.0.0",
+      "0.0.1",
+      "1.0.0",
+      "1.0.1",
+      "2.0.0",
+      "2.0.1"
+    ],
+    "collection": "air_quality_conus_lambert",
+    "instance": "2025-11-06T03:00Z",
+    "zoom": 4,
     "unit": ""
   },
   {
@@ -314,8 +292,30 @@
     "unit": ""
   },
   {
-    "path": "/collections/gefs0p25_v12p3_global_latlon/instances/2021-02-01T00:00Z/items/zarr/categorical_snow/0/4326/degF",
-    "param": "categorical_snow",
+    "path": "/collections/air_quality_hawaii_mercator/instances/2025-11-06T03:00Z/items/zarr/smoke_01_hour_near_surface/0/4326",
+    "param": "smoke_01_hour_near_surface",
+    "chunks": [
+      "0.0.0",
+      "0.0.1",
+      "0.1.0",
+      "0.1.1",
+      "1.0.0",
+      "1.0.1",
+      "1.1.0",
+      "1.1.1",
+      "2.0.0",
+      "2.0.1",
+      "2.1.0",
+      "2.1.1"
+    ],
+    "collection": "air_quality_hawaii_mercator",
+    "instance": "2025-11-06T03:00Z",
+    "zoom": 0,
+    "unit": ""
+  },
+  {
+    "path": "/collections/gefs0p25_v12p3_global_latlon/instances/2021-02-01T00:00Z/items/zarr/categorical_freezing_rain/0/4326/degF",
+    "param": "categorical_freezing_rain",
     "chunks": [
       "0.0.0.0",
       "0.0.0.1",
@@ -364,8 +364,8 @@
     "unit": "degF"
   },
   {
-    "path": "/collections/gefs0p25_v12p3_global_latlon/instances/2021-02-02T00:00Z/items/zarr/categorical_ice_pellets/0/4326/degF",
-    "param": "categorical_ice_pellets",
+    "path": "/collections/gefs0p25_v12p3_global_latlon/instances/2021-02-02T00:00Z/items/zarr/categorical_freezing_rain/0/4326/degF",
+    "param": "categorical_freezing_rain",
     "chunks": [
       "0.0.0.0",
       "0.0.0.1",
@@ -389,32 +389,7 @@
     "unit": "degF"
   },
   {
-    "path": "/collections/gefs0p25_v12p3_global_latlon/instances/2021-02-02T00:00Z/items/zarr/categorical_rain/0/4326/degF",
-    "param": "categorical_rain",
-    "chunks": [
-      "0.0.0.0",
-      "0.0.0.1",
-      "0.0.1.0",
-      "0.0.1.1",
-      "0.1.0.0",
-      "0.1.0.1",
-      "0.1.1.0",
-      "0.1.1.1",
-      "1.0.0.0",
-      "1.0.0.1",
-      "1.0.1.0",
-      "1.0.1.1",
-      "1.1.0.0",
-      "1.1.0.1",
-      "1.1.1.0"
-    ],
-    "collection": "gefs0p25_v12p3_global_latlon",
-    "instance": "2021-02-02T00:00Z",
-    "zoom": 0,
-    "unit": "degF"
-  },
-  {
-    "path": "/collections/gefs0p25_v12p3_global_latlon/instances/2021-02-03T00:00Z/items/zarr/categorical_snow/0/4326/degF",
+    "path": "/collections/gefs0p25_v12p3_global_latlon/instances/2021-02-02T00:00Z/items/zarr/categorical_snow/0/4326/degF",
     "param": "categorical_snow",
     "chunks": [
       "0.0.0.0",
@@ -434,13 +409,13 @@
       "1.1.1.0"
     ],
     "collection": "gefs0p25_v12p3_global_latlon",
-    "instance": "2021-02-03T00:00Z",
+    "instance": "2021-02-02T00:00Z",
     "zoom": 0,
     "unit": "degF"
   },
   {
-    "path": "/collections/gefs0p25_v12p3_global_latlon/instances/2021-02-03T00:00Z/items/zarr/convective_inhibition/0/4326/degF",
-    "param": "convective_inhibition",
+    "path": "/collections/gefs0p25_v12p3_global_latlon/instances/2021-02-03T00:00Z/items/zarr/convective_available_potential_energy/0/4326/degF",
+    "param": "convective_available_potential_energy",
     "chunks": [
       "0.0.0.0",
       "0.0.0.1",
@@ -464,8 +439,33 @@
     "unit": "degF"
   },
   {
-    "path": "/collections/gefs0p25_v12p3_global_latlon/instances/2021-02-04T00:00Z/items/zarr/categorical_freezing_rain/0/4326/degF",
-    "param": "categorical_freezing_rain",
+    "path": "/collections/gefs0p25_v12p3_global_latlon/instances/2021-02-03T00:00Z/items/zarr/dewpoint_temperature/0/4326/degF",
+    "param": "dewpoint_temperature",
+    "chunks": [
+      "0.0.0.0",
+      "0.0.0.1",
+      "0.0.1.0",
+      "0.0.1.1",
+      "0.1.0.0",
+      "0.1.0.1",
+      "0.1.1.0",
+      "0.1.1.1",
+      "1.0.0.0",
+      "1.0.0.1",
+      "1.0.1.0",
+      "1.0.1.1",
+      "1.1.0.0",
+      "1.1.0.1",
+      "1.1.1.0"
+    ],
+    "collection": "gefs0p25_v12p3_global_latlon",
+    "instance": "2021-02-03T00:00Z",
+    "zoom": 0,
+    "unit": "degF"
+  },
+  {
+    "path": "/collections/gefs0p25_v12p3_global_latlon/instances/2021-02-04T00:00Z/items/zarr/categorical_ice_pellets/0/4326/degF",
+    "param": "categorical_ice_pellets",
     "chunks": [
       "0.0.0.0",
       "0.0.0.1",
@@ -489,8 +489,8 @@
     "unit": "degF"
   },
   {
-    "path": "/collections/gefs0p25_v12p3_global_latlon/instances/2021-02-04T00:00Z/items/zarr/categorical_rain/0/4326/degF",
-    "param": "categorical_rain",
+    "path": "/collections/gefs0p25_v12p3_global_latlon/instances/2021-02-04T00:00Z/items/zarr/categorical_freezing_rain/0/4326/degF",
+    "param": "categorical_freezing_rain",
     "chunks": [
       "0.0.0.0",
       "0.0.0.1",
@@ -564,32 +564,32 @@
     "unit": "degF"
   },
   {
-    "path": "/collections/gfs0p25_v16p3_global_latlon/instances/2025-12-18T00:00Z/items/zarr/specific_humidity_specified_pressure_difference_from_ground_to_level/0/4326/kg kg-1",
-    "param": "specific_humidity_specified_pressure_difference_from_ground_to_level",
+    "path": "/collections/gfs0p25_v16p3_global_latlon/instances/2025-12-18T00:00Z/items/zarr/relative_humidity_isobaric_surface/0/4326/percent",
+    "param": "relative_humidity_isobaric_surface",
     "chunks": [
-      "0.0.0",
-      "0.0.1",
-      "0.0.2",
-      "0.1.0",
-      "0.1.1",
-      "0.1.2",
-      "0.2.0",
-      "0.2.1",
-      "0.2.2",
-      "1.0.0",
-      "1.0.1",
-      "1.0.2",
-      "1.1.0",
-      "1.1.1",
-      "1.1.2"
+      "0.0.0.0",
+      "0.0.0.1",
+      "0.0.1.0",
+      "0.0.1.1",
+      "0.1.0.0",
+      "0.1.0.1",
+      "0.1.1.0",
+      "0.1.1.1",
+      "1.0.0.0",
+      "1.0.0.1",
+      "1.0.1.0",
+      "1.0.1.1",
+      "1.1.0.0",
+      "1.1.0.1",
+      "1.1.1.0"
     ],
     "collection": "gfs0p25_v16p3_global_latlon",
     "instance": "2025-12-18T00:00Z",
     "zoom": 0,
-    "unit": "kg kg-1"
+    "unit": "percent"
   },
   {
-    "path": "/collections/gfs0p25_v16p3_global_latlon/instances/2025-12-18T00:00Z/items/zarr/specific_humidity_height_above_ground/0/4326/kg kg-1",
+    "path": "/collections/gfs0p25_v16p3_global_latlon/instances/2025-12-18T00:00Z/items/zarr/specific_humidity_height_above_ground/0/4326/percent",
     "param": "specific_humidity_height_above_ground",
     "chunks": [
       "0.0.0.0",
@@ -611,11 +611,11 @@
     "collection": "gfs0p25_v16p3_global_latlon",
     "instance": "2025-12-18T00:00Z",
     "zoom": 0,
-    "unit": "kg kg-1"
+    "unit": "percent"
   },
   {
-    "path": "/collections/gfs0p25_v17_global_latlon/instances/2025-12-16T00:00Z/items/zarr/apparent_temperature_height_above_ground/0/4326/degF",
-    "param": "apparent_temperature_height_above_ground",
+    "path": "/collections/gfs0p25_v17_global_latlon/instances/2025-12-16T00:00Z/items/zarr/pressure_convective_cloud_top_level/0/4326/degF",
+    "param": "pressure_convective_cloud_top_level",
     "chunks": [
       "0.0.0",
       "0.0.1",
@@ -664,8 +664,8 @@
     "unit": "degF"
   },
   {
-    "path": "/collections/gfs0p25_v17_global_latlon/instances/2025-12-17T00:00Z/items/zarr/categorical_snow/0/4326/degF",
-    "param": "categorical_snow",
+    "path": "/collections/gfs0p25_v17_global_latlon/instances/2025-12-17T00:00Z/items/zarr/categorical_freezing_rain/0/4326/degF",
+    "param": "categorical_freezing_rain",
     "chunks": [
       "0.0.0",
       "0.0.1",
@@ -689,8 +689,8 @@
     "unit": "degF"
   },
   {
-    "path": "/collections/gfs0p25_v17_global_latlon/instances/2025-12-17T00:00Z/items/zarr/categorical_ice_pellets/0/4326/degF",
-    "param": "categorical_ice_pellets",
+    "path": "/collections/gfs0p25_v17_global_latlon/instances/2025-12-17T00:00Z/items/zarr/categorical_snow/0/4326/degF",
+    "param": "categorical_snow",
     "chunks": [
       "0.0.0",
       "0.0.1",
@@ -750,24 +750,17 @@
     "unit": "degF"
   },
   {
-    "path": "/collections/nbm_v5p0_conus_lambert/instances/2025-11-18T00:00Z/items/zarr/cloud_base/0/4326/degF",
-    "param": "cloud_base",
+    "path": "/collections/nbm_v5p0_conus_lambert/instances/2025-11-18T00:00Z/items/zarr/conditional_probability_of_precipitation_type/0/4326/degF",
+    "param": "conditional_probability_of_precipitation_type",
     "chunks": [
-      "0.0.0",
-      "0.0.1",
-      "0.0.2",
-      "0.1.0",
-      "0.1.1",
-      "0.1.2",
-      "0.2.0",
-      "0.2.1",
-      "0.2.2",
-      "1.0.0",
-      "1.0.1",
-      "1.0.2",
-      "1.1.0",
-      "1.1.1",
-      "1.1.2"
+      "0.0.0.0",
+      "0.0.0.1",
+      "0.0.1.0",
+      "0.0.1.1",
+      "1.0.0.0",
+      "1.0.0.1",
+      "1.0.1.0",
+      "1.0.1.1"
     ],
     "collection": "nbm_v5p0_conus_lambert",
     "instance": "2025-11-18T00:00Z",
@@ -775,69 +768,21 @@
     "unit": "degF"
   },
   {
-    "path": "/collections/nbm_v5p0_conus_lambert/instances/2025-11-18T00:00Z/items/zarr/cloud_base/4/4326/degF",
-    "param": "cloud_base",
+    "path": "/collections/nbm_v5p0_conus_lambert/instances/2025-11-18T00:00Z/items/zarr/conditional_probability_of_precipitation_type/4/4326/degF",
+    "param": "conditional_probability_of_precipitation_type",
     "chunks": [
-      "0.0.0",
-      "0.0.1",
-      "0.0.2",
-      "0.1.0",
-      "0.1.1",
-      "0.1.2",
-      "1.0.0",
-      "1.0.1",
-      "1.0.2",
-      "1.1.0",
-      "1.1.1",
-      "1.1.2",
-      "2.0.0",
-      "2.0.1",
-      "2.0.2"
+      "0.0.0.0",
+      "0.0.0.1",
+      "0.0.1.0",
+      "0.0.1.1",
+      "1.0.0.0",
+      "1.0.0.1",
+      "1.0.1.0",
+      "1.0.1.1"
     ],
     "collection": "nbm_v5p0_conus_lambert",
     "instance": "2025-11-18T00:00Z",
     "zoom": 4,
-    "unit": "degF"
-  },
-  {
-    "path": "/collections/rtma2p5_v2p10_conus_lambert/instances/2021-01-01T00:00Z/items/zarr/dew_point_height_above_ground/0/4326/degF",
-    "param": "dew_point_height_above_ground",
-    "chunks": [
-      "0.0.0",
-      "0.0.1",
-      "0.0.2",
-      "0.1.0",
-      "0.1.1",
-      "0.1.2",
-      "1.0.0",
-      "1.0.1",
-      "1.0.2",
-      "1.1.0",
-      "1.1.1",
-      "1.1.2",
-      "2.0.0",
-      "2.0.1",
-      "2.0.2"
-    ],
-    "collection": "rtma2p5_v2p10_conus_lambert",
-    "instance": "2021-01-01T00:00Z",
-    "zoom": 0,
-    "unit": "degF"
-  },
-  {
-    "path": "/collections/rtma2p5_v2p10_conus_lambert/instances/2021-01-01T00:00Z/items/zarr/dew_point_height_above_ground/2/4326/degF",
-    "param": "dew_point_height_above_ground",
-    "chunks": [
-      "0.0.0",
-      "0.0.1",
-      "1.0.0",
-      "1.0.1",
-      "2.0.0",
-      "2.0.1"
-    ],
-    "collection": "rtma2p5_v2p10_conus_lambert",
-    "instance": "2021-01-01T00:00Z",
-    "zoom": 2,
     "unit": "degF"
   },
   {
@@ -882,7 +827,7 @@
     "unit": "degF"
   },
   {
-    "path": "/collections/rtma2p5_v2p10_conus_lambert/instances/2021-02-01T00:00Z/items/zarr/total_cloud_cover/0/4326/degF",
+    "path": "/collections/rtma2p5_v2p10_conus_lambert/instances/2021-01-01T00:00Z/items/zarr/total_cloud_cover/0/4326/degF",
     "param": "total_cloud_cover",
     "chunks": [
       "0.0.0",
@@ -902,12 +847,12 @@
       "2.0.2"
     ],
     "collection": "rtma2p5_v2p10_conus_lambert",
-    "instance": "2021-02-01T00:00Z",
+    "instance": "2021-01-01T00:00Z",
     "zoom": 0,
     "unit": "degF"
   },
   {
-    "path": "/collections/rtma2p5_v2p10_conus_lambert/instances/2021-02-01T00:00Z/items/zarr/total_cloud_cover/2/4326/degF",
+    "path": "/collections/rtma2p5_v2p10_conus_lambert/instances/2021-01-01T00:00Z/items/zarr/total_cloud_cover/2/4326/degF",
     "param": "total_cloud_cover",
     "chunks": [
       "0.0.0",
@@ -918,13 +863,13 @@
       "2.0.1"
     ],
     "collection": "rtma2p5_v2p10_conus_lambert",
-    "instance": "2021-02-01T00:00Z",
+    "instance": "2021-01-01T00:00Z",
     "zoom": 2,
     "unit": "degF"
   },
   {
-    "path": "/collections/rtma2p5_v2p10_conus_lambert/instances/2021-02-01T00:00Z/items/zarr/dew_point_height_above_ground/0/4326/degF",
-    "param": "dew_point_height_above_ground",
+    "path": "/collections/rtma2p5_v2p10_conus_lambert/instances/2021-02-01T00:00Z/items/zarr/height_ground_or_water_surface/0/4326/degF",
+    "param": "height_ground_or_water_surface",
     "chunks": [
       "0.0.0",
       "0.0.1",
@@ -948,8 +893,8 @@
     "unit": "degF"
   },
   {
-    "path": "/collections/rtma2p5_v2p10_conus_lambert/instances/2021-02-01T00:00Z/items/zarr/dew_point_height_above_ground/2/4326/degF",
-    "param": "dew_point_height_above_ground",
+    "path": "/collections/rtma2p5_v2p10_conus_lambert/instances/2021-02-01T00:00Z/items/zarr/height_ground_or_water_surface/2/4326/degF",
+    "param": "height_ground_or_water_surface",
     "chunks": [
       "0.0.0",
       "0.0.1",
@@ -964,7 +909,7 @@
     "unit": "degF"
   },
   {
-    "path": "/collections/rtma2p5_v2p10_conus_lambert/instances/2021-03-01T00:00Z/items/zarr/pressure_ground_or_water_surface/0/4326/degF",
+    "path": "/collections/rtma2p5_v2p10_conus_lambert/instances/2021-02-01T00:00Z/items/zarr/pressure_ground_or_water_surface/0/4326/degF",
     "param": "pressure_ground_or_water_surface",
     "chunks": [
       "0.0.0",
@@ -984,12 +929,12 @@
       "2.0.2"
     ],
     "collection": "rtma2p5_v2p10_conus_lambert",
-    "instance": "2021-03-01T00:00Z",
+    "instance": "2021-02-01T00:00Z",
     "zoom": 0,
     "unit": "degF"
   },
   {
-    "path": "/collections/rtma2p5_v2p10_conus_lambert/instances/2021-03-01T00:00Z/items/zarr/pressure_ground_or_water_surface/2/4326/degF",
+    "path": "/collections/rtma2p5_v2p10_conus_lambert/instances/2021-02-01T00:00Z/items/zarr/pressure_ground_or_water_surface/2/4326/degF",
     "param": "pressure_ground_or_water_surface",
     "chunks": [
       "0.0.0",
@@ -1000,13 +945,13 @@
       "2.0.1"
     ],
     "collection": "rtma2p5_v2p10_conus_lambert",
-    "instance": "2021-03-01T00:00Z",
+    "instance": "2021-02-01T00:00Z",
     "zoom": 2,
     "unit": "degF"
   },
   {
-    "path": "/collections/rtma2p5_v2p10_conus_lambert/instances/2021-03-01T00:00Z/items/zarr/dew_point_height_above_ground/0/4326/degF",
-    "param": "dew_point_height_above_ground",
+    "path": "/collections/rtma2p5_v2p10_conus_lambert/instances/2021-03-01T00:00Z/items/zarr/specific_humidity_height_above_ground/0/4326/degF",
+    "param": "specific_humidity_height_above_ground",
     "chunks": [
       "0.0.0",
       "0.0.1",
@@ -1030,8 +975,8 @@
     "unit": "degF"
   },
   {
-    "path": "/collections/rtma2p5_v2p10_conus_lambert/instances/2021-03-01T00:00Z/items/zarr/dew_point_height_above_ground/2/4326/degF",
-    "param": "dew_point_height_above_ground",
+    "path": "/collections/rtma2p5_v2p10_conus_lambert/instances/2021-03-01T00:00Z/items/zarr/specific_humidity_height_above_ground/2/4326/degF",
+    "param": "specific_humidity_height_above_ground",
     "chunks": [
       "0.0.0",
       "0.0.1",
@@ -1046,7 +991,253 @@
     "unit": "degF"
   },
   {
-    "path": "/collections/rtma2p5_v2p10_conus_lambert/instances/2021-04-01T00:00Z/items/zarr/height_cloud_ceiling/0/4326/degF",
+    "path": "/collections/rtma2p5_v2p10_conus_lambert/instances/2021-03-01T00:00Z/items/zarr/total_cloud_cover/0/4326/degF",
+    "param": "total_cloud_cover",
+    "chunks": [
+      "0.0.0",
+      "0.0.1",
+      "0.0.2",
+      "0.1.0",
+      "0.1.1",
+      "0.1.2",
+      "1.0.0",
+      "1.0.1",
+      "1.0.2",
+      "1.1.0",
+      "1.1.1",
+      "1.1.2",
+      "2.0.0",
+      "2.0.1",
+      "2.0.2"
+    ],
+    "collection": "rtma2p5_v2p10_conus_lambert",
+    "instance": "2021-03-01T00:00Z",
+    "zoom": 0,
+    "unit": "degF"
+  },
+  {
+    "path": "/collections/rtma2p5_v2p10_conus_lambert/instances/2021-03-01T00:00Z/items/zarr/total_cloud_cover/2/4326/degF",
+    "param": "total_cloud_cover",
+    "chunks": [
+      "0.0.0",
+      "0.0.1",
+      "1.0.0",
+      "1.0.1",
+      "2.0.0",
+      "2.0.1"
+    ],
+    "collection": "rtma2p5_v2p10_conus_lambert",
+    "instance": "2021-03-01T00:00Z",
+    "zoom": 2,
+    "unit": "degF"
+  },
+  {
+    "path": "/collections/rtma2p5_v2p10_conus_lambert/instances/2021-04-01T00:00Z/items/zarr/height_ground_or_water_surface/0/4326/degF",
+    "param": "height_ground_or_water_surface",
+    "chunks": [
+      "0.0.0",
+      "0.0.1",
+      "0.0.2",
+      "0.1.0",
+      "0.1.1",
+      "0.1.2",
+      "1.0.0",
+      "1.0.1",
+      "1.0.2",
+      "1.1.0",
+      "1.1.1",
+      "1.1.2",
+      "2.0.0",
+      "2.0.1",
+      "2.0.2"
+    ],
+    "collection": "rtma2p5_v2p10_conus_lambert",
+    "instance": "2021-04-01T00:00Z",
+    "zoom": 0,
+    "unit": "degF"
+  },
+  {
+    "path": "/collections/rtma2p5_v2p10_conus_lambert/instances/2021-04-01T00:00Z/items/zarr/height_ground_or_water_surface/2/4326/degF",
+    "param": "height_ground_or_water_surface",
+    "chunks": [
+      "0.0.0",
+      "0.0.1",
+      "1.0.0",
+      "1.0.1",
+      "2.0.0",
+      "2.0.1"
+    ],
+    "collection": "rtma2p5_v2p10_conus_lambert",
+    "instance": "2021-04-01T00:00Z",
+    "zoom": 2,
+    "unit": "degF"
+  },
+  {
+    "path": "/collections/rtma2p5_v2p10_conus_lambert/instances/2021-04-01T00:00Z/items/zarr/pressure_ground_or_water_surface/0/4326/degF",
+    "param": "pressure_ground_or_water_surface",
+    "chunks": [
+      "0.0.0",
+      "0.0.1",
+      "0.0.2",
+      "0.1.0",
+      "0.1.1",
+      "0.1.2",
+      "1.0.0",
+      "1.0.1",
+      "1.0.2",
+      "1.1.0",
+      "1.1.1",
+      "1.1.2",
+      "2.0.0",
+      "2.0.1",
+      "2.0.2"
+    ],
+    "collection": "rtma2p5_v2p10_conus_lambert",
+    "instance": "2021-04-01T00:00Z",
+    "zoom": 0,
+    "unit": "degF"
+  },
+  {
+    "path": "/collections/rtma2p5_v2p10_conus_lambert/instances/2021-04-01T00:00Z/items/zarr/pressure_ground_or_water_surface/2/4326/degF",
+    "param": "pressure_ground_or_water_surface",
+    "chunks": [
+      "0.0.0",
+      "0.0.1",
+      "1.0.0",
+      "1.0.1",
+      "2.0.0",
+      "2.0.1"
+    ],
+    "collection": "rtma2p5_v2p10_conus_lambert",
+    "instance": "2021-04-01T00:00Z",
+    "zoom": 2,
+    "unit": "degF"
+  },
+  {
+    "path": "/collections/rtma2p5_v2p10_conus_lambert/instances/2021-05-01T00:00Z/items/zarr/specific_humidity_height_above_ground/0/4326/degF",
+    "param": "specific_humidity_height_above_ground",
+    "chunks": [
+      "0.0.0",
+      "0.0.1",
+      "0.0.2",
+      "0.1.0",
+      "0.1.1",
+      "0.1.2",
+      "1.0.0",
+      "1.0.1",
+      "1.0.2",
+      "1.1.0",
+      "1.1.1",
+      "1.1.2",
+      "2.0.0",
+      "2.0.1",
+      "2.0.2"
+    ],
+    "collection": "rtma2p5_v2p10_conus_lambert",
+    "instance": "2021-05-01T00:00Z",
+    "zoom": 0,
+    "unit": "degF"
+  },
+  {
+    "path": "/collections/rtma2p5_v2p10_conus_lambert/instances/2021-05-01T00:00Z/items/zarr/specific_humidity_height_above_ground/2/4326/degF",
+    "param": "specific_humidity_height_above_ground",
+    "chunks": [
+      "0.0.0",
+      "0.0.1",
+      "1.0.0",
+      "1.0.1",
+      "2.0.0",
+      "2.0.1"
+    ],
+    "collection": "rtma2p5_v2p10_conus_lambert",
+    "instance": "2021-05-01T00:00Z",
+    "zoom": 2,
+    "unit": "degF"
+  },
+  {
+    "path": "/collections/rtma2p5_v2p10_conus_lambert/instances/2021-05-01T00:00Z/items/zarr/wind_direction_height_above_ground/0/4326/degF",
+    "param": "wind_direction_height_above_ground",
+    "chunks": [
+      "0.0.0",
+      "0.0.1",
+      "0.0.2",
+      "0.1.0",
+      "0.1.1",
+      "0.1.2",
+      "1.0.0",
+      "1.0.1",
+      "1.0.2",
+      "1.1.0",
+      "1.1.1",
+      "1.1.2",
+      "2.0.0",
+      "2.0.1",
+      "2.0.2"
+    ],
+    "collection": "rtma2p5_v2p10_conus_lambert",
+    "instance": "2021-05-01T00:00Z",
+    "zoom": 0,
+    "unit": "degF"
+  },
+  {
+    "path": "/collections/rtma2p5_v2p10_conus_lambert/instances/2021-05-01T00:00Z/items/zarr/wind_direction_height_above_ground/2/4326/degF",
+    "param": "wind_direction_height_above_ground",
+    "chunks": [
+      "0.0.0",
+      "0.0.1",
+      "1.0.0",
+      "1.0.1",
+      "2.0.0",
+      "2.0.1"
+    ],
+    "collection": "rtma2p5_v2p10_conus_lambert",
+    "instance": "2021-05-01T00:00Z",
+    "zoom": 2,
+    "unit": "degF"
+  },
+  {
+    "path": "/collections/urma2p5_v2p10_conus_lambert/instances/2025-12-01T00:00Z/items/zarr/visibility/0/4326/degF",
+    "param": "visibility",
+    "chunks": [
+      "0.0.0",
+      "0.0.1",
+      "0.0.2",
+      "0.1.0",
+      "0.1.1",
+      "0.1.2",
+      "1.0.0",
+      "1.0.1",
+      "1.0.2",
+      "1.1.0",
+      "1.1.1",
+      "1.1.2",
+      "2.0.0",
+      "2.0.1",
+      "2.0.2"
+    ],
+    "collection": "urma2p5_v2p10_conus_lambert",
+    "instance": "2025-12-01T00:00Z",
+    "zoom": 0,
+    "unit": "degF"
+  },
+  {
+    "path": "/collections/urma2p5_v2p10_conus_lambert/instances/2025-12-01T00:00Z/items/zarr/visibility/2/4326/degF",
+    "param": "visibility",
+    "chunks": [
+      "0.0.0",
+      "0.0.1",
+      "1.0.0",
+      "1.0.1",
+      "2.0.0",
+      "2.0.1"
+    ],
+    "collection": "urma2p5_v2p10_conus_lambert",
+    "instance": "2025-12-01T00:00Z",
+    "zoom": 2,
+    "unit": "degF"
+  },
+  {
+    "path": "/collections/urma2p5_v2p10_conus_lambert/instances/2025-12-01T00:00Z/items/zarr/height_cloud_ceiling/0/4326/degF",
     "param": "height_cloud_ceiling",
     "chunks": [
       "0.0.0",
@@ -1065,219 +1256,14 @@
       "2.0.1",
       "2.0.2"
     ],
-    "collection": "rtma2p5_v2p10_conus_lambert",
-    "instance": "2021-04-01T00:00Z",
+    "collection": "urma2p5_v2p10_conus_lambert",
+    "instance": "2025-12-01T00:00Z",
     "zoom": 0,
     "unit": "degF"
   },
   {
-    "path": "/collections/rtma2p5_v2p10_conus_lambert/instances/2021-04-01T00:00Z/items/zarr/height_cloud_ceiling/2/4326/degF",
+    "path": "/collections/urma2p5_v2p10_conus_lambert/instances/2025-12-01T00:00Z/items/zarr/height_cloud_ceiling/2/4326/degF",
     "param": "height_cloud_ceiling",
-    "chunks": [
-      "0.0.0",
-      "0.0.1",
-      "1.0.0",
-      "1.0.1",
-      "2.0.0",
-      "2.0.1"
-    ],
-    "collection": "rtma2p5_v2p10_conus_lambert",
-    "instance": "2021-04-01T00:00Z",
-    "zoom": 2,
-    "unit": "degF"
-  },
-  {
-    "path": "/collections/rtma2p5_v2p10_conus_lambert/instances/2021-04-01T00:00Z/items/zarr/dew_point_height_above_ground/0/4326/degF",
-    "param": "dew_point_height_above_ground",
-    "chunks": [
-      "0.0.0",
-      "0.0.1",
-      "0.0.2",
-      "0.1.0",
-      "0.1.1",
-      "0.1.2",
-      "1.0.0",
-      "1.0.1",
-      "1.0.2",
-      "1.1.0",
-      "1.1.1",
-      "1.1.2",
-      "2.0.0",
-      "2.0.1",
-      "2.0.2"
-    ],
-    "collection": "rtma2p5_v2p10_conus_lambert",
-    "instance": "2021-04-01T00:00Z",
-    "zoom": 0,
-    "unit": "degF"
-  },
-  {
-    "path": "/collections/rtma2p5_v2p10_conus_lambert/instances/2021-04-01T00:00Z/items/zarr/dew_point_height_above_ground/2/4326/degF",
-    "param": "dew_point_height_above_ground",
-    "chunks": [
-      "0.0.0",
-      "0.0.1",
-      "1.0.0",
-      "1.0.1",
-      "2.0.0",
-      "2.0.1"
-    ],
-    "collection": "rtma2p5_v2p10_conus_lambert",
-    "instance": "2021-04-01T00:00Z",
-    "zoom": 2,
-    "unit": "degF"
-  },
-  {
-    "path": "/collections/rtma2p5_v2p10_conus_lambert/instances/2021-05-01T00:00Z/items/zarr/dew_point_height_above_ground/0/4326/degF",
-    "param": "dew_point_height_above_ground",
-    "chunks": [
-      "0.0.0",
-      "0.0.1",
-      "0.0.2",
-      "0.1.0",
-      "0.1.1",
-      "0.1.2",
-      "1.0.0",
-      "1.0.1",
-      "1.0.2",
-      "1.1.0",
-      "1.1.1",
-      "1.1.2",
-      "2.0.0",
-      "2.0.1",
-      "2.0.2"
-    ],
-    "collection": "rtma2p5_v2p10_conus_lambert",
-    "instance": "2021-05-01T00:00Z",
-    "zoom": 0,
-    "unit": "degF"
-  },
-  {
-    "path": "/collections/rtma2p5_v2p10_conus_lambert/instances/2021-05-01T00:00Z/items/zarr/dew_point_height_above_ground/2/4326/degF",
-    "param": "dew_point_height_above_ground",
-    "chunks": [
-      "0.0.0",
-      "0.0.1",
-      "1.0.0",
-      "1.0.1",
-      "2.0.0",
-      "2.0.1"
-    ],
-    "collection": "rtma2p5_v2p10_conus_lambert",
-    "instance": "2021-05-01T00:00Z",
-    "zoom": 2,
-    "unit": "degF"
-  },
-  {
-    "path": "/collections/rtma2p5_v2p10_conus_lambert/instances/2021-05-01T00:00Z/items/zarr/temperature_height_above_ground/0/4326/degF",
-    "param": "temperature_height_above_ground",
-    "chunks": [
-      "0.0.0",
-      "0.0.1",
-      "0.0.2",
-      "0.1.0",
-      "0.1.1",
-      "0.1.2",
-      "1.0.0",
-      "1.0.1",
-      "1.0.2",
-      "1.1.0",
-      "1.1.1",
-      "1.1.2",
-      "2.0.0",
-      "2.0.1",
-      "2.0.2"
-    ],
-    "collection": "rtma2p5_v2p10_conus_lambert",
-    "instance": "2021-05-01T00:00Z",
-    "zoom": 0,
-    "unit": "degF"
-  },
-  {
-    "path": "/collections/rtma2p5_v2p10_conus_lambert/instances/2021-05-01T00:00Z/items/zarr/temperature_height_above_ground/2/4326/degF",
-    "param": "temperature_height_above_ground",
-    "chunks": [
-      "0.0.0",
-      "0.0.1",
-      "1.0.0",
-      "1.0.1",
-      "2.0.0",
-      "2.0.1"
-    ],
-    "collection": "rtma2p5_v2p10_conus_lambert",
-    "instance": "2021-05-01T00:00Z",
-    "zoom": 2,
-    "unit": "degF"
-  },
-  {
-    "path": "/collections/urma2p5_v2p10_conus_lambert/instances/2025-12-01T00:00Z/items/zarr/pressure_ground_or_water_surface/0/4326/degF",
-    "param": "pressure_ground_or_water_surface",
-    "chunks": [
-      "0.0.0",
-      "0.0.1",
-      "0.0.2",
-      "0.1.0",
-      "0.1.1",
-      "0.1.2",
-      "1.0.0",
-      "1.0.1",
-      "1.0.2",
-      "1.1.0",
-      "1.1.1",
-      "1.1.2",
-      "2.0.0",
-      "2.0.1",
-      "2.0.2"
-    ],
-    "collection": "urma2p5_v2p10_conus_lambert",
-    "instance": "2025-12-01T00:00Z",
-    "zoom": 0,
-    "unit": "degF"
-  },
-  {
-    "path": "/collections/urma2p5_v2p10_conus_lambert/instances/2025-12-01T00:00Z/items/zarr/pressure_ground_or_water_surface/2/4326/degF",
-    "param": "pressure_ground_or_water_surface",
-    "chunks": [
-      "0.0.0",
-      "0.0.1",
-      "1.0.0",
-      "1.0.1",
-      "2.0.0",
-      "2.0.1"
-    ],
-    "collection": "urma2p5_v2p10_conus_lambert",
-    "instance": "2025-12-01T00:00Z",
-    "zoom": 2,
-    "unit": "degF"
-  },
-  {
-    "path": "/collections/urma2p5_v2p10_conus_lambert/instances/2025-12-01T00:00Z/items/zarr/total_precipitation_1h/0/4326/degF",
-    "param": "total_precipitation_1h",
-    "chunks": [
-      "0.0.0",
-      "0.0.1",
-      "0.0.2",
-      "0.1.0",
-      "0.1.1",
-      "0.1.2",
-      "1.0.0",
-      "1.0.1",
-      "1.0.2",
-      "1.1.0",
-      "1.1.1",
-      "1.1.2",
-      "2.0.0",
-      "2.0.1",
-      "2.0.2"
-    ],
-    "collection": "urma2p5_v2p10_conus_lambert",
-    "instance": "2025-12-01T00:00Z",
-    "zoom": 0,
-    "unit": "degF"
-  },
-  {
-    "path": "/collections/urma2p5_v2p10_conus_lambert/instances/2025-12-01T00:00Z/items/zarr/total_precipitation_1h/2/4326/degF",
-    "param": "total_precipitation_1h",
     "chunks": [
       "0.0.0",
       "0.0.1",
