@@ -1,0 +1,66 @@
+h1. EDR API Performance Testing Overview
+
+h2. Objective
+
+Determine which EC2 instance type best handles the EDR API production workload to inform infrastructure decisions. Three configurations are tested:
+
+| Target | Instance | Endpoint |
+| Production baseline | m5n.4xlarge | @:443@ |
+| Memory-optimized | m8i.4xlarge | @:8443@ |
+| Compute-optimized | c8i.4xlarge | @:9443@ |
+
+h2. Use Case
+
+When new model data arrives (hourly), NWSViz visualization clients simultaneously request zarr chunks for the new instance — all cache misses hitting S3. Concurrently, batch users make programmatic requests that are also cache misses. As Redis warms up over the following minutes, backend load decreases. The test simulates this exact pattern.
+
+h2. Testing Approach
+
+*Tool:* Locust (Python), run from @205.156.8.80@
+
+*User types:*
+* @VisualizationUser@ (70%) — simulates NWSViz map clients. Picks a collection/instance, requests spatially adjacent zarr chunks in viewport-sized bursts scaled by zoom level. Pauses between bursts to simulate user interaction. Occasionally switches to a new instance triggering a new cold cache burst.
+* @BatchUser@ (30%) — simulates programmatic clients. Fully randomized collection/instance/chunk requests with no wait time. Always cache misses.
+
+*Load shape (@CacheWarmingShape@):*
+# Burst to 500 users over 5 minutes — cold cache, all S3 origin hits
+# Decay to 50 users over 25 minutes — Redis warming, load decreasing
+# Total duration ~30 minutes
+
+*Cache misses guaranteed by:*
+* All collections, instances, parameters, zoom levels, and chunk coordinates discovered dynamically from the live API at test startup — nothing hardcoded
+* Redis flushed manually before each test run (operator confirms via prompt)
+* @VisualizationUser@ and @BatchUser@ randomize instance selection so the same chunk is unlikely to be requested twice
+
+h2. Metrics Captured
+
+h3. Locust (client-side)
+* Total requests and failure rate
+* Requests/s throughput
+* Response time: p50, p95, p99, max, avg
+
+h3. Prometheus (server-side, scoped to test time window)
+* Zarr chunk request rate per deployment
+* Zarr latency: p50, p95, p99
+* 429 rate limit hits/s
+* 500 error rate/s
+* Node CPU utilization
+* Node memory usage
+* Network I/O (receive/transmit)
+
+h2. Reporting
+
+After each test run, @generate_report.py@ queries Prometheus for the exact test time window from the Locust stats history and combines both data sources into three output files:
+
+* @load_test_report_{target}_{date}.html@ — full report with tables
+* @load_test_report_{target}_{date}.md@ — markdown for GitHub
+* @load_test_report_{target}_{date}.textile@ — for Redmine tickets
+
+Run all three targets to get comparable reports:
+
+<pre>
+./run_all.sh production
+./run_all.sh memory
+./run_all.sh compute
+</pre>
+
+Results are committed to @ShaneMill1.github.io/NWSVIZ_Load_Testing_Locust_Reworked/@.

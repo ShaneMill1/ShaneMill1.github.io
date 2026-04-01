@@ -1,0 +1,25 @@
+Method,Name,Error,Occurrences
+GET,/collections/{c}/instances/{i}/items/zarr/{p}/zoom4/chunk,HTTPError('404 Client Error: Not Found for url: /collections/{c}/instances/{i}/items/zarr/{p}/zoom4/chunk'),1512
+GET,/collections/{c}/instances/{i}/items/zarr/.zmetadata,HTTPError('502 Server Error: Bad Gateway for url: /collections/{c}/instances/{i}/items/zarr/.zmetadata'),704
+GET,/collections/{c}/instances/{i}/items/zarr/{p}/zoom2/chunk,HTTPError('502 Server Error: Bad Gateway for url: /collections/{c}/instances/{i}/items/zarr/{p}/zoom2/chunk'),81
+GET,/collections/{c}/instances/{i}/items/zarr/{p}/zoom8/chunk,HTTPError('500 Server Error: Internal Server Error for url: /collections/{c}/instances/{i}/items/zarr/{p}/zoom8/chunk'),1
+GET,/collections/{c}/instances/{i}/items/zarr/{p}/zoom1/chunk,HTTPError('502 Server Error: Bad Gateway for url: /collections/{c}/instances/{i}/items/zarr/{p}/zoom1/chunk'),2077
+GET,/collections/{c}/instances/{i}/items/zarr/{p}/zoom1/chunk,HTTPError('404 Client Error: Not Found for url: /collections/{c}/instances/{i}/items/zarr/{p}/zoom1/chunk'),29522
+GET,/collections/{c}/instances/{i}/items/zarr/{p}/chunk,HTTPError('404 Client Error: Not Found for url: /collections/{c}/instances/{i}/items/zarr/{p}/chunk'),11641
+GET,/collections/{c}/instances/{i}/items/zarr/{p}/zoom0/chunk,HTTPError('404 Client Error: Not Found for url: /collections/{c}/instances/{i}/items/zarr/{p}/zoom0/chunk'),3390
+GET,/collections/{c}/instances/{i}/items/zarr/{p}/chunk,HTTPError('500 Server Error: Internal Server Error for url: /collections/{c}/instances/{i}/items/zarr/{p}/chunk'),2
+GET,/collections/{c}/instances/{i}/items/zarr/{p}/chunk,HTTPError('502 Server Error: Bad Gateway for url: /collections/{c}/instances/{i}/items/zarr/{p}/chunk'),1045
+GET,/collections/{c}/instances/{i}/items/zarr/.zmetadata,HTTPError('404 Client Error: Not Found for url: /collections/{c}/instances/{i}/items/zarr/.zmetadata'),20590
+GET,/collections/{c}/instances/{i}/items/zarr/{p}/zoom8/chunk,HTTPError('502 Server Error: Bad Gateway for url: /collections/{c}/instances/{i}/items/zarr/{p}/zoom8/chunk'),744
+GET,/collections/{c}/instances/{i}/items/zarr/{p}/zoom8/chunk,HTTPError('404 Client Error: Not Found for url: /collections/{c}/instances/{i}/items/zarr/{p}/zoom8/chunk'),662
+GET,/collections/{c}/instances/{i}/items/zarr/{p}/zoom2/chunk,HTTPError('404 Client Error: Not Found for url: /collections/{c}/instances/{i}/items/zarr/{p}/zoom2/chunk'),379
+GET,/collections/{c}/instances/{i}/items/zarr/{p}/zoom0/chunk,HTTPError('503 Server Error: Service Temporarily Unavailable for url: /collections/{c}/instances/{i}/items/zarr/{p}/zoom0/chunk'),2868
+GET,/collections/{c}/instances/{i}/items/zarr/.zmetadata,HTTPError('503 Server Error: Service Temporarily Unavailable for url: /collections/{c}/instances/{i}/items/zarr/.zmetadata'),10715
+GET,/collections/{c}/instances/{i}/items/zarr/{p}/chunk,HTTPError('503 Server Error: Service Temporarily Unavailable for url: /collections/{c}/instances/{i}/items/zarr/{p}/chunk'),15747
+GET,/collections/{c}/instances/{i}/items/zarr/{p}/zoom8/chunk,HTTPError('503 Server Error: Service Temporarily Unavailable for url: /collections/{c}/instances/{i}/items/zarr/{p}/zoom8/chunk'),12552
+GET,/collections/{c}/instances/{i}/items/zarr/{p}/zoom4/chunk,HTTPError('503 Server Error: Service Temporarily Unavailable for url: /collections/{c}/instances/{i}/items/zarr/{p}/zoom4/chunk'),7952
+GET,/collections/{c}/instances/{i}/items/zarr/{p}/zoom2/chunk,HTTPError('503 Server Error: Service Temporarily Unavailable for url: /collections/{c}/instances/{i}/items/zarr/{p}/zoom2/chunk'),1294
+GET,/collections/{c}/instances/{i}/items/zarr/{p}/zoom0/chunk,HTTPError('502 Server Error: Bad Gateway for url: /collections/{c}/instances/{i}/items/zarr/{p}/zoom0/chunk'),246
+GET,/collections/{c}/instances/{i}/items/zarr/{p}/zoom1/chunk,HTTPError('503 Server Error: Service Temporarily Unavailable for url: /collections/{c}/instances/{i}/items/zarr/{p}/zoom1/chunk'),23287
+GET,/collections/{c}/instances/{i}/items/zarr/{p}/zoom4/chunk,HTTPError('502 Server Error: Bad Gateway for url: /collections/{c}/instances/{i}/items/zarr/{p}/zoom4/chunk'),468
+GET,/collections/{c}/instances/{i}/items/zarr/{p}/zoom4/chunk,"ChunkedEncodingError(ProtocolError('Connection broken: IncompleteRead(0 bytes read, 546475 more expected)', IncompleteRead(0 bytes read, 546475 more expected)))",1
