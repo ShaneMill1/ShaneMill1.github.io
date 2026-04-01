@@ -1,0 +1,2 @@
+Method,Name,Error,Occurrences
+GET,/collections/{c}/instances/{i}/items/zarr/{p}/zoom1/chunk,HTTPError('404 Client Error: Not Found for url: /collections/{c}/instances/{i}/items/zarr/{p}/zoom1/chunk'),11
