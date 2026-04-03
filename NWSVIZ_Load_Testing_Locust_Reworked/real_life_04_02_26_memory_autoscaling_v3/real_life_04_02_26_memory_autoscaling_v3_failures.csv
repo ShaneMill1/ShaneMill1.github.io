@@ -1,0 +1,8 @@
+Method,Name,Error,Occurrences
+GET,/collections/{c}/instances/{i}/items/zarr/{p}/zoom4/chunk,HTTPError('404 Client Error: Not Found for url: /collections/{c}/instances/{i}/items/zarr/{p}/zoom4/chunk'),147
+GET,/collections/{c}/instances/{i}/items/zarr/{p}/zoom1/chunk,HTTPError('404 Client Error: Not Found for url: /collections/{c}/instances/{i}/items/zarr/{p}/zoom1/chunk'),5538
+GET,/collections/{c}/instances/{i}/items/zarr/{p}/chunk,HTTPError('404 Client Error: Not Found for url: /collections/{c}/instances/{i}/items/zarr/{p}/chunk'),2075
+GET,/collections/{c}/instances/{i}/items/zarr/{p}/zoom0/chunk,HTTPError('404 Client Error: Not Found for url: /collections/{c}/instances/{i}/items/zarr/{p}/zoom0/chunk'),511
+GET,/collections/{c}/instances/{i}/items/zarr/.zmetadata,HTTPError('404 Client Error: Not Found for url: /collections/{c}/instances/{i}/items/zarr/.zmetadata'),3356
+GET,/collections/{c}/instances/{i}/items/zarr/{p}/zoom8/chunk,HTTPError('404 Client Error: Not Found for url: /collections/{c}/instances/{i}/items/zarr/{p}/zoom8/chunk'),46
+GET,/collections/{c}/instances/{i}/items/zarr/{p}/zoom2/chunk,HTTPError('404 Client Error: Not Found for url: /collections/{c}/instances/{i}/items/zarr/{p}/zoom2/chunk'),20

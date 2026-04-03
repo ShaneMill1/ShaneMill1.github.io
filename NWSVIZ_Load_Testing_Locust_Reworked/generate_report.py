@@ -60,7 +60,7 @@ def prom_query_range(query, start, end, step="30s", url=PROMETHEUS_URL):
         resp = requests.get(
             f"{url}/api/v1/query_range",
             params={"query": query, "start": start, "end": end, "step": step},
-            timeout=15
+            timeout=120
         )
         if resp.status_code == 200:
             return resp.json().get("data", {}).get("result", [])
@@ -207,6 +207,19 @@ def collect_prometheus_metrics(start, end, pod_filter, url=PROMETHEUS_URL):
         start, end, url=url
     )
 
+    # Replica count over time
+    deployment_name = {
+        "edr-desi-api-[^mc].*": "edr-desi-api",
+        "edr-desi-api-memory-.*": "edr-desi-api-memory",
+        "edr-desi-api-compute-.*": "edr-desi-api-compute",
+    }.get(pod_filter, "edr-desi-api")
+    ts = prom_query_range(
+        f'kube_deployment_status_replicas{{namespace="edr-api",deployment="{deployment_name}"}}',
+        start, end, url=url
+    )
+    series["replicas"] = _ts_to_series(ts)
+    metrics["max_replicas"] = max((v for v in series["replicas"][1] if v is not None), default=None)
+
     return metrics, series
 
 
@@ -218,7 +231,7 @@ def generate_charts(data, base):
     series = data.get("series", {})
     history = data.get("history")
 
-    fig, axes = plt.subplots(4, 2, figsize=(14, 16))
+    fig, axes = plt.subplots(5, 2, figsize=(14, 20))
     fig.suptitle(f"Load Test — {data['target']} ({data['instance']})\n{data['test_start']} → {data['test_end']}", fontsize=13)
     fig.patch.set_facecolor('#f5f5f5')
 
@@ -272,12 +285,16 @@ def generate_charts(data, base):
     _plot(axes[2][0], *series.get("cache_hit_ratio", ([], [])), "Redis Cache Hit Ratio", "%", "#9b59b6")
     _plot(axes[2][1], *series.get("cpu_pct", ([], [])), "Node CPU Usage", "%", "#2ecc71")
 
-    # Row 3: Memory and cache hits/misses
+    # Row 3: Memory and replica count
     _plot(axes[3][0], *series.get("mem_used_gb", ([], [])), "Node Memory Used", "GB", "#e67e22")
+    _plot(axes[3][1], *series.get("replicas", ([], [])), "Replica Count", "pods", "#2c3e50")
+
+    # Row 4: Cache hits vs misses and cache hit ratio
     hits_ts, hits_vals = series.get("cache_hits_rps", ([], []))
     miss_ts, miss_vals = series.get("cache_misses_rps", ([], []))
-    _plot(axes[3][1], hits_ts, hits_vals, "Redis Cache Hits vs Misses", "req/s", "#2ecc71",
+    _plot(axes[4][0], hits_ts, hits_vals, "Redis Cache Hits vs Misses", "req/s", "#2ecc71",
           secondary_ts=miss_ts, secondary_vals=miss_vals, secondary_label="misses", secondary_color="#d9534f")
+    _plot(axes[4][1], *series.get("cache_hit_ratio", ([], [])), "Redis Cache Hit Ratio", "%", "#9b59b6")
 
     plt.tight_layout()
     chart_path = f"{base}_charts.png"
@@ -536,6 +553,7 @@ def write_html(data, output_file, chart_path):
             <tr><td>Avg Cache Hits/s</td><td>{fmt_rps(p.get('cache_hits_rps'))}</td></tr>
             <tr><td>Avg Cache Misses/s</td><td>{fmt_rps(p.get('cache_misses_rps'))}</td></tr>
             <tr><td>Pod Restarts</td><td>{int(p.get('pod_restarts') or 0)}</td></tr>
+            <tr><td>Peak Replicas</td><td>{int(p.get('max_replicas') or 2)}</td></tr>
             <tr><td>Avg Node CPU</td><td>{fmt_pct(p.get('cpu_pct'))}</td></tr>
             <tr><td>Avg Node Memory Used</td><td>{fmt_bytes(p.get('mem_used_bytes'))} / {fmt_bytes(p.get('mem_total_bytes'))} ({f"{mem_pct:.1f}%" if mem_pct else "N/A"})</td></tr>
             <tr><td>Avg Network RX</td><td>{fmt_bytes(p.get('net_rx_bps'))}/s</td></tr>
@@ -604,6 +622,7 @@ def write_md(data, output_file, chart_path):
 | Avg Cache Hits/s | {fmt_rps(p.get('cache_hits_rps'))} |
 | Avg Cache Misses/s | {fmt_rps(p.get('cache_misses_rps'))} |
 | Pod Restarts | {int(p.get('pod_restarts') or 0)} |
+| Peak Replicas | {int(p.get('max_replicas') or 2)} |
 | Avg Node CPU | {fmt_pct(p.get('cpu_pct'))} |
 | Avg Node Memory Used | {fmt_bytes(p.get('mem_used_bytes'))} / {fmt_bytes(p.get('mem_total_bytes'))} ({f"{mem_pct:.1f}%" if mem_pct else "N/A"}) |
 | Avg Network RX | {fmt_bytes(p.get('net_rx_bps'))}/s |
@@ -662,6 +681,7 @@ h2. Prometheus Metrics (avg over test window)
 | Avg Cache Hits/s | {fmt_rps(p.get('cache_hits_rps'))} |
 | Avg Cache Misses/s | {fmt_rps(p.get('cache_misses_rps'))} |
 | Pod Restarts | {int(p.get('pod_restarts') or 0)} |
+| Peak Replicas | {int(p.get('max_replicas') or 2)} |
 | Avg Node CPU | {fmt_pct(p.get('cpu_pct'))} |
 | Avg Node Memory Used | {fmt_bytes(p.get('mem_used_bytes'))} / {fmt_bytes(p.get('mem_total_bytes'))} ({f"{mem_pct:.1f}%" if mem_pct else "N/A"}) |
 | Avg Network RX | {fmt_bytes(p.get('net_rx_bps'))}/s |

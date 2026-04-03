@@ -1,6 +1,6 @@
 # Load Test Report — memory (m8i.4xlarge)
 
-**Generated:** 2026-04-01 14:43:01
+**Generated:** 2026-04-01 17:55:30
 **Test window:** 2026-04-01 14:12:58 UTC → 2026-04-01 14:42:59 UTC
 
 ## Time Series Charts
@@ -60,6 +60,7 @@
 | Avg Cache Hits/s | 208.72 |
 | Avg Cache Misses/s | 137.00 |
 | Pod Restarts | 0 |
+| Peak Replicas | 2 |
 | Avg Node CPU | 6675.4% |
 | Avg Node Memory Used | 82.4 GB / 123.5 GB (66.7%) |
 | Avg Network RX | 133.4 MB/s |

@@ -9,6 +9,8 @@ set -e
 
 TARGET=${1:-production}
 SUFFIX=${2:-}
+USERS=${3:-500}
+DURATION=${4:-30m}
 
 case $TARGET in
     production) HOST="https://edr-api-desi-c.mdl.nws.noaa.gov" ;;
@@ -42,6 +44,14 @@ read -p "Confirm Redis has been flushed and you are ready to proceed? (y/N): " c
 [ "$confirm" = "y" ] || [ "$confirm" = "Y" ] || { echo "Aborting."; exit 1; }
 
 echo ""
+echo "Running discovery..."
+DISCOVERY_CACHE="discovery_cache.json"
+# Remove old cache to ensure fresh discovery
+rm -f "$DISCOVERY_CACHE"
+python3 discover.py "$HOST" "$DISCOVERY_CACHE"
+export DISCOVERY_CACHE
+
+echo ""
 echo "Starting real-life test..."
 mkdir -p "$OUTPUT_DIR"
 
@@ -49,9 +59,9 @@ locust -f "$LOCUST_FILE" \
     --host "$HOST" \
     --headless \
     --processes $NUM_WORKERS \
-    --users 500 \
+    --users $USERS \
     --spawn-rate 50 \
-    --run-time 30m \
+    --run-time $DURATION \
     --html "$OUTPUT_DIR/index.html" \
     --csv "$OUTPUT_DIR/${OUTPUT_DIR}" \
     VisualizationUser BatchUser || true

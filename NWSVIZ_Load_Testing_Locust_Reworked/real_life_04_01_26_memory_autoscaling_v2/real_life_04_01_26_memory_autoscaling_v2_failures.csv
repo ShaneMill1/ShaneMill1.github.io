@@ -1,0 +1,6 @@
+Method,Name,Error,Occurrences
+GET,/collections/{c}/instances/{i}/items/zarr/{p}/zoom0/chunk,HTTPError('503 Server Error: Service Temporarily Unavailable for url: /collections/{c}/instances/{i}/items/zarr/{p}/zoom0/chunk'),195
+GET,/collections/{c}/instances/{i}/items/zarr/.zmetadata,HTTPError('503 Server Error: Service Temporarily Unavailable for url: /collections/{c}/instances/{i}/items/zarr/.zmetadata'),673
+GET,/collections/{c}/instances/{i}/items/zarr/{p}/chunk,HTTPError('503 Server Error: Service Temporarily Unavailable for url: /collections/{c}/instances/{i}/items/zarr/{p}/chunk'),908
+GET,/collections/{c}/instances/{i}/items/zarr/{p}/zoom4/chunk,HTTPError('503 Server Error: Service Temporarily Unavailable for url: /collections/{c}/instances/{i}/items/zarr/{p}/zoom4/chunk'),416
+GET,/collections/{c}/instances/{i}/items/zarr/{p}/zoom1/chunk,HTTPError('503 Server Error: Service Temporarily Unavailable for url: /collections/{c}/instances/{i}/items/zarr/{p}/zoom1/chunk'),2092
